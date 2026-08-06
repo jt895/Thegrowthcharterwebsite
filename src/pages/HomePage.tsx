@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import LogoMark from "../components/LogoMark";
+import { homeContent } from "../data/content";
 
 import imgAccolade from "@/imports/accolade.png";
 import imgAmbc from "@/imports/ambc.png";
@@ -142,16 +143,16 @@ export default function HomePage({ onNavigate }: HomePageProps) {
 
         <div style={{ maxWidth: 760, position: "relative" }}>
           <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 32 }} className="hero-sub">
-            The Growth Charter
+            {homeContent.hero.eyebrow}
           </p>
           <h1 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(42px, 6vw, 76px)", lineHeight: 1.08, color: "#F5F3EE", marginBottom: 32, fontWeight: 400 }} className="hero-title">
-            Business growth needs sharper choices, not more activity.
+            {homeContent.hero.title}
           </h1>
           <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 18, lineHeight: 1.7, color: "rgba(245,243,238,0.65)", marginBottom: 16, maxWidth: 620 }} className="hero-sub">
-            The United Republic helps established businesses find where growth is really available, decide what matters most and build the practical capability to act.
+            {homeContent.hero.subA}
           </p>
           <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.7, color: "rgba(245,243,238,0.45)", marginBottom: 48, maxWidth: 560 }} className="hero-sub">
-            The Growth Charter brings executive-level strategy, customer evidence and commercial discipline to owner-led businesses ready for their next stage.
+            {homeContent.hero.subB}
           </p>
           <div style={{ display: "flex", gap: 16, flexWrap: "wrap" }} className="hero-cta">
             <button
@@ -160,7 +161,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
               onMouseEnter={(e) => { e.currentTarget.style.background = "#239068"; }}
               onMouseLeave={(e) => { e.currentTarget.style.background = "#2A9D78"; }}
             >
-              Book a discovery session
+              {homeContent.hero.ctaPrimary}
             </button>
             <button
               onClick={() => nav("how-we-work")}
@@ -168,7 +169,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
               onMouseEnter={(e) => { e.currentTarget.style.borderColor = "#2A9D78"; }}
               onMouseLeave={(e) => { e.currentTarget.style.borderColor = "rgba(42,157,120,0.4)"; }}
             >
-              See how it works
+              {homeContent.hero.ctaSecondary}
             </button>
           </div>
         </div>
@@ -176,7 +177,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
         {/* Scroll indicator */}
         <div style={{ display: "flex", alignItems: "center", gap: 12, marginTop: 64 }}>
           <div style={{ width: 1, height: 48, background: "linear-gradient(to bottom, #2A9D78, transparent)" }} />
-          <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, letterSpacing: "0.12em", textTransform: "uppercase", color: "#9B9B9B" }}>Scroll</span>
+          <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, letterSpacing: "0.12em", textTransform: "uppercase", color: "#9B9B9B" }}>{homeContent.hero.scrollLabel}</span>
         </div>
       </section>
 
@@ -184,24 +185,19 @@ export default function HomePage({ onNavigate }: HomePageProps) {
       <section style={{ background: "#161616", padding: "120px 40px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
           <div ref={r1} className="reveal" style={{ marginBottom: 64 }}>
-            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 20 }}>The Problem</p>
+            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 20 }}>{homeContent.problem.eyebrow}</p>
             <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(32px, 4vw, 52px)", color: "#F5F3EE", fontWeight: 400, lineHeight: 1.15, maxWidth: 640 }}>
-              You need growth, you don't need more marketing.<br />Good businesses plateau when the next decision is unclear.
+              {homeContent.problem.title}<br />{homeContent.problem.titleLine2}
             </h2>
           </div>
           <div ref={r2} className="reveal reveal-delay-1" style={{ marginBottom: 64 }}>
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 16, lineHeight: 1.8, color: "rgba(245,243,238,0.6)", maxWidth: 560 }}>
-              Growth usually slows because the business has outgrown the assumptions, habits and systems that got it this far. More marketing won't fix a commercial problem that has not been properly defined.
+              {homeContent.problem.body}
             </p>
           </div>
 
           <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: 1, background: "rgba(255,255,255,0.06)" }}>
-            {[
-              "Revenue is holding, but profit or momentum has stopped improving",
-              "Marketing activity is happening, but the commercial return is unclear",
-              "Too much of the growth plan still lives in the owner's head",
-              "The business attracts work, but not always the most valuable work",
-            ].map((item, i) => (
+            {homeContent.problem.points.map((item, i) => (
               <div key={i} style={{ background: "#1C1C1C", padding: "36px 40px", borderLeft: "2px solid #2A9D78", display: "flex", gap: 20, alignItems: "flex-start" }}>
                 <span style={{ fontFamily: "'Instrument Serif', serif", fontSize: 20, color: "#2A9D78", opacity: 0.5, minWidth: 28, marginTop: 2 }}>0{i + 1}</span>
                 <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.65, color: "rgba(245,243,238,0.7)", margin: 0 }}>{item}</p>
@@ -215,12 +211,12 @@ export default function HomePage({ onNavigate }: HomePageProps) {
       <section style={{ padding: "120px 40px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
           <div ref={r3} className="reveal" style={{ textAlign: "center", marginBottom: 72 }}>
-            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 20 }}>Choose Your Path</p>
+            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 20 }}>{homeContent.choosePath.eyebrow}</p>
             <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(30px, 4vw, 48px)", color: "#F5F3EE", fontWeight: 400, lineHeight: 1.15, marginBottom: 16 }}>
-              One advisory practice. Two clear ways to engage.
+              {homeContent.choosePath.title}
             </h2>
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 16, color: "#9B9B9B", maxWidth: 480, margin: "0 auto" }}>
-              Start with the path that matches the decision you need to make.
+              {homeContent.choosePath.subtitle}
             </p>
           </div>
 
@@ -232,14 +228,14 @@ export default function HomePage({ onNavigate }: HomePageProps) {
               onMouseLeave={(e) => { (e.currentTarget as HTMLDivElement).style.borderTopColor = "rgba(155,155,155,0.3)"; }}
             >
               <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.15em", textTransform: "uppercase", color: "#9B9B9B", marginBottom: 12 }}>
-                Government, corporate and complex organisations
+                {homeContent.choosePath.advisory.eyebrow}
               </p>
-              <h3 style={{ fontFamily: "'Instrument Serif', serif", fontSize: 32, color: "#F5F3EE", fontWeight: 400, marginBottom: 24 }}>Strategic Advisory</h3>
+              <h3 style={{ fontFamily: "'Instrument Serif', serif", fontSize: 32, color: "#F5F3EE", fontWeight: 400, marginBottom: 24 }}>{homeContent.choosePath.advisory.title}</h3>
               <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.75, color: "rgba(245,243,238,0.55)", marginBottom: 40 }}>
-                Independent strategic advisory for organisations that need to define the real problem before investing in campaigns, content, engagement or delivery. Whether you need Business Strategy, a Fractional CMO, Brand Positioning, Marketing and Communications Strategy, Audience Research and Segmentation, Channel Strategy, Pr and Crisis Communications or Implementation, The United Republic can help to simplify your complex problems, manage multiple stakeholders, work out what to do and just make it happen.
+                {homeContent.choosePath.advisory.body}
               </p>
               <div style={{ display: "flex", alignItems: "center", gap: 8, color: "#9B9B9B" }}>
-                <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, letterSpacing: "0.05em" }}>Explore Strategic Advisory</span>
+                <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, letterSpacing: "0.05em" }}>{homeContent.choosePath.advisory.cta}</span>
                 <span style={{ fontSize: 16 }}>→</span>
               </div>
             </div>
@@ -251,14 +247,14 @@ export default function HomePage({ onNavigate }: HomePageProps) {
               onMouseLeave={(e) => { (e.currentTarget as HTMLDivElement).style.background = "#1A2820"; }}
             >
               <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.15em", textTransform: "uppercase", color: "#8FD9BE", marginBottom: 12 }}>
-                Australian start-ups & established businesses
+                {homeContent.choosePath.growthCharter.eyebrow}
               </p>
-              <h3 style={{ fontFamily: "'Instrument Serif', serif", fontSize: 32, color: "#F5F3EE", fontWeight: 400, marginBottom: 24 }}>The Growth Charter</h3>
+              <h3 style={{ fontFamily: "'Instrument Serif', serif", fontSize: 32, color: "#F5F3EE", fontWeight: 400, marginBottom: 24 }}>{homeContent.choosePath.growthCharter.title}</h3>
               <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.75, color: "rgba(245,243,238,0.55)", marginBottom: 40 }}>
-                The Growth Charter helps Australian start-ups and established businesses to grow by finding their strongest commercial opportunities, choosing the right priorities and building the capability to act on them. With multiple way to engage, there is a solution to grow your business and achieve you goals.
+                {homeContent.choosePath.growthCharter.body}
               </p>
               <div style={{ display: "flex", alignItems: "center", gap: 8, color: "#2A9D78" }}>
-                <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, letterSpacing: "0.05em" }}>Explore The Growth Charter</span>
+                <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, letterSpacing: "0.05em" }}>{homeContent.choosePath.growthCharter.cta}</span>
                 <span style={{ fontSize: 16 }}>→</span>
               </div>
             </div>
@@ -270,24 +266,19 @@ export default function HomePage({ onNavigate }: HomePageProps) {
       <section style={{ background: "#161616", padding: "120px 40px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
           <div ref={r4} className="reveal" style={{ marginBottom: 64 }}>
-            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 20 }}>Why The United Republic</p>
+            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 20 }}>{homeContent.whyTur.eyebrow}</p>
             <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(30px, 4vw, 48px)", color: "#F5F3EE", fontWeight: 400, lineHeight: 1.15, maxWidth: 600 }}>
-              Senior strategic thinking, scaled for practical business growth.
+              {homeContent.whyTur.title}
             </h2>
           </div>
           <div ref={r5} className="reveal reveal-delay-1" style={{ marginBottom: 80 }}>
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 16, lineHeight: 1.8, color: "rgba(245,243,238,0.55)", maxWidth: 680 }}>
-              We bring the the proven experience and discipline used to drive growth for Australia's favourite brands and engage millions of Australians to grow and scale your business.
+              {homeContent.whyTur.body}
             </p>
           </div>
 
           <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 2 }}>
-            {[
-              { title: "Commercial first", body: "We connect customer, brand, sales, margin and capacity decisions so growth is tied to business value, not activity." },
-              { title: "Evidence led", body: "We test owner belief against customer insight, business data and market reality before choosing priorities." },
-              { title: "Built to implement", body: "The output is a staged plan with owners, measures, tools and decisions your team can keep using." },
-              { title: "Capability not Dependency", body: "You own what we build and know how to use it. Our job is to make ourselves unnecessary, not indispensable. But we're always here when you need support or advice." },
-            ].map((item, i) => (
+            {homeContent.whyTur.pillars.map((item, i) => (
               <div key={i} style={{ background: "#1C1C1C", padding: "40px", borderTop: "1px solid rgba(42,157,120,0.3)" }}>
                 <h3 style={{ fontFamily: "'Instrument Serif', serif", fontSize: 22, color: "#F5F3EE", fontWeight: 400, marginBottom: 16 }}>{item.title}</h3>
                 <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, lineHeight: 1.75, color: "rgba(245,243,238,0.55)", margin: 0 }}>{item.body}</p>
@@ -301,20 +292,15 @@ export default function HomePage({ onNavigate }: HomePageProps) {
       <section style={{ padding: "120px 40px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1fr", gap: 80, alignItems: "center" }}>
           <div ref={r6} className="reveal">
-            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 20 }}>Results</p>
+            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 20 }}>{homeContent.results.eyebrow}</p>
             <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(30px, 3.5vw, 44px)", color: "#F5F3EE", fontWeight: 400, lineHeight: 1.2, marginBottom: 24 }}>
-              Evidence of growth, not just intent.
+              {homeContent.results.title}
             </h2>
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.8, color: "rgba(245,243,238,0.55)", marginBottom: 40 }}>
-              Whether you're engaging through Strategic Advisory or the Growth Charter,&nbsp;&nbsp;the thinking behind it comes from decades of measurable commercial and behavioural outcomes.
+              {homeContent.results.body}
             </p>
             <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
-              {[
-                "Building brands that earn trust and preference",
-                "Targeting the right customers with sharper positioning",
-                "Growing businesses through clearer commercial priorities",
-                "Improving capability so teams can keep acting without us",
-              ].map((item, i) => (
+              {homeContent.results.points.map((item, i) => (
                 <div key={i} style={{ display: "flex", gap: 16, alignItems: "flex-start" }}>
                   <div style={{ width: 6, height: 6, borderRadius: "50%", background: "#2A9D78", marginTop: 8, flexShrink: 0 }} />
                   <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, lineHeight: 1.7, color: "rgba(245,243,238,0.65)", margin: 0 }}>{item}</p>
@@ -324,9 +310,9 @@ export default function HomePage({ onNavigate }: HomePageProps) {
           </div>
           <div>
             <div style={{ padding: "48px", background: "#161616", borderLeft: "2px solid #2A9D78" }}>
-              <p style={{ fontFamily: "'Instrument Serif', serif", fontSize: 52, color: "#2A9D78", fontWeight: 400, lineHeight: 1, marginBottom: 8 }}>25+</p>
+              <p style={{ fontFamily: "'Instrument Serif', serif", fontSize: 52, color: "#2A9D78", fontWeight: 400, lineHeight: 1, marginBottom: 8 }}>{homeContent.results.stat.value}</p>
               <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, color: "#9B9B9B", lineHeight: 1.6 }}>
-                years of building brands, targeting the right customers, growing businesses and improving capability.
+                {homeContent.results.stat.label}
               </p>
             </div>
           </div>
@@ -337,7 +323,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
       <section style={{ background: "#161616", padding: "100px 40px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
           <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#9B9B9B", marginBottom: 56, textAlign: "center" }}>
-            Experience behind the thinking — We've worked with Australia's Favourite Brands:
+            {homeContent.clientLogos.label}
           </p>
 
           {/* Image logos grid */}
@@ -401,10 +387,10 @@ export default function HomePage({ onNavigate }: HomePageProps) {
       <section style={{ padding: "100px 40px", textAlign: "center" }}>
         <div style={{ maxWidth: 600, margin: "0 auto" }}>
           <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(28px, 3.5vw, 40px)", color: "#F5F3EE", fontWeight: 400, lineHeight: 1.2, marginBottom: 20 }}>
-            Find the growth decision your business needs next.
+            {homeContent.cta.title}
           </h2>
           <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.75, color: "rgba(245,243,238,0.5)", marginBottom: 40 }}>
-            The first session is a practical conversation about your business, what are the challenges, what has slowed, where the opportunity may be and what a useful outcome would look like.
+            {homeContent.cta.body}
           </p>
           <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
             <button
@@ -413,7 +399,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
               onMouseEnter={(e) => { e.currentTarget.style.background = "#239068"; }}
               onMouseLeave={(e) => { e.currentTarget.style.background = "#2A9D78"; }}
             >
-              Book a discovery session
+              {homeContent.cta.ctaPrimary}
             </button>
             <button
               onClick={() => nav("about")}
@@ -421,7 +407,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
               onMouseEnter={(e) => { e.currentTarget.style.borderColor = "rgba(255,255,255,0.4)"; }}
               onMouseLeave={(e) => { e.currentTarget.style.borderColor = "rgba(255,255,255,0.15)"; }}
             >
-              Review the program
+              {homeContent.cta.ctaSecondary}
             </button>
           </div>
         </div>

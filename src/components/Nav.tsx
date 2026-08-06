@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import LogoMark from "./LogoMark";
+import { navContent, siteContent } from "../data/content";
 
 type Page = "home" | "about" | "how-we-work" | "services" | "strategic-advisory" | "growth-charter";
 
@@ -62,7 +63,7 @@ export default function Nav({ current, onNavigate }: NavProps) {
           >
             <LogoMark size={42} />
             <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 12, fontWeight: 500, letterSpacing: "0.14em", textTransform: "uppercase", color: "#F5F3EE", lineHeight: 1.3 }}>
-              The United<br />Republic
+              {siteContent.brandNameLines[0]}<br />{siteContent.brandNameLines[1]}
             </span>
           </button>
 
@@ -81,7 +82,7 @@ export default function Nav({ current, onNavigate }: NavProps) {
               onMouseEnter={(e) => { if (current !== "growth-charter") e.currentTarget.style.color = "#F5F3EE"; }}
               onMouseLeave={(e) => { if (current !== "growth-charter") e.currentTarget.style.color = "rgba(245,243,238,0.6)"; }}
             >
-              The Growth Charter
+              {navContent.growthCharter}
             </button>
 
             {/* Strategic Advisory dropdown */}
@@ -99,7 +100,7 @@ export default function Nav({ current, onNavigate }: NavProps) {
                 onMouseEnter={(e) => { if (!advisoryActive) e.currentTarget.style.color = "#F5F3EE"; }}
                 onMouseLeave={(e) => { if (!advisoryActive) e.currentTarget.style.color = "rgba(245,243,238,0.6)"; }}
               >
-                Strategic Advisory
+                {navContent.strategicAdvisory}
                 <svg width="10" height="6" viewBox="0 0 10 6" fill="none" style={{ transition: "transform 0.2s", transform: advisoryOpen ? "rotate(180deg)" : "rotate(0deg)" }}>
                   <path d="M1 1L5 5L9 1" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
@@ -124,7 +125,7 @@ export default function Nav({ current, onNavigate }: NavProps) {
                     onMouseEnter={(e) => { e.currentTarget.style.color = "#2A9D78"; e.currentTarget.style.background = "rgba(42,157,120,0.06)"; }}
                     onMouseLeave={(e) => { e.currentTarget.style.color = current === "strategic-advisory" ? "#2A9D78" : "rgba(245,243,238,0.7)"; e.currentTarget.style.background = "none"; }}
                   >
-                    Strategic Advisory
+                    {navContent.strategicAdvisory}
                   </button>
                   <div style={{ height: 1, background: "rgba(255,255,255,0.06)", margin: "0 20px" }} />
                   <button
@@ -139,7 +140,7 @@ export default function Nav({ current, onNavigate }: NavProps) {
                     onMouseEnter={(e) => { e.currentTarget.style.color = "#2A9D78"; e.currentTarget.style.background = "rgba(42,157,120,0.06)"; }}
                     onMouseLeave={(e) => { e.currentTarget.style.color = current === "services" ? "#2A9D78" : "rgba(245,243,238,0.7)"; e.currentTarget.style.background = "none"; }}
                   >
-                    Services
+                    {navContent.services}
                   </button>
                 </div>
               )}
@@ -158,7 +159,7 @@ export default function Nav({ current, onNavigate }: NavProps) {
               onMouseEnter={(e) => { if (current !== "how-we-work") e.currentTarget.style.color = "#F5F3EE"; }}
               onMouseLeave={(e) => { if (current !== "how-we-work") e.currentTarget.style.color = "rgba(245,243,238,0.6)"; }}
             >
-              How We Work
+              {navContent.howWeWork}
             </button>
 
             {/* About */}
@@ -174,11 +175,11 @@ export default function Nav({ current, onNavigate }: NavProps) {
               onMouseEnter={(e) => { if (current !== "about") e.currentTarget.style.color = "#F5F3EE"; }}
               onMouseLeave={(e) => { if (current !== "about") e.currentTarget.style.color = "rgba(245,243,238,0.6)"; }}
             >
-              About
+              {navContent.about}
             </button>
 
             <a
-              href="mailto:jt@theunitedrepublic.com.au"
+              href={`mailto:${siteContent.contact.email}`}
               style={{
                 background: "none",
                 border: "1px solid rgba(42,157,120,0.5)",
@@ -191,7 +192,7 @@ export default function Nav({ current, onNavigate }: NavProps) {
               onMouseEnter={(e) => { (e.currentTarget as HTMLAnchorElement).style.background = "rgba(42,157,120,0.08)"; (e.currentTarget as HTMLAnchorElement).style.borderColor = "#2A9D78"; }}
               onMouseLeave={(e) => { (e.currentTarget as HTMLAnchorElement).style.background = "none"; (e.currentTarget as HTMLAnchorElement).style.borderColor = "rgba(42,157,120,0.5)"; }}
             >
-              Contact
+              {navContent.contact}
             </a>
           </nav>
 
@@ -212,13 +213,7 @@ export default function Nav({ current, onNavigate }: NavProps) {
       {/* Mobile menu */}
       {mobileOpen && (
         <div style={{ position: "fixed", inset: 0, zIndex: 99, background: "#1C1C1C", display: "flex", flexDirection: "column", paddingTop: 96, paddingLeft: 40 }}>
-          {([
-            { label: "About", page: "about" as Page },
-            { label: "Strategic Advisory", page: "strategic-advisory" as Page },
-            { label: "Services", page: "services" as Page },
-            { label: "The Growth Charter", page: "growth-charter" as Page },
-            { label: "How We Work", page: "how-we-work" as Page },
-          ]).map((l) => (
+          {(navContent.mobileLinks as { label: string; page: Page }[]).map((l) => (
             <button
               key={l.page}
               onClick={() => handleNav(l.page)}

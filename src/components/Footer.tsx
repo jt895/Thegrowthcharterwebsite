@@ -1,4 +1,5 @@
 import LogoMark from "./LogoMark";
+import { footerContent, siteContent } from "../data/content";
 
 type Page = "home" | "about" | "how-we-work" | "services" | "strategic-advisory" | "growth-charter";
 
@@ -21,26 +22,21 @@ export default function Footer({ onNavigate }: FooterProps) {
             <div style={{ display: "flex", alignItems: "center", gap: 14, marginBottom: 24 }}>
               <LogoMark size={46} />
               <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 12, fontWeight: 500, letterSpacing: "0.14em", textTransform: "uppercase", color: "#F5F3EE", lineHeight: 1.4 }}>
-                The United<br />Republic
+                {siteContent.brandNameLines[0]}<br />{siteContent.brandNameLines[1]}
               </span>
             </div>
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, lineHeight: 1.7, color: "#9B9B9B", maxWidth: 260 }}>
-              Independent strategic advisory for complex organisations and practical business growth support through The Growth Charter.
+              {siteContent.blurb}
             </p>
           </div>
 
           {/* Navigation */}
           <div>
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.1em", textTransform: "uppercase", color: "#9B9B9B", marginBottom: 20 }}>
-              Ways to work with us
+              {footerContent.navHeading}
             </p>
             <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-              {[
-                { label: "Strategic Advisory", page: "about" as Page },
-                { label: "The Growth Charter", page: "growth-charter" as Page },
-                { label: "How We Work", page: "how-we-work" as Page },
-                { label: "Services", page: "services" as Page },
-              ].map((l) => (
+              {(footerContent.navLinks as { label: string; page: Page }[]).map((l) => (
                 <button
                   key={l.page}
                   onClick={() => nav(l.page)}
@@ -57,21 +53,22 @@ export default function Footer({ onNavigate }: FooterProps) {
           {/* Contact */}
           <div>
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.1em", textTransform: "uppercase", color: "#9B9B9B", marginBottom: 20 }}>
-              Contact
+              {footerContent.contactHeading}
             </p>
             <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
-              <a href="mailto:jt@theunitedrepublic.com.au" style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, color: "rgba(245,243,238,0.55)", textDecoration: "none", transition: "color 0.2s" }}
+              <a href={`mailto:${siteContent.contact.email}`} style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, color: "rgba(245,243,238,0.55)", textDecoration: "none", transition: "color 0.2s" }}
                 onMouseEnter={(e) => { e.currentTarget.style.color = "#2A9D78"; }}
                 onMouseLeave={(e) => { e.currentTarget.style.color = "rgba(245,243,238,0.55)"; }}
               >
-                jt@theunitedrepublic.com.au
+                {siteContent.contact.email}
               </a>
-              <a href="tel:+61407744388" style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, color: "rgba(245,243,238,0.55)", textDecoration: "none" }}>
-                +61 407 744 388
+              <a href={siteContent.contact.phoneHref} style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, color: "rgba(245,243,238,0.55)", textDecoration: "none" }}>
+                {siteContent.contact.phone}
               </a>
               <div style={{ marginTop: 12, display: "flex", flexDirection: "column", gap: 8 }}>
-                <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 12, color: "#9B9B9B", margin: 0 }}>Growth Charter enquiry</p>
-                <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 12, color: "#9B9B9B", margin: 0 }}>Strategic Advisory enquiry</p>
+                {footerContent.enquiryLabels.map((label) => (
+                  <p key={label} style={{ fontFamily: "'Inter', sans-serif", fontSize: 12, color: "#9B9B9B", margin: 0 }}>{label}</p>
+                ))}
               </div>
             </div>
           </div>
@@ -79,10 +76,10 @@ export default function Footer({ onNavigate }: FooterProps) {
 
         <div style={{ borderTop: "1px solid rgba(255,255,255,0.06)", paddingTop: 32, display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 16 }}>
           <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 12, color: "#9B9B9B", margin: 0 }}>
-            © 2026 The United Republic. All rights reserved.
+            {siteContent.copyright}
           </p>
           <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 12, color: "#9B9B9B", margin: 0, fontStyle: "italic" }}>
-            Strategy, growth and practical implementation
+            {siteContent.tagline}
           </p>
         </div>
       </div>
