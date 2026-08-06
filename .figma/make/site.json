@@ -1,0 +1,10 @@
+{
+  "description": "A premium website redesign showcasing strategic advisory content with a confident, editorial style and subtle animations for enhanced user engagement.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
