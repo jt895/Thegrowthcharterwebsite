@@ -1,4 +1,4 @@
-import logoImg from "@/imports/TUR_NEW_LOGO_white_copy_transparent.png";
+import logoImg from "@/imports/TUR_NEW_LOGO_circle_only.png";
 
 interface LogoMarkProps {
   size?: number;

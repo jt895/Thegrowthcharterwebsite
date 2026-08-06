@@ -19,7 +19,7 @@ export default function Footer({ onNavigate }: FooterProps) {
           {/* Brand */}
           <div>
             <div style={{ display: "flex", alignItems: "center", gap: 14, marginBottom: 24 }}>
-              <LogoMark size={44} />
+              <LogoMark size={46} />
               <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 12, fontWeight: 500, letterSpacing: "0.14em", textTransform: "uppercase", color: "#F5F3EE", lineHeight: 1.4 }}>
                 The United<br />Republic
               </span>

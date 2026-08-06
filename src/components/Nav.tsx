@@ -60,7 +60,7 @@ export default function Nav({ current, onNavigate }: NavProps) {
             onClick={() => handleNav("home")}
             style={{ display: "flex", alignItems: "center", gap: 14, background: "none", border: "none", cursor: "pointer", padding: 0 }}
           >
-            <LogoMark size={40} />
+            <LogoMark size={42} />
             <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 12, fontWeight: 500, letterSpacing: "0.14em", textTransform: "uppercase", color: "#F5F3EE", lineHeight: 1.3 }}>
               The United<br />Republic
             </span>

@@ -70,6 +70,69 @@ export default function GrowthCharterPage({ onNavigate }: GrowthCharterPageProps
         </div>
       </section>
 
+      {/* What is the Growth Charter */}
+      <section style={{ padding: "100px 40px" }}>
+        <div style={{ maxWidth: 1280, margin: "0 auto" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1.4fr", gap: 80, alignItems: "start" }}>
+            <div>
+              <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 20 }}>
+                The program
+              </p>
+              <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(28px, 3.5vw, 44px)", color: "#F5F3EE", fontWeight: 400, lineHeight: 1.2, marginBottom: 32 }}>
+                What is The Growth Charter?
+              </h2>
+              <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.85, color: "rgba(245,243,238,0.55)", marginBottom: 24 }}>
+                The Growth Charter is a structured business growth program that helps Australian businesses — from early-stage startups to established enterprises — find their strongest commercial opportunities, make smarter decisions and build the practical capability to act on them.
+              </p>
+              <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.85, color: "rgba(245,243,238,0.5)" }}>
+                Unlike a consulting report that sits on a shelf, The Growth Charter is built to be used. Every stage produces evidence, decisions and tools that stay in the business — so you leave with something that works, not just something that looks good.
+              </p>
+            </div>
+            <div style={{ display: "flex", flexDirection: "column", gap: 2 }}>
+              {[
+                { title: "Evidence first", body: "We test owner belief against customer insight, commercial data and market reality before any decisions are made." },
+                { title: "Strategy before execution", body: "No campaigns, websites or marketing spend until the commercial direction is clear and the priorities are set." },
+                { title: "Built for your business", body: "The program is tailored to your stage, your sector and your goals — not a generic framework applied the same way to every client." },
+                { title: "Capability, not dependency", body: "You own everything we build together. Our job is to make you more capable, not to keep you reliant on us." },
+              ].map((item, i) => (
+                <div key={i} style={{ background: "#1E1E1E", padding: "28px 32px", borderLeft: "2px solid rgba(42,157,120,0.3)", display: "flex", gap: 20, alignItems: "flex-start" }}>
+                  <div>
+                    <h3 style={{ fontFamily: "'Instrument Serif', serif", fontSize: 18, color: "#F5F3EE", fontWeight: 400, marginBottom: 8 }}>{item.title}</h3>
+                    <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, lineHeight: 1.7, color: "rgba(245,243,238,0.5)", margin: 0 }}>{item.body}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Ways to work together */}
+      <section style={{ background: "#161616", padding: "100px 40px" }}>
+        <div style={{ maxWidth: 1280, margin: "0 auto" }}>
+          <div style={{ marginBottom: 56 }}>
+            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 16 }}>Ways to work together</p>
+            <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(26px, 3vw, 38px)", color: "#F5F3EE", fontWeight: 400, lineHeight: 1.2 }}>
+              The same method, with the level of support you need.
+            </h2>
+          </div>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 2 }}>
+            {[
+              { title: "Business Launch Essentials", sub: "For new, newly established or small businesses that need the right commercial, brand and digital foundations from the start, including positioning, messaging and a launch-ready website.", note: "A focused path for new ventures and small businesses wanting to grow" },
+              { title: "DIY", sub: "A guided program for owners who want to work through The Growth Charter themselves using structured tools, templates and training.", note: "Online program in development" },
+              { title: "Do It Together", sub: "We guide the work, run the key sessions and help you make the decisions, while you and your team build the plan and the skills to carry it forward.", note: "Best for hands-on owners and capable internal teams" },
+              { title: "Done For You", sub: "We conduct the research, analysis and strategic work, build the plan and support implementation with the right specialists where required.", note: "Best for speed, complexity or limited internal capacity" },
+            ].map((mode, i) => (
+              <div key={mode.title} style={{ background: "#1C1C1C", padding: "40px 32px", borderTop: i === 0 ? "2px solid rgba(155,155,155,0.5)" : i === 1 || i === 2 ? "2px solid #2A9D78" : "2px solid rgba(143,217,190,0.4)" }}>
+                <h3 style={{ fontFamily: "'Instrument Serif', serif", fontSize: 22, color: "#F5F3EE", fontWeight: 400, marginBottom: 16 }}>{mode.title}</h3>
+                <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, lineHeight: 1.75, color: "rgba(245,243,238,0.5)", marginBottom: 24 }}>{mode.sub}</p>
+                <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 12, color: "#2A9D78", fontStyle: "italic" }}>{mode.note}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Why good businesses plateau */}
       <section style={{ background: "#161616", padding: "100px 40px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
@@ -186,31 +249,6 @@ export default function GrowthCharterPage({ onNavigate }: GrowthCharterPageProps
         </div>
       </section>
 
-      {/* Ways to work together */}
-      <section style={{ background: "#161616", padding: "100px 40px" }}>
-        <div style={{ maxWidth: 1280, margin: "0 auto" }}>
-          <div style={{ marginBottom: 56 }}>
-            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 16 }}>Ways to work together</p>
-            <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(26px, 3vw, 38px)", color: "#F5F3EE", fontWeight: 400, lineHeight: 1.2 }}>
-              The same method, with the level of support you need.
-            </h2>
-          </div>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 2 }}>
-            {[
-              { title: "Business Launch Essentials", sub: "For new, newly established or small businesses that need the right commercial, brand and digital foundations from the start, including positioning, messaging and a launch-ready website.", note: "A focused path for new ventures and small businesses wanting to grow" },
-              { title: "DIY", sub: "A guided program for owners who want to work through The Growth Charter themselves using structured tools, templates and training.", note: "Online program in development" },
-              { title: "Do It Together", sub: "We guide the work, run the key sessions and help you make the decisions, while you and your team build the plan and the skills to carry it forward.", note: "Best for hands-on owners and capable internal teams" },
-              { title: "Done For You", sub: "We conduct the research, analysis and strategic work, build the plan and support implementation with the right specialists where required.", note: "Best for speed, complexity or limited internal capacity" },
-            ].map((mode, i) => (
-              <div key={mode.title} style={{ background: "#1C1C1C", padding: "40px 32px", borderTop: i === 0 ? "2px solid rgba(155,155,155,0.5)" : i === 1 || i === 2 ? "2px solid #2A9D78" : "2px solid rgba(143,217,190,0.4)" }}>
-                <h3 style={{ fontFamily: "'Instrument Serif', serif", fontSize: 22, color: "#F5F3EE", fontWeight: 400, marginBottom: 16 }}>{mode.title}</h3>
-                <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, lineHeight: 1.75, color: "rgba(245,243,238,0.5)", marginBottom: 24 }}>{mode.sub}</p>
-                <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 12, color: "#2A9D78", fontStyle: "italic" }}>{mode.note}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Why TUR */}
       <section style={{ padding: "100px 40px" }}>
