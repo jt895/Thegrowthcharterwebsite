@@ -33,6 +33,9 @@ export default defineConfig(({ mode }) => {
       host: '0.0.0.0',
       port: parseInt(process.env.PORT || '8443'),
       strictPort: true,
+      // Netlify Visual Editor reaches Vite through its hosted preview proxy.
+      // Vite 8 rejects those forwarded hostnames unless they are explicitly allowed.
+      allowedHosts: ['.netlify.app', 'create.netlify.com', '.stackbit.app'],
       watch: { ignored: ['**/.figma/**'] },
     },
     preview: {
