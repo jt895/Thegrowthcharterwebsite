@@ -86,7 +86,9 @@ export default defineStackbitConfig({
   publishDir: "dist",
   contentSources: [
     new GitContentSource({
-      rootPath: import.meta.dirname,
+      // Netlify evaluates an ESM copy of this config from `.stackbit/cache`.
+      // The process working directory remains the checked-out repository root.
+      rootPath: process.cwd(),
       contentDirs: ["content"],
       models: [
         {
