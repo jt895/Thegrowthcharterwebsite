@@ -681,7 +681,7 @@
             "columns": [
                 {
                     "title": "Diagnose",
-                    "sub": "We identify the problem behind the brief.",
+                    "sub": "We identify the problem under th hood",
                     "items": [
                         "Business objectives",
                         "Success measures",
