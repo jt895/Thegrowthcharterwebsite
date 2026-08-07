@@ -135,3 +135,34 @@ body {
     grid-template-columns: 60px 1fr !important;
   }
 }
+
+@media (max-width: 600px) {
+  /* Keep page gutters and text panels fluid on phone-sized screens. */
+  section {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  section [style*="grid-template-columns"] {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  section [style*="grid-template-columns"] > *,
+  section [style*="display: flex"] > * {
+    min-width: 0;
+  }
+
+  section div[style*="padding"] {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  section h1,
+  section h2,
+  section h3,
+  section p,
+  section li,
+  section span {
+    overflow-wrap: anywhere;
+  }
+}
