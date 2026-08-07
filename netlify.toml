@@ -6,6 +6,11 @@
   NODE_VERSION = "22"
   PNPM_VERSION = "11.16.0"
 
+[dev]
+  command = "pnpm dev"
+  targetPort = 8443
+  framework = "#custom"
+
 [[headers]]
   for = "/*"
   [headers.values]
