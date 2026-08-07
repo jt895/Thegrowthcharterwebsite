@@ -7,19 +7,33 @@ import HowWeWorkPage from "./pages/HowWeWorkPage";
 import ServicesPage from "./pages/ServicesPage";
 import StrategicAdvisoryPage from "./pages/StrategicAdvisoryPage";
 import GrowthCharterPage from "./pages/GrowthCharterPage";
+import { pageFromPath, pathForPage, updateDocumentMetadata, type Page } from "./routes";
 
-type Page = "home" | "about" | "how-we-work" | "services" | "strategic-advisory" | "growth-charter";
+interface AppProps {
+  initialPage?: Page;
+}
 
-export default function App() {
-  const [page, setPage] = useState<Page>("home");
+export default function App({ initialPage = "home" }: AppProps) {
+  const [page, setPage] = useState<Page>(initialPage);
 
   const navigate = (p: Page) => {
+    const path = pathForPage(p);
+    if (window.location.pathname !== path) {
+      window.history.pushState({ page: p }, "", path);
+    }
     setPage(p);
   };
 
   useEffect(() => {
+    updateDocumentMetadata(page);
     window.scrollTo({ top: 0 });
   }, [page]);
+
+  useEffect(() => {
+    const handlePopState = () => setPage(pageFromPath(window.location.pathname));
+    window.addEventListener("popstate", handlePopState);
+    return () => window.removeEventListener("popstate", handlePopState);
+  }, []);
 
   const renderPage = () => {
     switch (page) {

@@ -1,6 +1,8 @@
 import { useEffect, useRef } from "react";
 import LogoMark from "../components/LogoMark";
 import { homeContent } from "../data/content";
+import { editableField } from "../data/editable";
+import type { Page } from "../routes";
 
 import imgAccolade from "@/imports/accolade.png";
 import imgAmbc from "@/imports/ambc.png";
@@ -43,8 +45,6 @@ import imgTaubmans from "@/imports/taubmans.png";
 import imgToyota from "@/imports/toyota.png";
 import imgYalumba from "@/imports/yalumba.png";
 import imgYellowtail from "@/imports/yellowtail.png";
-
-type Page = "home" | "about" | "how-we-work" | "services" | "strategic-advisory" | "growth-charter";
 
 interface HomePageProps {
   onNavigate: (page: Page) => void;
@@ -115,7 +115,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
     <div style={{ background: "#1C1C1C", minHeight: "100vh" }}>
 
       {/* Hero */}
-      <section style={{ minHeight: "100vh", display: "flex", flexDirection: "column", justifyContent: "center", padding: "120px 40px 80px", maxWidth: 1280, margin: "0 auto", position: "relative" }}>
+      <section {...editableField("home.hero")} style={{ minHeight: "100vh", display: "flex", flexDirection: "column", justifyContent: "center", padding: "120px 40px 80px", maxWidth: 1280, margin: "0 auto", position: "relative" }}>
 
         {/* Animated ring mark — exact v1 */}
         <div style={{ position: "absolute", right: "6%", top: "50%", transform: "translateY(-50%)", opacity: 0.18, pointerEvents: "none" }} className="hero-ring">
@@ -182,7 +182,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
       </section>
 
       {/* The Problem */}
-      <section style={{ background: "#161616", padding: "120px 40px" }}>
+      <section {...editableField("home.problem")} style={{ background: "#161616", padding: "120px 40px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
           <div ref={r1} className="reveal" style={{ marginBottom: 64 }}>
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 20 }}>{homeContent.problem.eyebrow}</p>
@@ -208,7 +208,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
       </section>
 
       {/* Choose Your Path */}
-      <section style={{ padding: "120px 40px" }}>
+      <section {...editableField("home.choosePath")} style={{ padding: "120px 40px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
           <div ref={r3} className="reveal" style={{ textAlign: "center", marginBottom: 72 }}>
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 20 }}>{homeContent.choosePath.eyebrow}</p>
@@ -263,7 +263,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
       </section>
 
       {/* Why TUR */}
-      <section style={{ background: "#161616", padding: "120px 40px" }}>
+      <section {...editableField("home.whyTur")} style={{ background: "#161616", padding: "120px 40px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
           <div ref={r4} className="reveal" style={{ marginBottom: 64 }}>
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 20 }}>{homeContent.whyTur.eyebrow}</p>
@@ -289,7 +289,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
       </section>
 
       {/* Results */}
-      <section style={{ padding: "120px 40px" }}>
+      <section {...editableField("home.results")} style={{ padding: "120px 40px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1fr", gap: 80, alignItems: "center" }}>
           <div ref={r6} className="reveal">
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 20 }}>{homeContent.results.eyebrow}</p>
@@ -320,7 +320,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
       </section>
 
       {/* Client logos */}
-      <section style={{ background: "#161616", padding: "100px 40px" }}>
+      <section {...editableField("home.clientLogos")} style={{ background: "#161616", padding: "100px 40px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
           <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#9B9B9B", marginBottom: 56, textAlign: "center" }}>
             {homeContent.clientLogos.label}
@@ -384,7 +384,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
       </section>
 
       {/* CTA */}
-      <section style={{ padding: "100px 40px", textAlign: "center" }}>
+      <section {...editableField("home.cta")} style={{ padding: "100px 40px", textAlign: "center" }}>
         <div style={{ maxWidth: 600, margin: "0 auto" }}>
           <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(28px, 3.5vw, 40px)", color: "#F5F3EE", fontWeight: 400, lineHeight: 1.2, marginBottom: 20 }}>
             {homeContent.cta.title}

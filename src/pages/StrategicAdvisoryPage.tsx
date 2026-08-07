@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { strategicAdvisoryContent, siteContent } from "../data/content";
-
-type Page = "home" | "about" | "how-we-work" | "services" | "strategic-advisory" | "growth-charter";
+import { editableField } from "../data/editable";
+import type { Page } from "../routes";
 
 interface StrategicAdvisoryPageProps {
   onNavigate: (page: Page) => void;
@@ -35,7 +35,7 @@ export default function StrategicAdvisoryPage({ onNavigate }: StrategicAdvisoryP
     <div style={{ background: "#1C1C1C", minHeight: "100vh" }}>
 
       {/* Hero */}
-      <section style={{ minHeight: "85vh", display: "flex", flexDirection: "column", justifyContent: "center", padding: "140px 40px 100px", position: "relative", overflow: "hidden" }}>
+      <section {...editableField("strategicAdvisory.hero")} style={{ minHeight: "85vh", display: "flex", flexDirection: "column", justifyContent: "center", padding: "140px 40px 100px", position: "relative", overflow: "hidden" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto", position: "relative", width: "100%" }}>
           <div style={{ maxWidth: 760 }}>
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 28 }} className="hero-sub">
@@ -73,7 +73,7 @@ export default function StrategicAdvisoryPage({ onNavigate }: StrategicAdvisoryP
       </section>
 
       {/* What we do differently */}
-      <section style={{ background: "#161616", padding: "100px 40px" }}>
+      <section {...editableField("strategicAdvisory.differentiation")} style={{ background: "#161616", padding: "100px 40px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
           <div ref={r1} className="reveal" style={{ marginBottom: 56 }}>
             <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(28px, 3.5vw, 44px)", color: "#F5F3EE", fontWeight: 400, lineHeight: 1.15, textAlign: "center" }}>
@@ -92,7 +92,7 @@ export default function StrategicAdvisoryPage({ onNavigate }: StrategicAdvisoryP
       </section>
 
       {/* Why clients engage us early */}
-      <section style={{ padding: "100px 40px" }}>
+      <section {...editableField("strategicAdvisory.whyEngageEarly")} style={{ padding: "100px 40px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
           <div ref={r3} className="reveal" style={{ marginBottom: 64 }}>
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 20, textAlign: "center" }}>
@@ -114,7 +114,7 @@ export default function StrategicAdvisoryPage({ onNavigate }: StrategicAdvisoryP
       </section>
 
       {/* Our methodology */}
-      <section style={{ background: "#161616", padding: "100px 40px" }}>
+      <section {...editableField("strategicAdvisory.methodology")} style={{ background: "#161616", padding: "100px 40px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
           <div ref={r5} className="reveal" style={{ marginBottom: 64 }}>
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 16, textAlign: "center" }}>
@@ -153,7 +153,7 @@ export default function StrategicAdvisoryPage({ onNavigate }: StrategicAdvisoryP
       </section>
 
       {/* What we do */}
-      <section style={{ padding: "100px 40px" }}>
+      <section {...editableField("strategicAdvisory.whatWeDo")} style={{ padding: "100px 40px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
           <div ref={r6} className="reveal" style={{ marginBottom: 64 }}>
             <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(28px, 3.5vw, 44px)", color: "#F5F3EE", fontWeight: 400, lineHeight: 1.15, textAlign: "center" }}>
@@ -180,7 +180,7 @@ export default function StrategicAdvisoryPage({ onNavigate }: StrategicAdvisoryP
       </section>
 
       {/* Built for complex organisations */}
-      <section style={{ background: "#161616", padding: "100px 40px" }}>
+      <section {...editableField("strategicAdvisory.builtFor")} style={{ background: "#161616", padding: "100px 40px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
           <div ref={r7} className="reveal" style={{ marginBottom: 64 }}>
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 20, textAlign: "center" }}>
@@ -212,7 +212,7 @@ export default function StrategicAdvisoryPage({ onNavigate }: StrategicAdvisoryP
       </section>
 
       {/* CTA */}
-      <section style={{ padding: "100px 40px", textAlign: "center" }}>
+      <section {...editableField("strategicAdvisory.cta")} style={{ padding: "100px 40px", textAlign: "center" }}>
         <div style={{ maxWidth: 560, margin: "0 auto" }}>
           <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.15em", textTransform: "uppercase", color: "#9B9B9B", marginBottom: 20 }}>
             {strategicAdvisoryContent.cta.eyebrow}

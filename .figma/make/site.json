@@ -1,7 +1,8 @@
 {
-  "description": "A premium website redesign showcasing strategic advisory content with a confident, editorial style and subtle animations for enhanced user engagement.",
+  "title": "The United Republic | Strategy and Business Growth",
+  "language": "en",
   "robots": {
-    "index": false
+    "index": true
   },
   "accessibility": {
     "addBypassLinks": false,

@@ -1,8 +1,8 @@
 import { useEffect, useRef } from "react";
 import AnimatedHeroMark from "../components/AnimatedHeroMark";
 import { aboutContent, siteContent } from "../data/content";
-
-type Page = "home" | "about" | "how-we-work" | "services" | "strategic-advisory" | "growth-charter";
+import { editableField } from "../data/editable";
+import type { Page } from "../routes";
 
 interface AboutPageProps {
   onNavigate: (page: Page) => void;
@@ -33,7 +33,7 @@ export default function AboutPage({ onNavigate }: AboutPageProps) {
     <div style={{ background: "#1C1C1C", minHeight: "100vh" }}>
 
       {/* Hero */}
-      <section style={{ paddingTop: 160, paddingBottom: 100, padding: "160px 40px 100px", position: "relative", overflow: "hidden" }}>
+      <section {...editableField("about.hero")} style={{ paddingTop: 160, paddingBottom: 100, padding: "160px 40px 100px", position: "relative", overflow: "hidden" }}>
         <div style={{ position: "absolute", right: "-4%", top: "50%", transform: "translateY(-50%)", pointerEvents: "none", animation: "fade-in 2.4s ease 0.5s both" }}>
           <AnimatedHeroMark size={600} opacity={0.32} speedMultiplier={2.2} />
         </div>
@@ -59,7 +59,7 @@ export default function AboutPage({ onNavigate }: AboutPageProps) {
       </section>
 
       {/* The tailored team model */}
-      <section style={{ background: "#161616", padding: "100px 40px" }}>
+      <section {...editableField("about.tailoredTeam")} style={{ background: "#161616", padding: "100px 40px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
           <div ref={r1} className="reveal" style={{ marginBottom: 56 }}>
             <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(28px, 3.5vw, 44px)", color: "#F5F3EE", fontWeight: 400, lineHeight: 1.15, textAlign: "center" }}>
@@ -78,7 +78,7 @@ export default function AboutPage({ onNavigate }: AboutPageProps) {
       </section>
 
       {/* How we're different */}
-      <section style={{ padding: "100px 40px" }}>
+      <section {...editableField("about.differentiators")} style={{ padding: "100px 40px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
           <div ref={r3} className="reveal" style={{ marginBottom: 72 }}>
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 20, textAlign: "center" }}>
@@ -104,7 +104,7 @@ export default function AboutPage({ onNavigate }: AboutPageProps) {
       </section>
 
       {/* Experience */}
-      <section style={{ background: "#161616", padding: "100px 40px" }}>
+      <section {...editableField("about.experience")} style={{ background: "#161616", padding: "100px 40px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
           <div ref={r5} className="reveal" style={{ marginBottom: 56 }}>
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 20 }}>
@@ -129,7 +129,7 @@ export default function AboutPage({ onNavigate }: AboutPageProps) {
       </section>
 
       {/* Principal Consultant */}
-      <section style={{ padding: "100px 40px" }}>
+      <section {...editableField("about.principal")} style={{ padding: "100px 40px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1.5fr", gap: 80, alignItems: "start" }}>
           <div ref={r6} className="reveal">
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 20 }}>
@@ -162,7 +162,7 @@ export default function AboutPage({ onNavigate }: AboutPageProps) {
       </section>
 
       {/* CTA */}
-      <section style={{ background: "#161616", padding: "100px 40px", textAlign: "center" }}>
+      <section {...editableField("about.cta")} style={{ background: "#161616", padding: "100px 40px", textAlign: "center" }}>
         <div style={{ maxWidth: 560, margin: "0 auto" }}>
           <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.15em", textTransform: "uppercase", color: "#9B9B9B", marginBottom: 20 }}>
             {aboutContent.cta.eyebrow}

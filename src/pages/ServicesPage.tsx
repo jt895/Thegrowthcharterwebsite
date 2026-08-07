@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { servicesContent, siteContent } from "../data/content";
-
-type Page = "home" | "about" | "how-we-work" | "services" | "strategic-advisory" | "growth-charter";
+import { editableField } from "../data/editable";
+import type { Page } from "../routes";
 
 interface ServicesPageProps {
   onNavigate: (page: Page) => void;
@@ -23,15 +23,17 @@ const services = servicesContent.services;
 
 interface ServiceCardProps {
   service: typeof services[0];
+  index: number;
 }
 
-function ServiceCard({ service }: ServiceCardProps) {
+function ServiceCard({ service, index }: ServiceCardProps) {
   const ref = useReveal();
   return (
     <div
       id={service.id}
       ref={ref}
       className="reveal"
+      {...editableField(`services.services.${index}`)}
       style={{ background: "#1C1C1C", border: "1px solid rgba(255,255,255,0.06)", padding: "64px 56px", display: "grid", gridTemplateColumns: "1fr 1fr", gap: "48px 64px", scrollMarginTop: 100 }}
     >
       <div style={{ gridColumn: "1 / -1", display: "flex", justifyContent: "space-between", alignItems: "flex-start", paddingBottom: 40, borderBottom: "1px solid rgba(255,255,255,0.07)", flexWrap: "wrap", gap: 16 }}>
@@ -81,7 +83,7 @@ export default function ServicesPage({ onNavigate }: ServicesPageProps) {
     <div style={{ background: "#1C1C1C", minHeight: "100vh" }}>
 
       {/* Hero */}
-      <section style={{ padding: "160px 40px 80px", textAlign: "center" }}>
+      <section {...editableField("services.hero")} style={{ padding: "160px 40px 80px", textAlign: "center" }}>
         <div style={{ maxWidth: 840, margin: "0 auto" }}>
           <h1 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(38px, 5vw, 64px)", lineHeight: 1.08, color: "#F5F3EE", fontWeight: 400, marginBottom: 28 }} className="hero-title">
             {servicesContent.hero.title}
@@ -93,7 +95,7 @@ export default function ServicesPage({ onNavigate }: ServicesPageProps) {
       </section>
 
       {/* Services index */}
-      <section style={{ background: "#161616", padding: "60px 40px" }}>
+      <section {...editableField("services.services")} style={{ background: "#161616", padding: "60px 40px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
           <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#9B9B9B", marginBottom: 40, textAlign: "center" }}>
             {servicesContent.indexLabel}
@@ -125,7 +127,7 @@ export default function ServicesPage({ onNavigate }: ServicesPageProps) {
       </section>
 
       {/* Note */}
-      <section style={{ background: "#161616", padding: "0 40px 40px" }}>
+      <section {...editableField("services.note")} style={{ background: "#161616", padding: "0 40px 40px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
           <div style={{ background: "#1A2820", borderLeft: "2px solid #2A9D78", padding: "28px 36px" }}>
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, lineHeight: 1.75, color: "rgba(245,243,238,0.6)", margin: 0, fontStyle: "italic" }}>
@@ -136,14 +138,14 @@ export default function ServicesPage({ onNavigate }: ServicesPageProps) {
       </section>
 
       {/* Service cards */}
-      <section style={{ padding: "80px 40px" }}>
+      <section {...editableField("services.services")} style={{ padding: "80px 40px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto", display: "flex", flexDirection: "column", gap: 2 }}>
-          {services.map((service) => <ServiceCard key={service.title} service={service} />)}
+          {services.map((service, index) => <ServiceCard key={service.title} service={service} index={index} />)}
         </div>
       </section>
 
       {/* CTA */}
-      <section style={{ background: "#161616", padding: "80px 40px" }}>
+      <section {...editableField("services.cta")} style={{ background: "#161616", padding: "80px 40px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1fr", gap: 64, alignItems: "center" }}>
           <div>
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.15em", textTransform: "uppercase", color: "#9B9B9B", marginBottom: 16 }}>{servicesContent.cta.eyebrow}</p>

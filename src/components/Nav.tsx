@@ -1,8 +1,8 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, type MouseEvent as ReactMouseEvent } from "react";
 import LogoMark from "./LogoMark";
 import { navContent, siteContent } from "../data/content";
-
-type Page = "home" | "about" | "how-we-work" | "services" | "strategic-advisory" | "growth-charter";
+import { editableField } from "../data/editable";
+import { pathForPage, type Page } from "../routes";
 
 interface NavProps {
   current: Page;
@@ -38,11 +38,18 @@ export default function Nav({ current, onNavigate }: NavProps) {
     window.scrollTo({ top: 0 });
   };
 
+  const handleLink = (event: ReactMouseEvent<HTMLAnchorElement>, page: Page) => {
+    if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    event.preventDefault();
+    handleNav(page);
+  };
+
   const advisoryActive = current === "strategic-advisory" || current === "services";
 
   return (
     <>
       <header
+        {...editableField("navigation")}
         style={{
           position: "fixed",
           top: 0,
@@ -57,23 +64,25 @@ export default function Nav({ current, onNavigate }: NavProps) {
       >
         <div style={{ maxWidth: 1280, margin: "0 auto", padding: "0 40px", height: 72, display: "flex", alignItems: "center", justifyContent: "space-between" }}>
           {/* Logo */}
-          <button
-            onClick={() => handleNav("home")}
-            style={{ display: "flex", alignItems: "center", gap: 14, background: "none", border: "none", cursor: "pointer", padding: 0 }}
+          <a
+            href={pathForPage("home")}
+            onClick={(event) => handleLink(event, "home")}
+            style={{ display: "flex", alignItems: "center", gap: 14, color: "inherit", textDecoration: "none" }}
           >
             <LogoMark size={42} />
             <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 12, fontWeight: 500, letterSpacing: "0.14em", textTransform: "uppercase", color: "#F5F3EE", lineHeight: 1.3 }}>
               {siteContent.brandNameLines[0]}<br />{siteContent.brandNameLines[1]}
             </span>
-          </button>
+          </a>
 
           {/* Desktop nav */}
           <nav style={{ display: "flex", alignItems: "center", gap: 36 }} className="hidden-mobile">
             {/* The Growth Charter */}
-            <button
-              onClick={() => handleNav("growth-charter")}
+            <a
+              href={pathForPage("growth-charter")}
+              onClick={(event) => handleLink(event, "growth-charter")}
               style={{
-                background: "none", border: "none", cursor: "pointer",
+                cursor: "pointer", textDecoration: "none",
                 fontFamily: "'Inter', sans-serif", fontSize: 13, fontWeight: 400, letterSpacing: "0.03em",
                 color: current === "growth-charter" ? "#2A9D78" : "rgba(245,243,238,0.6)",
                 transition: "color 0.25s", padding: "4px 0",
@@ -83,7 +92,7 @@ export default function Nav({ current, onNavigate }: NavProps) {
               onMouseLeave={(e) => { if (current !== "growth-charter") e.currentTarget.style.color = "rgba(245,243,238,0.6)"; }}
             >
               {navContent.growthCharter}
-            </button>
+            </a>
 
             {/* Strategic Advisory dropdown */}
             <div ref={dropdownRef} style={{ position: "relative" }}>
@@ -113,10 +122,11 @@ export default function Nav({ current, onNavigate }: NavProps) {
                   minWidth: 200, boxShadow: "0 16px 40px rgba(0,0,0,0.5)",
                   animation: "fade-in 0.15s ease",
                 }}>
-                  <button
-                    onClick={() => handleNav("strategic-advisory")}
+                  <a
+                    href={pathForPage("strategic-advisory")}
+                    onClick={(event) => handleLink(event, "strategic-advisory")}
                     style={{
-                      display: "block", width: "100%", background: "none", border: "none", cursor: "pointer",
+                      display: "block", width: "100%", cursor: "pointer", textDecoration: "none",
                       fontFamily: "'Inter', sans-serif", fontSize: 13, color: current === "strategic-advisory" ? "#2A9D78" : "rgba(245,243,238,0.7)",
                       textAlign: "left", padding: "14px 20px",
                       borderLeft: current === "strategic-advisory" ? "2px solid #2A9D78" : "2px solid transparent",
@@ -126,12 +136,13 @@ export default function Nav({ current, onNavigate }: NavProps) {
                     onMouseLeave={(e) => { e.currentTarget.style.color = current === "strategic-advisory" ? "#2A9D78" : "rgba(245,243,238,0.7)"; e.currentTarget.style.background = "none"; }}
                   >
                     {navContent.strategicAdvisory}
-                  </button>
+                  </a>
                   <div style={{ height: 1, background: "rgba(255,255,255,0.06)", margin: "0 20px" }} />
-                  <button
-                    onClick={() => handleNav("services")}
+                  <a
+                    href={pathForPage("services")}
+                    onClick={(event) => handleLink(event, "services")}
                     style={{
-                      display: "block", width: "100%", background: "none", border: "none", cursor: "pointer",
+                      display: "block", width: "100%", cursor: "pointer", textDecoration: "none",
                       fontFamily: "'Inter', sans-serif", fontSize: 13, color: current === "services" ? "#2A9D78" : "rgba(245,243,238,0.7)",
                       textAlign: "left", padding: "14px 20px",
                       borderLeft: current === "services" ? "2px solid #2A9D78" : "2px solid transparent",
@@ -141,16 +152,17 @@ export default function Nav({ current, onNavigate }: NavProps) {
                     onMouseLeave={(e) => { e.currentTarget.style.color = current === "services" ? "#2A9D78" : "rgba(245,243,238,0.7)"; e.currentTarget.style.background = "none"; }}
                   >
                     {navContent.services}
-                  </button>
+                  </a>
                 </div>
               )}
             </div>
 
             {/* How We Work */}
-            <button
-              onClick={() => handleNav("how-we-work")}
+            <a
+              href={pathForPage("how-we-work")}
+              onClick={(event) => handleLink(event, "how-we-work")}
               style={{
-                background: "none", border: "none", cursor: "pointer",
+                cursor: "pointer", textDecoration: "none",
                 fontFamily: "'Inter', sans-serif", fontSize: 13, fontWeight: 400, letterSpacing: "0.03em",
                 color: current === "how-we-work" ? "#2A9D78" : "rgba(245,243,238,0.6)",
                 transition: "color 0.25s", padding: "4px 0",
@@ -160,13 +172,14 @@ export default function Nav({ current, onNavigate }: NavProps) {
               onMouseLeave={(e) => { if (current !== "how-we-work") e.currentTarget.style.color = "rgba(245,243,238,0.6)"; }}
             >
               {navContent.howWeWork}
-            </button>
+            </a>
 
             {/* About */}
-            <button
-              onClick={() => handleNav("about")}
+            <a
+              href={pathForPage("about")}
+              onClick={(event) => handleLink(event, "about")}
               style={{
-                background: "none", border: "none", cursor: "pointer",
+                cursor: "pointer", textDecoration: "none",
                 fontFamily: "'Inter', sans-serif", fontSize: 13, fontWeight: 400, letterSpacing: "0.03em",
                 color: current === "about" ? "#2A9D78" : "rgba(245,243,238,0.6)",
                 transition: "color 0.25s", padding: "4px 0",
@@ -176,7 +189,7 @@ export default function Nav({ current, onNavigate }: NavProps) {
               onMouseLeave={(e) => { if (current !== "about") e.currentTarget.style.color = "rgba(245,243,238,0.6)"; }}
             >
               {navContent.about}
-            </button>
+            </a>
 
             <a
               href={`mailto:${siteContent.contact.email}`}
@@ -214,11 +227,12 @@ export default function Nav({ current, onNavigate }: NavProps) {
       {mobileOpen && (
         <div style={{ position: "fixed", inset: 0, zIndex: 99, background: "#1C1C1C", display: "flex", flexDirection: "column", paddingTop: 96, paddingLeft: 40 }}>
           {(navContent.mobileLinks as { label: string; page: Page }[]).map((l) => (
-            <button
+            <a
               key={l.page}
-              onClick={() => handleNav(l.page)}
+              href={pathForPage(l.page)}
+              onClick={(event) => handleLink(event, l.page)}
               style={{
-                background: "none", border: "none", cursor: "pointer",
+                cursor: "pointer", textDecoration: "none",
                 fontFamily: l.page === "services" ? "'Inter', sans-serif" : "'Instrument Serif', serif",
                 fontSize: l.page === "services" ? 20 : 36,
                 color: current === l.page ? "#2A9D78" : "#F5F3EE",
@@ -228,7 +242,7 @@ export default function Nav({ current, onNavigate }: NavProps) {
               }}
             >
               {l.label}
-            </button>
+            </a>
           ))}
         </div>
       )}

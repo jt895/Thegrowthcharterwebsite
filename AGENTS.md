@@ -39,3 +39,12 @@ This project uses **Tailwind CSS v4** through the `@tailwindcss/vite` plugin con
 - Use double quotes for strings containing apostrophes (`"We're here to help"`), or escape them in single-quoted strings. An unescaped apostrophe in a single-quoted string breaks the build.
 - Ensure JSX tags are closed and braces are balanced.
 - Export components as default exports.
+
+## Content, routes, and visual editing
+
+- Treat `content/site.json` as the source of truth for all editable website copy. Do not move marketing copy back into React components.
+- Access copy through the named exports in `src/data/content.ts`.
+- Preserve `data-sb-object-id` and `data-sb-field-path` annotations created with `src/data/editable.ts`; Netlify Visual Editor uses them to connect preview elements to content fields.
+- When adding a page, add its URL and metadata to `src/routes.ts`, its render case to `src/App.tsx`, and its entry to the sitemap in `stackbit.config.ts`.
+- Keep `stackbit.config.ts`, `netlify.toml`, and `scripts/prerender.mjs` working when changing the build.
+- Run `pnpm run check` before handing off changes. This checks TypeScript and builds every static route.

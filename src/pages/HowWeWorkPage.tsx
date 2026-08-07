@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { howWeWorkContent } from "../data/content";
-
-type Page = "home" | "about" | "how-we-work" | "services" | "strategic-advisory" | "growth-charter";
+import { editableField } from "../data/editable";
+import type { Page } from "../routes";
 
 interface HowWeWorkPageProps {
   onNavigate: (page: Page) => void;
@@ -32,6 +32,7 @@ function PhaseItem({ phase, index }: PhaseProps) {
     <div
       ref={ref}
       className="reveal"
+      {...editableField(`howWeWork.phases.${index}`)}
       style={{ display: "grid", gridTemplateColumns: "140px 1fr 1fr", gap: "0 64px", padding: "72px 0", borderTop: index === 0 ? "2px solid #2A9D78" : "1px solid rgba(255,255,255,0.07)", alignItems: "start" }}
     >
       <div style={{ paddingTop: 4 }}>
@@ -70,7 +71,7 @@ export default function HowWeWorkPage({ onNavigate }: HowWeWorkPageProps) {
 
   return (
     <div style={{ background: "#1C1C1C", minHeight: "100vh" }}>
-      <section style={{ padding: "160px 40px 80px", textAlign: "center" }}>
+      <section {...editableField("howWeWork.hero")} style={{ padding: "160px 40px 80px", textAlign: "center" }}>
         <div style={{ maxWidth: 800, margin: "0 auto" }}>
           <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 24 }} className="hero-sub">{howWeWorkContent.hero.eyebrow}</p>
           <h1 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(38px, 5vw, 64px)", lineHeight: 1.08, color: "#F5F3EE", fontWeight: 400, marginBottom: 28 }} className="hero-title">
@@ -82,7 +83,7 @@ export default function HowWeWorkPage({ onNavigate }: HowWeWorkPageProps) {
         </div>
       </section>
 
-      <section style={{ background: "#161616", padding: "72px 40px" }}>
+      <section {...editableField("howWeWork.intro")} style={{ background: "#161616", padding: "72px 40px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
           <div ref={r1} className="reveal" style={{ maxWidth: 720 }}>
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 16, lineHeight: 1.85, color: "rgba(245,243,238,0.55)" }}>
@@ -92,13 +93,13 @@ export default function HowWeWorkPage({ onNavigate }: HowWeWorkPageProps) {
         </div>
       </section>
 
-      <section style={{ padding: "0 40px 80px" }}>
+      <section {...editableField("howWeWork.phases")} style={{ padding: "0 40px 80px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
           {phases.map((phase, i) => <PhaseItem key={phase.num} phase={phase} index={i} />)}
         </div>
       </section>
 
-      <section style={{ background: "#0B5E48", padding: "80px 40px", textAlign: "center" }}>
+      <section {...editableField("howWeWork.cta")} style={{ background: "#0B5E48", padding: "80px 40px", textAlign: "center" }}>
         <div style={{ maxWidth: 680, margin: "0 auto" }}>
           <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, letterSpacing: "0.08em", textTransform: "uppercase", color: "rgba(143,217,190,0.7)", marginBottom: 20 }}>{howWeWorkContent.cta.eyebrow}</p>
           <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(24px, 3vw, 36px)", color: "#F5F3EE", fontWeight: 400, lineHeight: 1.3, marginBottom: 32 }}>

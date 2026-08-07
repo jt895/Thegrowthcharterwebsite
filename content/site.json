@@ -1,0 +1,766 @@
+{
+  "type": "SiteContent",
+  "site": {
+    "brandName": "The United Republic",
+    "brandNameLines": [
+      "The United",
+      "Republic"
+    ],
+    "tagline": "Strategy, growth and practical implementation",
+    "blurb": "Independent strategic advisory for complex organisations and practical business growth support through The Growth Charter.",
+    "copyright": "© 2026 The United Republic. All rights reserved.",
+    "contact": {
+      "email": "jt@theunitedrepublic.com.au",
+      "phone": "+61 407 744 388",
+      "phoneHref": "tel:+61407744388"
+    }
+  },
+  "navigation": {
+    "growthCharter": "The Growth Charter",
+    "strategicAdvisory": "Strategic Advisory",
+    "services": "Services",
+    "howWeWork": "How We Work",
+    "about": "About",
+    "contact": "Contact",
+    "mobileLinks": [
+      {
+        "label": "About",
+        "page": "about"
+      },
+      {
+        "label": "Strategic Advisory",
+        "page": "strategic-advisory"
+      },
+      {
+        "label": "Services",
+        "page": "services"
+      },
+      {
+        "label": "The Growth Charter",
+        "page": "growth-charter"
+      },
+      {
+        "label": "How We Work",
+        "page": "how-we-work"
+      }
+    ]
+  },
+  "footer": {
+    "navHeading": "Ways to work with us",
+    "navLinks": [
+      {
+        "label": "Strategic Advisory",
+        "page": "strategic-advisory"
+      },
+      {
+        "label": "The Growth Charter",
+        "page": "growth-charter"
+      },
+      {
+        "label": "How We Work",
+        "page": "how-we-work"
+      },
+      {
+        "label": "Services",
+        "page": "services"
+      }
+    ],
+    "contactHeading": "Contact",
+    "enquiryLabels": [
+      "Growth Charter enquiry",
+      "Strategic Advisory enquiry"
+    ]
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "The Growth Charter",
+      "title": "Business growth needs sharper choices, not more activity.",
+      "subA": "The United Republic helps established businesses find where growth is really available, decide what matters most and build the practical capability to act.",
+      "subB": "The Growth Charter brings executive-level strategy, customer evidence and commercial discipline to owner-led businesses ready for their next stage.",
+      "ctaPrimary": "Book a discovery session",
+      "ctaSecondary": "See how it works",
+      "scrollLabel": "Scroll"
+    },
+    "problem": {
+      "eyebrow": "The Problem",
+      "title": "You need growth, you don't need more marketing.",
+      "titleLine2": "Good businesses plateau when the next decision is unclear.",
+      "body": "Growth usually slows because the business has outgrown the assumptions, habits and systems that got it this far. More marketing won't fix a commercial problem that has not been properly defined.",
+      "points": [
+        "Revenue is holding, but profit or momentum has stopped improving",
+        "Marketing activity is happening, but the commercial return is unclear",
+        "Too much of the growth plan still lives in the owner's head",
+        "The business attracts work, but not always the most valuable work"
+      ]
+    },
+    "choosePath": {
+      "eyebrow": "Choose Your Path",
+      "title": "One advisory practice. Two clear ways to engage.",
+      "subtitle": "Start with the path that matches the decision you need to make.",
+      "advisory": {
+        "eyebrow": "Government, corporate and complex organisations",
+        "title": "Strategic Advisory",
+        "body": "Independent strategic advisory for organisations that need to define the real problem before investing in campaigns, content, engagement or delivery. Whether you need Business Strategy, a Fractional CMO, Brand Positioning, Marketing and Communications Strategy, Audience Research and Segmentation, Channel Strategy, Pr and Crisis Communications or Implementation, The United Republic can help to simplify your complex problems, manage multiple stakeholders, work out what to do and just make it happen.",
+        "cta": "Explore Strategic Advisory"
+      },
+      "growthCharter": {
+        "eyebrow": "Australian start-ups & established businesses",
+        "title": "The Growth Charter",
+        "body": "The Growth Charter helps Australian start-ups and established businesses to grow by finding their strongest commercial opportunities, choosing the right priorities and building the capability to act on them. With multiple way to engage, there is a solution to grow your business and achieve you goals.",
+        "cta": "Explore The Growth Charter"
+      }
+    },
+    "whyTur": {
+      "eyebrow": "Why The United Republic",
+      "title": "Senior strategic thinking, scaled for practical business growth.",
+      "body": "We bring the the proven experience and discipline used to drive growth for Australia's favourite brands and engage millions of Australians to grow and scale your business.",
+      "pillars": [
+        {
+          "title": "Commercial first",
+          "body": "We connect customer, brand, sales, margin and capacity decisions so growth is tied to business value, not activity."
+        },
+        {
+          "title": "Evidence led",
+          "body": "We test owner belief against customer insight, business data and market reality before choosing priorities."
+        },
+        {
+          "title": "Built to implement",
+          "body": "The output is a staged plan with owners, measures, tools and decisions your team can keep using."
+        },
+        {
+          "title": "Capability not Dependency",
+          "body": "You own what we build and know how to use it. Our job is to make ourselves unnecessary, not indispensable. But we're always here when you need support or advice."
+        }
+      ]
+    },
+    "results": {
+      "eyebrow": "Results",
+      "title": "Evidence of growth, not just intent.",
+      "body": "Whether you're engaging through Strategic Advisory or the Growth Charter,  the thinking behind it comes from decades of measurable commercial and behavioural outcomes.",
+      "points": [
+        "Building brands that earn trust and preference",
+        "Targeting the right customers with sharper positioning",
+        "Growing businesses through clearer commercial priorities",
+        "Improving capability so teams can keep acting without us"
+      ],
+      "stat": {
+        "value": "25+",
+        "label": "years of building brands, targeting the right customers, growing businesses and improving capability."
+      }
+    },
+    "clientLogos": {
+      "label": "Experience behind the thinking — We've worked with Australia's Favourite Brands:"
+    },
+    "cta": {
+      "title": "Find the growth decision your business needs next.",
+      "body": "The first session is a practical conversation about your business, what are the challenges, what has slowed, where the opportunity may be and what a useful outcome would look like.",
+      "ctaPrimary": "Book a discovery session",
+      "ctaSecondary": "Review the program"
+    }
+  },
+  "about": {
+    "hero": {
+      "eyebrow": "About",
+      "title": "The United Republic",
+      "paraA": "The United Republic is an Australian independent business strategy, growth and communications strategy advisory led by senior practitioners with deep experience across government, major brands, start-ups, SMEs, complex stakeholder environments and behaviour change.",
+      "paraB": "We help organisations define the real problem, shape the right strategic response, and guide the work through to delivery when needed.",
+      "paraC": "Our role is not to add noise. It is to bring clarity, direction and judgement at the point where communications decisions matter most."
+    },
+    "tailoredTeam": {
+      "title": "The tailored team model",
+      "paraA": "We do not force projects through a fixed agency structure. We build the right team around the challenge, drawing on specialist partners and senior talent to make sure strategy is carried through in the right way.",
+      "paraB": "This means clients get strategic thinking that's independent of execution bias, combined with access to the best specialists for each part of the work — whether that's creative development, media strategy, content production, stakeholder engagement, or campaign delivery."
+    },
+    "differentiators": {
+      "eyebrow": "Approach",
+      "title": "How we're different",
+      "items": [
+        {
+          "title": "Your Business First",
+          "body": "If we don't understand your business and your objectives we can't find the right levers to pull, or the barriers holding you back, or know what success looks like."
+        },
+        {
+          "title": "Customers and Audience First",
+          "body": "By understanding your customers and your audiences, we know what problem you're solving for them and why they buy, and where the opportunities for growth lie."
+        },
+        {
+          "title": "Strategy before execution",
+          "body": "We start with the problem, not the solution. That means better briefs, clearer direction, and work that's focused on what matters most."
+        },
+        {
+          "title": "Independent advice",
+          "body": "We don't have a vested interest in a particular channel, medium or approach. Our only interest is making sure the strategy is right."
+        },
+        {
+          "title": "Senior practitioners",
+          "body": "You work with experienced strategists who've delivered complex, high-stakes communications programs — not junior account teams."
+        },
+        {
+          "title": "The right partners",
+          "body": "We identify, brief and guide specialist partners based on what the work needs — not what we happen to have in-house."
+        },
+        {
+          "title": "Evidence-led",
+          "body": "Our strategies are grounded in research, insight and data — not assumptions or creative instinct."
+        },
+        {
+          "title": "Focused on outcomes",
+          "body": "We measure success by results, not outputs. Strategy is only as good as what it achieves."
+        }
+      ]
+    },
+    "experience": {
+      "eyebrow": "Track record",
+      "title": "Experience",
+      "paraA": "The United Republic has delivered strategic advisory across government, public sector, purpose-led organisations, major brands and complex stakeholder environments, and helped grow businesses from a start-up in the garage to multi-million dollar enterprises.",
+      "paraB": "Our work spans business strategy, business growth, behaviour change campaigns, brand repositioning, multi-stakeholder engagement programs, crisis and reputation management, campaign strategy and launch planning, and has engaged millions of Australians.",
+      "paraC": "We've led projects including state and local government elections, national awareness campaigns, product and brand launches, and long-term strategic consulting engagements with government and corporate clients."
+    },
+    "principal": {
+      "eyebrow": "Leadership",
+      "title": "Principal Consultant",
+      "name": "James Trebilcock",
+      "ctaLabel": "Get in touch",
+      "bioA": "With 25 years of experience across strategy, communications, engagement, customer experience and operational leadership, James helps organisations solve the right problems before they invest in execution. Through The United Republic, he works with government, community-facing organisations and major brands to uncover the real issues, identify the audiences that matter most, and build evidence-based strategies that connect insight, messaging and delivery.",
+      "bioB": "His work is grounded in research, customer and stakeholder understanding, and a clear view of what drives participation, trust and growth. He brings together strategy, communications and implementation planning to give clients a clear path forward, practical actions, and the right partners to deliver work that performs in the real world."
+    },
+    "cta": {
+      "eyebrow": "Work with us",
+      "title": "Start with the right conversation.",
+      "ctaPrimary": "Get in touch",
+      "ctaSecondary": "Explore our services"
+    }
+  },
+  "growthCharter": {
+    "hero": {
+      "eyebrow": "The United Republic",
+      "title": "Your business is working. The next stage needs a clearer plan.",
+      "paraA": "The Growth Charter helps established Australian businesses find their strongest commercial opportunities, choose the right priorities and build the capability to act on them.",
+      "paraB": "We combine executive-level strategy, customer evidence and practical implementation. You own the roadmap, and your business is stronger and more capable when the work is finished.",
+      "paraC": "Based in South Australia, working with businesses across Adelaide, the Adelaide Hills, Mount Barker, Murray Bridge and nationally.",
+      "ctaPrimary": "Book a Growth Charter conversation",
+      "ctaSecondary": "See how it works"
+    },
+    "whatIs": {
+      "eyebrow": "The program",
+      "title": "What is The Growth Charter?",
+      "paraA": "The Growth Charter is a structured business growth program that helps Australian businesses — from early-stage startups to established enterprises — find their strongest commercial opportunities, make smarter decisions and build the practical capability to act on them.",
+      "paraB": "Unlike a consulting report that sits on a shelf, The Growth Charter is built to be used. Every stage produces evidence, decisions and tools that stay in the business — so you leave with something that works, not just something that looks good.",
+      "pillars": [
+        {
+          "title": "Evidence first",
+          "body": "We test owner belief against customer insight, commercial data and market reality before any decisions are made."
+        },
+        {
+          "title": "Strategy before execution",
+          "body": "No campaigns, websites or marketing spend until the commercial direction is clear and the priorities are set."
+        },
+        {
+          "title": "Built for your business",
+          "body": "The program is tailored to your stage, your sector and your goals — not a generic framework applied the same way to every client."
+        },
+        {
+          "title": "Capability, not dependency",
+          "body": "You own everything we build together. Our job is to make you more capable, not to keep you reliant on us."
+        }
+      ]
+    },
+    "waysToWork": {
+      "eyebrow": "Ways to work together",
+      "title": "The same method, with the level of support you need.",
+      "modes": [
+        {
+          "title": "Business Launch Essentials",
+          "sub": "For new, newly established or small businesses that need the right commercial, brand and digital foundations from the start, including positioning, messaging and a launch-ready website.",
+          "note": "A focused path for new ventures and small businesses wanting to grow"
+        },
+        {
+          "title": "DIY",
+          "sub": "A guided program for owners who want to work through The Growth Charter themselves using structured tools, templates and training.",
+          "note": "Online program in development"
+        },
+        {
+          "title": "Do It Together",
+          "sub": "We guide the work, run the key sessions and help you make the decisions, while you and your team build the plan and the skills to carry it forward.",
+          "note": "Best for hands-on owners and capable internal teams"
+        },
+        {
+          "title": "Done For You",
+          "sub": "We conduct the research, analysis and strategic work, build the plan and support implementation with the right specialists where required.",
+          "note": "Best for speed, complexity or limited internal capacity"
+        }
+      ]
+    },
+    "plateau": {
+      "title": "Why good businesses plateau",
+      "body": "Growth rarely stops because the owner lacks ambition. It usually slows because the business has outgrown the decisions, habits and systems that got it this far.",
+      "points": [
+        "The business is busy, but revenue or profit has stopped moving",
+        "Too much depends on the owner",
+        "The business is attracting work, but not always the right work",
+        "Pricing has grown from habit rather than clear commercial logic",
+        "Marketing activity is disconnected from sales and profit",
+        "Past agency work created activity without lasting internal capability"
+      ]
+    },
+    "centralIdea": {
+      "eyebrow": "The central idea",
+      "title": "What you believe. What the evidence says.",
+      "paraA": "Every owner holds a view of why customers buy, which work is most valuable and where growth will come from. Some of it will be right. Some of it will be incomplete. Some of it may be costing the business money.",
+      "paraB": "The Growth Charter deliberately surfaces the gap between belief and evidence. That is where better decisions, stronger margins and clearer growth priorities are found.",
+      "quote": "The product is not a website, a campaign or an AI tool. The product is a stronger business, with clearer commercial choices and the ability to keep moving after the engagement ends."
+    },
+    "howItWorks": {
+      "eyebrow": "How it works",
+      "title": "Five stages. One commercial plan.",
+      "body": "Each stage produces the evidence and decisions required for the next. We do not jump to marketing activity before the commercial direction is clear.",
+      "stages": [
+        {
+          "num": "01",
+          "section": "Discovery",
+          "title": "The Business Now",
+          "body": "We capture how you and your team see the business today, including your goals, customers, commercial model, capacity, risks and personal endgame."
+        },
+        {
+          "num": "02",
+          "section": "Evidence and analysis",
+          "title": "The Opportunity",
+          "body": "We test those beliefs against customer research, commercial data and market reality, then size and rank the opportunities in dollars, effort and time to impact."
+        },
+        {
+          "num": "03",
+          "section": "A clearer place in the market",
+          "title": "Branding & Positioning",
+          "body": "We define what you are really selling, why the right customers should choose you and how your business can stand apart in a way you can deliver."
+        },
+        {
+          "num": "04",
+          "section": "Who matters and how to reach them",
+          "title": "Audiences, Messaging & Channel Planning",
+          "body": "We set customer priorities, shape the messages that matter and choose the channels that fit how people actually make decisions."
+        },
+        {
+          "num": "05",
+          "section": "Turn the plan into action",
+          "title": "Go To Market & Implementation",
+          "body": "We create a staged plan with responsibilities, timing, budgets, measures and the practical tools your team needs to deliver it."
+        }
+      ]
+    },
+    "whatYouLeaveWith": {
+      "eyebrow": "What you leave with",
+      "title": "A clear commercial direction and the practical means to act on it.",
+      "points": [
+        "A clear view of which customers and services create the most value",
+        "Commercial opportunities ranked by impact, effort and time to return",
+        "Sharper positioning grounded in evidence, not preference",
+        "A practical plan tied to revenue, profit, capacity and owner goals",
+        "Tools, templates and skills your team can keep using",
+        "Clear measures so you know what is working and what needs to change"
+      ]
+    },
+    "whyTur": {
+      "eyebrow": "Why The United Republic",
+      "title": "Big business experience, applied to your business.",
+      "paraA": "The Growth Charter draws on more than 25 years of work with national and international brands, government agencies, industry groups and owner-led businesses.",
+      "paraB": "James Trebilcock has led strategy, marketing, communications and business growth work for organisations including Toyota, Ford, Commonwealth Bank, Hyundai, Subaru, the Electoral Commission of South Australia, Hort Innovation, DFAT, Austrade, Adelaide Hills Wine Region and The Bend Motorsport Park.",
+      "paraC": "The same questions used to build major brands, increase sales and change public behaviour can help an established local business make better commercial decisions. The scale changes. The quality of the thinking should not.",
+      "organisations": [
+        "Local Government",
+        "Toyota Australia",
+        "Ford Australia",
+        "Commonwealth Bank",
+        "Hyundai",
+        "Subaru",
+        "DFAT / Smartraveller",
+        "Hort Innovation",
+        "SA Electoral Commission",
+        "Adelaide Hills Wine Region"
+      ]
+    },
+    "fitCheck": {
+      "title": "Is The Growth Charter right for your business?",
+      "body": "You're a good fit if you're an established business that's working but could be performing better, a new business that wants to get the foundations right from the start, or an early-stage startup ready to move from idea to commercial reality. In every case, you're ready to look at the evidence before making the next decision.",
+      "cta": "Book a Growth Charter conversation",
+      "points": [
+        "You're generating revenue but growth has plateaued or slowed",
+        "You're not sure which customers, services or channels are most valuable",
+        "You want to grow but don't want to add complexity or cost before clarity",
+        "You've tried marketing activity before but it hasn't moved the needle",
+        "You want a roadmap you own and a team that can help you execute it",
+        "You need someone senior who has done this before"
+      ]
+    }
+  },
+  "howWeWork": {
+    "hero": {
+      "eyebrow": "How we work",
+      "title": "How we work",
+      "body": "The United Republic works from strategy through to delivery. We can support one phase of the process or guide the full journey from problem definition to campaign execution."
+    },
+    "intro": "We work with clients to define where strategic support is needed most. Some organisations need help defining the problem. Others have a clear brief but need strategy and direction. And some need ongoing guidance to ensure execution stays true to the strategic intent.",
+    "phases": [
+      {
+        "num": "01",
+        "title": "Diagnose",
+        "tagline": "We identify the problem behind the brief",
+        "body": "Before any strategy work begins, we need to understand what's really going on. This phase combines audience research, stakeholder insight, communications audits and strategic analysis to define the real challenge—not just the symptoms.",
+        "delivers": [
+          "Audience and stakeholder insight",
+          "Communications review and audit",
+          "Brand and positioning diagnosis",
+          "Behaviour change strategy",
+          "Message and narrative assessment",
+          "Strategic problem definition"
+        ],
+        "approach": "We can support this phase as a standalone diagnostic, or as the foundation for ongoing strategy and delivery work. The diagnostic output becomes the brief for everything that follows."
+      },
+      {
+        "num": "02",
+        "title": "Design",
+        "tagline": "We turn complexity into a clear plan",
+        "body": "Once the problem is clear, we build the strategy. This means creating frameworks, plans and direction that guide decision-making, shape creative development, and ensure all activity is aligned to outcomes.",
+        "delivers": [
+          "Communications strategy",
+          "Campaign architecture",
+          "Message frameworks",
+          "Content planning",
+          "Channel planning and media strategy",
+          "Stakeholder engagement strategy",
+          "Launch sequencing and phasing"
+        ],
+        "approach": "Strategy work can be delivered as a complete plan, or we can work alongside internal teams to co-create and build capability. Every strategy is designed to survive contact with reality."
+      },
+      {
+        "num": "03",
+        "title": "Direct",
+        "tagline": "We help the strategy survive contact with reality",
+        "body": "Strategy only works if it's executed well. We help clients identify and brief the right agency and specialist partners, provide strategic oversight during implementation, and ensure the work stays true to the original intent.",
+        "delivers": [
+          "Agency and partner briefing",
+          "Implementation oversight and guidance",
+          "Strategic project leadership",
+          "Internal team support and capability building",
+          "Creative and content review",
+          "Alignment across stakeholders and partners"
+        ],
+        "approach": "This is where the tailored team model comes to life. We identify, brief and guide specialist partners—whether that's creative agencies, media partners, content producers, or delivery teams—to bring the strategy to life with the right expertise."
+      },
+      {
+        "num": "04",
+        "title": "Measure",
+        "tagline": "We help clients understand what worked and what to do next",
+        "body": "Measuring outcomes is how we learn. We help clients evaluate campaign performance, test messages, review what worked, and plan refinements based on evidence.",
+        "delivers": [
+          "Campaign evaluation and analysis",
+          "Performance reporting against objectives",
+          "Message testing and effectiveness studies",
+          "Post-campaign review and debrief",
+          "Refinement planning and optimisation"
+        ],
+        "approach": "Evaluation feeds back into strategy. We help clients build a cycle of learning that improves performance over time and ensures future work is smarter, sharper and more focused."
+      }
+    ],
+    "cta": {
+      "eyebrow": "Strategy through to delivery",
+      "title": "The United Republic works from problem definition through to identifying, briefing and guiding the right execution partners.",
+      "ctaLabel": "Explore our services"
+    }
+  },
+  "services": {
+    "hero": {
+      "title": "Services",
+      "body": "The United Republic is designed to be easy to buy from. Our services are structured around clear offers that can be scaled to suit the challenge, the timeline and the level of support you need."
+    },
+    "indexLabel": "What we offer",
+    "note": "Every service can include campaign execution support — we help identify, brief and guide the right specialist partners to bring the strategy to life.",
+    "services": [
+      {
+        "id": "fractional-cmo",
+        "title": "Fractional CMO",
+        "sub": "Senior marketing leadership without the full-time overhead",
+        "duration": "Ongoing / retainer",
+        "body": "Access experienced, senior marketing leadership on a fractional basis — embedded in your business to own the strategy, lead the team and drive commercial outcomes without the cost of a full-time executive hire.",
+        "included": [
+          "Marketing strategy ownership and accountability",
+          "Brand positioning and messaging direction",
+          "Team leadership and capability development",
+          "Agency and partner management",
+          "Budget planning and channel allocation",
+          "Performance reporting and optimisation",
+          "Board and executive-level reporting"
+        ],
+        "when": "Use this when you need senior marketing leadership but aren't ready or resourced for a full-time CMO. Ideal for growth-stage businesses, organisations in transition, or teams that need experienced direction.",
+        "execution": "Operates as part of your leadership team. Typically engaged on a monthly retainer with defined scope, regular reviews and clear performance measures."
+      },
+      {
+        "id": "strategy-workshops",
+        "title": "Strategy Workshops",
+        "sub": "Focused sessions to align thinking and unlock direction",
+        "duration": "Half-day to 2 days",
+        "body": "Facilitated strategy sessions designed to align your team, clarify the challenge, define priorities and build shared direction — fast. Each workshop is designed around your specific need, from problem definition to planning.",
+        "included": [
+          "Pre-workshop discovery and preparation",
+          "Facilitated problem definition session",
+          "Audience and market insight review",
+          "Priority-setting and decision frameworks",
+          "Strategic direction and next steps",
+          "Workshop summary and action plan"
+        ],
+        "when": "Use this when your team needs to get aligned quickly, when you're at a strategic crossroads, or when you need structured thinking to unblock a decision.",
+        "execution": "Can be delivered as a standalone session or as the first phase of a broader strategy engagement. Remote or in-person."
+      },
+      {
+        "id": "strategic-diagnostic",
+        "title": "Strategic Diagnostic",
+        "sub": "Define the real problem before you invest",
+        "duration": "2–4 weeks",
+        "body": "A focused diagnostic to understand the challenge, map the landscape, and define where strategic focus will have the greatest impact.",
+        "included": [
+          "Audience and stakeholder insight analysis",
+          "Problem definition and strategic framing",
+          "Communications landscape review",
+          "Barrier and opportunity mapping",
+          "Strategic recommendations and next steps"
+        ],
+        "when": "Use this when you need clarity on the problem before committing to strategy or execution. Ideal for organisations that want to make sure they're solving the right challenge.",
+        "execution": "Can lead directly into strategy development, or be used as a standalone diagnostic to inform internal planning."
+      },
+      {
+        "id": "strategy-build",
+        "title": "Strategy Build",
+        "sub": "Create the plan that guides everything",
+        "duration": "6–12 weeks",
+        "body": "A complete communications or campaign strategy—from problem definition through to delivery frameworks, partner briefing and implementation guidance.",
+        "included": [
+          "Full communications or campaign strategy",
+          "Message frameworks and narrative architecture",
+          "Channel and media strategy",
+          "Campaign architecture and phasing",
+          "Creative and content direction (Ideas Brief)",
+          "Partner and agency briefing materials",
+          "Implementation roadmap"
+        ],
+        "when": "Use this when you have a clear challenge and need a comprehensive strategy to guide execution. Includes identification of delivery partners and briefing support.",
+        "execution": "Includes agency/partner identification and briefing. Can be delivered as a handover, or we can provide ongoing strategic oversight during implementation."
+      },
+      {
+        "id": "strategic-lead",
+        "title": "Strategic Lead",
+        "sub": "Ongoing strategic guidance from problem to delivery",
+        "duration": "3–12 months (or longer)",
+        "body": "Embedded strategic leadership across the full project lifecycle—from initial problem definition through strategy development, partner briefing, and implementation oversight.",
+        "included": [
+          "Full diagnostic and strategy development",
+          "Identification and briefing of delivery partners",
+          "Strategic project leadership",
+          "Implementation oversight and review",
+          "Creative and content direction",
+          "Stakeholder alignment and management",
+          "Performance tracking and refinement"
+        ],
+        "when": "Use this for high-stakes, complex or long-term programs that need senior strategic leadership from start to finish.",
+        "execution": "Full integration with your team and delivery partners. We identify, brief and guide specialist agencies and partners throughout, ensuring strategy is carried through to execution."
+      },
+      {
+        "id": "review-refine",
+        "title": "Review and Refine",
+        "sub": "Evaluate what worked and improve what's next",
+        "duration": "2–4 weeks",
+        "body": "Post-campaign evaluation, performance analysis and strategic refinement to learn from what worked and plan smarter next steps.",
+        "included": [
+          "Campaign performance evaluation",
+          "Audience and stakeholder feedback analysis",
+          "Message effectiveness review",
+          "Strategic debrief and learnings",
+          "Refinement recommendations"
+        ],
+        "when": "Use this after a campaign or program to evaluate performance and feed insights back into future strategy.",
+        "execution": "Can inform next-phase planning or be used as a standalone review to close out a program."
+      }
+    ],
+    "cta": {
+      "eyebrow": "Not sure which service you need?",
+      "title": "Every project is different. We can tailor our approach to suit your challenge, your timeline, and where you need support most.",
+      "body": "Let's talk about what you're trying to achieve.",
+      "ctaLabel": "Book an initial conversation",
+      "quote": "The United Republic doesn't run a fixed agency structure. We build the right team around each challenge — bringing together specialist partners for creative, media, content, production and delivery based on what the work needs, not what we happen to have in-house."
+    }
+  },
+  "strategicAdvisory": {
+    "hero": {
+      "eyebrow": "Strategic Advisory",
+      "title": "Start with the right questions, then build the right response.",
+      "paraA": "The United Republic helps organisations define the real problem, shape the right strategy, and guide the work that follows.",
+      "paraB": "We work with government, brands and complex organisations to make sure they are solving the right problems before investing in campaigns, content, media, stakeholder activity or creative development.",
+      "ctaPrimary": "Start with a strategic diagnostic",
+      "ctaSecondary": "See how we work"
+    },
+    "differentiation": {
+      "title": "What we do differently",
+      "paraA": "The United Republic helps organisations start with the right questions, define the real problem, and build the right response before investing in execution. We use strategic clarity, audience understanding, evidence-based planning and practical problem definition to make sure the work is focused on what matters most, where it can have the greatest influence, and how it can create the strongest outcome.",
+      "paraB": "We then help bring that strategy to life by identifying and briefing the right partners for the task at hand. Rather than pushing work through a fixed agency model, we build the right team around each challenge, drawing on the best specialist talent to deliver campaign execution that stays true to the strategy. That means clients get clear thinking up front, the right expertise in delivery, and work designed to perform in the real world."
+    },
+    "whyEngageEarly": {
+      "eyebrow": "Approach",
+      "title": "Why clients engage us early",
+      "reasons": [
+        "We understand the business, the objectives and what success looks like before we do anything else",
+        "We focus on what matters most and where it can have the greatest influence",
+        "We start with the real problem, not just the brief",
+        "We combine strategic thinking with practical delivery direction",
+        "We identify and brief the right partners to bring the work to life",
+        "We stay focused on outcomes, not agency process"
+      ]
+    },
+    "methodology": {
+      "eyebrow": "Our methodology",
+      "title": "The United Republic Creative Methodology",
+      "steps": [
+        {
+          "num": "01",
+          "title": "Start with the foundation, not the finish",
+          "body": "Brilliant work begins with the basics. We start by understanding audiences deeply, identifying the true challenge, quantifying what matters most, and mapping the barriers, segments and behaviours that will shape success. Strategy comes first, and everything else follows from that.",
+          "items": [
+            [
+              "We understand your business objectives and unique needs",
+              "Understanding your audiences deeply"
+            ],
+            [
+              "Identifying the true challenge, not just the symptoms",
+              "Quantifying the challenge and where influence matters most"
+            ],
+            [
+              "Mapping segments, barriers and behaviours",
+              "Building strategy grounded in data and insight"
+            ]
+          ]
+        },
+        {
+          "num": "02",
+          "title": "Ideas first, not creative concepts",
+          "body": "We develop what we call an Ideas Brief, not a traditional creative brief. This creates audience-first direction that guides everything that follows. We stay media-neutral from the start, build around what engages and influences, and shape execution by bringing together the right combination of message, medium and meaning.",
+          "items": [
+            [
+              "Ideas Brief, not traditional creative brief",
+              "Media-neutral thinking from the outset"
+            ],
+            [
+              "Focus on what influences and shifts behaviour",
+              "Build from message, medium and meaning"
+            ],
+            [
+              "Prioritise the right idea over the biggest idea",
+              ""
+            ]
+          ]
+        },
+        {
+          "num": "03",
+          "title": "The right team, every time",
+          "body": "We do not run a fixed creative department or force work through an agency machine. We build the right team around each challenge, bringing together the best senior specialists for the job. That keeps the work tailored, lean and focused on outcomes.",
+          "items": [
+            [
+              "No bloated departments or fixed agency structure",
+              "Specialist teams built around the challenge"
+            ],
+            [
+              "Senior creative and execution partners selected for fit",
+              "More flexibility, less overhead"
+            ],
+            [
+              "Focus on outcomes, not outputs",
+              ""
+            ]
+          ]
+        }
+      ]
+    },
+    "whatWeDo": {
+      "title": "What we do",
+      "columns": [
+        {
+          "title": "Diagnose",
+          "sub": "We identify the problem behind the brief.",
+          "items": [
+            "Business objectives",
+            "Success measures",
+            "Identify opportunities",
+            "Uncover levers and barriers",
+            "Audience and stakeholder insight",
+            "Communications review",
+            "Brand and positioning diagnosis",
+            "Behaviour change strategy",
+            "Message and narrative assessment",
+            "Strategic problem definition"
+          ]
+        },
+        {
+          "title": "Design",
+          "sub": "We turn complexity into a clear plan.",
+          "items": [
+            "Roadmap to success",
+            "Clear roles and responsibilities",
+            "Communications strategy",
+            "Campaign architecture",
+            "Message frameworks",
+            "Content planning",
+            "Channel planning",
+            "Stakeholder engagement strategy",
+            "Launch sequencing"
+          ]
+        },
+        {
+          "title": "Direct",
+          "sub": "We help the strategy survive contact with reality.",
+          "items": [
+            "Agency and partner briefing",
+            "Implementation oversight",
+            "Strategic project leadership",
+            "Internal team support",
+            "Creative and content review",
+            "Alignment across stakeholders"
+          ]
+        },
+        {
+          "title": "Measure",
+          "sub": "We help clients understand what worked and what to do next.",
+          "items": [
+            "Campaign evaluation",
+            "Performance reporting",
+            "Message testing",
+            "Post-campaign review",
+            "Refinement planning"
+          ]
+        }
+      ]
+    },
+    "builtFor": {
+      "eyebrow": "Who we work with",
+      "title": "Built for complex organisations",
+      "items": [
+        "Government and public sector",
+        "Purpose-led organisations",
+        "Complex stakeholder environments",
+        "Brand and reputation challenges",
+        "Behaviour change programs",
+        "Multi-channel campaigns",
+        "Projects that need strategy, alignment and implementation discipline"
+      ],
+      "highStakesTitle": "Experience across high-stakes work",
+      "highStakes": [
+        "Public trust and participation",
+        "Brand and market repositioning",
+        "Consumer awareness and education",
+        "Complex multi-stakeholder communications",
+        "Campaign and launch strategy",
+        "Research-led strategic planning"
+      ]
+    },
+    "cta": {
+      "eyebrow": "Start the conversation",
+      "title": "Book an initial conversation.",
+      "ctaLabel": "Book an initial conversation"
+    }
+  }
+}
