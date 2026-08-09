@@ -21,3 +21,26 @@
   from = "/home"
   to = "/"
   status = 301
+
+# Batch 4: How We Work renamed to The Advisory Process.
+[[redirects]]
+  from = "/how-we-work/"
+  to = "/advisory-process/"
+  status = 301
+
+[[redirects]]
+  from = "/how-we-work"
+  to = "/advisory-process/"
+  status = 301
+
+# Old-site case study URLs: every slug below is preserved exactly as a route
+# on the new site (see src/routes.ts), so none of them need a redirect rule.
+# Listed here for the record — nothing to configure:
+#   /case-studies/toyota-lifetime-advantages
+#   /case-studies/ford-six-model-launches
+#   /case-studies/commbank-little-card-big-rewards
+#   /case-studies/snack-brands-kettle-popcorn
+#   /case-studies/state-election-2022
+#   /case-studies/local-government-elections-2022
+#   /case-studies/first-nations-voice-2024
+#   /case-studies/adelaide-hills-wine-region

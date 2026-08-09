@@ -19,36 +19,11 @@
   "navigation": {
     "growthCharter": "The Growth Charter",
     "strategicAdvisory": "Strategic Advisory",
-    "services": "Services",
-    "howWeWork": "How We Work",
+    "services": "Advisory Services",
+    "howWeWork": "The Advisory Process",
     "about": "About",
     "contact": "Contact",
-    "mobileLinks": [
-      {
-        "label": "About",
-        "page": "about"
-      },
-      {
-        "label": "Strategic Advisory",
-        "page": "strategic-advisory"
-      },
-      {
-        "label": "Services",
-        "page": "services"
-      },
-      {
-        "label": "The Growth Charter",
-        "page": "growth-charter"
-      },
-      {
-        "label": "How We Work",
-        "page": "how-we-work"
-      },
-      {
-        "label": "Contact",
-        "page": "contact"
-      }
-    ]
+    "caseStudies": "Case Studies"
   },
   "footer": {
     "navHeading": "Ways to work with us",
@@ -62,11 +37,11 @@
         "page": "growth-charter"
       },
       {
-        "label": "How We Work",
+        "label": "The Advisory Process",
         "page": "how-we-work"
       },
       {
-        "label": "Services",
+        "label": "Advisory Services",
         "page": "services"
       }
     ],
@@ -344,7 +319,7 @@
   },
   "howWeWork": {
     "hero": {
-      "eyebrow": "How we work",
+      "eyebrow": "The Advisory Process",
       "title": "From the real problem to work that performs.",
       "body": "We work from problem definition through to delivery. Take one phase or the whole journey."
     },

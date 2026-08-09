@@ -8,7 +8,9 @@ import ServicesPage from "./pages/ServicesPage";
 import StrategicAdvisoryPage from "./pages/StrategicAdvisoryPage";
 import GrowthCharterPage from "./pages/GrowthCharterPage";
 import ContactPage from "./pages/ContactPage";
+import StubPage from "./pages/StubPage";
 import { trackPageview } from "./lib/analytics";
+import { stubRoutes } from "./data/stubRoutes";
 import { pageFromPath, pathForPage, updateDocumentMetadata, type Page } from "./routes";
 
 interface AppProps {
@@ -39,6 +41,9 @@ export default function App({ initialPage = "home" }: AppProps) {
   }, []);
 
   const renderPage = () => {
+    const stub = stubRoutes.find((s) => s.page === page);
+    if (stub) return <StubPage onNavigate={navigate} editableKey={`stub.${stub.page}`} {...stub} />;
+
     switch (page) {
       case "home": return <HomePage onNavigate={navigate} />;
       case "about": return <AboutPage onNavigate={navigate} />;
@@ -47,6 +52,7 @@ export default function App({ initialPage = "home" }: AppProps) {
       case "services": return <ServicesPage onNavigate={navigate} />;
       case "growth-charter": return <GrowthCharterPage onNavigate={navigate} />;
       case "contact": return <ContactPage onNavigate={navigate} />;
+      default: return <HomePage onNavigate={navigate} />;
     }
   };
 

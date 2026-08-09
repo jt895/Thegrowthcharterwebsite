@@ -5,7 +5,20 @@ export type Page =
   | "services"
   | "strategic-advisory"
   | "growth-charter"
-  | "contact";
+  | "contact"
+  | "launch-charter"
+  | "do-it-together"
+  | "launch-complete"
+  | "charter-course"
+  | "case-studies"
+  | "toyota-lifetime-advantages"
+  | "ford-six-model-launches"
+  | "commbank-little-card-big-rewards"
+  | "snack-brands-kettle-popcorn"
+  | "state-election-2022"
+  | "local-government-elections-2022"
+  | "first-nations-voice-2024"
+  | "adelaide-hills-wine-region";
 
 export interface SiteRoute {
   page: Page;
@@ -35,8 +48,8 @@ export const siteRoutes: SiteRoute[] = [
   },
   {
     page: "how-we-work",
-    path: "/how-we-work/",
-    title: "How We Work | The United Republic",
+    path: "/advisory-process/",
+    title: "The Advisory Process | The United Republic",
     description:
       "How The United Republic works — diagnose, design, direct and measure. Problem definition through to briefing and guiding the specialists who deliver the work.",
   },
@@ -67,6 +80,94 @@ export const siteRoutes: SiteRoute[] = [
     title: "Contact | The United Republic",
     description:
       "Get in touch with The United Republic. A twenty-minute conversation about what you're trying to change, and whether we're the right people to help.",
+  },
+
+  // Growth Charter product pages — stubs pending full product copy.
+  {
+    page: "launch-charter",
+    path: "/growth-charter/launch-charter/",
+    title: "Launch Charter | The Growth Charter | The United Republic",
+    description:
+      "Foundations done properly. Positioning, a 90-day growth plan, brand and a launch-ready website.",
+  },
+  {
+    page: "do-it-together",
+    path: "/growth-charter/do-it-together/",
+    title: "Do It Together | The Growth Charter | The United Republic",
+    description:
+      "We guide the work, run the key sessions and help you make the decisions, while you and your team build the plan and the skills to carry it forward.",
+  },
+  {
+    page: "launch-complete",
+    path: "/growth-charter/launch-complete/",
+    title: "Launch Complete | The Growth Charter | The United Republic",
+    description:
+      "Everything, built on your actual sales data, with pricing, conversion and 12 weeks of support.",
+  },
+  {
+    page: "charter-course",
+    path: "/growth-charter/charter-course/",
+    title: "The Charter Course | The Growth Charter | The United Republic",
+    description:
+      "A guided program for owners who want to work through The Growth Charter themselves, using structured tools, templates and training.",
+  },
+
+  // Case studies — slugs preserved from the old site so no redirects are needed.
+  // Stubs pending the full case-studies rewrite.
+  {
+    page: "case-studies",
+    path: "/case-studies/",
+    title: "Case Studies | The United Republic",
+    description:
+      "Case studies from 25 years of strategy, marketing and growth work across government, major brands and owner-led businesses.",
+  },
+  {
+    page: "toyota-lifetime-advantages",
+    path: "/case-studies/toyota-lifetime-advantages/",
+    title: "Toyota — Lifetime Advantages | Case Studies | The United Republic",
+    description: "How this campaign built long-term value for Toyota owners.",
+  },
+  {
+    page: "ford-six-model-launches",
+    path: "/case-studies/ford-six-model-launches/",
+    title: "Ford — Six Model Launches | Case Studies | The United Republic",
+    description: "Six model launches for Ford, planned and delivered.",
+  },
+  {
+    page: "commbank-little-card-big-rewards",
+    path: "/case-studies/commbank-little-card-big-rewards/",
+    title: "CommBank — Little Card, Big Rewards | Case Studies | The United Republic",
+    description: "A rewards campaign for Commonwealth Bank.",
+  },
+  {
+    page: "snack-brands-kettle-popcorn",
+    path: "/case-studies/snack-brands-kettle-popcorn/",
+    title: "Snack Brands Kettle — Popcorn Launch | Case Studies | The United Republic",
+    description: "Bringing Kettle popcorn to market for Snack Brands.",
+  },
+  {
+    page: "state-election-2022",
+    path: "/case-studies/state-election-2022/",
+    title: "2022 State Election | Case Studies | The United Republic",
+    description: "Strategy and communications for the 2022 South Australian state election.",
+  },
+  {
+    page: "local-government-elections-2022",
+    path: "/case-studies/local-government-elections-2022/",
+    title: "2022 Local Government Elections | Case Studies | The United Republic",
+    description: "Strategy and communications for the 2022 local government elections.",
+  },
+  {
+    page: "first-nations-voice-2024",
+    path: "/case-studies/first-nations-voice-2024/",
+    title: "2024 First Nations Voice | Case Studies | The United Republic",
+    description: "Strategy and communications for the 2024 First Nations Voice referendum.",
+  },
+  {
+    page: "adelaide-hills-wine-region",
+    path: "/case-studies/adelaide-hills-wine-region/",
+    title: "Adelaide Hills Wine Region | Case Studies | The United Republic",
+    description: "Brand and growth work for the Adelaide Hills Wine Region.",
   },
 ];
 
