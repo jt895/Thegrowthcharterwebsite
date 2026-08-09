@@ -9,8 +9,11 @@ import StrategicAdvisoryPage from "./pages/StrategicAdvisoryPage";
 import GrowthCharterPage from "./pages/GrowthCharterPage";
 import ContactPage from "./pages/ContactPage";
 import StubPage from "./pages/StubPage";
+import ProductPage from "./pages/ProductPage";
+import CharterCoursePage from "./pages/CharterCoursePage";
 import { trackPageview } from "./lib/analytics";
 import { stubRoutes } from "./data/stubRoutes";
+import { growthCharterContent } from "./data/content";
 import { pageFromPath, pathForPage, updateDocumentMetadata, type Page } from "./routes";
 
 interface AppProps {
@@ -52,6 +55,10 @@ export default function App({ initialPage = "home" }: AppProps) {
       case "services": return <ServicesPage onNavigate={navigate} />;
       case "growth-charter": return <GrowthCharterPage onNavigate={navigate} />;
       case "contact": return <ContactPage onNavigate={navigate} />;
+      case "launch-charter": return <ProductPage onNavigate={navigate} page="launch-charter" product={growthCharterContent.products.launchCharter} />;
+      case "do-it-together": return <ProductPage onNavigate={navigate} page="do-it-together" product={growthCharterContent.products.doItTogether} />;
+      case "launch-complete": return <ProductPage onNavigate={navigate} page="launch-complete" product={growthCharterContent.products.launchComplete} />;
+      case "charter-course": return <CharterCoursePage onNavigate={navigate} />;
       default: return <HomePage onNavigate={navigate} />;
     }
   };

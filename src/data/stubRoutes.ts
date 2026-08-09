@@ -9,42 +9,12 @@ export interface StubRouteConfig {
   backTo: Page;
 }
 
-const productBody = "Full product page in development.";
 const caseStudyBody = "Full case study in development.";
 
+// The four Growth Charter product pages (launch-charter, do-it-together,
+// launch-complete, charter-course) have real pages now — see ProductPage.tsx
+// and CharterCoursePage.tsx — so they're no longer in this stub list.
 export const stubRoutes: StubRouteConfig[] = [
-  {
-    page: "launch-charter",
-    eyebrow: "The Growth Charter",
-    heading: "Launch Charter",
-    body: "Foundations done properly. Positioning, a 90-day growth plan, brand and a launch-ready website. " + productBody,
-    backLabel: "Back to The Growth Charter",
-    backTo: "growth-charter",
-  },
-  {
-    page: "do-it-together",
-    eyebrow: "The Growth Charter",
-    heading: "Do It Together",
-    body: "We guide the work, run the key sessions and help you make the decisions, while you and your team build the plan and the skills to carry it forward. " + productBody,
-    backLabel: "Back to The Growth Charter",
-    backTo: "growth-charter",
-  },
-  {
-    page: "launch-complete",
-    eyebrow: "The Growth Charter",
-    heading: "Launch Complete",
-    body: "Everything, built on your actual sales data, with pricing, conversion and 12 weeks of support. " + productBody,
-    backLabel: "Back to The Growth Charter",
-    backTo: "growth-charter",
-  },
-  {
-    page: "charter-course",
-    eyebrow: "The Growth Charter",
-    heading: "The Charter Course",
-    body: "A guided program for owners who want to work through The Growth Charter themselves, using structured tools, templates and training. " + productBody,
-    backLabel: "Back to The Growth Charter",
-    backTo: "growth-charter",
-  },
   {
     page: "toyota-lifetime-advantages",
     eyebrow: "Case Study",

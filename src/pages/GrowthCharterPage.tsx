@@ -106,26 +106,98 @@ export default function GrowthCharterPage({ onNavigate }: GrowthCharterPageProps
         </div>
       </section>
 
-      {/* Ways to work together */}
+      {/* Ways to engage — scope × delivery matrix */}
       <section id="ways-to-work" {...editableField("growthCharter.waysToWork")} style={{ background: "#161616", padding: "100px 40px" }}>
-        <div style={{ maxWidth: 1280, margin: "0 auto" }}>
-          <div style={{ marginBottom: 56 }}>
+        <div style={{ maxWidth: 1000, margin: "0 auto" }}>
+          <div style={{ marginBottom: 40 }}>
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 16 }}>{growthCharterContent.waysToWork.eyebrow}</p>
-            <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(26px, 3vw, 38px)", color: "#F5F3EE", fontWeight: 400, lineHeight: 1.2 }}>
+            <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(26px, 3vw, 38px)", color: "#F5F3EE", fontWeight: 400, lineHeight: 1.2, marginBottom: 16 }}>
               {growthCharterContent.waysToWork.title}
             </h2>
+            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.75, color: "rgba(245,243,238,0.5)", maxWidth: 620 }}>
+              {growthCharterContent.waysToWork.intro}
+            </p>
           </div>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 2 }}>
-            {growthCharterContent.waysToWork.modes.map((mode, i) => (
-              <div key={mode.title} style={{ background: "#1C1C1C", padding: "40px 32px", borderTop: i === 0 ? "2px solid rgba(155,155,155,0.5)" : i === 1 || i === 2 ? "2px solid #2A9D78" : "2px solid rgba(143,217,190,0.4)" }}>
-                <h3 style={{ fontFamily: "'Instrument Serif', serif", fontSize: 22, color: "#F5F3EE", fontWeight: 400, marginBottom: 16 }}>{mode.title}</h3>
-                <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, lineHeight: 1.75, color: "rgba(245,243,238,0.5)", marginBottom: 24 }}>{mode.sub}</p>
-                <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 12, color: "#2A9D78", fontStyle: "italic" }}>{mode.note}</p>
+
+          {/* Desktop: real table */}
+          <div className="matrix-table" style={{ border: "1px solid rgba(255,255,255,0.08)" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr" }}>
+              <div style={{ padding: "20px 24px", borderBottom: "1px solid rgba(255,255,255,0.08)" }} />
+              {growthCharterContent.waysToWork.columns.map((col) => (
+                <div key={col} style={{ padding: "20px 24px", borderBottom: "1px solid rgba(255,255,255,0.08)", borderLeft: "1px solid rgba(255,255,255,0.08)", textAlign: "center" }}>
+                  <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 12, fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", color: "#8FD9BE" }}>{col}</span>
+                </div>
+              ))}
+            </div>
+            {growthCharterContent.waysToWork.rows.map((row, ri) => (
+              <div key={row.scope} style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", borderTop: ri > 0 ? "1px solid rgba(255,255,255,0.08)" : "none" }}>
+                <div style={{ padding: "24px" }}>
+                  <p style={{ fontFamily: "'Instrument Serif', serif", fontSize: 20, color: "#F5F3EE", fontWeight: 400, marginBottom: 6 }}>{row.scope}</p>
+                  <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 12, lineHeight: 1.5, color: "rgba(245,243,238,0.45)", margin: 0 }}>{row.note}</p>
+                </div>
+                {row.cells.map((cell, ci) => (
+                  <div key={ci} style={{ padding: "24px", borderLeft: "1px solid rgba(255,255,255,0.08)", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                    {cell.page ? (
+                      <button
+                        onClick={() => nav(cell.page as Page)}
+                        style={{ background: "none", border: "none", cursor: "pointer", fontFamily: "'Instrument Serif', serif", fontSize: 22, color: "#2A9D78", padding: 0, display: "flex", alignItems: "center", gap: 6 }}
+                      >
+                        {cell.value}
+                        {('pending' in cell && cell.pending) && <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 9, fontWeight: 600, letterSpacing: "0.04em", textTransform: "uppercase", color: "#E3B15E", border: "1px solid rgba(227,177,94,0.4)", padding: "2px 6px" }}>Pending</span>}
+                      </button>
+                    ) : (
+                      <span style={{ fontFamily: "'Instrument Serif', serif", fontSize: 22, color: "rgba(245,243,238,0.3)" }}>{cell.value}</span>
+                    )}
+                  </div>
+                ))}
               </div>
             ))}
           </div>
+
+          {/* Mobile: stacked cards */}
+          <div className="matrix-stack" style={{ display: "none", flexDirection: "column", gap: 2 }}>
+            {growthCharterContent.waysToWork.rows.map((row) => (
+              <div key={row.scope} style={{ background: "#1C1C1C", padding: "24px", border: "1px solid rgba(255,255,255,0.08)" }}>
+                <p style={{ fontFamily: "'Instrument Serif', serif", fontSize: 20, color: "#F5F3EE", fontWeight: 400, marginBottom: 4 }}>{row.scope}</p>
+                <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 12, lineHeight: 1.5, color: "rgba(245,243,238,0.45)", marginBottom: 16 }}>{row.note}</p>
+                <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+                  {row.cells.map((cell, ci) => (
+                    <div key={ci} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", borderTop: "1px solid rgba(255,255,255,0.06)", paddingTop: 10 }}>
+                      <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 12, color: "#9B9B9B", textTransform: "uppercase", letterSpacing: "0.04em" }}>{growthCharterContent.waysToWork.columns[ci]}</span>
+                      {cell.page ? (
+                        <button onClick={() => nav(cell.page as Page)} style={{ background: "none", border: "none", cursor: "pointer", fontFamily: "'Instrument Serif', serif", fontSize: 18, color: "#2A9D78", padding: 0, display: "flex", alignItems: "center", gap: 6 }}>
+                          {cell.value}
+                          {('pending' in cell && cell.pending) && <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 9, fontWeight: 600, color: "#E3B15E", border: "1px solid rgba(227,177,94,0.4)", padding: "2px 6px" }}>Pending</span>}
+                        </button>
+                      ) : (
+                        <span style={{ fontFamily: "'Instrument Serif', serif", fontSize: 18, color: "rgba(245,243,238,0.3)" }}>{cell.value}</span>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, lineHeight: 1.7, color: "rgba(245,243,238,0.4)", marginTop: 24 }}>
+            {growthCharterContent.waysToWork.note}
+          </p>
+
+          <div style={{ marginTop: 32, paddingTop: 32, borderTop: "1px solid rgba(255,255,255,0.08)", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 16 }}>
+            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, color: "rgba(245,243,238,0.55)", margin: 0 }}>{growthCharterContent.waysToWork.charterCourseNote}</p>
+            <button onClick={() => nav("charter-course")} style={{ background: "none", border: "none", cursor: "pointer", display: "flex", alignItems: "center", gap: 8, fontFamily: "'Inter', sans-serif", fontSize: 14, color: "#2A9D78", padding: 0 }}>
+              {growthCharterContent.waysToWork.charterCourseLinkLabel} <span>→</span>
+            </button>
+          </div>
         </div>
       </section>
+
+      <style>{`
+        @media (max-width: 640px) {
+          .matrix-table { display: none !important; }
+          .matrix-stack { display: flex !important; }
+        }
+      `}</style>
 
       {/* Central idea */}
       <section {...editableField("growthCharter.centralIdea")} style={{ padding: "100px 40px" }}>

@@ -118,6 +118,8 @@ export default function ContactPage(_props: ContactPageProps) {
                 fields={[
                   { name: "name", label: "Name", type: "text" },
                   { name: "email", label: "Email", type: "email" },
+                  { name: "business", label: "Business name", type: "text" },
+                  { name: "message", label: contactContent.waitlist.messageFieldLabel, type: "textarea" },
                 ]}
               />
             </div>
