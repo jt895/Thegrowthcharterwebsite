@@ -12,13 +12,17 @@ export interface SiteRoute {
   path: string;
   title: string;
   description: string;
+  /** Path under /og/ for this route's share image. Falls back to /og/default.png when unset. */
+  image?: string;
 }
+
+export const defaultOgImage = "/og/default.png";
 
 export const siteRoutes: SiteRoute[] = [
   {
     page: "home",
     path: "/",
-    title: "The United Republic | Strategy and Business Growth",
+    title: "The United Republic | Strategy and Business Growth — Adelaide, South Australia",
     description:
       "Strategy and growth for Australian businesses and complex organisations. We find where growth is really available, set the priorities and build the capability to act. Based in South Australia.",
   },
@@ -55,7 +59,7 @@ export const siteRoutes: SiteRoute[] = [
     path: "/growth-charter/",
     title: "The Growth Charter | The United Republic",
     description:
-      "A practical growth program that helps Australian businesses identify commercial opportunities, choose priorities and act with confidence.",
+      "The Growth Charter finds the growth that's already in your business, sizes it in dollars, and gives you a plan you own — for Australian businesses ready for their next stage.",
   },
   {
     page: "contact",
@@ -92,6 +96,19 @@ export function updateDocumentMetadata(page: Page): void {
   const ogDescription = document.querySelector<HTMLMetaElement>('meta[property="og:description"]');
   ogDescription?.setAttribute("content", route.description);
 
+  const canonicalUrl = new URL(route.path, window.location.origin).href;
+
   const canonical = document.querySelector<HTMLLinkElement>('link[rel="canonical"]');
-  canonical?.setAttribute("href", new URL(route.path, window.location.origin).href);
+  canonical?.setAttribute("href", canonicalUrl);
+
+  const ogUrl = document.querySelector<HTMLMetaElement>('meta[property="og:url"]');
+  ogUrl?.setAttribute("content", canonicalUrl);
+
+  const imageUrl = new URL(route.image ?? defaultOgImage, window.location.origin).href;
+
+  const ogImage = document.querySelector<HTMLMetaElement>('meta[property="og:image"]');
+  ogImage?.setAttribute("content", imageUrl);
+
+  const twitterImage = document.querySelector<HTMLMetaElement>('meta[name="twitter:image"]');
+  twitterImage?.setAttribute("content", imageUrl);
 }

@@ -8,8 +8,42 @@
     <meta property="og:title" content="The United Republic | Strategy and Business Growth" />
     <meta property="og:description" content="Independent strategic advisory and practical growth support for established Australian businesses and complex organisations." />
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://thegrowthcharter.netlify.app/" />
+    <meta property="og:site_name" content="The United Republic" />
+    <!--
+      Default share image. prerender.mjs and routes.ts (updateDocumentMetadata)
+      both overwrite this per route with route.image when set, falling back to
+      this same default otherwise — see src/routes.ts's defaultOgImage.
+      Drop the 1200x630 default file at public/og/default.png (per-page
+      overrides go in the same public/og/ folder, referenced via each route's
+      `image` field in src/routes.ts).
+    -->
+    <meta property="og:image" content="https://thegrowthcharter.netlify.app/og/default.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="The United Republic" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://thegrowthcharter.netlify.app/og/default.png" />
     <link rel="canonical" href="https://thegrowthcharter.netlify.app/" />
     <title><!-- figma:title --></title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "The United Republic",
+        "url": "https://thegrowthcharter.netlify.app/",
+        "email": "jt@theunitedrepublic.com.au",
+        "telephone": "+61407744388",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Adelaide",
+          "addressRegion": "South Australia",
+          "addressCountry": "AU"
+        },
+        "areaServed": "AU",
+        "description": "Independent Australian strategy and business growth advisory, based in Adelaide, South Australia."
+      }
+    </script>
     <!-- figma:head-end -->
   </head>
   <body>

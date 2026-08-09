@@ -17,8 +17,12 @@ function escapeHtml(value) {
     .replace(/"/g, "&quot;");
 }
 
+// Keep in sync with defaultOgImage in src/routes.ts.
+const DEFAULT_OG_IMAGE = "/og/default.png";
+
 function replaceMeta(html, route) {
   const canonicalUrl = `${siteUrl}${route.path}`;
+  const imageUrl = `${siteUrl}${route.image ?? DEFAULT_OG_IMAGE}`;
   return html
     .replace(/<title>[\s\S]*?<\/title>/, `<title>${escapeHtml(route.title)}</title>`)
     .replace(
@@ -32,6 +36,18 @@ function replaceMeta(html, route) {
     .replace(
       /<meta property="og:description"[^>]*>/,
       `<meta property="og:description" content="${escapeHtml(route.description)}">`,
+    )
+    .replace(
+      /<meta property="og:url"[^>]*>/,
+      `<meta property="og:url" content="${escapeHtml(canonicalUrl)}">`,
+    )
+    .replace(
+      /<meta property="og:image"[^>]*>/,
+      `<meta property="og:image" content="${escapeHtml(imageUrl)}">`,
+    )
+    .replace(
+      /<meta name="twitter:image"[^>]*>/,
+      `<meta name="twitter:image" content="${escapeHtml(imageUrl)}">`,
     )
     .replace(
       /<link rel="canonical"[^>]*>/,
