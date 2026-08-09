@@ -73,6 +73,7 @@ export default function Nav({ current, onNavigate }: NavProps) {
   };
 
   const growthCharterItems: DropdownItem[] = [
+    { label: "Overview", page: "growth-charter" },
     { label: "Launch Charter", page: "launch-charter" },
     { label: "Do It Together", page: "do-it-together" },
     { label: "Launch Complete", page: "launch-complete" },
@@ -80,6 +81,7 @@ export default function Nav({ current, onNavigate }: NavProps) {
   ];
 
   const advisoryItems: DropdownItem[] = [
+    { label: "Overview", page: "strategic-advisory" },
     { label: navContent.services, page: "services" },
     { label: navContent.howWeWork, page: "how-we-work" },
   ];
