@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
-import { homeContent, siteContent } from "../data/content";
+import { homeContent } from "../data/content";
 import { editableField } from "../data/editable";
+import { goToContact } from "../lib/contactNav";
 import type { Page } from "../routes";
 
 import imgAccolade from "@/imports/accolade.png";
@@ -274,14 +275,14 @@ export default function HomePage({ onNavigate }: HomePageProps) {
             {homeContent.cta.body}
           </p>
           <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
-            <a
-              href={`mailto:${siteContent.contact.email}`}
-              style={{ background: "#2A9D78", border: "none", cursor: "pointer", fontFamily: "'Inter', sans-serif", fontSize: 14, fontWeight: 500, color: "#fff", padding: "16px 32px", textDecoration: "none", display: "inline-block", transition: "background 0.25s" }}
-              onMouseEnter={(e) => { (e.currentTarget as HTMLAnchorElement).style.background = "#239068"; }}
-              onMouseLeave={(e) => { (e.currentTarget as HTMLAnchorElement).style.background = "#2A9D78"; }}
+            <button
+              onClick={() => goToContact(onNavigate, "home")}
+              style={{ background: "#2A9D78", border: "none", cursor: "pointer", fontFamily: "'Inter', sans-serif", fontSize: 14, fontWeight: 500, color: "#fff", padding: "16px 32px", transition: "background 0.25s" }}
+              onMouseEnter={(e) => { e.currentTarget.style.background = "#239068"; }}
+              onMouseLeave={(e) => { e.currentTarget.style.background = "#2A9D78"; }}
             >
               {homeContent.cta.ctaPrimary}
-            </a>
+            </button>
             <button
               onClick={() => nav("how-we-work")}
               style={{ background: "none", border: "1px solid rgba(255,255,255,0.15)", cursor: "pointer", fontFamily: "'Inter', sans-serif", fontSize: 14, fontWeight: 400, color: "rgba(245,243,238,0.6)", padding: "16px 32px", transition: "border-color 0.25s" }}

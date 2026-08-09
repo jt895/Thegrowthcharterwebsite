@@ -1,7 +1,8 @@
 import { useEffect, useRef } from "react";
 import SpinningRingMark from "../components/SpinningRingMark";
-import { growthCharterContent, siteContent } from "../data/content";
+import { growthCharterContent } from "../data/content";
 import { editableField } from "../data/editable";
+import { goToContact } from "../lib/contactNav";
 import type { Page } from "../routes";
 
 interface GrowthCharterPageProps {
@@ -22,6 +23,7 @@ function useReveal() {
 
 export default function GrowthCharterPage({ onNavigate }: GrowthCharterPageProps) {
   const nav = (page: Page) => { onNavigate(page); window.scrollTo({ top: 0 }); };
+  const contact = () => goToContact(onNavigate, "growth-charter", "growth-charter-enquiry");
   const scrollToWaysToWork = () => {
     document.getElementById("ways-to-work")?.scrollIntoView({ behavior: "smooth", block: "start" });
   };
@@ -51,14 +53,14 @@ export default function GrowthCharterPage({ onNavigate }: GrowthCharterPageProps
               {growthCharterContent.hero.paraB}
             </p>
             <div style={{ display: "flex", gap: 16, flexWrap: "wrap" }} className="hero-cta">
-              <a
-                href={`mailto:${siteContent.contact.email}`}
-                style={{ background: "#2A9D78", border: "none", cursor: "pointer", fontFamily: "'Inter', sans-serif", fontSize: 14, fontWeight: 500, color: "#fff", padding: "16px 32px", textDecoration: "none", display: "inline-block", transition: "background 0.25s" }}
-                onMouseEnter={(e) => { (e.currentTarget as HTMLAnchorElement).style.background = "#239068"; }}
-                onMouseLeave={(e) => { (e.currentTarget as HTMLAnchorElement).style.background = "#2A9D78"; }}
+              <button
+                onClick={contact}
+                style={{ background: "#2A9D78", border: "none", cursor: "pointer", fontFamily: "'Inter', sans-serif", fontSize: 14, fontWeight: 500, color: "#fff", padding: "16px 32px", transition: "background 0.25s" }}
+                onMouseEnter={(e) => { e.currentTarget.style.background = "#239068"; }}
+                onMouseLeave={(e) => { e.currentTarget.style.background = "#2A9D78"; }}
               >
                 {growthCharterContent.hero.ctaPrimary}
-              </a>
+              </button>
               <button
                 onClick={scrollToWaysToWork}
                 style={{ background: "none", border: "1px solid rgba(42,157,120,0.4)", cursor: "pointer", fontFamily: "'Inter', sans-serif", fontSize: 14, color: "#2A9D78", padding: "16px 32px", transition: "border-color 0.25s" }}
@@ -216,14 +218,14 @@ export default function GrowthCharterPage({ onNavigate }: GrowthCharterPageProps
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.85, color: "rgba(245,243,238,0.6)", marginBottom: 32 }}>
               {growthCharterContent.fitCheck.body}
             </p>
-            <a
-              href={`mailto:${siteContent.contact.email}`}
-              style={{ background: "#2A9D78", border: "none", cursor: "pointer", fontFamily: "'Inter', sans-serif", fontSize: 14, fontWeight: 500, color: "#fff", padding: "16px 32px", textDecoration: "none", display: "inline-block", transition: "background 0.25s" }}
-              onMouseEnter={(e) => { (e.currentTarget as HTMLAnchorElement).style.background = "#239068"; }}
-              onMouseLeave={(e) => { (e.currentTarget as HTMLAnchorElement).style.background = "#2A9D78"; }}
+            <button
+              onClick={contact}
+              style={{ background: "#2A9D78", border: "none", cursor: "pointer", fontFamily: "'Inter', sans-serif", fontSize: 14, fontWeight: 500, color: "#fff", padding: "16px 32px", transition: "background 0.25s" }}
+              onMouseEnter={(e) => { e.currentTarget.style.background = "#239068"; }}
+              onMouseLeave={(e) => { e.currentTarget.style.background = "#2A9D78"; }}
             >
               {growthCharterContent.fitCheck.cta}
-            </a>
+            </button>
           </div>
           <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
             {growthCharterContent.fitCheck.points.map((item, i) => (
