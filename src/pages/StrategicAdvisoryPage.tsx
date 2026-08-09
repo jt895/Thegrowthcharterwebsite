@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
-import { strategicAdvisoryContent, siteContent } from "../data/content";
+import { strategicAdvisoryContent } from "../data/content";
 import { editableField } from "../data/editable";
+import { goToContact } from "../lib/contactNav";
 import type { Page } from "../routes";
 
 interface StrategicAdvisoryPageProps {
@@ -24,12 +25,12 @@ function useReveal() {
 
 export default function StrategicAdvisoryPage({ onNavigate }: StrategicAdvisoryPageProps) {
   const nav = (page: Page) => { onNavigate(page); window.scrollTo({ top: 0 }); };
+  const contact = (formAnchor?: string) => goToContact(onNavigate, "strategic-advisory", formAnchor);
   const r1 = useReveal(), r2 = useReveal(), r3 = useReveal(), r4 = useReveal(), r5 = useReveal(), r6 = useReveal(), r7 = useReveal();
 
   const methodology = strategicAdvisoryContent.methodology.steps;
   const whatWeDo = strategicAdvisoryContent.whatWeDo.columns;
   const builtFor = strategicAdvisoryContent.builtFor.items;
-  const highStakes = strategicAdvisoryContent.builtFor.highStakes;
 
   return (
     <div style={{ background: "#1C1C1C", minHeight: "100vh" }}>
@@ -51,64 +52,59 @@ export default function StrategicAdvisoryPage({ onNavigate }: StrategicAdvisoryP
               {strategicAdvisoryContent.hero.paraB}
             </p>
             <div style={{ display: "flex", gap: 16, flexWrap: "wrap" }} className="hero-cta">
-              <a
-                href={`mailto:${siteContent.contact.email}`}
-                style={{ background: "#2A9D78", border: "none", fontFamily: "'Inter', sans-serif", fontSize: 14, fontWeight: 500, color: "#fff", padding: "16px 32px", textDecoration: "none", display: "inline-block", transition: "background 0.25s" }}
-                onMouseEnter={(e) => { (e.currentTarget as HTMLAnchorElement).style.background = "#239068"; }}
-                onMouseLeave={(e) => { (e.currentTarget as HTMLAnchorElement).style.background = "#2A9D78"; }}
+              <button
+                onClick={() => contact("strategic-advisory-enquiry")}
+                style={{ background: "#2A9D78", border: "none", cursor: "pointer", fontFamily: "'Inter', sans-serif", fontSize: 14, fontWeight: 500, color: "#fff", padding: "16px 32px", transition: "background 0.25s" }}
+                onMouseEnter={(e) => { e.currentTarget.style.background = "#239068"; }}
+                onMouseLeave={(e) => { e.currentTarget.style.background = "#2A9D78"; }}
               >
                 {strategicAdvisoryContent.hero.ctaPrimary}
-              </a>
-              <button
-                onClick={() => nav("how-we-work")}
-                style={{ background: "none", border: "1px solid rgba(42,157,120,0.4)", cursor: "pointer", fontFamily: "'Inter', sans-serif", fontSize: 14, fontWeight: 400, color: "#2A9D78", padding: "16px 32px", transition: "border-color 0.25s" }}
-                onMouseEnter={(e) => { e.currentTarget.style.borderColor = "#2A9D78"; }}
-                onMouseLeave={(e) => { e.currentTarget.style.borderColor = "rgba(42,157,120,0.4)"; }}
-              >
-                {strategicAdvisoryContent.hero.ctaSecondary}
               </button>
             </div>
           </div>
         </div>
       </section>
 
-      {/* What we do differently */}
-      <section {...editableField("strategicAdvisory.differentiation")} style={{ background: "#161616", padding: "100px 40px" }}>
+      {/* The Case */}
+      <section {...editableField("strategicAdvisory.theCase")} style={{ background: "#161616", padding: "100px 40px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
           <div ref={r1} className="reveal" style={{ marginBottom: 56 }}>
             <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(28px, 3.5vw, 44px)", color: "#F5F3EE", fontWeight: 400, lineHeight: 1.15, textAlign: "center" }}>
-              {strategicAdvisoryContent.differentiation.title}
+              {strategicAdvisoryContent.theCase.title}
             </h2>
           </div>
           <div ref={r2} className="reveal reveal-delay-1" style={{ maxWidth: 820, margin: "0 auto", background: "#1C1C1C", padding: "56px 64px", borderLeft: "2px solid #2A9D78" }}>
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 16, lineHeight: 1.85, color: "rgba(245,243,238,0.65)", marginBottom: 28 }}>
-              {strategicAdvisoryContent.differentiation.paraA}
+              {strategicAdvisoryContent.theCase.paraA}
+            </p>
+            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.85, color: "rgba(245,243,238,0.5)", marginBottom: 28 }}>
+              {strategicAdvisoryContent.theCase.paraB}
             </p>
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.85, color: "rgba(245,243,238,0.5)", margin: 0 }}>
-              {strategicAdvisoryContent.differentiation.paraB}
+              {strategicAdvisoryContent.theCase.paraC}
             </p>
           </div>
         </div>
       </section>
 
-      {/* Why clients engage us early */}
-      <section {...editableField("strategicAdvisory.whyEngageEarly")} style={{ padding: "100px 40px" }}>
+      {/* The Difference */}
+      <section {...editableField("strategicAdvisory.theDifference")} style={{ padding: "100px 40px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
-          <div ref={r3} className="reveal" style={{ marginBottom: 64 }}>
-            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 20, textAlign: "center" }}>
-              {strategicAdvisoryContent.whyEngageEarly.eyebrow}
-            </p>
+          <div ref={r3} className="reveal" style={{ marginBottom: 56 }}>
             <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(28px, 3.5vw, 44px)", color: "#F5F3EE", fontWeight: 400, lineHeight: 1.15, textAlign: "center" }}>
-              {strategicAdvisoryContent.whyEngageEarly.title}
+              {strategicAdvisoryContent.theDifference.title}
             </h2>
           </div>
-          <div ref={r4} className="reveal reveal-delay-1" style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: 2 }}>
-            {strategicAdvisoryContent.whyEngageEarly.reasons.map((item, i) => (
-              <div key={i} style={{ background: "#1E1E1E", padding: "32px 40px", display: "flex", gap: 20, alignItems: "flex-start", borderTop: i < 2 ? "2px solid #2A9D78" : "1px solid rgba(42,157,120,0.15)" }}>
-                <span style={{ color: "#2A9D78", fontSize: 18, marginTop: 1, flexShrink: 0 }}>→</span>
-                <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.65, color: "rgba(245,243,238,0.65)", margin: 0 }}>{item}</p>
-              </div>
-            ))}
+          <div ref={r4} className="reveal reveal-delay-1" style={{ maxWidth: 820, margin: "0 auto", background: "#1C1C1C", padding: "56px 64px", borderLeft: "2px solid #2A9D78" }}>
+            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 16, lineHeight: 1.85, color: "rgba(245,243,238,0.65)", marginBottom: 28 }}>
+              {strategicAdvisoryContent.theDifference.paraA}
+            </p>
+            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.85, color: "rgba(245,243,238,0.5)", marginBottom: 28 }}>
+              {strategicAdvisoryContent.theDifference.paraB}
+            </p>
+            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.85, color: "rgba(245,243,238,0.5)", margin: 0 }}>
+              {strategicAdvisoryContent.theDifference.paraC}
+            </p>
           </div>
         </div>
       </section>
@@ -126,25 +122,13 @@ export default function StrategicAdvisoryPage({ onNavigate }: StrategicAdvisoryP
           </div>
           <div style={{ display: "flex", flexDirection: "column", gap: 2 }}>
             {methodology.map((step, i) => (
-              <div key={i} style={{ background: "#1C1C1C", display: "grid", gridTemplateColumns: "80px 1fr 1fr", gap: 48, padding: "56px 48px", borderTop: i === 0 ? "2px solid #2A9D78" : "1px solid rgba(255,255,255,0.06)" }}>
+              <div key={i} style={{ background: "#1C1C1C", display: "grid", gridTemplateColumns: "80px 1fr", gap: 48, padding: "56px 48px", borderTop: i === 0 ? "2px solid #2A9D78" : "1px solid rgba(255,255,255,0.06)" }}>
                 <div>
                   <span style={{ fontFamily: "'Instrument Serif', serif", fontSize: 52, color: "rgba(42,157,120,0.2)", fontWeight: 400, lineHeight: 1 }}>{step.num}</span>
                 </div>
                 <div>
                   <h3 style={{ fontFamily: "'Instrument Serif', serif", fontSize: 24, color: "#F5F3EE", fontWeight: 400, marginBottom: 16 }}>{step.title}</h3>
                   <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, lineHeight: 1.8, color: "rgba(245,243,238,0.55)", margin: 0 }}>{step.body}</p>
-                </div>
-                <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
-                  {step.items.map((pair, j) => (
-                    <div key={j} style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
-                      {pair.filter(Boolean).map((pt) => (
-                        <div key={pt} style={{ display: "flex", gap: 10, alignItems: "flex-start" }}>
-                          <span style={{ color: "#2A9D78", fontSize: 14, marginTop: 1, flexShrink: 0 }}>→</span>
-                          <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, lineHeight: 1.6, color: "rgba(245,243,238,0.5)", margin: 0 }}>{pt}</p>
-                        </div>
-                      ))}
-                    </div>
-                  ))}
                 </div>
               </div>
             ))}
@@ -163,8 +147,7 @@ export default function StrategicAdvisoryPage({ onNavigate }: StrategicAdvisoryP
           <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 2, alignItems: "stretch" }}>
             {whatWeDo.map((col, i) => (
               <div key={i} style={{ background: "#1E1E1E", padding: "40px 32px", borderTop: "2px solid #2A9D78", display: "flex", flexDirection: "column" }}>
-                <h3 style={{ fontFamily: "'Instrument Serif', serif", fontSize: 24, color: "#F5F3EE", fontWeight: 400, marginBottom: 10 }}>{col.title}</h3>
-                <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, lineHeight: 1.6, color: "#2A9D78", marginBottom: 28, fontStyle: "italic" }}>{col.sub}</p>
+                <h3 style={{ fontFamily: "'Instrument Serif', serif", fontSize: 24, color: "#F5F3EE", fontWeight: 400, marginBottom: 20 }}>{col.title}</h3>
                 <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
                   {col.items.map((item) => (
                     <div key={item} style={{ display: "flex", gap: 10, alignItems: "flex-start" }}>
@@ -175,6 +158,46 @@ export default function StrategicAdvisoryPage({ onNavigate }: StrategicAdvisoryP
                 </div>
               </div>
             ))}
+          </div>
+          <div style={{ display: "flex", gap: 32, justifyContent: "center", marginTop: 48, flexWrap: "wrap" }}>
+            <button
+              onClick={() => nav("services")}
+              style={{ background: "none", border: "none", cursor: "pointer", display: "flex", alignItems: "center", gap: 8, fontFamily: "'Inter', sans-serif", fontSize: 14, color: "#2A9D78", padding: 0 }}
+            >
+              {strategicAdvisoryContent.whatWeDo.linkServices} <span>→</span>
+            </button>
+            <button
+              onClick={() => nav("how-we-work")}
+              style={{ background: "none", border: "none", cursor: "pointer", display: "flex", alignItems: "center", gap: 8, fontFamily: "'Inter', sans-serif", fontSize: 14, color: "#2A9D78", padding: 0 }}
+            >
+              {strategicAdvisoryContent.whatWeDo.linkProcess} <span>→</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* Evidence */}
+      <section {...editableField("strategicAdvisory.evidence")} style={{ background: "#161616", padding: "100px 40px" }}>
+        <div style={{ maxWidth: 1280, margin: "0 auto" }}>
+          <div style={{ marginBottom: 64, textAlign: "center" }}>
+            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 20 }}>
+              {strategicAdvisoryContent.evidence.eyebrow}
+            </p>
+            <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(28px, 3.5vw, 44px)", color: "#F5F3EE", fontWeight: 400, lineHeight: 1.15, marginBottom: 16 }}>
+              {strategicAdvisoryContent.evidence.title}
+            </h2>
+            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.75, color: "rgba(245,243,238,0.5)", maxWidth: 640, margin: "0 auto" }}>
+              {strategicAdvisoryContent.evidence.body}
+            </p>
+          </div>
+          <div style={{ maxWidth: 900, margin: "0 auto", display: "grid", gridTemplateColumns: "220px 1fr", gap: 48, alignItems: "start", background: "#1C1C1C", padding: "48px", borderTop: "2px solid #2A9D78" }}>
+            <div style={{ height: 220, background: "#242424", border: "1px dashed rgba(255,255,255,0.15)", display: "flex", alignItems: "center", justifyContent: "center", textAlign: "center", padding: 16 }}>
+              <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 12, color: "#9B9B9B" }}>Photograph — to be supplied</span>
+            </div>
+            <div>
+              <h3 style={{ fontFamily: "'Instrument Serif', serif", fontSize: 24, color: "#F5F3EE", fontWeight: 400, marginBottom: 16 }}>{strategicAdvisoryContent.evidence.principal.name}</h3>
+              <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.8, color: "rgba(245,243,238,0.6)", margin: 0 }}>{strategicAdvisoryContent.evidence.principal.bio}</p>
+            </div>
           </div>
         </div>
       </section>
@@ -190,21 +213,10 @@ export default function StrategicAdvisoryPage({ onNavigate }: StrategicAdvisoryP
               {strategicAdvisoryContent.builtFor.title}
             </h2>
           </div>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 2, marginBottom: 64 }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 2 }}>
             {builtFor.map((item, i) => (
               <div key={i} style={{ background: "#1C1C1C", padding: "28px 32px", borderLeft: "2px solid rgba(42,157,120,0.3)" }}>
                 <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, lineHeight: 1.6, color: "rgba(245,243,238,0.65)", margin: 0 }}>{item}</p>
-              </div>
-            ))}
-          </div>
-
-          <h3 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(22px, 2.5vw, 32px)", color: "#F5F3EE", fontWeight: 400, marginBottom: 32, textAlign: "center" }}>
-            {strategicAdvisoryContent.builtFor.highStakesTitle}
-          </h3>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 2 }}>
-            {highStakes.map((item, i) => (
-              <div key={i} style={{ background: "#1C1C1C", padding: "28px 32px", borderTop: "1px solid rgba(42,157,120,0.2)" }}>
-                <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, lineHeight: 1.6, color: "rgba(245,243,238,0.6)", margin: 0 }}>{item}</p>
               </div>
             ))}
           </div>
@@ -217,17 +229,20 @@ export default function StrategicAdvisoryPage({ onNavigate }: StrategicAdvisoryP
           <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.15em", textTransform: "uppercase", color: "#9B9B9B", marginBottom: 20 }}>
             {strategicAdvisoryContent.cta.eyebrow}
           </p>
-          <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(24px, 3vw, 40px)", color: "#F5F3EE", fontWeight: 400, lineHeight: 1.2, marginBottom: 40 }}>
+          <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(24px, 3vw, 40px)", color: "#F5F3EE", fontWeight: 400, lineHeight: 1.2, marginBottom: 20 }}>
             {strategicAdvisoryContent.cta.title}
           </h2>
-          <a
-            href={`mailto:${siteContent.contact.email}`}
-            style={{ background: "#2A9D78", fontFamily: "'Inter', sans-serif", fontSize: 14, fontWeight: 500, color: "#fff", padding: "16px 32px", textDecoration: "none", display: "inline-block", transition: "background 0.25s" }}
-            onMouseEnter={(e) => { (e.currentTarget as HTMLAnchorElement).style.background = "#239068"; }}
-            onMouseLeave={(e) => { (e.currentTarget as HTMLAnchorElement).style.background = "#2A9D78"; }}
+          <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.75, color: "rgba(245,243,238,0.5)", marginBottom: 40 }}>
+            {strategicAdvisoryContent.cta.body}
+          </p>
+          <button
+            onClick={() => contact("strategic-advisory-enquiry")}
+            style={{ background: "#2A9D78", border: "none", cursor: "pointer", fontFamily: "'Inter', sans-serif", fontSize: 14, fontWeight: 500, color: "#fff", padding: "16px 32px", transition: "background 0.25s" }}
+            onMouseEnter={(e) => { e.currentTarget.style.background = "#239068"; }}
+            onMouseLeave={(e) => { e.currentTarget.style.background = "#2A9D78"; }}
           >
             {strategicAdvisoryContent.cta.ctaLabel}
-          </a>
+          </button>
         </div>
       </section>
 

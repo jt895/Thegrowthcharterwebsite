@@ -16,3 +16,4 @@ export const growthCharterContent = contentDocument.growthCharter;
 export const howWeWorkContent = contentDocument.howWeWork;
 export const servicesContent = contentDocument.services;
 export const strategicAdvisoryContent = contentDocument.strategicAdvisory;
+export const contactContent = contentDocument.contact;

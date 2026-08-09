@@ -1,13 +1,15 @@
 import LogoMark from "./LogoMark";
 import { footerContent, siteContent } from "../data/content";
 import { editableField } from "../data/editable";
+import { goToContact } from "../lib/contactNav";
 import { pathForPage, type Page } from "../routes";
 
 interface FooterProps {
+  current: Page;
   onNavigate: (page: Page) => void;
 }
 
-export default function Footer({ onNavigate }: FooterProps) {
+export default function Footer({ current, onNavigate }: FooterProps) {
   const nav = (page: Page) => {
     onNavigate(page);
     window.scrollTo({ top: 0 });
@@ -66,9 +68,20 @@ export default function Footer({ onNavigate }: FooterProps) {
               <a href={siteContent.contact.phoneHref} style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, color: "rgba(245,243,238,0.55)", textDecoration: "none" }}>
                 {siteContent.contact.phone}
               </a>
-              <div style={{ marginTop: 12, display: "flex", flexDirection: "column", gap: 8 }}>
-                {footerContent.enquiryLabels.map((label) => (
-                  <p key={label} style={{ fontFamily: "'Inter', sans-serif", fontSize: 12, color: "#9B9B9B", margin: 0 }}>{label}</p>
+              <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, lineHeight: 1.6, color: "#9B9B9B", marginTop: 8 }}>
+                {siteContent.location}
+              </p>
+              <div style={{ marginTop: 4, display: "flex", flexDirection: "column", gap: 8 }}>
+                {(footerContent.enquiryLabels as { label: string; anchor: string }[]).map((item) => (
+                  <button
+                    key={item.anchor}
+                    onClick={() => goToContact(onNavigate, current, item.anchor)}
+                    style={{ background: "none", border: "none", cursor: "pointer", textAlign: "left", padding: 0, fontFamily: "'Inter', sans-serif", fontSize: 12, color: "#9B9B9B", transition: "color 0.2s" }}
+                    onMouseEnter={(e) => { e.currentTarget.style.color = "#2A9D78"; }}
+                    onMouseLeave={(e) => { e.currentTarget.style.color = "#9B9B9B"; }}
+                  >
+                    {item.label}
+                  </button>
                 ))}
               </div>
             </div>

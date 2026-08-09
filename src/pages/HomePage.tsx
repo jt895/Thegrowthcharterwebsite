@@ -1,50 +1,20 @@
 import { useEffect, useRef } from "react";
-import LogoMark from "../components/LogoMark";
-import { homeContent } from "../data/content";
+import { homeContent, siteContent } from "../data/content";
 import { editableField } from "../data/editable";
 import type { Page } from "../routes";
 
 import imgAccolade from "@/imports/accolade.png";
-import imgAmbc from "@/imports/ambc.png";
-import imgAustraliaPost from "@/imports/australia-post.png";
-import imgAustralianAvocados from "@/imports/australian-avocados.jpg";
-import imgBarnardos from "@/imports/barnardos.png";
-import imgBws from "@/imports/bws.png";
-import imgCaltex from "@/imports/caltex.png";
-import imgCcs from "@/imports/ccs.jpeg";
-import imgClipal500 from "@/imports/clipsal-500.jpg";
-import imgCommbank from "@/imports/commbank.png";
-import imgCreditUnionSa from "@/imports/credit-union-sa.png";
-import imgEcsa from "@/imports/ecsa.png";
-import imgFcmb from "@/imports/fcmb.png";
 import imgFord from "@/imports/ford.png";
-import imgGmDaewoo from "@/imports/gm-daewoo.png";
-import imgHipages from "@/imports/hipages.png";
 import imgHyundai from "@/imports/hyundai.png";
 import imgIag from "@/imports/iag.png";
 import imgKaplan from "@/imports/kaplan.png";
-import imgKettle from "@/imports/kettle.png";
-import imgKu from "@/imports/ku.png";
-import imgLocalGov from "@/imports/local-government-logo.png";
-import imgMac from "@/imports/mac.png";
-import imgMillers from "@/imports/millers.png";
-import imgNova from "@/imports/nova.png";
-import imgOnce from "@/imports/once.jpeg";
 import imgPanasonic from "@/imports/panasonic.png";
-import imgPetaluma from "@/imports/petaluma.png";
-import imgQbe from "@/imports/qbe.jpeg";
-import imgQuarantine from "@/imports/quarantine.png";
 import imgSaGovernment from "@/imports/sa-government.png";
-import imgSaLotteries from "@/imports/sa-lotteries.png";
 import imgSmartraveller from "@/imports/smartraveller.jpeg";
-import imgStHallett from "@/imports/st-hallett.png";
 import imgStockland from "@/imports/stockland.png";
 import imgSubaru from "@/imports/subaru.png";
-import imgTafeVictoria from "@/imports/tafe-victoria.png";
-import imgTaubmans from "@/imports/taubmans.png";
 import imgToyota from "@/imports/toyota.png";
 import imgYalumba from "@/imports/yalumba.png";
-import imgYellowtail from "@/imports/yellowtail.png";
 
 interface HomePageProps {
   onNavigate: (page: Page) => void;
@@ -62,54 +32,31 @@ function useReveal() {
   return ref;
 }
 
+// Curated to 10-12 working logos. Previously included CommBank, Yellowtail and
+// hipages marks that render as broken/boxed against the dark treatment.
 const clientLogoImages: { src: string; alt: string }[] = [
-  { src: imgAustraliaPost,      alt: "Australia Post" },
-  { src: imgToyota,             alt: "Toyota" },
-  { src: imgFord,               alt: "Ford" },
-  { src: imgHyundai,            alt: "Hyundai" },
-  { src: imgSubaru,             alt: "Subaru" },
-  { src: imgCommbank,           alt: "CommBank" },
-  { src: imgIag,                alt: "IAG" },
-  { src: imgQbe,                alt: "QBE" },
-  { src: imgPanasonic,          alt: "Panasonic" },
-  { src: imgKaplan,             alt: "Kaplan" },
-  { src: imgStockland,          alt: "Stockland" },
-  { src: imgSaLotteries,        alt: "SA Lotteries" },
-  { src: imgTafeVictoria,       alt: "TAFE Victoria" },
-  { src: imgSmartraveller,      alt: "DFAT Smartraveller" },
-  { src: imgYellowtail,         alt: "Yellowtail" },
-  { src: imgYalumba,            alt: "Yalumba Wines" },
-  { src: imgAccolade,           alt: "Accolade Wines" },
-  { src: imgCaltex,             alt: "Caltex / Woolworths Petroleum JV" },
-  { src: imgBws,                alt: "BWS" },
-  { src: imgBarnardos,          alt: "Barnardos Australia" },
-  { src: imgHipages,            alt: "hipages" },
-  { src: imgKettle,             alt: "Snack Brands Kettle" },
-  { src: imgCcs,                alt: "Snack Brands CC's" },
-  { src: imgMillers,            alt: "Millers" },
-  { src: imgTaubmans,           alt: "Taubmans" },
-  { src: imgCreditUnionSa,      alt: "Credit Union SA" },
-  { src: imgGmDaewoo,           alt: "GM Daewoo" },
-  { src: imgFcmb,               alt: "FCMB" },
-  { src: imgSaGovernment,       alt: "SA Government" },
-  { src: imgMac,                alt: "Motor Accident Commission" },
-  { src: imgQuarantine,         alt: "AQIS Quarantine Matters" },
-  { src: imgAustralianAvocados, alt: "Australian Avocados" },
-  { src: imgEcsa,               alt: "ECSA" },
-  { src: imgKu,                 alt: "KU Children Services" },
-  { src: imgNova,               alt: "Nova Systems" },
-  { src: imgOnce,               alt: "OnceDirect" },
-  { src: imgPetaluma,           alt: "Petaluma Wines" },
-  { src: imgStHallett,          alt: "St Hallett" },
-  { src: imgClipal500,          alt: "Clipsal 500" },
-  { src: imgAmbc,               alt: "AMBC" },
+  { src: imgToyota,        alt: "Toyota" },
+  { src: imgFord,          alt: "Ford" },
+  { src: imgHyundai,       alt: "Hyundai" },
+  { src: imgSubaru,        alt: "Subaru" },
+  { src: imgSmartraveller, alt: "DFAT Smartraveller" },
+  { src: imgYalumba,       alt: "Yalumba Wines" },
+  { src: imgAccolade,      alt: "Accolade Wines" },
+  { src: imgIag,           alt: "IAG" },
+  { src: imgPanasonic,     alt: "Panasonic" },
+  { src: imgStockland,     alt: "Stockland" },
+  { src: imgKaplan,        alt: "Kaplan" },
+  { src: imgSaGovernment,  alt: "SA Government" },
 ];
 
 export default function HomePage({ onNavigate }: HomePageProps) {
   const nav = (page: Page) => { onNavigate(page); window.scrollTo({ top: 0 }); };
+  const scrollToPaths = () => {
+    document.getElementById("two-paths")?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
 
   const heroRef = useRef<SVGSVGElement>(null);
-  const r1 = useReveal(), r2 = useReveal(), r3 = useReveal(), r4 = useReveal(), r5 = useReveal(), r6 = useReveal();
+  const r3 = useReveal(), r4 = useReveal(), r5 = useReveal();
 
   return (
     <div style={{ background: "#1C1C1C", minHeight: "100vh" }}>
@@ -142,9 +89,6 @@ export default function HomePage({ onNavigate }: HomePageProps) {
         </div>
 
         <div style={{ maxWidth: 760, position: "relative" }}>
-          <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 32 }} className="hero-sub">
-            {homeContent.hero.eyebrow}
-          </p>
           <h1 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(42px, 6vw, 76px)", lineHeight: 1.08, color: "#F5F3EE", marginBottom: 32, fontWeight: 400 }} className="hero-title">
             {homeContent.hero.title}
           </h1>
@@ -156,20 +100,12 @@ export default function HomePage({ onNavigate }: HomePageProps) {
           </p>
           <div style={{ display: "flex", gap: 16, flexWrap: "wrap" }} className="hero-cta">
             <button
-              onClick={() => nav("growth-charter")}
+              onClick={scrollToPaths}
               style={{ background: "#2A9D78", border: "none", cursor: "pointer", fontFamily: "'Inter', sans-serif", fontSize: 14, fontWeight: 500, color: "#fff", padding: "16px 32px", letterSpacing: "0.02em", transition: "background 0.25s" }}
               onMouseEnter={(e) => { e.currentTarget.style.background = "#239068"; }}
               onMouseLeave={(e) => { e.currentTarget.style.background = "#2A9D78"; }}
             >
               {homeContent.hero.ctaPrimary}
-            </button>
-            <button
-              onClick={() => nav("how-we-work")}
-              style={{ background: "none", border: "1px solid rgba(42,157,120,0.4)", cursor: "pointer", fontFamily: "'Inter', sans-serif", fontSize: 14, fontWeight: 400, color: "#2A9D78", padding: "16px 32px", letterSpacing: "0.02em", transition: "border-color 0.25s" }}
-              onMouseEnter={(e) => { e.currentTarget.style.borderColor = "#2A9D78"; }}
-              onMouseLeave={(e) => { e.currentTarget.style.borderColor = "rgba(42,157,120,0.4)"; }}
-            >
-              {homeContent.hero.ctaSecondary}
             </button>
           </div>
         </div>
@@ -181,61 +117,31 @@ export default function HomePage({ onNavigate }: HomePageProps) {
         </div>
       </section>
 
-      {/* The Problem */}
-      <section {...editableField("home.problem")} style={{ background: "#161616", padding: "120px 40px" }}>
-        <div style={{ maxWidth: 1280, margin: "0 auto" }}>
-          <div ref={r1} className="reveal" style={{ marginBottom: 64 }}>
-            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 20 }}>{homeContent.problem.eyebrow}</p>
-            <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(32px, 4vw, 52px)", color: "#F5F3EE", fontWeight: 400, lineHeight: 1.15, maxWidth: 640 }}>
-              {homeContent.problem.title}<br />{homeContent.problem.titleLine2}
-            </h2>
-          </div>
-          <div ref={r2} className="reveal reveal-delay-1" style={{ marginBottom: 64 }}>
-            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 16, lineHeight: 1.8, color: "rgba(245,243,238,0.6)", maxWidth: 560 }}>
-              {homeContent.problem.body}
-            </p>
-          </div>
-
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: 1, background: "rgba(255,255,255,0.06)" }}>
-            {homeContent.problem.points.map((item, i) => (
-              <div key={i} style={{ background: "#1C1C1C", padding: "36px 40px", borderLeft: "2px solid #2A9D78", display: "flex", gap: 20, alignItems: "flex-start" }}>
-                <span style={{ fontFamily: "'Instrument Serif', serif", fontSize: 20, color: "#2A9D78", opacity: 0.5, minWidth: 28, marginTop: 2 }}>0{i + 1}</span>
-                <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.65, color: "rgba(245,243,238,0.7)", margin: 0 }}>{item}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Choose Your Path */}
-      <section {...editableField("home.choosePath")} style={{ padding: "120px 40px" }}>
+      {/* Two Paths */}
+      <section id="two-paths" {...editableField("home.twoPaths")} style={{ padding: "120px 40px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
           <div ref={r3} className="reveal" style={{ textAlign: "center", marginBottom: 72 }}>
-            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 20 }}>{homeContent.choosePath.eyebrow}</p>
-            <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(30px, 4vw, 48px)", color: "#F5F3EE", fontWeight: 400, lineHeight: 1.15, marginBottom: 16 }}>
-              {homeContent.choosePath.title}
+            <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(30px, 4vw, 48px)", color: "#F5F3EE", fontWeight: 400, lineHeight: 1.15 }}>
+              {homeContent.twoPaths.title}
             </h2>
-            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 16, color: "#9B9B9B", maxWidth: 480, margin: "0 auto" }}>
-              {homeContent.choosePath.subtitle}
-            </p>
           </div>
 
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 2 }}>
             {/* Advisory */}
             <div style={{ background: "#1E1E1E", padding: "56px 48px", borderTop: "2px solid rgba(155,155,155,0.3)", position: "relative", cursor: "pointer", transition: "border-color 0.3s" }}
-              onClick={() => nav("about")}
+              onClick={() => nav("strategic-advisory")}
               onMouseEnter={(e) => { (e.currentTarget as HTMLDivElement).style.borderTopColor = "#9B9B9B"; }}
               onMouseLeave={(e) => { (e.currentTarget as HTMLDivElement).style.borderTopColor = "rgba(155,155,155,0.3)"; }}
             >
               <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.15em", textTransform: "uppercase", color: "#9B9B9B", marginBottom: 12 }}>
-                {homeContent.choosePath.advisory.eyebrow}
+                {homeContent.twoPaths.advisory.eyebrow}
               </p>
-              <h3 style={{ fontFamily: "'Instrument Serif', serif", fontSize: 32, color: "#F5F3EE", fontWeight: 400, marginBottom: 24 }}>{homeContent.choosePath.advisory.title}</h3>
+              <h3 style={{ fontFamily: "'Instrument Serif', serif", fontSize: 32, color: "#F5F3EE", fontWeight: 400, marginBottom: 24 }}>{homeContent.twoPaths.advisory.title}</h3>
               <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.75, color: "rgba(245,243,238,0.55)", marginBottom: 40 }}>
-                {homeContent.choosePath.advisory.body}
+                {homeContent.twoPaths.advisory.body}
               </p>
               <div style={{ display: "flex", alignItems: "center", gap: 8, color: "#9B9B9B" }}>
-                <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, letterSpacing: "0.05em" }}>{homeContent.choosePath.advisory.cta}</span>
+                <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, letterSpacing: "0.05em" }}>{homeContent.twoPaths.advisory.cta}</span>
                 <span style={{ fontSize: 16 }}>→</span>
               </div>
             </div>
@@ -247,14 +153,14 @@ export default function HomePage({ onNavigate }: HomePageProps) {
               onMouseLeave={(e) => { (e.currentTarget as HTMLDivElement).style.background = "#1A2820"; }}
             >
               <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.15em", textTransform: "uppercase", color: "#8FD9BE", marginBottom: 12 }}>
-                {homeContent.choosePath.growthCharter.eyebrow}
+                {homeContent.twoPaths.growthCharter.eyebrow}
               </p>
-              <h3 style={{ fontFamily: "'Instrument Serif', serif", fontSize: 32, color: "#F5F3EE", fontWeight: 400, marginBottom: 24 }}>{homeContent.choosePath.growthCharter.title}</h3>
+              <h3 style={{ fontFamily: "'Instrument Serif', serif", fontSize: 32, color: "#F5F3EE", fontWeight: 400, marginBottom: 24 }}>{homeContent.twoPaths.growthCharter.title}</h3>
               <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.75, color: "rgba(245,243,238,0.55)", marginBottom: 40 }}>
-                {homeContent.choosePath.growthCharter.body}
+                {homeContent.twoPaths.growthCharter.body}
               </p>
               <div style={{ display: "flex", alignItems: "center", gap: 8, color: "#2A9D78" }}>
-                <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, letterSpacing: "0.05em" }}>{homeContent.choosePath.growthCharter.cta}</span>
+                <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, letterSpacing: "0.05em" }}>{homeContent.twoPaths.growthCharter.cta}</span>
                 <span style={{ fontSize: 16 }}>→</span>
               </div>
             </div>
@@ -271,13 +177,13 @@ export default function HomePage({ onNavigate }: HomePageProps) {
               {homeContent.whyTur.title}
             </h2>
           </div>
-          <div ref={r5} className="reveal reveal-delay-1" style={{ marginBottom: 80 }}>
+          <div className="reveal reveal-delay-1" style={{ marginBottom: 80 }}>
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 16, lineHeight: 1.8, color: "rgba(245,243,238,0.55)", maxWidth: 680 }}>
               {homeContent.whyTur.body}
             </p>
           </div>
 
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 2 }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 2 }}>
             {homeContent.whyTur.pillars.map((item, i) => (
               <div key={i} style={{ background: "#1C1C1C", padding: "40px", borderTop: "1px solid rgba(42,157,120,0.3)" }}>
                 <h3 style={{ fontFamily: "'Instrument Serif', serif", fontSize: 22, color: "#F5F3EE", fontWeight: 400, marginBottom: 16 }}>{item.title}</h3>
@@ -288,43 +194,18 @@ export default function HomePage({ onNavigate }: HomePageProps) {
         </div>
       </section>
 
-      {/* Results */}
-      <section {...editableField("home.results")} style={{ padding: "120px 40px" }}>
-        <div style={{ maxWidth: 1280, margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1fr", gap: 80, alignItems: "center" }}>
-          <div ref={r6} className="reveal">
-            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 20 }}>{homeContent.results.eyebrow}</p>
-            <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(30px, 3.5vw, 44px)", color: "#F5F3EE", fontWeight: 400, lineHeight: 1.2, marginBottom: 24 }}>
-              {homeContent.results.title}
-            </h2>
-            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.8, color: "rgba(245,243,238,0.55)", marginBottom: 40 }}>
-              {homeContent.results.body}
-            </p>
-            <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
-              {homeContent.results.points.map((item, i) => (
-                <div key={i} style={{ display: "flex", gap: 16, alignItems: "flex-start" }}>
-                  <div style={{ width: 6, height: 6, borderRadius: "50%", background: "#2A9D78", marginTop: 8, flexShrink: 0 }} />
-                  <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, lineHeight: 1.7, color: "rgba(245,243,238,0.65)", margin: 0 }}>{item}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-          <div>
-            <div style={{ padding: "48px", background: "#161616", borderLeft: "2px solid #2A9D78" }}>
-              <p style={{ fontFamily: "'Instrument Serif', serif", fontSize: 52, color: "#2A9D78", fontWeight: 400, lineHeight: 1, marginBottom: 8 }}>{homeContent.results.stat.value}</p>
-              <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, color: "#9B9B9B", lineHeight: 1.6 }}>
-                {homeContent.results.stat.label}
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Client logos */}
-      <section {...editableField("home.clientLogos")} style={{ background: "#161616", padding: "100px 40px" }}>
+      {/* Credibility */}
+      <section {...editableField("home.credibility")} style={{ padding: "120px 40px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
-          <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#9B9B9B", marginBottom: 56, textAlign: "center" }}>
-            {homeContent.clientLogos.label}
-          </p>
+          <div ref={r5} className="reveal" style={{ marginBottom: 56, textAlign: "center" }}>
+            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 20 }}>{homeContent.credibility.eyebrow}</p>
+            <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(30px, 3.5vw, 44px)", color: "#F5F3EE", fontWeight: 400, lineHeight: 1.2, marginBottom: 20 }}>
+              {homeContent.credibility.title}
+            </h2>
+            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.8, color: "rgba(245,243,238,0.55)", maxWidth: 640, margin: "0 auto" }}>
+              {homeContent.credibility.body}
+            </p>
+          </div>
 
           {/* Image logos grid */}
           <div style={{
@@ -393,16 +274,16 @@ export default function HomePage({ onNavigate }: HomePageProps) {
             {homeContent.cta.body}
           </p>
           <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
-            <button
-              onClick={() => nav("growth-charter")}
-              style={{ background: "#2A9D78", border: "none", cursor: "pointer", fontFamily: "'Inter', sans-serif", fontSize: 14, fontWeight: 500, color: "#fff", padding: "16px 32px", transition: "background 0.25s" }}
-              onMouseEnter={(e) => { e.currentTarget.style.background = "#239068"; }}
-              onMouseLeave={(e) => { e.currentTarget.style.background = "#2A9D78"; }}
+            <a
+              href={`mailto:${siteContent.contact.email}`}
+              style={{ background: "#2A9D78", border: "none", cursor: "pointer", fontFamily: "'Inter', sans-serif", fontSize: 14, fontWeight: 500, color: "#fff", padding: "16px 32px", textDecoration: "none", display: "inline-block", transition: "background 0.25s" }}
+              onMouseEnter={(e) => { (e.currentTarget as HTMLAnchorElement).style.background = "#239068"; }}
+              onMouseLeave={(e) => { (e.currentTarget as HTMLAnchorElement).style.background = "#2A9D78"; }}
             >
               {homeContent.cta.ctaPrimary}
-            </button>
+            </a>
             <button
-              onClick={() => nav("about")}
+              onClick={() => nav("how-we-work")}
               style={{ background: "none", border: "1px solid rgba(255,255,255,0.15)", cursor: "pointer", fontFamily: "'Inter', sans-serif", fontSize: 14, fontWeight: 400, color: "rgba(245,243,238,0.6)", padding: "16px 32px", transition: "border-color 0.25s" }}
               onMouseEnter={(e) => { e.currentTarget.style.borderColor = "rgba(255,255,255,0.4)"; }}
               onMouseLeave={(e) => { e.currentTarget.style.borderColor = "rgba(255,255,255,0.15)"; }}

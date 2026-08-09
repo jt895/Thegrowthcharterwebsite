@@ -2,7 +2,10 @@ import React from 'react'
 import { createRoot, hydrateRoot } from 'react-dom/client'
 import App from './App'
 import './index.css'
+import { initAnalytics } from './lib/analytics'
 import { pageFromPath } from './routes'
+
+initAnalytics()
 
 const root = document.getElementById('root')!
 const app = (

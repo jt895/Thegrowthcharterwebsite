@@ -15,6 +15,46 @@
   <body>
     <!-- figma:body-start -->
     <div id="root"></div>
+
+    <!--
+      Static Netlify Forms declarations.
+      This is a client-rendered React app, so Netlify's build-time HTML scan
+      never sees the real forms rendered from src/components/EnquiryForm.tsx
+      unless it's looking at prerendered output. These hidden duplicates give
+      Netlify's form parser a plain-HTML copy of every field name so each form
+      is registered and ready to receive submissions regardless. They are never
+      shown to visitors and never submitted directly.
+    -->
+    <div hidden>
+      <form name="growth-charter-enquiry" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="growth-charter-enquiry" />
+        <input type="hidden" name="source-page" value="" />
+        <input type="text" name="bot-field" />
+        <input type="text" name="name" />
+        <input type="text" name="business" />
+        <input type="email" name="email" />
+        <input type="tel" name="phone" />
+        <textarea name="message"></textarea>
+      </form>
+      <form name="strategic-advisory-enquiry" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="strategic-advisory-enquiry" />
+        <input type="hidden" name="source-page" value="" />
+        <input type="text" name="bot-field" />
+        <input type="text" name="name" />
+        <input type="text" name="organisation" />
+        <input type="email" name="email" />
+        <input type="tel" name="phone" />
+        <textarea name="message"></textarea>
+      </form>
+      <form name="charter-course-waitlist" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="charter-course-waitlist" />
+        <input type="hidden" name="source-page" value="" />
+        <input type="text" name="bot-field" />
+        <input type="text" name="name" />
+        <input type="email" name="email" />
+      </form>
+    </div>
+
     <script type="module" src="/src/main.tsx"></script>
     <!-- figma:body-end -->
   </body>

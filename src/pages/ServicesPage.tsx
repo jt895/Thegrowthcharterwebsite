@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
-import { servicesContent, siteContent } from "../data/content";
+import { servicesContent } from "../data/content";
 import { editableField } from "../data/editable";
+import { goToContact } from "../lib/contactNav";
 import type { Page } from "../routes";
 
 interface ServicesPageProps {
@@ -62,10 +63,12 @@ function ServiceCard({ service, index }: ServiceCardProps) {
           <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 600, letterSpacing: "0.12em", textTransform: "uppercase", color: "#9B9B9B", marginBottom: 14 }}>When to use this</p>
           <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, lineHeight: 1.8, color: "rgba(245,243,238,0.5)" }}>{service.when}</p>
         </div>
-        <div style={{ background: "#161616", padding: "24px 28px", borderLeft: "2px solid rgba(42,157,120,0.3)" }}>
-          <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 600, letterSpacing: "0.12em", textTransform: "uppercase", color: "#9B9B9B", marginBottom: 12 }}>Execution support</p>
-          <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, lineHeight: 1.75, color: "rgba(245,243,238,0.45)", margin: 0 }}>{service.execution}</p>
-        </div>
+        {service.execution && (
+          <div style={{ background: "#161616", padding: "24px 28px", borderLeft: "2px solid rgba(42,157,120,0.3)" }}>
+            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 600, letterSpacing: "0.12em", textTransform: "uppercase", color: "#9B9B9B", marginBottom: 12 }}>Execution support</p>
+            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, lineHeight: 1.75, color: "rgba(245,243,238,0.45)", margin: 0 }}>{service.execution}</p>
+          </div>
+        )}
       </div>
     </div>
   );
@@ -94,8 +97,45 @@ export default function ServicesPage({ onNavigate }: ServicesPageProps) {
         </div>
       </section>
 
+      {/* Quote block — relocated here from the foot of the page */}
+      <section {...editableField("services.quoteBlock")} style={{ padding: "0 40px 60px" }}>
+        <div style={{ maxWidth: 1280, margin: "0 auto" }}>
+          <div style={{ maxWidth: 820, margin: "0 auto", background: "#1A2820", borderLeft: "2px solid #2A9D78", padding: "28px 36px" }}>
+            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, lineHeight: 1.75, color: "rgba(245,243,238,0.6)", margin: 0, fontStyle: "italic" }}>
+              {servicesContent.quoteBlock}
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Sequence */}
+      <section {...editableField("services.sequence")} style={{ background: "#161616", padding: "80px 40px" }}>
+        <div style={{ maxWidth: 1280, margin: "0 auto" }}>
+          <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(26px, 3vw, 38px)", color: "#F5F3EE", fontWeight: 400, lineHeight: 1.2, textAlign: "center", marginBottom: 48 }}>
+            {servicesContent.sequence.title}
+          </h2>
+          <div style={{ display: "flex", flexDirection: "column", gap: 1, marginBottom: 40 }}>
+            {servicesContent.sequence.steps.map((step, i) => (
+              <div key={step.num} style={{ display: "grid", gridTemplateColumns: "60px 1fr", gap: 24, padding: "24px 0", borderTop: i === 0 ? "2px solid #2A9D78" : "1px solid rgba(255,255,255,0.07)", alignItems: "center" }}>
+                <span style={{ fontFamily: "'Instrument Serif', serif", fontSize: 28, color: "rgba(42,157,120,0.4)", fontWeight: 400 }}>{step.num}</span>
+                <div style={{ display: "flex", gap: 16, alignItems: "baseline", flexWrap: "wrap" }}>
+                  <h3 style={{ fontFamily: "'Instrument Serif', serif", fontSize: 18, color: "#F5F3EE", fontWeight: 400, margin: 0 }}>{step.title}</h3>
+                  <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, color: "rgba(245,243,238,0.5)", margin: 0 }}>{step.body}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+          <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, lineHeight: 1.8, color: "rgba(245,243,238,0.55)", maxWidth: 720, margin: "0 auto 12px" }}>
+            {servicesContent.sequence.noteA}
+          </p>
+          <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, lineHeight: 1.8, color: "rgba(245,243,238,0.45)", maxWidth: 720, margin: "0 auto" }}>
+            {servicesContent.sequence.noteB}
+          </p>
+        </div>
+      </section>
+
       {/* Services index */}
-      <section {...editableField("services.services")} style={{ background: "#161616", padding: "60px 40px" }}>
+      <section {...editableField("services.services")} style={{ padding: "60px 40px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
           <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#9B9B9B", marginBottom: 40, textAlign: "center" }}>
             {servicesContent.indexLabel}
@@ -126,17 +166,6 @@ export default function ServicesPage({ onNavigate }: ServicesPageProps) {
         </div>
       </section>
 
-      {/* Note */}
-      <section {...editableField("services.note")} style={{ background: "#161616", padding: "0 40px 40px" }}>
-        <div style={{ maxWidth: 1280, margin: "0 auto" }}>
-          <div style={{ background: "#1A2820", borderLeft: "2px solid #2A9D78", padding: "28px 36px" }}>
-            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, lineHeight: 1.75, color: "rgba(245,243,238,0.6)", margin: 0, fontStyle: "italic" }}>
-              {servicesContent.note}
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* Service cards */}
       <section {...editableField("services.services")} style={{ padding: "80px 40px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto", display: "flex", flexDirection: "column", gap: 2 }}>
@@ -145,30 +174,22 @@ export default function ServicesPage({ onNavigate }: ServicesPageProps) {
       </section>
 
       {/* CTA */}
-      <section {...editableField("services.cta")} style={{ background: "#161616", padding: "80px 40px" }}>
-        <div style={{ maxWidth: 1280, margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1fr", gap: 64, alignItems: "center" }}>
-          <div>
-            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.15em", textTransform: "uppercase", color: "#9B9B9B", marginBottom: 16 }}>{servicesContent.cta.eyebrow}</p>
-            <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(24px, 3vw, 36px)", color: "#F5F3EE", fontWeight: 400, lineHeight: 1.25, marginBottom: 20 }}>
-              {servicesContent.cta.title}
-            </h2>
-            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.7, color: "rgba(245,243,238,0.45)", marginBottom: 36 }}>
-              {servicesContent.cta.body}
-            </p>
-            <a
-              href={`mailto:${siteContent.contact.email}`}
-              style={{ background: "#2A9D78", fontFamily: "'Inter', sans-serif", fontSize: 14, fontWeight: 500, color: "#fff", padding: "16px 32px", textDecoration: "none", display: "inline-block", transition: "background 0.25s" }}
-              onMouseEnter={(e) => { (e.currentTarget as HTMLAnchorElement).style.background = "#239068"; }}
-              onMouseLeave={(e) => { (e.currentTarget as HTMLAnchorElement).style.background = "#2A9D78"; }}
-            >
-              {servicesContent.cta.ctaLabel}
-            </a>
-          </div>
-          <div style={{ background: "#1A2820", padding: "48px", borderLeft: "2px solid #2A9D78" }}>
-            <p style={{ fontFamily: "'Instrument Serif', serif", fontSize: 18, color: "#8FD9BE", fontWeight: 400, lineHeight: 1.6, fontStyle: "italic", margin: 0 }}>
-              "{servicesContent.cta.quote}"
-            </p>
-          </div>
+      <section {...editableField("services.cta")} style={{ background: "#161616", padding: "80px 40px", textAlign: "center" }}>
+        <div style={{ maxWidth: 560, margin: "0 auto" }}>
+          <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(24px, 3vw, 36px)", color: "#F5F3EE", fontWeight: 400, lineHeight: 1.25, marginBottom: 20 }}>
+            {servicesContent.cta.title}
+          </h2>
+          <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.7, color: "rgba(245,243,238,0.45)", marginBottom: 36 }}>
+            {servicesContent.cta.body}
+          </p>
+          <button
+            onClick={() => goToContact(onNavigate, "services", "strategic-advisory-enquiry")}
+            style={{ background: "#2A9D78", border: "none", cursor: "pointer", fontFamily: "'Inter', sans-serif", fontSize: 14, fontWeight: 500, color: "#fff", padding: "16px 32px", transition: "background 0.25s" }}
+            onMouseEnter={(e) => { e.currentTarget.style.background = "#239068"; }}
+            onMouseLeave={(e) => { e.currentTarget.style.background = "#2A9D78"; }}
+          >
+            {servicesContent.cta.ctaLabel}
+          </button>
         </div>
       </section>
 

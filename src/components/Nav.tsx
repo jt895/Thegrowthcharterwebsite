@@ -192,13 +192,16 @@ export default function Nav({ current, onNavigate }: NavProps) {
             </a>
 
             <a
-              href={`mailto:${siteContent.contact.email}`}
+              href={pathForPage("contact")}
+              onClick={(event) => handleLink(event, "contact")}
               style={{
                 background: "none",
                 border: "1px solid rgba(42,157,120,0.5)",
+                cursor: "pointer",
                 fontFamily: "'Inter', sans-serif", fontSize: 12, fontWeight: 500,
                 letterSpacing: "0.08em", textTransform: "uppercase",
-                color: "#2A9D78", padding: "8px 20px",
+                color: current === "contact" ? "#F5F3EE" : "#2A9D78",
+                padding: "8px 20px",
                 textDecoration: "none", display: "inline-block",
                 transition: "border-color 0.25s, background 0.25s",
               }}

@@ -4,7 +4,8 @@ export type Page =
   | "how-we-work"
   | "services"
   | "strategic-advisory"
-  | "growth-charter";
+  | "growth-charter"
+  | "contact";
 
 export interface SiteRoute {
   page: Page;
@@ -19,35 +20,35 @@ export const siteRoutes: SiteRoute[] = [
     path: "/",
     title: "The United Republic | Strategy and Business Growth",
     description:
-      "Independent strategic advisory and practical growth support for established Australian businesses and complex organisations.",
+      "Strategy and growth for Australian businesses and complex organisations. We find where growth is really available, set the priorities and build the capability to act. Based in South Australia.",
   },
   {
     page: "about",
     path: "/about/",
     title: "About | The United Republic",
     description:
-      "Meet The United Republic, an independent Australian strategy, growth and communications advisory led by senior practitioners.",
+      "The United Republic is an independent Australian strategy and growth advisory led by James Trebilcock — 25 years across government, major brands and owner-led business. Based in South Australia.",
   },
   {
     page: "how-we-work",
     path: "/how-we-work/",
     title: "How We Work | The United Republic",
     description:
-      "Discover The United Republic's evidence-led process for defining opportunities, setting priorities and building practical capability.",
+      "How The United Republic works — diagnose, design, direct and measure. Problem definition through to briefing and guiding the specialists who deliver the work.",
   },
   {
     page: "services",
     path: "/services/",
     title: "Services | The United Republic",
     description:
-      "Explore strategic diagnostics, strategy development, implementation guidance and ongoing strategic leadership services.",
+      "Strategic diagnostics, strategy development, embedded strategic leadership and fractional CMO services for organisations that need the real problem defined before they invest.",
   },
   {
     page: "strategic-advisory",
     path: "/strategic-advisory/",
     title: "Strategic Advisory | The United Republic",
     description:
-      "Independent strategic advisory for government, brands and complex organisations that need clarity before execution.",
+      "Independent strategic advisory for government, brands and complex organisations. We define the real problem, build the strategy and brief the specialists who deliver it.",
   },
   {
     page: "growth-charter",
@@ -55,6 +56,13 @@ export const siteRoutes: SiteRoute[] = [
     title: "The Growth Charter | The United Republic",
     description:
       "A practical growth program that helps Australian businesses identify commercial opportunities, choose priorities and act with confidence.",
+  },
+  {
+    page: "contact",
+    path: "/contact/",
+    title: "Contact | The United Republic",
+    description:
+      "Get in touch with The United Republic. A twenty-minute conversation about what you're trying to change, and whether we're the right people to help.",
   },
 ];
 

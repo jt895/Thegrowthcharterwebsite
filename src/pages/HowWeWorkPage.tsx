@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { howWeWorkContent } from "../data/content";
+import { howWeWorkContent, siteContent } from "../data/content";
 import { editableField } from "../data/editable";
 import type { Page } from "../routes";
 
@@ -102,17 +102,30 @@ export default function HowWeWorkPage({ onNavigate }: HowWeWorkPageProps) {
       <section {...editableField("howWeWork.cta")} style={{ background: "#0B5E48", padding: "80px 40px", textAlign: "center" }}>
         <div style={{ maxWidth: 680, margin: "0 auto" }}>
           <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, letterSpacing: "0.08em", textTransform: "uppercase", color: "rgba(143,217,190,0.7)", marginBottom: 20 }}>{howWeWorkContent.cta.eyebrow}</p>
-          <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(24px, 3vw, 36px)", color: "#F5F3EE", fontWeight: 400, lineHeight: 1.3, marginBottom: 32 }}>
+          <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(24px, 3vw, 36px)", color: "#F5F3EE", fontWeight: 400, lineHeight: 1.3, marginBottom: 20 }}>
             {howWeWorkContent.cta.title}
           </h2>
-          <button
-            onClick={() => nav("services")}
-            style={{ background: "rgba(255,255,255,0.1)", border: "1px solid rgba(255,255,255,0.25)", cursor: "pointer", fontFamily: "'Inter', sans-serif", fontSize: 14, fontWeight: 500, color: "#fff", padding: "16px 36px", transition: "background 0.25s" }}
-            onMouseEnter={(e) => { e.currentTarget.style.background = "rgba(255,255,255,0.18)"; }}
-            onMouseLeave={(e) => { e.currentTarget.style.background = "rgba(255,255,255,0.1)"; }}
-          >
-            {howWeWorkContent.cta.ctaLabel}
-          </button>
+          <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.75, color: "rgba(245,243,238,0.7)", marginBottom: 32 }}>
+            {howWeWorkContent.cta.body}
+          </p>
+          <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
+            <a
+              href={`mailto:${siteContent.contact.email}`}
+              style={{ background: "rgba(255,255,255,0.1)", border: "1px solid rgba(255,255,255,0.25)", cursor: "pointer", fontFamily: "'Inter', sans-serif", fontSize: 14, fontWeight: 500, color: "#fff", padding: "16px 36px", textDecoration: "none", display: "inline-block", transition: "background 0.25s" }}
+              onMouseEnter={(e) => { (e.currentTarget as HTMLAnchorElement).style.background = "rgba(255,255,255,0.18)"; }}
+              onMouseLeave={(e) => { (e.currentTarget as HTMLAnchorElement).style.background = "rgba(255,255,255,0.1)"; }}
+            >
+              {howWeWorkContent.cta.ctaLabel}
+            </a>
+            <button
+              onClick={() => nav("services")}
+              style={{ background: "none", border: "1px solid rgba(255,255,255,0.25)", cursor: "pointer", fontFamily: "'Inter', sans-serif", fontSize: 14, fontWeight: 400, color: "rgba(255,255,255,0.8)", padding: "16px 36px", transition: "border-color 0.25s" }}
+              onMouseEnter={(e) => { e.currentTarget.style.borderColor = "rgba(255,255,255,0.5)"; }}
+              onMouseLeave={(e) => { e.currentTarget.style.borderColor = "rgba(255,255,255,0.25)"; }}
+            >
+              {howWeWorkContent.cta.ctaSecondaryLabel}
+            </button>
+          </div>
         </div>
       </section>
     </div>

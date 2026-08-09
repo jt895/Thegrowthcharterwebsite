@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import SpinningRingMark from "../components/SpinningRingMark";
-import { growthCharterContent } from "../data/content";
+import { growthCharterContent, siteContent } from "../data/content";
 import { editableField } from "../data/editable";
 import type { Page } from "../routes";
 
@@ -22,6 +22,9 @@ function useReveal() {
 
 export default function GrowthCharterPage({ onNavigate }: GrowthCharterPageProps) {
   const nav = (page: Page) => { onNavigate(page); window.scrollTo({ top: 0 }); };
+  const scrollToWaysToWork = () => {
+    document.getElementById("ways-to-work")?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
 
   return (
     <div style={{ background: "#1C1C1C", minHeight: "100vh" }}>
@@ -44,22 +47,20 @@ export default function GrowthCharterPage({ onNavigate }: GrowthCharterPageProps
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 17, lineHeight: 1.75, color: "rgba(245,243,238,0.6)", maxWidth: 640, marginBottom: 16 }} className="hero-sub">
               {growthCharterContent.hero.paraA}
             </p>
-            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.75, color: "rgba(245,243,238,0.45)", maxWidth: 580, marginBottom: 12 }} className="hero-sub">
+            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.75, color: "rgba(245,243,238,0.45)", maxWidth: 580, marginBottom: 48 }} className="hero-sub">
               {growthCharterContent.hero.paraB}
             </p>
-            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, lineHeight: 1.7, color: "rgba(245,243,238,0.3)", maxWidth: 560, marginBottom: 48, fontStyle: "italic" }} className="hero-sub">
-              {growthCharterContent.hero.paraC}
-            </p>
             <div style={{ display: "flex", gap: 16, flexWrap: "wrap" }} className="hero-cta">
-              <button
-                style={{ background: "#2A9D78", border: "none", cursor: "pointer", fontFamily: "'Inter', sans-serif", fontSize: 14, fontWeight: 500, color: "#fff", padding: "16px 32px", transition: "background 0.25s" }}
-                onMouseEnter={(e) => { e.currentTarget.style.background = "#239068"; }}
-                onMouseLeave={(e) => { e.currentTarget.style.background = "#2A9D78"; }}
+              <a
+                href={`mailto:${siteContent.contact.email}`}
+                style={{ background: "#2A9D78", border: "none", cursor: "pointer", fontFamily: "'Inter', sans-serif", fontSize: 14, fontWeight: 500, color: "#fff", padding: "16px 32px", textDecoration: "none", display: "inline-block", transition: "background 0.25s" }}
+                onMouseEnter={(e) => { (e.currentTarget as HTMLAnchorElement).style.background = "#239068"; }}
+                onMouseLeave={(e) => { (e.currentTarget as HTMLAnchorElement).style.background = "#2A9D78"; }}
               >
                 {growthCharterContent.hero.ctaPrimary}
-              </button>
+              </a>
               <button
-                onClick={() => nav("how-we-work")}
+                onClick={scrollToWaysToWork}
                 style={{ background: "none", border: "1px solid rgba(42,157,120,0.4)", cursor: "pointer", fontFamily: "'Inter', sans-serif", fontSize: 14, color: "#2A9D78", padding: "16px 32px", transition: "border-color 0.25s" }}
                 onMouseEnter={(e) => { e.currentTarget.style.borderColor = "#2A9D78"; }}
                 onMouseLeave={(e) => { e.currentTarget.style.borderColor = "rgba(42,157,120,0.4)"; }}
@@ -104,7 +105,7 @@ export default function GrowthCharterPage({ onNavigate }: GrowthCharterPageProps
       </section>
 
       {/* Ways to work together */}
-      <section {...editableField("growthCharter.waysToWork")} style={{ background: "#161616", padding: "100px 40px" }}>
+      <section id="ways-to-work" {...editableField("growthCharter.waysToWork")} style={{ background: "#161616", padding: "100px 40px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
           <div style={{ marginBottom: 56 }}>
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 16 }}>{growthCharterContent.waysToWork.eyebrow}</p>
@@ -120,30 +121,6 @@ export default function GrowthCharterPage({ onNavigate }: GrowthCharterPageProps
                 <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 12, color: "#2A9D78", fontStyle: "italic" }}>{mode.note}</p>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Why good businesses plateau */}
-      <section {...editableField("growthCharter.plateau")} style={{ background: "#161616", padding: "100px 40px" }}>
-        <div style={{ maxWidth: 1280, margin: "0 auto" }}>
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1.5fr", gap: 80, alignItems: "start" }}>
-            <div>
-              <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(28px, 3.5vw, 44px)", color: "#F5F3EE", fontWeight: 400, lineHeight: 1.2, marginBottom: 24 }}>
-                {growthCharterContent.plateau.title}
-              </h2>
-              <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.8, color: "rgba(245,243,238,0.5)" }}>
-                {growthCharterContent.plateau.body}
-              </p>
-            </div>
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 2 }}>
-              {growthCharterContent.plateau.points.map((item, i) => (
-                <div key={i} style={{ background: "#1C1C1C", padding: "28px 24px", borderLeft: "2px solid #2A9D78", display: "flex", gap: 12, alignItems: "flex-start" }}>
-                  <div style={{ width: 4, height: 4, borderRadius: "50%", background: "#2A9D78", marginTop: 9, flexShrink: 0 }} />
-                  <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, lineHeight: 1.65, color: "rgba(245,243,238,0.65)", margin: 0 }}>{item}</p>
-                </div>
-              ))}
-            </div>
           </div>
         </div>
       </section>
@@ -200,27 +177,6 @@ export default function GrowthCharterPage({ onNavigate }: GrowthCharterPageProps
         </div>
       </section>
 
-      {/* What you leave with */}
-      <section {...editableField("growthCharter.whatYouLeaveWith")} style={{ padding: "100px 40px" }}>
-        <div style={{ maxWidth: 1280, margin: "0 auto" }}>
-          <div style={{ marginBottom: 56 }}>
-            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 16 }}>{growthCharterContent.whatYouLeaveWith.eyebrow}</p>
-            <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(26px, 3vw, 38px)", color: "#F5F3EE", fontWeight: 400, lineHeight: 1.2 }}>
-              {growthCharterContent.whatYouLeaveWith.title}
-            </h2>
-          </div>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 2 }}>
-            {growthCharterContent.whatYouLeaveWith.points.map((item, i) => (
-              <div key={i} style={{ background: "#1E1E1E", padding: "32px 28px", display: "flex", gap: 16, alignItems: "flex-start", borderTop: "1px solid rgba(42,157,120,0.25)" }}>
-                <div style={{ width: 6, height: 6, borderRadius: "50%", background: "#2A9D78", marginTop: 8, flexShrink: 0 }} />
-                <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, lineHeight: 1.7, color: "rgba(245,243,238,0.6)", margin: 0 }}>{item}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-
       {/* Why TUR */}
       <section {...editableField("growthCharter.whyTur")} style={{ padding: "100px 40px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1fr", gap: 80 }}>
@@ -260,13 +216,14 @@ export default function GrowthCharterPage({ onNavigate }: GrowthCharterPageProps
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.85, color: "rgba(245,243,238,0.6)", marginBottom: 32 }}>
               {growthCharterContent.fitCheck.body}
             </p>
-            <button
-              style={{ background: "#2A9D78", border: "none", cursor: "pointer", fontFamily: "'Inter', sans-serif", fontSize: 14, fontWeight: 500, color: "#fff", padding: "16px 32px", transition: "background 0.25s" }}
-              onMouseEnter={(e) => { e.currentTarget.style.background = "#239068"; }}
-              onMouseLeave={(e) => { e.currentTarget.style.background = "#2A9D78"; }}
+            <a
+              href={`mailto:${siteContent.contact.email}`}
+              style={{ background: "#2A9D78", border: "none", cursor: "pointer", fontFamily: "'Inter', sans-serif", fontSize: 14, fontWeight: 500, color: "#fff", padding: "16px 32px", textDecoration: "none", display: "inline-block", transition: "background 0.25s" }}
+              onMouseEnter={(e) => { (e.currentTarget as HTMLAnchorElement).style.background = "#239068"; }}
+              onMouseLeave={(e) => { (e.currentTarget as HTMLAnchorElement).style.background = "#2A9D78"; }}
             >
               {growthCharterContent.fitCheck.cta}
-            </button>
+            </a>
           </div>
           <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
             {growthCharterContent.fitCheck.points.map((item, i) => (

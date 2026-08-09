@@ -7,6 +7,8 @@ import HowWeWorkPage from "./pages/HowWeWorkPage";
 import ServicesPage from "./pages/ServicesPage";
 import StrategicAdvisoryPage from "./pages/StrategicAdvisoryPage";
 import GrowthCharterPage from "./pages/GrowthCharterPage";
+import ContactPage from "./pages/ContactPage";
+import { trackPageview } from "./lib/analytics";
 import { pageFromPath, pathForPage, updateDocumentMetadata, type Page } from "./routes";
 
 interface AppProps {
@@ -27,6 +29,7 @@ export default function App({ initialPage = "home" }: AppProps) {
   useEffect(() => {
     updateDocumentMetadata(page);
     window.scrollTo({ top: 0 });
+    trackPageview(pathForPage(page));
   }, [page]);
 
   useEffect(() => {
@@ -43,6 +46,7 @@ export default function App({ initialPage = "home" }: AppProps) {
       case "strategic-advisory": return <StrategicAdvisoryPage onNavigate={navigate} />;
       case "services": return <ServicesPage onNavigate={navigate} />;
       case "growth-charter": return <GrowthCharterPage onNavigate={navigate} />;
+      case "contact": return <ContactPage onNavigate={navigate} />;
     }
   };
 
@@ -50,7 +54,7 @@ export default function App({ initialPage = "home" }: AppProps) {
     <div style={{ background: "#1C1C1C", minHeight: "100vh" }}>
       <Nav current={page} onNavigate={navigate} />
       <main>{renderPage()}</main>
-      <Footer onNavigate={navigate} />
+      <Footer current={page} onNavigate={navigate} />
     </div>
   );
 }
