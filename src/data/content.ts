@@ -18,3 +18,4 @@ export const servicesContent = contentDocument.services;
 export const strategicAdvisoryContent = contentDocument.strategicAdvisory;
 export const contactContent = contentDocument.contact;
 export const charterCourseContent = contentDocument.charterCourse;
+export const caseStudiesContent = contentDocument.caseStudies;

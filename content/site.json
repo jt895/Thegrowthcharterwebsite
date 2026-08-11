@@ -972,5 +972,150 @@
       "heading": "Join the waitlist",
       "intro": "People on the list get early access and foundation pricing."
     }
+  },
+  "caseStudies": {
+    "index": {
+      "eyebrow": "Our Work",
+      "title": "Case studies",
+      "paraA": "Selected work across government, behaviour change, brand strategy and product launches — including some of Australia's largest brands and most complex stakeholder environments.",
+      "paraB": "Every one of these started with a brief that described a symptom. The work was finding what was actually wrong.",
+      "filterAll": "All",
+      "filterStrategicAdvisory": "Strategic Advisory",
+      "filterGrowthCharter": "The Growth Charter",
+      "comingSoonLabel": "Coming soon"
+    },
+    "items": [
+      {
+        "slug": "toyota-lifetime-advantages",
+        "logo": "/case-studies/toyota-logo.png",
+        "sectorTags": ["Automotive", "Brand strategy"],
+        "filters": ["strategic-advisory", "growth-charter"],
+        "title": "Toyota — A Lifetime of Advantages",
+        "summary": "Korean brands were winning on price. The research found Toyota was already winning the argument that actually mattered.",
+        "linked": false
+      },
+      {
+        "slug": "ford-six-model-launches",
+        "logo": "/case-studies/ford-logo.png",
+        "sectorTags": ["Automotive", "Launch strategy"],
+        "filters": ["strategic-advisory"],
+        "title": "Ford — Six Model Launches in Six Months",
+        "summary": "Six launches is not one problem six times. The work was sequencing and proportion, not six campaigns.",
+        "linked": false
+      },
+      {
+        "slug": "commbank-little-card-big-rewards",
+        "logo": "/case-studies/commbank-logo.png",
+        "sectorTags": ["Financial services", "Product marketing"],
+        "filters": ["strategic-advisory", "growth-charter"],
+        "title": "Commonwealth Bank — Little Card, Big Rewards",
+        "summary": "Nobody wants a credit card. They want the thing it does — so that's what we said, in language people grasped immediately.",
+        "linked": false
+      },
+      {
+        "slug": "snack-brands-kettle-popcorn",
+        "logo": "/case-studies/kettle-logo.png",
+        "sectorTags": ["FMCG", "Product launch"],
+        "filters": ["strategic-advisory", "growth-charter"],
+        "title": "Snack Brands — Kettle Popcorn Launch",
+        "summary": "A brand extension has to feel new enough to notice and familiar enough to still be Kettle. The task was knowing which parts to hold onto.",
+        "linked": false
+      },
+      {
+        "slug": "state-election-2022",
+        "logo": "/case-studies/ecsa-2022-1.png",
+        "sectorTags": ["Government", "Behaviour change"],
+        "filters": ["strategic-advisory"],
+        "title": "2022 South Australian State Election",
+        "summary": "Engaged to help procure an ad agency. Within weeks it was clear the communications function itself wasn't working.",
+        "linked": false
+      },
+      {
+        "slug": "local-government-elections-2022",
+        "logo": "/case-studies/local-government-logo.jpeg",
+        "sectorTags": ["Government", "Behaviour change"],
+        "filters": ["strategic-advisory", "growth-charter"],
+        "title": "2022 Local Government Elections",
+        "summary": "Postal voting isn't an awareness problem — it's a behaviour with more steps and more places to give up.",
+        "linked": false
+      },
+      {
+        "slug": "first-nations-voice-2024",
+        "logo": "/case-studies/safnvp-logo.png",
+        "sectorTags": ["Government", "Community engagement"],
+        "filters": ["strategic-advisory"],
+        "title": "2024 First Nations Voice to Parliament Election",
+        "summary": "A new electoral process, six regions, and a timing change already working against understanding. Reach wasn't the constraint — trust was.",
+        "linked": true
+      },
+      {
+        "slug": "adelaide-hills-wine-region",
+        "logo": "/case-studies/adelaide-hills-logo.png",
+        "sectorTags": ["Wine", "Brand strategy"],
+        "filters": ["strategic-advisory", "growth-charter"],
+        "title": "Adelaide Hills Wine Region",
+        "summary": "The brief was positioning. The real obstacle was that members didn't agree on who the region was.",
+        "linked": false
+      }
+    ],
+    "firstNationsVoice2024": {
+      "sectorTags": ["Government", "Community engagement"],
+      "title": "2024 First Nations Voice to Parliament Election",
+      "attribution": "Communications strategy lead, Electoral Commission of South Australia, 2023–24",
+      "logo": "/case-studies/safnvp-logo.png",
+      "situation": {
+        "heading": "The situation",
+        "body": "South Australia's first First Nations Voice election — 46 positions across six regions, held on 16 March 2024. Originally scheduled for September 2023 and moved to avoid overlapping the Federal Voice Referendum."
+      },
+      "realProblem": {
+        "heading": "The real problem",
+        "body": "Standard election advertising was never going to carry this. A new electoral process, communities spread across six regions, and a timing change that had already disrupted understanding. Reach was not the constraint — trust and comprehension were."
+      },
+      "whatWeDid": {
+        "heading": "What we did",
+        "items": [
+          "Identified early that conventional advertising alone would not work, and built a community-led approach instead",
+          "Combined communications strategy, community engagement, media engagement, advertising, PR and budget management",
+          "Delivered across TV, press, outdoor, digital, website, social and PR",
+          "Created more than 500 community engagement kits and supported over 400 engagement sessions"
+        ]
+      },
+      "result": {
+        "heading": "The result",
+        "headline": "All 46 positions attracted multiple nominations.",
+        "body": "Not one was filled uncontested, and elections were successfully held across every position — establishing the First Nations Voice to SA Parliament."
+      },
+      "gallery": {
+        "heading": "Campaign assets",
+        "videosHeading": "Video",
+        "documentsHeading": "Documents",
+        "videos": [
+          { "title": "Awareness", "src": "/case-studies/voice-assets/awareness.mp4", "poster": "/case-studies/voice-assets/awareness.jpg" },
+          { "title": "Enrol", "src": "/case-studies/voice-assets/enrol.mp4", "poster": "/case-studies/voice-assets/enrol.jpg" },
+          { "title": "Enrol — Urgency", "src": "/case-studies/voice-assets/enrol-urgency.mp4", "poster": "/case-studies/voice-assets/enrol-urgency.jpg" },
+          { "title": "How to Vote", "src": "/case-studies/voice-assets/how-to-vote.mp4", "poster": "/case-studies/voice-assets/how-to-vote.jpg" },
+          { "title": "Nominate", "src": "/case-studies/voice-assets/nominate.mp4", "poster": "/case-studies/voice-assets/nominate.jpg" },
+          { "title": "Vote Awareness", "src": "/case-studies/voice-assets/vote-awareness.mp4", "poster": "/case-studies/voice-assets/vote-awareness.jpg" },
+          { "title": "Vote — Urgency", "src": "/case-studies/voice-assets/vote-urgency.mp4", "poster": "/case-studies/voice-assets/vote-urgency.jpg" }
+        ],
+        "documents": [
+          { "title": "Vote Poster (A2)", "src": "/case-studies/voice-assets/vote-poster-a2.pdf" },
+          { "title": "Enrol Press Ad", "src": "/case-studies/voice-assets/enrol-press-ad.pdf" },
+          { "title": "Election Brochure", "src": "/case-studies/voice-assets/brochure.pdf" },
+          { "title": "Nominations Guide (A3)", "src": "/case-studies/voice-assets/nominations-guide-a3.pdf" }
+        ]
+      },
+      "whyItMatters": {
+        "heading": "Why it matters to you",
+        "body": "When the people you need are not reachable through the obvious channels, spending more on those channels does not fix it. Going where they already are does."
+      },
+      "cta": {
+        "eyebrow": "Facing something similar?",
+        "title": "When the obvious channels aren't reaching the people you need, that's a strategy problem before it's a media-buying one.",
+        "body": "Tell us what you're trying to shift — we'll come back to you within one business day.",
+        "ctaLabel": "Send enquiry",
+        "backLabel": "Back to Case Studies"
+      }
+    }
   }
 }

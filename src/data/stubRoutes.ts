@@ -14,6 +14,8 @@ const caseStudyBody = "Full case study in development.";
 // The four Growth Charter product pages (launch-charter, do-it-together,
 // launch-complete, charter-course) have real pages now — see ProductPage.tsx
 // and CharterCoursePage.tsx — so they're no longer in this stub list.
+// "case-studies" and "first-nations-voice-2024" also have real pages now —
+// see CaseStudiesIndexPage.tsx and FirstNationsVoicePage.tsx.
 export const stubRoutes: StubRouteConfig[] = [
   {
     page: "toyota-lifetime-advantages",
@@ -64,27 +66,11 @@ export const stubRoutes: StubRouteConfig[] = [
     backTo: "case-studies",
   },
   {
-    page: "first-nations-voice-2024",
-    eyebrow: "Case Study",
-    heading: "2024 First Nations Voice",
-    body: caseStudyBody,
-    backLabel: "Back to Case Studies",
-    backTo: "case-studies",
-  },
-  {
     page: "adelaide-hills-wine-region",
     eyebrow: "Case Study",
     heading: "Adelaide Hills Wine Region",
     body: caseStudyBody,
     backLabel: "Back to Case Studies",
     backTo: "case-studies",
-  },
-  {
-    page: "case-studies",
-    eyebrow: "Our Work",
-    heading: "Case Studies",
-    body: "Case studies from 25 years of strategy, marketing and growth work across government, major brands and owner-led businesses — in production, check back soon.",
-    backLabel: "Back to Home",
-    backTo: "home",
   },
 ];

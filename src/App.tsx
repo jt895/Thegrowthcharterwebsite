@@ -11,6 +11,8 @@ import ContactPage from "./pages/ContactPage";
 import StubPage from "./pages/StubPage";
 import ProductPage from "./pages/ProductPage";
 import CharterCoursePage from "./pages/CharterCoursePage";
+import CaseStudiesIndexPage from "./pages/CaseStudiesIndexPage";
+import FirstNationsVoicePage from "./pages/FirstNationsVoicePage";
 import { trackPageview } from "./lib/analytics";
 import { stubRoutes } from "./data/stubRoutes";
 import { growthCharterContent } from "./data/content";
@@ -59,6 +61,8 @@ export default function App({ initialPage = "home" }: AppProps) {
       case "do-it-together": return <ProductPage onNavigate={navigate} page="do-it-together" product={growthCharterContent.products.doItTogether} />;
       case "launch-complete": return <ProductPage onNavigate={navigate} page="launch-complete" product={growthCharterContent.products.launchComplete} />;
       case "charter-course": return <CharterCoursePage onNavigate={navigate} />;
+      case "case-studies": return <CaseStudiesIndexPage onNavigate={navigate} />;
+      case "first-nations-voice-2024": return <FirstNationsVoicePage onNavigate={navigate} />;
       default: return <HomePage onNavigate={navigate} />;
     }
   };
