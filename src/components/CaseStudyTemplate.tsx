@@ -14,6 +14,11 @@ export interface CaseStudyGalleryDocument {
   src: string;
 }
 
+export interface CaseStudyGalleryImage {
+  title: string;
+  src: string;
+}
+
 export interface CaseStudyContent {
   sectorTags: string[];
   title: string;
@@ -26,8 +31,10 @@ export interface CaseStudyContent {
   gallery: {
     heading: string;
     videosHeading: string;
+    imagesHeading: string;
     documentsHeading: string;
     videos: CaseStudyGalleryVideo[];
+    images: CaseStudyGalleryImage[];
     documents: CaseStudyGalleryDocument[];
   };
   whyItMatters: { heading: string; body: string };
@@ -67,6 +74,11 @@ const H2 = {
 const bodyP = {
   fontFamily: "'Inter', sans-serif", fontSize: 16, lineHeight: 1.85, color: "rgba(245,243,238,0.65)", margin: 0,
 } as const;
+
+function videoMimeType(src: string): string {
+  const ext = src.split(".").pop()?.toLowerCase();
+  return ext === "mov" ? "video/quicktime" : "video/mp4";
+}
 
 function DocumentIcon() {
   return (
@@ -197,10 +209,35 @@ export default function CaseStudyTemplate({ content, page, formId, formName, onN
                       poster={video.poster}
                       style={{ width: "100%", aspectRatio: "16 / 9", background: "#000", display: "block" }}
                     >
-                      <source src={video.src} type="video/mp4" />
+                      <source src={video.src} type={videoMimeType(video.src)} />
                     </video>
                     <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, color: "rgba(245,243,238,0.55)", marginTop: 10, marginBottom: 0 }}>
                       {video.title}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {content.gallery.images.length > 0 && (
+            <div style={{ marginBottom: 64 }}>
+              <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 600, letterSpacing: "0.12em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 24 }}>
+                {content.gallery.imagesHeading}
+              </p>
+              {/* Natural aspect ratio, not cropped to a fixed box — campaign stills here range from
+                  landscape billboards to portrait social/press mockups. */}
+              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))", gap: 24 }}>
+                {content.gallery.images.map((image) => (
+                  <div key={image.src}>
+                    <img
+                      src={image.src}
+                      alt=""
+                      loading="lazy"
+                      style={{ width: "100%", height: "auto", display: "block", background: "#161616" }}
+                    />
+                    <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, color: "rgba(245,243,238,0.55)", marginTop: 10, marginBottom: 0 }}>
+                      {image.title}
                     </p>
                   </div>
                 ))}

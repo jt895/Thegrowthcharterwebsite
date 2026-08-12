@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import RelatedCaseStudies from "../components/RelatedCaseStudies";
 import SpinningRingMark from "../components/SpinningRingMark";
 import { growthCharterContent } from "../data/content";
 import { editableField } from "../data/editable";
@@ -279,6 +280,15 @@ export default function GrowthCharterPage({ onNavigate }: GrowthCharterPageProps
           </div>
         </div>
       </section>
+
+      {/* Related case studies */}
+      <RelatedCaseStudies
+        eyebrow="Related work"
+        title="Businesses and organisations who've used it"
+        slugs={["adelaide-hills-wine-region", "snack-brands-kettle-popcorn", "local-government-elections-2022"]}
+        onNavigate={onNavigate}
+        background="#161616"
+      />
 
       {/* Is The Growth Charter right for you */}
       <section {...editableField("growthCharter.fitCheck")} style={{ background: "#0B5E48", padding: "100px 40px" }}>

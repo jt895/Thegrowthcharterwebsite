@@ -12,7 +12,7 @@ import StubPage from "./pages/StubPage";
 import ProductPage from "./pages/ProductPage";
 import CharterCoursePage from "./pages/CharterCoursePage";
 import CaseStudiesIndexPage from "./pages/CaseStudiesIndexPage";
-import FirstNationsVoicePage from "./pages/FirstNationsVoicePage";
+import CaseStudyDetailPage from "./pages/CaseStudyDetailPage";
 import { trackPageview } from "./lib/analytics";
 import { stubRoutes } from "./data/stubRoutes";
 import { growthCharterContent } from "./data/content";
@@ -62,7 +62,15 @@ export default function App({ initialPage = "home" }: AppProps) {
       case "launch-complete": return <ProductPage onNavigate={navigate} page="launch-complete" product={growthCharterContent.products.launchComplete} />;
       case "charter-course": return <CharterCoursePage onNavigate={navigate} />;
       case "case-studies": return <CaseStudiesIndexPage onNavigate={navigate} />;
-      case "first-nations-voice-2024": return <FirstNationsVoicePage onNavigate={navigate} />;
+      case "toyota-lifetime-advantages":
+      case "ford-six-model-launches":
+      case "commbank-little-card-big-rewards":
+      case "snack-brands-kettle-popcorn":
+      case "state-election-2022":
+      case "local-government-elections-2022":
+      case "first-nations-voice-2024":
+      case "adelaide-hills-wine-region":
+        return <CaseStudyDetailPage page={page} onNavigate={navigate} />;
       default: return <HomePage onNavigate={navigate} />;
     }
   };

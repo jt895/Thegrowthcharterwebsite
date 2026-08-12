@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import RelatedCaseStudies from "../components/RelatedCaseStudies";
 import { strategicAdvisoryContent } from "../data/content";
 import { editableField } from "../data/editable";
 import { goToContact } from "../lib/contactNav";
@@ -222,6 +223,15 @@ export default function StrategicAdvisoryPage({ onNavigate }: StrategicAdvisoryP
           </div>
         </div>
       </section>
+
+      {/* Related case studies */}
+      <RelatedCaseStudies
+        eyebrow="Related work"
+        title="See the method in practice"
+        slugs={["state-election-2022", "first-nations-voice-2024", "local-government-elections-2022"]}
+        onNavigate={onNavigate}
+        background="#1C1C1C"
+      />
 
       {/* CTA */}
       <section {...editableField("strategicAdvisory.cta")} style={{ padding: "100px 40px", textAlign: "center" }}>

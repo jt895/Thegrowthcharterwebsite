@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import RelatedCaseStudies from "../components/RelatedCaseStudies";
 import { servicesContent } from "../data/content";
 import { editableField } from "../data/editable";
 import { goToContact } from "../lib/contactNav";
@@ -172,6 +173,15 @@ export default function ServicesPage({ onNavigate }: ServicesPageProps) {
           {services.map((service, index) => <ServiceCard key={service.title} service={service} index={index} />)}
         </div>
       </section>
+
+      {/* Related case studies */}
+      <RelatedCaseStudies
+        eyebrow="Related work"
+        title="See it in practice"
+        slugs={["state-election-2022", "toyota-lifetime-advantages", "commbank-little-card-big-rewards"]}
+        onNavigate={onNavigate}
+        background="#1C1C1C"
+      />
 
       {/* CTA */}
       <section {...editableField("services.cta")} style={{ background: "#161616", padding: "80px 40px", textAlign: "center" }}>

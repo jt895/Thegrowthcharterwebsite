@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import EnquiryForm from "../components/EnquiryForm";
+import RelatedCaseStudies from "../components/RelatedCaseStudies";
 import { growthCharterContent } from "../data/content";
 import { editableField } from "../data/editable";
 import { readContactSource } from "../lib/contactNav";
@@ -59,6 +60,7 @@ export interface ProductContent {
   howItRuns?: ProductHowItRuns;
   paymentNote?: string;
   bespokeNote?: string;
+  relatedCaseStudies?: string[];
 }
 
 interface ProductPageProps {
@@ -276,6 +278,17 @@ export default function ProductPage({ onNavigate, page, product }: ProductPagePr
         <section style={{ padding: "0 40px 80px", textAlign: "center" }}>
           <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, lineHeight: 1.75, color: "rgba(245,243,238,0.45)", maxWidth: 560, margin: "0 auto" }}>{product.bespokeNote}</p>
         </section>
+      )}
+
+      {/* Related case studies */}
+      {product.relatedCaseStudies && product.relatedCaseStudies.length > 0 && (
+        <RelatedCaseStudies
+          eyebrow="Related work"
+          title="See it applied"
+          slugs={product.relatedCaseStudies as Page[]}
+          onNavigate={onNavigate}
+          background="#1C1C1C"
+        />
       )}
 
       {/* Growth Charter enquiry form */}

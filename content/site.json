@@ -472,7 +472,11 @@
             ]
           ]
         },
-        "paymentNote": "$6,950 + GST. 40% on signing, 30% on delivery of your Growth Plan, 30% at go-live."
+        "paymentNote": "$6,950 + GST. 40% on signing, 30% on delivery of your Growth Plan, 30% at go-live.",
+        "relatedCaseStudies": [
+          "snack-brands-kettle-popcorn",
+          "adelaide-hills-wine-region"
+        ]
       },
       "doItTogether": {
         "eyebrow": "Do It Together",
@@ -571,7 +575,11 @@
           ],
           "trailingNote": "$14,950 + GST. 40% on signing, 30% on delivery of the Roadmap, 30% at go-live. Starts with a free conversation and a $450 Viability Session, credited against the engagement."
         },
-        "bespokeNote": "Bigger than this? Bespoke engagements cover multiple audiences, product lines or markets. Priced after the Viability Session."
+        "bespokeNote": "Bigger than this? Bespoke engagements cover multiple audiences, product lines or markets. Priced after the Viability Session.",
+        "relatedCaseStudies": [
+          "snack-brands-kettle-popcorn",
+          "adelaide-hills-wine-region"
+        ]
       }
     }
   },
@@ -988,62 +996,101 @@
       {
         "slug": "toyota-lifetime-advantages",
         "logo": "/case-studies/toyota-logo.png",
-        "sectorTags": ["Automotive", "Brand strategy"],
-        "filters": ["strategic-advisory", "growth-charter"],
+        "sectorTags": [
+          "Automotive",
+          "Brand strategy"
+        ],
+        "filters": [
+          "strategic-advisory",
+          "growth-charter"
+        ],
         "title": "Toyota — A Lifetime of Advantages",
         "summary": "Korean brands were winning on price. The research found Toyota was already winning the argument that actually mattered.",
-        "linked": false
+        "linked": true
       },
       {
         "slug": "ford-six-model-launches",
         "logo": "/case-studies/ford-logo.png",
-        "sectorTags": ["Automotive", "Launch strategy"],
-        "filters": ["strategic-advisory"],
+        "sectorTags": [
+          "Automotive",
+          "Launch strategy"
+        ],
+        "filters": [
+          "strategic-advisory"
+        ],
         "title": "Ford — Six Model Launches in Six Months",
         "summary": "Six launches is not one problem six times. The work was sequencing and proportion, not six campaigns.",
-        "linked": false
+        "linked": true
       },
       {
         "slug": "commbank-little-card-big-rewards",
         "logo": "/case-studies/commbank-logo.png",
-        "sectorTags": ["Financial services", "Product marketing"],
-        "filters": ["strategic-advisory", "growth-charter"],
+        "sectorTags": [
+          "Financial services",
+          "Product marketing"
+        ],
+        "filters": [
+          "strategic-advisory",
+          "growth-charter"
+        ],
         "title": "Commonwealth Bank — Little Card, Big Rewards",
         "summary": "Nobody wants a credit card. They want the thing it does — so that's what we said, in language people grasped immediately.",
-        "linked": false
+        "linked": true
       },
       {
         "slug": "snack-brands-kettle-popcorn",
         "logo": "/case-studies/kettle-logo.png",
-        "sectorTags": ["FMCG", "Product launch"],
-        "filters": ["strategic-advisory", "growth-charter"],
+        "sectorTags": [
+          "FMCG",
+          "Product launch"
+        ],
+        "filters": [
+          "strategic-advisory",
+          "growth-charter"
+        ],
         "title": "Snack Brands — Kettle Popcorn Launch",
         "summary": "A brand extension has to feel new enough to notice and familiar enough to still be Kettle. The task was knowing which parts to hold onto.",
-        "linked": false
+        "linked": true
       },
       {
         "slug": "state-election-2022",
         "logo": "/case-studies/ecsa-2022-1.png",
-        "sectorTags": ["Government", "Behaviour change"],
-        "filters": ["strategic-advisory"],
+        "sectorTags": [
+          "Government",
+          "Behaviour change"
+        ],
+        "filters": [
+          "strategic-advisory"
+        ],
         "title": "2022 South Australian State Election",
         "summary": "Engaged to help procure an ad agency. Within weeks it was clear the communications function itself wasn't working.",
-        "linked": false
+        "linked": true
       },
       {
         "slug": "local-government-elections-2022",
         "logo": "/case-studies/local-government-logo.jpeg",
-        "sectorTags": ["Government", "Behaviour change"],
-        "filters": ["strategic-advisory", "growth-charter"],
+        "sectorTags": [
+          "Government",
+          "Behaviour change"
+        ],
+        "filters": [
+          "strategic-advisory",
+          "growth-charter"
+        ],
         "title": "2022 Local Government Elections",
         "summary": "Postal voting isn't an awareness problem — it's a behaviour with more steps and more places to give up.",
-        "linked": false
+        "linked": true
       },
       {
         "slug": "first-nations-voice-2024",
         "logo": "/case-studies/safnvp-logo.png",
-        "sectorTags": ["Government", "Community engagement"],
-        "filters": ["strategic-advisory"],
+        "sectorTags": [
+          "Government",
+          "Community engagement"
+        ],
+        "filters": [
+          "strategic-advisory"
+        ],
         "title": "2024 First Nations Voice to Parliament Election",
         "summary": "A new electoral process, six regions, and a timing change already working against understanding. Reach wasn't the constraint — trust was.",
         "linked": true
@@ -1051,70 +1098,713 @@
       {
         "slug": "adelaide-hills-wine-region",
         "logo": "/case-studies/adelaide-hills-logo.png",
-        "sectorTags": ["Wine", "Brand strategy"],
-        "filters": ["strategic-advisory", "growth-charter"],
+        "sectorTags": [
+          "Wine",
+          "Brand strategy"
+        ],
+        "filters": [
+          "strategic-advisory",
+          "growth-charter"
+        ],
         "title": "Adelaide Hills Wine Region",
         "summary": "The brief was positioning. The real obstacle was that members didn't agree on who the region was.",
-        "linked": false
+        "linked": true
       }
     ],
-    "firstNationsVoice2024": {
-      "sectorTags": ["Government", "Community engagement"],
-      "title": "2024 First Nations Voice to Parliament Election",
-      "attribution": "Communications strategy lead, Electoral Commission of South Australia, 2023–24",
-      "logo": "/case-studies/safnvp-logo.png",
-      "situation": {
-        "heading": "The situation",
-        "body": "South Australia's first First Nations Voice election — 46 positions across six regions, held on 16 March 2024. Originally scheduled for September 2023 and moved to avoid overlapping the Federal Voice Referendum."
-      },
-      "realProblem": {
-        "heading": "The real problem",
-        "body": "Standard election advertising was never going to carry this. A new electoral process, communities spread across six regions, and a timing change that had already disrupted understanding. Reach was not the constraint — trust and comprehension were."
-      },
-      "whatWeDid": {
-        "heading": "What we did",
-        "items": [
-          "Identified early that conventional advertising alone would not work, and built a community-led approach instead",
-          "Combined communications strategy, community engagement, media engagement, advertising, PR and budget management",
-          "Delivered across TV, press, outdoor, digital, website, social and PR",
-          "Created more than 500 community engagement kits and supported over 400 engagement sessions"
-        ]
-      },
-      "result": {
-        "heading": "The result",
-        "headline": "All 46 positions attracted multiple nominations.",
-        "body": "Not one was filled uncontested, and elections were successfully held across every position — establishing the First Nations Voice to SA Parliament."
-      },
-      "gallery": {
-        "heading": "Campaign assets",
-        "videosHeading": "Video",
-        "documentsHeading": "Documents",
-        "videos": [
-          { "title": "Awareness", "src": "/case-studies/voice-assets/awareness.mp4", "poster": "/case-studies/voice-assets/awareness.jpg" },
-          { "title": "Enrol", "src": "/case-studies/voice-assets/enrol.mp4", "poster": "/case-studies/voice-assets/enrol.jpg" },
-          { "title": "Enrol — Urgency", "src": "/case-studies/voice-assets/enrol-urgency.mp4", "poster": "/case-studies/voice-assets/enrol-urgency.jpg" },
-          { "title": "How to Vote", "src": "/case-studies/voice-assets/how-to-vote.mp4", "poster": "/case-studies/voice-assets/how-to-vote.jpg" },
-          { "title": "Nominate", "src": "/case-studies/voice-assets/nominate.mp4", "poster": "/case-studies/voice-assets/nominate.jpg" },
-          { "title": "Vote Awareness", "src": "/case-studies/voice-assets/vote-awareness.mp4", "poster": "/case-studies/voice-assets/vote-awareness.jpg" },
-          { "title": "Vote — Urgency", "src": "/case-studies/voice-assets/vote-urgency.mp4", "poster": "/case-studies/voice-assets/vote-urgency.jpg" }
+    "details": {
+      "toyota-lifetime-advantages": {
+        "sectorTags": [
+          "Automotive",
+          "Brand strategy"
         ],
-        "documents": [
-          { "title": "Vote Poster (A2)", "src": "/case-studies/voice-assets/vote-poster-a2.pdf" },
-          { "title": "Enrol Press Ad", "src": "/case-studies/voice-assets/enrol-press-ad.pdf" },
-          { "title": "Election Brochure", "src": "/case-studies/voice-assets/brochure.pdf" },
-          { "title": "Nominations Guide (A3)", "src": "/case-studies/voice-assets/nominations-guide-a3.pdf" }
-        ]
+        "title": "Toyota — A Lifetime of Advantages",
+        "attribution": "Research and strategy lead, [organisation], [years]",
+        "logo": "/case-studies/toyota-logo.png",
+        "situation": {
+          "heading": "The situation",
+          "body": "Korean brands were competing hard on price and winning. Toyota was being pulled into a sticker-price argument it could not win without discounting its way down."
+        },
+        "realProblem": {
+          "heading": "The real problem",
+          "body": "The brief was about price. The research said price was the wrong battleground entirely. A national programme with consumers and dealers found that people define value as the whole ownership experience — reliability, servicing, running costs, resale — not the number on the windscreen. Toyota was already winning that argument. It just was not having it."
+        },
+        "whatWeDid": {
+          "heading": "What we did",
+          "items": [
+            "Ran the national research programme with consumers and dealers",
+            "Built the 'A Lifetime of Advantages' positioning and marketing plan from the findings",
+            "Rolled it across brand, retail, finance and service communications",
+            "Made the proposition consistent wherever a customer encountered Toyota"
+          ]
+        },
+        "result": {
+          "heading": "The result",
+          "headline": "Market share grew from 17% to 22% in twelve months.",
+          "body": "The platform outlasted the campaign and remained central to Toyota communications for years afterwards."
+        },
+        "gallery": {
+          "heading": "Campaign assets",
+          "videosHeading": "Video",
+          "documentsHeading": "Documents",
+          "videos": [
+            {
+              "title": "Toyota Access",
+              "src": "/case-studies/toyota-assets/toyota-access.mp4",
+              "poster": "/case-studies/toyota-assets/toyota-access.jpg"
+            },
+            {
+              "title": "Service Advantage",
+              "src": "/case-studies/toyota-assets/service-advantage.mp4",
+              "poster": "/case-studies/toyota-assets/service-advantage.jpg"
+            },
+            {
+              "title": "Network",
+              "src": "/case-studies/toyota-assets/network.mp4",
+              "poster": "/case-studies/toyota-assets/network.jpg"
+            },
+            {
+              "title": "Range",
+              "src": "/case-studies/toyota-assets/range.mp4",
+              "poster": "/case-studies/toyota-assets/range.jpg"
+            },
+            {
+              "title": "Resale Value",
+              "src": "/case-studies/toyota-assets/resale-value.mp4",
+              "poster": "/case-studies/toyota-assets/resale-value.jpg"
+            },
+            {
+              "title": "Toyota Finance Advantage",
+              "src": "/case-studies/toyota-assets/toyota-finance-advantage.mp4",
+              "poster": "/case-studies/toyota-assets/toyota-finance-advantage.jpg"
+            },
+            {
+              "title": "Toyota Service Advantage",
+              "src": "/case-studies/toyota-assets/toyota-service-advantage.mp4",
+              "poster": "/case-studies/toyota-assets/toyota-service-advantage.jpg"
+            },
+            {
+              "title": "Running Costs",
+              "src": "/case-studies/toyota-assets/running-costs.mp4",
+              "poster": "/case-studies/toyota-assets/running-costs.jpg"
+            }
+          ],
+          "documents": [
+            {
+              "title": "Print Ad — GCB",
+              "src": "/case-studies/toyota-assets/print-ad-gcb.pdf"
+            },
+            {
+              "title": "Print Ad — DT",
+              "src": "/case-studies/toyota-assets/print-ad-dt.pdf"
+            },
+            {
+              "title": "Print Ad — BCM",
+              "src": "/case-studies/toyota-assets/print-ad-bcm.pdf"
+            },
+            {
+              "title": "Print Ad — FP",
+              "src": "/case-studies/toyota-assets/print-ad-fp.pdf"
+            }
+          ],
+          "imagesHeading": "Images",
+          "images": []
+        },
+        "whyItMatters": {
+          "heading": "Why it matters to you",
+          "body": "Almost every business under price pressure is fighting on the wrong ground. The question is not how to justify your price — it is what your customers are actually buying, and whether you have ever said it out loud."
+        },
+        "cta": {
+          "eyebrow": "Facing something similar?",
+          "title": "If price feels like the only lever left, that's worth testing before you pull it.",
+          "body": "Tell us what you're trying to grow — we'll come back to you within one business day.",
+          "ctaLabel": "Send enquiry",
+          "backLabel": "Back to Case Studies"
+        }
       },
-      "whyItMatters": {
-        "heading": "Why it matters to you",
-        "body": "When the people you need are not reachable through the obvious channels, spending more on those channels does not fix it. Going where they already are does."
+      "ford-six-model-launches": {
+        "sectorTags": [
+          "Automotive",
+          "Launch strategy"
+        ],
+        "title": "Ford — Six Model Launches in Six Months",
+        "attribution": "National advertising and launch planning lead, [organisation], [years]",
+        "logo": "/case-studies/ford-logo.png",
+        "situation": {
+          "heading": "The situation",
+          "body": "Six vehicles to market in six months, in a slowing category, with new competitors arriving regularly and a dealer network that needed to stay confident."
+        },
+        "realProblem": {
+          "heading": "The real problem",
+          "body": "Six launches is not one problem six times. Run separately they compete with each other for attention, budget and dealer energy — and the weakest one drags the rest down. The work was sequencing and proportion, not six campaigns."
+        },
+        "whatWeDid": {
+          "heading": "What we did",
+          "items": [
+            "Built national advertising and promotional plans across all six launches as one programme",
+            "Managed a $100m+ budget through a highly competitive market period",
+            "Targeted each launch to the right audience for the right reason rather than treating them alike",
+            "Strengthened position through Cricket Australia sponsorship and a major uplift in online presence"
+          ]
+        },
+        "result": {
+          "heading": "The result",
+          "headline": "FG Falcon became Ford's most successful launch since 2000.",
+          "body": "Market share held above 13% through the period. All six launches delivered, with Ranger and FG Falcon carrying the programme."
+        },
+        "gallery": {
+          "heading": "Campaign assets",
+          "videosHeading": "Video",
+          "documentsHeading": "Documents",
+          "videos": [
+            {
+              "title": "Billboard",
+              "src": "/case-studies/ford-assets/billboard.mp4",
+              "poster": "/case-studies/ford-assets/billboard.jpg"
+            },
+            {
+              "title": "Falcon 50th Anniversary Limited Edition",
+              "src": "/case-studies/ford-assets/falcon-50th-anniversary.mp4",
+              "poster": "/case-studies/ford-assets/falcon-50th-anniversary.jpg"
+            },
+            {
+              "title": "Falcon — First TV Commercial",
+              "src": "/case-studies/ford-assets/falcon-first-tv-commercial.mp4",
+              "poster": "/case-studies/ford-assets/falcon-first-tv-commercial.jpg"
+            },
+            {
+              "title": "Fiesta",
+              "src": "/case-studies/ford-assets/fiesta.mp4",
+              "poster": "/case-studies/ford-assets/fiesta.jpg"
+            },
+            {
+              "title": "Fingers",
+              "src": "/case-studies/ford-assets/fingers.mp4",
+              "poster": "/case-studies/ford-assets/fingers.jpg"
+            },
+            {
+              "title": "Fluidic Sculpture",
+              "src": "/case-studies/ford-assets/fluidic-sculpture.mp4",
+              "poster": "/case-studies/ford-assets/fluidic-sculpture.jpg"
+            },
+            {
+              "title": "G6 Limited Edition",
+              "src": "/case-studies/ford-assets/g6-limited-edition.mp4",
+              "poster": "/case-studies/ford-assets/g6-limited-edition.jpg"
+            },
+            {
+              "title": "Mondeo",
+              "src": "/case-studies/ford-assets/mondeo.mp4",
+              "poster": "/case-studies/ford-assets/mondeo.jpg"
+            },
+            {
+              "title": "Most Fuel-Efficient Car in Australia",
+              "src": "/case-studies/ford-assets/most-fuel-efficient-car.mp4",
+              "poster": "/case-studies/ford-assets/most-fuel-efficient-car.jpg"
+            },
+            {
+              "title": "Ranger — Mother of All Dunes",
+              "src": "/case-studies/ford-assets/ranger-mother-of-all-dunes.mp4",
+              "poster": "/case-studies/ford-assets/ranger-mother-of-all-dunes.jpg"
+            },
+            {
+              "title": "Territory",
+              "src": "/case-studies/ford-assets/territory.mp4",
+              "poster": "/case-studies/ford-assets/territory.jpg"
+            }
+          ],
+          "documents": [],
+          "imagesHeading": "Images",
+          "images": []
+        },
+        "whyItMatters": {
+          "heading": "Why it matters to you",
+          "body": "Most businesses have more they want to promote than attention to spend on it. Deciding what leads, what follows and what waits is worth more than doing all of it at once, badly."
+        },
+        "cta": {
+          "eyebrow": "Facing something similar?",
+          "title": "Got more you want to launch than attention to spend on it? That's a sequencing problem, not a budget one.",
+          "body": "Tell us what you're trying to grow — we'll come back to you within one business day.",
+          "ctaLabel": "Send enquiry",
+          "backLabel": "Back to Case Studies"
+        }
       },
-      "cta": {
-        "eyebrow": "Facing something similar?",
-        "title": "When the obvious channels aren't reaching the people you need, that's a strategy problem before it's a media-buying one.",
-        "body": "Tell us what you're trying to shift — we'll come back to you within one business day.",
-        "ctaLabel": "Send enquiry",
-        "backLabel": "Back to Case Studies"
+      "commbank-little-card-big-rewards": {
+        "sectorTags": [
+          "Financial services",
+          "Product marketing"
+        ],
+        "title": "Commonwealth Bank — Little Card, Big Rewards",
+        "attribution": "Strategy and proposition lead, [organisation], [years]",
+        "logo": "/case-studies/commbank-logo.png",
+        "situation": {
+          "heading": "The situation",
+          "body": "Launch CBA's first cash-back credit card into a crowded market. The brief was simple and almost impossible: make people care about another credit card."
+        },
+        "realProblem": {
+          "heading": "The real problem",
+          "body": "Nobody wants a credit card. They want the thing the credit card does. Category language — rates, rewards, points, tiers — was making a genuinely simple benefit sound complicated, and complicated products do not get applied for."
+        },
+        "whatWeDid": {
+          "heading": "What we did",
+          "items": [
+            "Built a campaign that was clear, cheeky and plainly spoken",
+            "Explained cashback as money back, in language people grasped immediately",
+            "Deliberately avoided sounding like a bank",
+            "Made the value obvious from the first interaction rather than the fine print"
+          ]
+        },
+        "result": {
+          "heading": "The result",
+          "headline": "Online applications rose 30% after launch.",
+          "body": "A national campaign built around one easily understood idea."
+        },
+        "gallery": {
+          "heading": "Campaign assets",
+          "videosHeading": "Video",
+          "documentsHeading": "Documents",
+          "videos": [
+            {
+              "title": "Cricket Pads",
+              "src": "/case-studies/commbank-assets/cricket-pads.mp4",
+              "poster": "/case-studies/commbank-assets/cricket-pads.jpg"
+            },
+            {
+              "title": "Sofa",
+              "src": "/case-studies/commbank-assets/sofa.mp4",
+              "poster": "/case-studies/commbank-assets/sofa.jpg"
+            }
+          ],
+          "documents": [],
+          "imagesHeading": "Images",
+          "images": []
+        },
+        "whyItMatters": {
+          "heading": "Why it matters to you",
+          "body": "If explaining what you sell takes more than a sentence, you are losing people before price is ever discussed. Clarity is not a creative flourish — it is a conversion mechanism."
+        },
+        "cta": {
+          "eyebrow": "Facing something similar?",
+          "title": "If your product needs more than a sentence to explain, that's the first thing worth fixing.",
+          "body": "Tell us what you're trying to grow — we'll come back to you within one business day.",
+          "ctaLabel": "Send enquiry",
+          "backLabel": "Back to Case Studies"
+        }
+      },
+      "snack-brands-kettle-popcorn": {
+        "sectorTags": [
+          "FMCG",
+          "Product launch"
+        ],
+        "title": "Snack Brands — Kettle Popcorn Launch",
+        "attribution": "Go-to-market strategy lead, [organisation], [years]",
+        "logo": "/case-studies/kettle-logo.png",
+        "situation": {
+          "heading": "The situation",
+          "body": "A brand extension into an already crowded popcorn category. It had to feel new enough to be worth noticing, and familiar enough to still be Kettle."
+        },
+        "realProblem": {
+          "heading": "The real problem",
+          "body": "Brand extensions usually fail in one of two directions — too different and the equity does not transfer, too similar and there is no reason to buy. The real task was working out precisely which parts of Kettle were doing the work, and holding onto exactly those."
+        },
+        "whatWeDid": {
+          "heading": "What we did",
+          "items": [
+            "Developed the go-to-market plan for the launch",
+            "Built positioning and messaging around a premium tone with a slightly irreverent edge",
+            "Kept the proposition grounded in product truth rather than category cliché",
+            "Shaped execution so the product felt distinctive and recognisably Kettle"
+          ]
+        },
+        "result": {
+          "heading": "The result",
+          "headline": "The most successful brand extension launch in Snack Brands' history.",
+          "body": "Ranging was secured in Coles, Woolworths, Metcash and independents."
+        },
+        "gallery": {
+          "heading": "Campaign assets",
+          "videosHeading": "Video",
+          "documentsHeading": "Documents",
+          "videos": [
+            {
+              "title": "Popcorn Launch TVC",
+              "src": "/case-studies/kettle-assets/popcorn-launch-tvc.mp4",
+              "poster": "/case-studies/kettle-assets/popcorn-launch-tvc.jpg"
+            },
+            {
+              "title": "Honey Soy 30",
+              "src": "/case-studies/kettle-assets/honey-soy-30.mp4",
+              "poster": "/case-studies/kettle-assets/honey-soy-30.jpg"
+            },
+            {
+              "title": "Sweet Chilli 30",
+              "src": "/case-studies/kettle-assets/sweet-chilli-30.mp4",
+              "poster": "/case-studies/kettle-assets/sweet-chilli-30.jpg"
+            }
+          ],
+          "documents": [],
+          "imagesHeading": "Images",
+          "images": []
+        },
+        "whyItMatters": {
+          "heading": "Why it matters to you",
+          "body": "Adding a service or product line is the most common growth move a small business makes, and the most commonly botched. What you already have is worth more than the new thing — the trick is knowing which part."
+        },
+        "cta": {
+          "eyebrow": "Facing something similar?",
+          "title": "Thinking about a brand extension? Let's work out which parts of what you have are actually doing the work.",
+          "body": "Tell us what you're trying to grow — we'll come back to you within one business day.",
+          "ctaLabel": "Send enquiry",
+          "backLabel": "Back to Case Studies"
+        }
+      },
+      "state-election-2022": {
+        "sectorTags": [
+          "Government",
+          "Behaviour change"
+        ],
+        "title": "2022 South Australian State Election",
+        "attribution": "Strategic lead, Electoral Commission of South Australia, [years]",
+        "logo": "/case-studies/ecsa-2022-1.png",
+        "situation": {
+          "heading": "The situation",
+          "body": "Three major electoral events approaching, participation declining, COVID pressures mounting and voter fatigue building after a federal election."
+        },
+        "realProblem": {
+          "heading": "The real problem",
+          "body": "ECSA engaged us to help procure an advertising supplier. Within weeks it was clear that was not the problem. The communications function itself was not working — no strategic framework, no crisis capability, and no way for a new supplier to succeed even if one were appointed. They did not need a better supplier. They needed a function that could brief one."
+        },
+        "whatWeDid": {
+          "heading": "What we did",
+          "items": [
+            "Delivered a full capability review and identified the structural gaps",
+            "Built a multi-year strategy aligned to operational realities and government obligations",
+            "Established a crisis communications framework from scratch",
+            "Ran statewide research to identify audience segments, behavioural barriers and channel needs",
+            "Directed strategy, creative, media, PR and crisis communications through to implementation"
+          ]
+        },
+        "result": {
+          "heading": "The result",
+          "headline": "92% participation maintained through COVID conditions and voter fatigue.",
+          "body": "Targeted engagement reached CALD communities, young people and disengaged voters."
+        },
+        "gallery": {
+          "heading": "Campaign assets",
+          "videosHeading": "Video",
+          "documentsHeading": "Documents",
+          "videos": [
+            {
+              "title": "Campaign — G30",
+              "src": "/case-studies/state-election-assets/campaign-g30.mp4",
+              "poster": "/case-studies/state-election-assets/campaign-g30.jpg"
+            },
+            {
+              "title": "Campaign — V30",
+              "src": "/case-studies/state-election-assets/campaign-v30.mp4",
+              "poster": "/case-studies/state-election-assets/campaign-v30.jpg"
+            },
+            {
+              "title": "Campaign — W15 (YouTube)",
+              "src": "/case-studies/state-election-assets/campaign-w15-youtube.mp4",
+              "poster": "/case-studies/state-election-assets/campaign-w15-youtube.jpg"
+            },
+            {
+              "title": "Majority — Urgency",
+              "src": "/case-studies/state-election-assets/majority-urgency.mp4",
+              "poster": "/case-studies/state-election-assets/majority-urgency.jpg"
+            },
+            {
+              "title": "Story — When (15 sec)",
+              "src": "/case-studies/state-election-assets/story-when-15sec.mp4",
+              "poster": "/case-studies/state-election-assets/story-when-15sec.jpg"
+            },
+            {
+              "title": "Ben & Liam — Enrol (6 sec)",
+              "src": "/case-studies/state-election-assets/ben-and-liam-enrol-6sec.mp4",
+              "poster": "/case-studies/state-election-assets/ben-and-liam-enrol-6sec.jpg"
+            }
+          ],
+          "documents": [
+            {
+              "title": "Press Ad — The Advertiser",
+              "src": "/case-studies/state-election-assets/press-advertiser.pdf"
+            },
+            {
+              "title": "Postal Voting Guide",
+              "src": "/case-studies/state-election-assets/postal-voting-guide.pdf"
+            },
+            {
+              "title": "Official Guide",
+              "src": "/case-studies/state-election-assets/official-guide.pdf"
+            }
+          ],
+          "imagesHeading": "Images",
+          "images": [
+            {
+              "title": "Saturday Press Ad",
+              "src": "/case-studies/state-election-assets/saturday-press-ad.jpg"
+            },
+            {
+              "title": "Youth Letter",
+              "src": "/case-studies/state-election-assets/youth-letter.jpg"
+            }
+          ]
+        },
+        "whyItMatters": {
+          "heading": "Why it matters to you",
+          "body": "The thing you have decided to buy is frequently not the thing you need. That is worth knowing before you spend the money, not after."
+        },
+        "cta": {
+          "eyebrow": "Facing something similar?",
+          "title": "Not sure the thing you're about to buy is actually the thing you need? That's worth a conversation first.",
+          "body": "Tell us what you're trying to shift — we'll come back to you within one business day.",
+          "ctaLabel": "Send enquiry",
+          "backLabel": "Back to Case Studies"
+        }
+      },
+      "local-government-elections-2022": {
+        "sectorTags": [
+          "Government",
+          "Behaviour change"
+        ],
+        "title": "2022 Local Government Elections",
+        "attribution": "Campaign strategy lead, Electoral Commission of South Australia, 2022",
+        "logo": "/case-studies/local-government-logo.jpeg",
+        "situation": {
+          "heading": "The situation",
+          "body": "Council elections are voluntary and had been stuck near 30% participation for years, with some districts below 15%. They also fell in the same calendar year as two major parliamentary elections."
+        },
+        "realProblem": {
+          "heading": "The real problem",
+          "body": "This was not an awareness problem. Postal voting asks people to complete and return a ballot themselves — a different behaviour with more steps and more places to give up. Telling more people about the election would not have moved it."
+        },
+        "whatWeDid": {
+          "heading": "What we did",
+          "items": [
+            "Built an integrated campaign across enrolment, nominations and voting rather than one message",
+            "Built awareness of timing and responsibilities, not just the event",
+            "Encouraged business enrolment and promoted early completion and return of ballots",
+            "Co-ordinated messaging across ECSA, councils and the LGA"
+          ]
+        },
+        "result": {
+          "heading": "The result",
+          "headline": "Participation lifted from 30% to over 34% — more than 10% growth against a long-term decline.",
+          "body": "First-week postal ballot returns rose 300%, which improved processing efficiency and delivered results faster."
+        },
+        "gallery": {
+          "heading": "Campaign assets",
+          "videosHeading": "Video",
+          "documentsHeading": "Documents",
+          "videos": [
+            {
+              "title": "Campaign — 15A",
+              "src": "/case-studies/local-government-assets/campaign-15a.mp4",
+              "poster": "/case-studies/local-government-assets/campaign-15a.jpg"
+            },
+            {
+              "title": "Campaign — 30A",
+              "src": "/case-studies/local-government-assets/campaign-30a.mp4",
+              "poster": "/case-studies/local-government-assets/campaign-30a.jpg"
+            }
+          ],
+          "documents": [
+            {
+              "title": "Press Ad — Half Page",
+              "src": "/case-studies/local-government-assets/press-halfpage.pdf"
+            },
+            {
+              "title": "Press Ad — Strip",
+              "src": "/case-studies/local-government-assets/press-strip.pdf"
+            },
+            {
+              "title": "Press Ad — Quarter Vertical (Example)",
+              "src": "/case-studies/local-government-assets/press-qtr-vert-example.pdf"
+            }
+          ],
+          "imagesHeading": "Images",
+          "images": [
+            {
+              "title": "OOH — Billboard Planner",
+              "src": "/case-studies/local-government-assets/ooh-planner.jpg"
+            },
+            {
+              "title": "Social Post (In Situ)",
+              "src": "/case-studies/local-government-assets/social-post-insitu.jpg"
+            }
+          ]
+        },
+        "whyItMatters": {
+          "heading": "Why it matters to you",
+          "body": "Getting someone to act is a different job from getting them to notice. Most marketing that fails has done the first and skipped the second."
+        },
+        "cta": {
+          "eyebrow": "Facing something similar?",
+          "title": "Getting people to notice and getting them to act are two different jobs. Let's talk about which one you're missing.",
+          "body": "Tell us what you're trying to shift — we'll come back to you within one business day.",
+          "ctaLabel": "Send enquiry",
+          "backLabel": "Back to Case Studies"
+        }
+      },
+      "adelaide-hills-wine-region": {
+        "sectorTags": [
+          "Wine",
+          "Brand strategy"
+        ],
+        "title": "Adelaide Hills Wine Region",
+        "attribution": "Research and brand strategy lead, [organisation], [years]",
+        "logo": "/case-studies/adelaide-hills-logo.png",
+        "situation": {
+          "heading": "The situation",
+          "body": "One of Australia's leading cool climate wine regions, widely respected, and without a clear story about itself."
+        },
+        "realProblem": {
+          "heading": "The real problem",
+          "body": "The brief was brand positioning. The actual obstacle was internal: members did not agree on who the region was, who it competed against, or what it should say to consumers, visitors, government, industry bodies and sponsors. No amount of positioning work survives that. Agreement had to come first."
+        },
+        "whatWeDid": {
+          "heading": "What we did",
+          "items": [
+            "Ran an extensive qualitative and quantitative research programme across consumers, stakeholders, industry and government",
+            "Clarified who the region was, what it stood for, where it was heading and why anyone should believe it",
+            "Defined how the region should talk about itself in a way that united members rather than dividing them",
+            "Built the brand positioning, architecture and communications strategy from the research"
+          ]
+        },
+        "result": {
+          "heading": "The result",
+          "headline": "A research-led positioning and a clearer regional narrative.",
+          "body": "Giving members a shared platform for visitation, partnerships, government engagement and events."
+        },
+        "gallery": {
+          "heading": "Campaign assets",
+          "videosHeading": "Video",
+          "documentsHeading": "Documents",
+          "videos": [],
+          "documents": [
+            {
+              "title": "Brand Pyramid",
+              "src": "/case-studies/adelaide-hills-assets/brand-pyramid.pdf"
+            }
+          ],
+          "imagesHeading": "Images",
+          "images": []
+        },
+        "whyItMatters": {
+          "heading": "Why it matters to you",
+          "body": "If the people inside a business cannot agree on what it is, no external campaign will settle it. That agreement is the first thing the Growth Charter goes looking for."
+        },
+        "cta": {
+          "eyebrow": "Facing something similar?",
+          "title": "If the people inside your business can't agree on what it is, that's where we'd start too.",
+          "body": "Tell us what you're trying to grow — we'll come back to you within one business day.",
+          "ctaLabel": "Send enquiry",
+          "backLabel": "Back to Case Studies"
+        }
+      },
+      "first-nations-voice-2024": {
+        "sectorTags": [
+          "Government",
+          "Community engagement"
+        ],
+        "title": "2024 First Nations Voice to Parliament Election",
+        "attribution": "Communications strategy lead, Electoral Commission of South Australia, 2023–24",
+        "logo": "/case-studies/safnvp-logo.png",
+        "situation": {
+          "heading": "The situation",
+          "body": "South Australia's first First Nations Voice election — 46 positions across six regions, held on 16 March 2024. Originally scheduled for September 2023 and moved to avoid overlapping the Federal Voice Referendum."
+        },
+        "realProblem": {
+          "heading": "The real problem",
+          "body": "Standard election advertising was never going to carry this. A new electoral process, communities spread across six regions, and a timing change that had already disrupted understanding. Reach was not the constraint — trust and comprehension were."
+        },
+        "whatWeDid": {
+          "heading": "What we did",
+          "items": [
+            "Identified early that conventional advertising alone would not work, and built a community-led approach instead",
+            "Combined communications strategy, community engagement, media engagement, advertising, PR and budget management",
+            "Delivered across TV, press, outdoor, digital, website, social and PR",
+            "Created more than 500 community engagement kits and supported over 400 engagement sessions"
+          ]
+        },
+        "result": {
+          "heading": "The result",
+          "headline": "All 46 positions attracted multiple nominations.",
+          "body": "Not one was filled uncontested, and elections were successfully held across every position — establishing the First Nations Voice to SA Parliament."
+        },
+        "gallery": {
+          "heading": "Campaign assets",
+          "videosHeading": "Video",
+          "documentsHeading": "Documents",
+          "videos": [
+            {
+              "title": "Awareness",
+              "src": "/case-studies/voice-assets/awareness.mp4",
+              "poster": "/case-studies/voice-assets/awareness.jpg"
+            },
+            {
+              "title": "Enrol",
+              "src": "/case-studies/voice-assets/enrol.mp4",
+              "poster": "/case-studies/voice-assets/enrol.jpg"
+            },
+            {
+              "title": "Enrol — Urgency",
+              "src": "/case-studies/voice-assets/enrol-urgency.mp4",
+              "poster": "/case-studies/voice-assets/enrol-urgency.jpg"
+            },
+            {
+              "title": "How to Vote",
+              "src": "/case-studies/voice-assets/how-to-vote.mp4",
+              "poster": "/case-studies/voice-assets/how-to-vote.jpg"
+            },
+            {
+              "title": "Nominate",
+              "src": "/case-studies/voice-assets/nominate.mp4",
+              "poster": "/case-studies/voice-assets/nominate.jpg"
+            },
+            {
+              "title": "Vote Awareness",
+              "src": "/case-studies/voice-assets/vote-awareness.mp4",
+              "poster": "/case-studies/voice-assets/vote-awareness.jpg"
+            },
+            {
+              "title": "Vote — Urgency",
+              "src": "/case-studies/voice-assets/vote-urgency.mp4",
+              "poster": "/case-studies/voice-assets/vote-urgency.jpg"
+            }
+          ],
+          "documents": [
+            {
+              "title": "Vote Poster (A2)",
+              "src": "/case-studies/voice-assets/vote-poster-a2.pdf"
+            },
+            {
+              "title": "Enrol Press Ad",
+              "src": "/case-studies/voice-assets/enrol-press-ad.pdf"
+            },
+            {
+              "title": "Election Brochure",
+              "src": "/case-studies/voice-assets/brochure.pdf"
+            },
+            {
+              "title": "Nominations Guide (A3)",
+              "src": "/case-studies/voice-assets/nominations-guide-a3.pdf"
+            }
+          ],
+          "imagesHeading": "Images",
+          "images": []
+        },
+        "whyItMatters": {
+          "heading": "Why it matters to you",
+          "body": "When the people you need are not reachable through the obvious channels, spending more on those channels does not fix it. Going where they already are does."
+        },
+        "cta": {
+          "eyebrow": "Facing something similar?",
+          "title": "When the obvious channels aren't reaching the people you need, that's a strategy problem before it's a media-buying one.",
+          "body": "Tell us what you're trying to shift — we'll come back to you within one business day.",
+          "ctaLabel": "Send enquiry",
+          "backLabel": "Back to Case Studies"
+        }
       }
     }
   }
