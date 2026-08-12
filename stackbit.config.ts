@@ -105,7 +105,7 @@ export default defineStackbitConfig({
   ],
   sitemap: () => [
     { stableId: "home", label: "Home", urlPath: "/", isHomePage: true },
-    { stableId: "growth-charter", label: "The Growth Charter", urlPath: "/growth-charter/" },
+    { stableId: "growth-charter", label: "The Growth Program", urlPath: "/growth-program/" },
     { stableId: "strategic-advisory", label: "Strategic Advisory", urlPath: "/strategic-advisory/" },
     { stableId: "services", label: "Services", urlPath: "/services/" },
     { stableId: "how-we-work", label: "How We Work", urlPath: "/how-we-work/" },

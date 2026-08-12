@@ -33,6 +33,45 @@
   to = "/advisory-process/"
   status = 301
 
+# Batch 5: The Growth Charter renamed to The Growth Program.
+# Umbrella page and tiers renamed: Launch Charter -> Launch,
+# Launch Complete -> Grow, Charter Course -> Grow It Yourself.
+[[redirects]]
+  from = "/growth-charter/launch-charter/"
+  to = "/growth-program/launch/"
+  status = 301
+
+[[redirects]]
+  from = "/growth-charter/launch-complete/"
+  to = "/growth-program/grow/"
+  status = 301
+
+[[redirects]]
+  from = "/growth-charter/charter-course/"
+  to = "/growth-program/grow-it-yourself/"
+  status = 301
+
+[[redirects]]
+  from = "/growth-charter/do-it-together/"
+  to = "/growth-program/do-it-together/"
+  status = 301
+
+[[redirects]]
+  from = "/growth-charter/"
+  to = "/growth-program/"
+  status = 301
+
+[[redirects]]
+  from = "/growth-charter"
+  to = "/growth-program/"
+  status = 301
+
+# Catch-all for any old growth-charter sub-paths not listed above.
+[[redirects]]
+  from = "/growth-charter/*"
+  to = "/growth-program/:splat"
+  status = 301
+
 # Old-site case study URLs: every slug below is preserved exactly as a route
 # on the new site (see src/routes.ts), so none of them need a redirect rule.
 # Listed here for the record — nothing to configure:

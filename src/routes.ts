@@ -69,7 +69,7 @@ export const siteRoutes: SiteRoute[] = [
   },
   {
     page: "growth-charter",
-    path: "/growth-charter/",
+    path: "/growth-program/",
     title: "The Growth Program | The United Republic",
     description:
       "The Growth Program finds the growth that's already in your business, sizes it in dollars, and gives you a plan you own — for Australian businesses ready for their next stage.",
@@ -85,28 +85,28 @@ export const siteRoutes: SiteRoute[] = [
   // Growth Program product pages — stubs pending full product copy.
   {
     page: "launch-charter",
-    path: "/growth-charter/launch-charter/",
+    path: "/growth-program/launch/",
     title: "Launch | The Growth Program | The United Republic",
     description:
       "Foundations done properly. Positioning, a 90-day growth plan, brand and a launch-ready website.",
   },
   {
     page: "do-it-together",
-    path: "/growth-charter/do-it-together/",
+    path: "/growth-program/do-it-together/",
     title: "Do It Together | The Growth Program | The United Republic",
     description:
       "We guide the work, run the key sessions and help you make the decisions, while you and your team build the plan and the skills to carry it forward.",
   },
   {
     page: "launch-complete",
-    path: "/growth-charter/launch-complete/",
+    path: "/growth-program/grow/",
     title: "Grow | The Growth Program | The United Republic",
     description:
       "Everything, built on your actual sales data, with pricing, conversion and 12 weeks of support.",
   },
   {
     page: "charter-course",
-    path: "/growth-charter/charter-course/",
+    path: "/growth-program/grow-it-yourself/",
     title: "Grow It Yourself | The Growth Program | The United Republic",
     description:
       "A guided course for owners who want to work through The Growth Program themselves, using structured tools, templates and training.",
