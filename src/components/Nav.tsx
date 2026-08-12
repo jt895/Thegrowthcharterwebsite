@@ -240,6 +240,20 @@ export default function Nav({ current, onNavigate }: NavProps) {
               {navContent.about}
             </a>
 
+            {/* Phone — persistent quick-contact, right-aligned next to the nav links */}
+            <a
+              href={siteContent.contact.phoneHref}
+              style={{
+                cursor: "pointer", textDecoration: "none",
+                fontFamily: "'Inter', sans-serif", fontSize: 13, fontWeight: 400, letterSpacing: "0.02em",
+                color: "rgba(245,243,238,0.6)", transition: "color 0.25s", whiteSpace: "nowrap",
+              }}
+              onMouseEnter={(e) => { e.currentTarget.style.color = "#F5F3EE"; }}
+              onMouseLeave={(e) => { e.currentTarget.style.color = "rgba(245,243,238,0.6)"; }}
+            >
+              {siteContent.contact.phone}
+            </a>
+
             <a
               href={pathForPage("contact")}
               onClick={(event) => handleLink(event, "contact")}

@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
+import MobileContactBar from "./components/MobileContactBar";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import HowWeWorkPage from "./pages/HowWeWorkPage";
@@ -80,6 +81,7 @@ export default function App({ initialPage = "home" }: AppProps) {
       <Nav current={page} onNavigate={navigate} />
       <main>{renderPage()}</main>
       <Footer current={page} onNavigate={navigate} />
+      <MobileContactBar />
     </div>
   );
 }

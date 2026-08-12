@@ -96,8 +96,11 @@ export default function HomePage({ onNavigate }: HomePageProps) {
           <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 18, lineHeight: 1.7, color: "rgba(245,243,238,0.65)", marginBottom: 16, maxWidth: 620 }} className="hero-sub">
             {homeContent.hero.subA}
           </p>
-          <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.7, color: "rgba(245,243,238,0.45)", marginBottom: 48, maxWidth: 560 }} className="hero-sub">
+          <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.7, color: "rgba(245,243,238,0.45)", marginBottom: 20, maxWidth: 560 }} className="hero-sub">
             {homeContent.hero.subB}
+          </p>
+          <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, lineHeight: 1.6, color: "rgba(245,243,238,0.4)", marginBottom: 40, maxWidth: 560 }} className="hero-sub">
+            {homeContent.hero.proofLine}
           </p>
           <div style={{ display: "flex", gap: 16, flexWrap: "wrap" }} className="hero-cta">
             <button
@@ -138,8 +141,11 @@ export default function HomePage({ onNavigate }: HomePageProps) {
                 {homeContent.twoPaths.advisory.eyebrow}
               </p>
               <h3 style={{ fontFamily: "'Instrument Serif', serif", fontSize: 32, color: "#F5F3EE", fontWeight: 400, marginBottom: 24 }}>{homeContent.twoPaths.advisory.title}</h3>
-              <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.75, color: "rgba(245,243,238,0.55)", marginBottom: 40 }}>
+              <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.75, color: "rgba(245,243,238,0.55)", marginBottom: 20 }}>
                 {homeContent.twoPaths.advisory.body}
+              </p>
+              <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, lineHeight: 1.6, fontStyle: "italic", color: "rgba(245,243,238,0.45)", marginBottom: 40 }}>
+                {homeContent.twoPaths.advisory.fitNote}
               </p>
               <div style={{ display: "flex", alignItems: "center", gap: 8, color: "#9B9B9B" }}>
                 <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, letterSpacing: "0.05em" }}>{homeContent.twoPaths.advisory.cta}</span>
@@ -157,8 +163,11 @@ export default function HomePage({ onNavigate }: HomePageProps) {
                 {homeContent.twoPaths.growthCharter.eyebrow}
               </p>
               <h3 style={{ fontFamily: "'Instrument Serif', serif", fontSize: 32, color: "#F5F3EE", fontWeight: 400, marginBottom: 24 }}>{homeContent.twoPaths.growthCharter.title}</h3>
-              <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.75, color: "rgba(245,243,238,0.55)", marginBottom: 40 }}>
+              <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.75, color: "rgba(245,243,238,0.55)", marginBottom: 20 }}>
                 {homeContent.twoPaths.growthCharter.body}
+              </p>
+              <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, lineHeight: 1.6, fontStyle: "italic", color: "rgba(245,243,238,0.45)", marginBottom: 40 }}>
+                {homeContent.twoPaths.growthCharter.fitNote}
               </p>
               <div style={{ display: "flex", alignItems: "center", gap: 8, color: "#2A9D78" }}>
                 <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, letterSpacing: "0.05em" }}>{homeContent.twoPaths.growthCharter.cta}</span>

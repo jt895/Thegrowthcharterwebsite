@@ -139,6 +139,15 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  /* Clears MobileContactBar (fixed bottom bar, same breakpoint) so it never
+     permanently covers the last content on any page — including the Contact
+     page's form fields and submit buttons. */
+  body {
+    padding-bottom: calc(51px + env(safe-area-inset-bottom));
+  }
+}
+
 @media (max-width: 600px) {
   /* Keep page gutters and text panels fluid on phone-sized screens. */
   section {

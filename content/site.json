@@ -61,9 +61,10 @@
     "hero": {
       "title": "Growth needs sharper choices, not more activity.",
       "subA": "We help businesses and organisations find where growth is really available, decide what matters most, and build the capability to act on it.",
-      "subB": "Executive-level strategy, customer evidence and commercial discipline — applied at the scale you actually need.",
+      "subB": "Big-brand strategic thinking. Backed by real customer evidence. A hard eye on the money. Sized to fit your business.",
       "ctaPrimary": "Book your free 20 minute call",
-      "scrollLabel": "Scroll"
+      "scrollLabel": "Scroll",
+      "proofLine": "Trusted by teams at Toyota, IAG, Panasonic and SA Government to make growth decisions that stuck."
     },
     "twoPaths": {
       "title": "Two ways we work. Choose the one that fits.",
@@ -71,13 +72,15 @@
         "eyebrow": "Government, corporate and complex organisations",
         "title": "Strategic Advisory",
         "body": "Independent counsel for organisations that need to define the real problem before investing in campaigns, content or delivery. Complex stakeholders, competing priorities, and a clear answer at the end.",
-        "cta": "Explore Strategic Advisory"
+        "cta": "Explore Strategic Advisory",
+        "fitNote": "Right for you if you're leading a government, corporate or complex organisation and need independent counsel before committing budget."
       },
       "growthCharter": {
         "eyebrow": "Startups, small businesses and established businesses ready for the next step",
         "title": "The Growth Charter",
-        "body": "A structured program that finds your strongest commercial opportunities, ranks them by what they're worth, and builds a plan you own. Four ways to engage, from self-paced to fully delivered.",
-        "cta": "Explore The Growth Charter"
+        "body": "It finds your best opportunities, ranks them by what they're worth, and builds you a plan you own. Four ways to work with us, from do-it-yourself to fully done for you.",
+        "cta": "Explore The Growth Charter",
+        "fitNote": "Right for you if you're a founder or owner ready to find and act on your next growth opportunity."
       }
     },
     "whyTur": {
@@ -87,15 +90,15 @@
       "pillars": [
         {
           "title": "Commercial first",
-          "body": "We connect customer, brand, sales, margin and capacity decisions, so growth is tied to business value rather than activity."
+          "body": "We look at customers, brand, sales, margins and capacity together, so growth is tied to real value, not just activity."
         },
         {
           "title": "Evidence led",
-          "body": "We test what the owner believes against customer insight, business data and market reality before setting priorities."
+          "body": "We test what you believe against customer insight, real data and market reality, before deciding what matters most."
         },
         {
           "title": "Capability, not dependency",
-          "body": "You own what we build and know how to use it. Our job is to make ourselves unnecessary — though we're here when you want us."
+          "body": "You own what we build and know how to use it. Our job is to make ourselves unnecessary, though we're here when you want us."
         }
       ]
     },
@@ -187,27 +190,27 @@
       "eyebrow": "The Growth Charter",
       "title": "The growth you're looking for is probably already in your business.",
       "paraA": "The Growth Charter finds it, sizes it in dollars, and gives you a plan you own.",
-      "paraB": "Most owners are one or two decisions away from better margins — not one more marketing campaign. We test what you believe about your business against what the evidence actually says, and build the plan around the gap.",
+      "paraB": "Most owners are one or two decisions away from better margins, not one more marketing campaign. We test what you believe about your business against what the evidence actually says, and build the plan around the gap.",
       "ctaPrimary": "Book your free 20 minute call",
       "ctaSecondary": "See the ways to work with us"
     },
     "whatIs": {
       "eyebrow": "What it is",
       "title": "A growth program built to be used, not filed.",
-      "paraA": "The Growth Charter finds your strongest commercial opportunities, ranks them by what they are actually worth, and turns them into a plan with your name on it.",
-      "paraB": "Every stage produces evidence, decisions and tools that stay in your business. You finish stronger and more capable — not with a consultant on retainer.",
+      "paraA": "The Growth Charter finds your strongest opportunities, ranks them by what they're actually worth, and turns them into a plan with your name on it.",
+      "paraB": "Every stage leaves you with real evidence, clear decisions and tools you can use. You end up stronger and more capable, not with a consultant on retainer.",
       "pillars": [
         {
           "title": "Evidence first",
-          "body": "We test owner belief against customer insight and commercial data before any decisions are made."
+          "body": "We test what you believe against customer insight and real data before any decisions get made."
         },
         {
           "title": "Strategy before spend",
-          "body": "No campaigns, websites or marketing budget until the commercial direction is clear."
+          "body": "No campaigns, websites or marketing spend until the direction is clear."
         },
         {
           "title": "Built for your business",
-          "body": "Tailored to your stage, sector and goals. Not a framework applied the same way to everyone."
+          "body": "Shaped around your stage, sector and goals. Not the same playbook handed to everyone."
         },
         {
           "title": "Capability, not dependency",
@@ -218,7 +221,7 @@
     "waysToWork": {
       "eyebrow": "Ways to engage",
       "title": "The same scope. Two ways to deliver it.",
-      "intro": "Scope is how much work. Delivery is who does it. Pick the row for how much ground you need to cover, then the column for how much of it you want to do yourself.",
+      "intro": "Scope is how much work. Delivery is who does it. Pick the row for how much ground you need to cover, then the column for how much you want to do yourself.",
       "columns": [
         "Do It Together",
         "Done For You"
@@ -277,7 +280,7 @@
       "eyebrow": "The central idea",
       "title": "What you believe. What the evidence says.",
       "paraA": "Every owner has a view of why customers buy, which work is most valuable, and where growth will come from. Some of it is right. Some of it is incomplete. Some of it is quietly costing money.",
-      "paraB": "The Growth Charter deliberately surfaces that gap. It is where better decisions, stronger margins and clearer priorities are found.",
+      "paraB": "The Growth Charter finds that gap on purpose. That's where better decisions, stronger margins and clearer priorities come from.",
       "quote": "The product isn't a website, a campaign or an AI tool. It's a stronger business — with clearer commercial choices and the ability to keep moving after we've gone.",
       "quoteAttribution": "James Trebilcock, Founder, The United Republic"
     },
@@ -290,31 +293,31 @@
           "num": "01",
           "section": "Discovery",
           "title": "The Business Now",
-          "body": "We capture how you and your team see the business today, including your goals, customers, commercial model, capacity, risks and personal endgame."
+          "body": "We find out how you and your team see the business today: your goals, customers, business model, capacity, risks and where you personally want to end up."
         },
         {
           "num": "02",
           "section": "Evidence and analysis",
           "title": "The Opportunity",
-          "body": "We test those beliefs against customer research, commercial data and market reality, then size and rank the opportunities in dollars, effort and time to impact."
+          "body": "We test those beliefs against customer research, real numbers and market reality. Then we work out what each opportunity is worth, in dollars, effort and time."
         },
         {
           "num": "03",
           "section": "A clearer place in the market",
           "title": "Branding & Positioning",
-          "body": "We define what you are really selling, why the right customers should choose you and how your business can stand apart in a way you can deliver."
+          "body": "We work out what you're really selling, why the right customers should choose you, and how your business can stand apart in a way you can actually deliver."
         },
         {
           "num": "04",
           "section": "Who matters and how to reach them",
           "title": "Audiences, Messaging & Channel Planning",
-          "body": "We set customer priorities, shape the messages that matter and choose the channels that fit how people actually make decisions."
+          "body": "We work out which customers matter most, shape the messages that count, and choose the channels that fit how people actually decide."
         },
         {
           "num": "05",
           "section": "Turn the plan into action",
           "title": "Go To Market & Implementation",
-          "body": "We create a staged plan with responsibilities, timing, budgets, measures and the practical tools your team needs to deliver it."
+          "body": "We build a staged plan: who does what, when, what it costs, how you'll know it's working, and the tools your team needs to run it."
         }
       ]
     },

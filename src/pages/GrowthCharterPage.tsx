@@ -225,7 +225,9 @@ export default function GrowthCharterPage({ onNavigate }: GrowthCharterPageProps
               "{growthCharterContent.centralIdea.quote}"
             </p>
             <div style={{ width: 40, height: 1, background: "rgba(143,217,190,0.4)", marginBottom: 20 }} />
-            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, letterSpacing: "0.02em", color: "rgba(143,217,190,0.7)", margin: 0 }}>
+            {/* Matches the case-study attribution line style (CaseStudyTemplate.tsx) — the
+                site's one established byline/credibility caption convention. */}
+            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, color: "rgba(245,243,238,0.45)", margin: 0 }}>
               — {growthCharterContent.centralIdea.quoteAttribution}
             </p>
           </div>
