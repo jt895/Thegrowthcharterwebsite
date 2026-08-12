@@ -62,7 +62,7 @@
       "title": "Growth needs sharper choices, not more activity.",
       "subA": "We help businesses and organisations find where growth is really available, decide what matters most, and build the capability to act on it.",
       "subB": "Executive-level strategy, customer evidence and commercial discipline — applied at the scale you actually need.",
-      "ctaPrimary": "Find your path",
+      "ctaPrimary": "Book your free 20 minute call",
       "scrollLabel": "Scroll"
     },
     "twoPaths": {
@@ -107,8 +107,8 @@
     "cta": {
       "title": "Find the growth decision your business needs next.",
       "body": "The first conversation is practical and free. What's slowed down, where the opportunity might be, and what a useful outcome would look like. Twenty minutes, no pitch.",
-      "ctaPrimary": "Book a conversation",
-      "ctaSecondary": "See how we work"
+      "ctaPrimary": "Book your free 20 minute call",
+      "ctaSecondary": "Book your free 20 minute call"
     }
   },
   "about": {
@@ -165,7 +165,7 @@
     },
     "routeOut": {
       "title": "Two ways to work with us",
-      "buttonLabel": "Get in touch",
+      "buttonLabel": "Book your free 20 minute call",
       "paths": [
         {
           "title": "Strategic Advisory",
@@ -188,7 +188,7 @@
       "title": "The growth you're looking for is probably already in your business.",
       "paraA": "The Growth Charter finds it, sizes it in dollars, and gives you a plan you own.",
       "paraB": "Most owners are one or two decisions away from better margins — not one more marketing campaign. We test what you believe about your business against what the evidence actually says, and build the plan around the gap.",
-      "ctaPrimary": "Book a conversation",
+      "ctaPrimary": "Book your free 20 minute call",
       "ctaSecondary": "See the ways to work with us"
     },
     "whatIs": {
@@ -338,7 +338,7 @@
     "fitCheck": {
       "title": "Is this you?",
       "body": "Start with a free 20-minute conversation. No pitch — we'll tell you honestly whether the Charter is right for you, and what it would look like.",
-      "cta": "Book a conversation",
+      "cta": "Book your free 20 minute call",
       "points": [
         "Revenue is there, but growth has flattened",
         "You're not sure which customers or services are actually most profitable",
@@ -353,7 +353,7 @@
         "title": "Everything you need to start selling properly.",
         "subtitle": "Strategy, positioning, brand, a website that converts and a 90-day plan — for new and small businesses that want to get it right the first time.",
         "price": "$6,950 + GST",
-        "ctaLabel": "Book a conversation",
+        "ctaLabel": "Book your free 20 minute call",
         "intro": {
           "heading": "The problem",
           "body": [
@@ -484,7 +484,7 @@
         "subtitle": "We run the sessions, bring the evidence and guide the decisions. You and your team do the work — and keep the capability.",
         "price": "From $9,550 + GST",
         "pricePending": true,
-        "ctaLabel": "Book a conversation",
+        "ctaLabel": "Book your free 20 minute call",
         "intro": {
           "heading": "How it works",
           "body": [
@@ -534,7 +534,7 @@
         "title": "We do the work. You get your business back.",
         "subtitle": "The full Growth Charter — researched, analysed, built and implemented. You make the decisions. We produce everything else.",
         "price": "$14,950 + GST",
-        "ctaLabel": "Book a conversation",
+        "ctaLabel": "Book your free 20 minute call",
         "intro": {
           "body": [
             "For owners with the ambition and the budget, but not the hours.",
@@ -656,7 +656,7 @@
       "eyebrow": "Strategy through to delivery",
       "title": "Strategy through to delivery.",
       "body": "We work from problem definition through to identifying, briefing and guiding the right execution partners.",
-      "ctaLabel": "Book an initial conversation",
+      "ctaLabel": "Book your free 20 minute call",
       "ctaSecondaryLabel": "See the services"
     }
   },
@@ -786,7 +786,7 @@
     "cta": {
       "title": "Not sure which one you need?",
       "body": "Most conversations start there. Tell us what you're trying to achieve and we'll tell you honestly which service fits — or whether you need one at all.",
-      "ctaLabel": "Book an initial conversation"
+      "ctaLabel": "Book your free 20 minute call"
     }
   },
   "strategicAdvisory": {
@@ -795,7 +795,7 @@
       "title": "Start with the right questions. Then build the right response.",
       "paraA": "Independent counsel for government, brands and complex organisations — before the money goes into campaigns, content or creative.",
       "paraB": "We help you define the real problem, shape the strategy that answers it, and brief the right specialists to deliver it.",
-      "ctaPrimary": "Book an initial conversation"
+      "ctaPrimary": "Book your free 20 minute call"
     },
     "theCase": {
       "title": "Most briefs describe a symptom.",
@@ -904,7 +904,7 @@
       "eyebrow": "Start the conversation",
       "title": "Start with a conversation about the problem.",
       "body": "Not a pitch and not a capability presentation. A discussion about what you're trying to change and whether we're the right people to help.",
-      "ctaLabel": "Book an initial conversation"
+      "ctaLabel": "Book your free 20 minute call"
     }
   },
   "contact": {
