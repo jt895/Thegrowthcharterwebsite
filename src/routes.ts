@@ -70,9 +70,9 @@ export const siteRoutes: SiteRoute[] = [
   {
     page: "growth-charter",
     path: "/growth-charter/",
-    title: "The Growth Charter | The United Republic",
+    title: "The Growth Program | The United Republic",
     description:
-      "The Growth Charter finds the growth that's already in your business, sizes it in dollars, and gives you a plan you own — for Australian businesses ready for their next stage.",
+      "The Growth Program finds the growth that's already in your business, sizes it in dollars, and gives you a plan you own — for Australian businesses ready for their next stage.",
   },
   {
     page: "contact",
@@ -82,34 +82,34 @@ export const siteRoutes: SiteRoute[] = [
       "Get in touch with The United Republic. A twenty-minute conversation about what you're trying to change, and whether we're the right people to help.",
   },
 
-  // Growth Charter product pages — stubs pending full product copy.
+  // Growth Program product pages — stubs pending full product copy.
   {
     page: "launch-charter",
     path: "/growth-charter/launch-charter/",
-    title: "Launch Charter | The Growth Charter | The United Republic",
+    title: "Launch | The Growth Program | The United Republic",
     description:
       "Foundations done properly. Positioning, a 90-day growth plan, brand and a launch-ready website.",
   },
   {
     page: "do-it-together",
     path: "/growth-charter/do-it-together/",
-    title: "Do It Together | The Growth Charter | The United Republic",
+    title: "Do It Together | The Growth Program | The United Republic",
     description:
       "We guide the work, run the key sessions and help you make the decisions, while you and your team build the plan and the skills to carry it forward.",
   },
   {
     page: "launch-complete",
     path: "/growth-charter/launch-complete/",
-    title: "Launch Complete | The Growth Charter | The United Republic",
+    title: "Grow | The Growth Program | The United Republic",
     description:
       "Everything, built on your actual sales data, with pricing, conversion and 12 weeks of support.",
   },
   {
     page: "charter-course",
     path: "/growth-charter/charter-course/",
-    title: "The Charter Course | The Growth Charter | The United Republic",
+    title: "Grow It Yourself | The Growth Program | The United Republic",
     description:
-      "A guided program for owners who want to work through The Growth Charter themselves, using structured tools, templates and training.",
+      "A guided course for owners who want to work through The Growth Program themselves, using structured tools, templates and training.",
   },
 
   // Case studies — slugs preserved from the old site so no redirects are needed.

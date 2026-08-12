@@ -7,7 +7,7 @@
       "Republic"
     ],
     "tagline": "Strategy, growth and practical implementation",
-    "blurb": "Independent strategic advisory for complex organisations and practical business growth support through The Growth Charter.",
+    "blurb": "Independent strategic advisory for complex organisations and practical business growth support through The Growth Program.",
     "copyright": "© 2026 The United Republic. All rights reserved.",
     "contact": {
       "email": "jt@theunitedrepublic.com.au",
@@ -17,7 +17,7 @@
     "location": "Adelaide, South Australia. Working with businesses and organisations nationally."
   },
   "navigation": {
-    "growthCharter": "The Growth Charter",
+    "growthCharter": "The Growth Program",
     "strategicAdvisory": "Strategic Advisory",
     "services": "Advisory Services",
     "howWeWork": "The Advisory Process",
@@ -33,7 +33,7 @@
         "page": "strategic-advisory"
       },
       {
-        "label": "The Growth Charter",
+        "label": "The Growth Program",
         "page": "growth-charter"
       },
       {
@@ -48,7 +48,7 @@
     "contactHeading": "Contact",
     "enquiryLabels": [
       {
-        "label": "Growth Charter enquiry",
+        "label": "Growth Program enquiry",
         "anchor": "growth-charter-enquiry"
       },
       {
@@ -77,9 +77,9 @@
       },
       "growthCharter": {
         "eyebrow": "Startups, small businesses and established businesses ready for the next step",
-        "title": "The Growth Charter",
+        "title": "The Growth Program",
         "body": "It finds your best opportunities, ranks them by what they're worth, and builds you a plan you own. Four ways to work with us, from do-it-yourself to fully done for you.",
-        "cta": "Explore The Growth Charter",
+        "cta": "Explore The Growth Program",
         "fitNote": "Right for you if you're a founder or owner ready to find and act on your next growth opportunity."
       }
     },
@@ -118,7 +118,7 @@
     "hero": {
       "eyebrow": "About",
       "title": "One senior strategist. The right team around every job.",
-      "paraA": "The United Republic is an independent Australian strategy and growth advisory — working with government and major brands through Strategic Advisory, and with owner-led businesses through The Growth Charter.",
+      "paraA": "The United Republic is an independent Australian strategy and growth advisory — working with government and major brands through Strategic Advisory, and with owner-led businesses through The Growth Program.",
       "paraB": "We help you define the real problem, shape the response, and stay involved through delivery."
     },
     "james": {
@@ -177,9 +177,9 @@
           "target": "strategic-advisory"
         },
         {
-          "title": "The Growth Charter",
+          "title": "The Growth Program",
           "body": "For startups, small businesses and established businesses ready for the next stage of growth.",
-          "cta": "Explore The Growth Charter",
+          "cta": "Explore The Growth Program",
           "target": "growth-charter"
         }
       ]
@@ -187,9 +187,9 @@
   },
   "growthCharter": {
     "hero": {
-      "eyebrow": "The Growth Charter",
+      "eyebrow": "The Growth Program",
       "title": "The growth you're looking for is probably already in your business.",
-      "paraA": "The Growth Charter finds it, sizes it in dollars, and gives you a plan you own.",
+      "paraA": "The Growth Program finds it, sizes it in dollars, and gives you a plan you own.",
       "paraB": "Most owners are one or two decisions away from better margins, not one more marketing campaign. We test what you believe about your business against what the evidence actually says, and build the plan around the gap.",
       "ctaPrimary": "Book your free 20 minute call",
       "ctaSecondary": "See the ways to work with us"
@@ -197,7 +197,7 @@
     "whatIs": {
       "eyebrow": "What it is",
       "title": "A growth program built to be used, not filed.",
-      "paraA": "The Growth Charter finds your strongest opportunities, ranks them by what they're actually worth, and turns them into a plan with your name on it.",
+      "paraA": "The Growth Program finds your strongest opportunities, ranks them by what they're actually worth, and turns them into a plan with your name on it.",
       "paraB": "Every stage leaves you with real evidence, clear decisions and tools you can use. You end up stronger and more capable, not with a consultant on retainer.",
       "pillars": [
         {
@@ -228,7 +228,7 @@
       ],
       "rows": [
         {
-          "scope": "Launch Charter",
+          "scope": "Launch",
           "note": "Foundations done properly — strategy, brand, a launch-ready website.",
           "cells": [
             {
@@ -242,7 +242,7 @@
           ]
         },
         {
-          "scope": "Launch Complete",
+          "scope": "Grow",
           "note": "Everything, built on your actual sales data, with pricing, conversion and 12 weeks of support.",
           "cells": [
             {
@@ -257,7 +257,7 @@
           ]
         },
         {
-          "scope": "Bespoke",
+          "scope": "Scale",
           "note": "Multiple audiences, product lines or markets.",
           "cells": [
             {
@@ -272,7 +272,7 @@
         }
       ],
       "note": "All prices ex GST. Every engagement starts with a $450 Viability Session, credited in full.",
-      "charterCourseNote": "Prefer to go at your own pace? The Charter Course is in development.",
+      "charterCourseNote": "Prefer to go at your own pace? Grow It Yourself is in development.",
       "charterCourseLinkLabel": "Join the waitlist",
       "legend": "Scope is how much work is involved. Delivery is who does it — Do It Together means you're guided through it, Done For You means we build it for you."
     },
@@ -280,7 +280,7 @@
       "eyebrow": "The central idea",
       "title": "What you believe. What the evidence says.",
       "paraA": "Every owner has a view of why customers buy, which work is most valuable, and where growth will come from. Some of it is right. Some of it is incomplete. Some of it is quietly costing money.",
-      "paraB": "The Growth Charter finds that gap on purpose. That's where better decisions, stronger margins and clearer priorities come from.",
+      "paraB": "The Growth Program finds that gap on purpose. That's where better decisions, stronger margins and clearer priorities come from.",
       "quote": "The product isn't a website, a campaign or an AI tool. It's a stronger business — with clearer commercial choices and the ability to keep moving after we've gone.",
       "quoteAttribution": "James Trebilcock, Founder, The United Republic"
     },
@@ -324,7 +324,7 @@
     "whyTur": {
       "eyebrow": "Credibility",
       "title": "Big business experience, applied to yours.",
-      "paraA": "The Growth Charter draws on 25 years of work with national and international brands, government agencies and owner-led businesses.",
+      "paraA": "The Growth Program draws on 25 years of work with national and international brands, government agencies and owner-led businesses.",
       "paraB": "James Trebilcock has led strategy, marketing and growth for Toyota, Ford, Commonwealth Bank, Hyundai, Subaru, DFAT, Hort Innovation, the Electoral Commission of South Australia, Adelaide Hills Wine Region and The Bend Motorsport Park.",
       "paraC": "The questions that build major brands are the same ones that help a local business make better commercial decisions. The scale changes. The thinking shouldn't.",
       "organisations": [
@@ -342,7 +342,7 @@
     },
     "fitCheck": {
       "title": "Is this you?",
-      "body": "Start with a free 20-minute conversation. No pitch — we'll tell you honestly whether the Charter is right for you, and what it would look like.",
+      "body": "Start with a free 20-minute conversation. No pitch — we'll tell you honestly whether the Program is right for you, and what it would look like.",
       "cta": "Book your free 20 minute call",
       "points": [
         "Revenue is there, but growth has flattened",
@@ -354,7 +354,7 @@
     },
     "products": {
       "launchCharter": {
-        "eyebrow": "Launch Charter · Done For You",
+        "eyebrow": "Launch · Done For You",
         "title": "Everything you need to start selling properly.",
         "subtitle": "Strategy, positioning, brand, a website that converts and a 90-day plan — for new and small businesses that want to get it right the first time.",
         "price": "$6,950 + GST",
@@ -364,7 +364,7 @@
           "body": [
             "Most new businesses build the website first. Then they wonder why it isn't bringing in work.",
             "A logo and a site are outputs. They only work when they express a decision you have already made — about who you are for, what you are really selling, and why someone should choose you over the alternative.",
-            "Launch Charter makes those decisions first, then builds everything to match."
+            "Launch makes those decisions first, then builds everything to match."
           ]
         },
         "included": {
@@ -450,7 +450,7 @@
             "You want a site that looks like you, not like a template",
             "You want to be able to run it yourself afterwards"
           ],
-          "trailingNote": "Ready for more? Launch Complete adds analysis of your actual sales data, pricing and conversion work, and 12 weeks of support."
+          "trailingNote": "Ready for more? Grow adds analysis of your actual sales data, pricing and conversion work, and 12 weeks of support."
         },
         "howItRuns": {
           "heading": "How it runs",
@@ -502,7 +502,7 @@
           "groups": [
             {
               "items": [
-                "All five stages of the Growth Charter, facilitated with you and your team",
+                "All five stages of the Growth Program, facilitated with you and your team",
                 "Customer research and interviews",
                 "Commercial and profitability analysis using your actual sales data",
                 "Offer, pricing and conversion design",
@@ -535,9 +535,9 @@
         }
       },
       "launchComplete": {
-        "eyebrow": "Launch Complete · Done For You",
+        "eyebrow": "Grow · Done For You",
         "title": "We do the work. You get your business back.",
-        "subtitle": "The full Growth Charter — researched, analysed, built and implemented. You make the decisions. We produce everything else.",
+        "subtitle": "The full Growth Program — researched, analysed, built and implemented. You make the decisions. We produce everything else.",
         "price": "$14,950 + GST",
         "ctaLabel": "Book your free 20 minute call",
         "intro": {
@@ -548,7 +548,7 @@
           ]
         },
         "included": {
-          "heading": "Everything in Launch Charter, plus",
+          "heading": "Everything in Launch, plus",
           "groups": [
             {
               "items": [
@@ -580,7 +580,7 @@
           ],
           "trailingNote": "$14,950 + GST. 40% on signing, 30% on delivery of the Roadmap, 30% at go-live. Starts with a free conversation and a $450 Viability Session, credited against the engagement."
         },
-        "bespokeNote": "Bigger than this? Bespoke engagements cover multiple audiences, product lines or markets. Priced after the Viability Session.",
+        "bespokeNote": "Bigger than this? Scale engagements cover multiple audiences, product lines or markets. Priced after the Viability Session.",
         "relatedCaseStudies": [
           "snack-brands-kettle-popcorn",
           "adelaide-hills-wine-region"
@@ -922,7 +922,7 @@
       "growthCharter": {
         "id": "growth-charter-enquiry",
         "formName": "growth-charter-enquiry",
-        "displayName": "Growth Charter enquiry",
+        "displayName": "Growth Program enquiry",
         "title": "Growing a business",
         "intro": "You run a business and want more of the right customers, better margins, or a plan you actually own.",
         "submitLabel": "Send enquiry"
@@ -940,10 +940,10 @@
     "waitlist": {
       "id": "charter-course-waitlist",
       "formName": "charter-course-waitlist",
-      "displayName": "Charter Course waitlist",
-      "eyebrow": "The Charter Course",
+      "displayName": "Grow It Yourself waitlist",
+      "eyebrow": "Grow It Yourself",
       "title": "Prefer to go at your own pace?",
-      "intro": "The Charter Course is in development. Leave your details and we will let you know when it is ready.",
+      "intro": "Grow It Yourself is in development. Leave your details and we will let you know when it is ready.",
       "submitLabel": "Join the waitlist",
       "messageFieldLabel": "What's your biggest growth question right now?"
     },
@@ -963,13 +963,13 @@
   },
   "charterCourse": {
     "eyebrow": "Do It Yourself · Coming Soon",
-    "title": "The Growth Charter, at your own pace.",
-    "subtitle": "The same method, delivered as a structured online program you work through yourself — choosing the sections your business actually needs.",
+    "title": "Grow it yourself.",
+    "subtitle": "The same Growth Program method, delivered as a structured online course you work through yourself — choosing the sections your business actually needs.",
     "intro": "Every tool, template and worksheet we use with clients, with training that shows you how to use them. Built for owners who have more time than budget, and who would rather learn the thinking than buy the answer.",
     "covers": {
       "heading": "What it will cover",
       "items": [
-        "All five stages of the Growth Charter, broken into workable sessions",
+        "All five stages of the Growth Program, broken into workable sessions",
         "The worksheets and templates we use in paid engagements",
         "The numbers tools — breakeven, goal volume, capacity and pricing",
         "Video training for each stage",
@@ -994,7 +994,7 @@
       "paraB": "Every one of these started with a brief that described a symptom. The work was finding what was actually wrong.",
       "filterAll": "All",
       "filterStrategicAdvisory": "Strategic Advisory",
-      "filterGrowthCharter": "The Growth Charter",
+      "filterGrowthCharter": "The Growth Program",
       "comingSoonLabel": "Coming soon"
     },
     "items": [
@@ -1697,7 +1697,7 @@
         },
         "whyItMatters": {
           "heading": "Why it matters to you",
-          "body": "If the people inside a business cannot agree on what it is, no external campaign will settle it. That agreement is the first thing the Growth Charter goes looking for."
+          "body": "If the people inside a business cannot agree on what it is, no external campaign will settle it. That agreement is the first thing the Growth Program goes looking for."
         },
         "cta": {
           "eyebrow": "Facing something similar?",
