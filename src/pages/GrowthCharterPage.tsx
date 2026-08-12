@@ -120,6 +120,11 @@ export default function GrowthCharterPage({ onNavigate }: GrowthCharterPageProps
             </p>
           </div>
 
+          {/* Legend — sits tight against the table so it reads as the table's caption, not a continuation of the section intro above. */}
+          <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.75, color: "rgba(245,243,238,0.5)", maxWidth: 620, marginBottom: 20 }}>
+            {growthCharterContent.waysToWork.legend}
+          </p>
+
           {/* Desktop: real table */}
           <div className="matrix-table" style={{ border: "1px solid rgba(255,255,255,0.08)" }}>
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr" }}>
@@ -219,7 +224,10 @@ export default function GrowthCharterPage({ onNavigate }: GrowthCharterPageProps
             <p style={{ fontFamily: "'Instrument Serif', serif", fontSize: 22, color: "#8FD9BE", fontWeight: 400, lineHeight: 1.6, fontStyle: "italic", marginBottom: 32 }}>
               "{growthCharterContent.centralIdea.quote}"
             </p>
-            <div style={{ width: 40, height: 1, background: "rgba(143,217,190,0.4)" }} />
+            <div style={{ width: 40, height: 1, background: "rgba(143,217,190,0.4)", marginBottom: 20 }} />
+            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, letterSpacing: "0.02em", color: "rgba(143,217,190,0.7)", margin: 0 }}>
+              — {growthCharterContent.centralIdea.quoteAttribution}
+            </p>
           </div>
         </div>
       </section>
