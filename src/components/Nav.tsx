@@ -74,10 +74,10 @@ export default function Nav({ current, onNavigate }: NavProps) {
 
   const growthCharterItems: DropdownItem[] = [
     { label: "Overview", page: "growth-charter" },
-    { label: "Launch Charter", page: "launch-charter" },
+    { label: "Launch", page: "launch-charter" },
     { label: "Do It Together", page: "do-it-together" },
-    { label: "Launch Complete", page: "launch-complete" },
-    { label: "The Charter Course", page: "charter-course" },
+    { label: "Grow", page: "launch-complete" },
+    { label: "Grow It Yourself", page: "charter-course" },
   ];
 
   const advisoryItems: DropdownItem[] = [
@@ -86,7 +86,7 @@ export default function Nav({ current, onNavigate }: NavProps) {
     { label: navContent.howWeWork, page: "how-we-work" },
   ];
 
-  const growthActive = pathForPage(current).startsWith("/growth-charter/") || current === "growth-charter";
+  const growthActive = pathForPage(current).startsWith("/growth-program/") || current === "growth-charter";
   const advisoryActive = current === "strategic-advisory" || current === "services" || current === "how-we-work";
   const caseStudiesActive = pathForPage(current).startsWith("/case-studies/") || current === "case-studies";
 
