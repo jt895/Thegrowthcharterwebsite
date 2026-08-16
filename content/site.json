@@ -325,7 +325,7 @@
             "eyebrow": "Credibility",
             "title": "Big business experience, applied to yours.",
             "paraA": "The Growth Program draws on 25 years of work with national and international brands, government agencies and owner-led businesses.",
-            "paraB": "James Trebilcock has led strategy, marketing and growth for Toyota, Ford, Commonwealth Bank, Hyundai, Subaru, DFAT, Hort Innovation, YellowTail Wines, the Electoral Commission of South Australia, Adelaide Hills Wine Region and The Bend Motorsport Park.",
+            "paraB": "James has led strategy, marketing and growth for Toyota, Ford, Commonwealth Bank, Hyundai, Subaru, DFAT, Hort Innovation, YellowTail Wines, the Electoral Commission of South Australia, Adelaide Hills Wine Region and The Bend Motorsport Park.",
             "paraC": "The questions that build major brands are the same ones that help a local business make better commercial decisions. The scale changes. The thinking shouldn't.",
             "organisations": [
                 "Toyota",
@@ -337,7 +337,8 @@
                 "Hort Innovation",
                 "Electoral Commission of South Australia",
                 "Adelaide Hills Wine Region",
-                "The Bend Motorsport Park"
+                "The Bend Motorsport Park",
+                "YellowTail"
             ]
         },
         "fitCheck": {
@@ -349,22 +350,24 @@
                 "You're not sure which customers or services are actually most profitable",
                 "You've spent on marketing before and can't point to what it returned",
                 "Too much of the business runs through you",
-                "You want a plan you own, not a supplier you can't leave"
+                "You want a plan you own, not a supplier you can't leave",
+                "Business is good, but you need to take the next step ",
+                "You're great at the delivery, but need help finding new customers and opportunities"
             ]
         },
         "products": {
             "launchCharter": {
-                "eyebrow": "Launch · Done For You",
-                "title": "Everything you need to start selling properly.",
+                "eyebrow": "LAUNCH · Done For You",
+                "title": "Everything you need to grow your business.",
                 "subtitle": "Strategy, positioning, brand, a website that converts and a 90-day plan — for new and small businesses that want to get it right the first time.",
-                "price": "$6,950 + GST",
+                "price": "$5,990 + GST",
                 "ctaLabel": "Book your free 20 minute call",
                 "intro": {
                     "heading": "The problem",
                     "body": [
-                        "Most new businesses build the website first. Then they wonder why it isn't bringing in work.",
-                        "A logo and a site are outputs. They only work when they express a decision you have already made — about who you are for, what you are really selling, and why someone should choose you over the alternative.",
-                        "Launch makes those decisions first, then builds everything to match."
+                        "Most new businesses create a logo and build the website first. Then they wonder why it isn't bringing in work.",
+                        "A logo and a site are just pretty outputs; they help people recognise your business (eventually) and understand what you do if they visit the site. They only work when they express a decision you have already made - who you are for (customers), what you are really selling (what problem you are solving for them), and why someone should choose you over the alternative.",
+                        "LAUNCH makes those decisions first, then builds everything to match."
                     ]
                 },
                 "included": {
@@ -382,14 +385,14 @@
                         {
                             "heading": "The build",
                             "items": [
-                                "Logo and brand guide",
-                                "Five-page website built in Framer — designed for you, properly animated, and yours to edit",
-                                "Website copy for all five pages, with two rounds of changes",
-                                "Domain, branded email and Google Workspace",
+                                "Logo and brand guidelines",
+                                "A website built in Framer — up to five pages, designed for you, properly animated, and yours to edit",
+                                "Website copy, with two rounds of changes",
+                                "Web domain, a branded email address  and Google Workspace",
                                 "Google Business Profile",
                                 "Facebook, Instagram and LinkedIn set up properly",
                                 "Google Analytics and enquiry tracking",
-                                "Business cards and email signature"
+                                "Business cards and email signature artwork"
                             ]
                         },
                         {
@@ -398,7 +401,8 @@
                                 "Go-live",
                                 "A training session on your own tools",
                                 "Every login in your name",
-                                "A short guide to running it yourself"
+                                "A short guide to running it yourself",
+                                "Ongoing email, hosting, domain registration, and related costs are billed directly to you. No markup or middlemen."
                             ]
                         }
                     ]
@@ -408,7 +412,7 @@
                     "body": [
                         "Every engagement starts with a 90-minute Viability Session — $450, credited in full against the package if you proceed.",
                         "We work out your breakeven, how many customers you need to hit your income goal, and whether your capacity can actually deliver them. You leave with a one-page summary of your own numbers, whether or not you go further.",
-                        "If the numbers don't work, we'll tell you. Marketing can't fix a business model."
+                        "If the numbers don't work, we'll tell you."
                     ]
                 },
                 "addOns": {
@@ -448,9 +452,10 @@
                         "You're small, trading, and ready to grow properly",
                         "You'd rather make the decisions first and build second",
                         "You want a site that looks like you, not like a template",
-                        "You want to be able to run it yourself afterwards"
+                        "You want to be able to run it yourself afterwards",
+                        "You're working in the business not on the business"
                     ],
-                    "trailingNote": "Ready for more? Grow adds analysis of your actual sales data, pricing and conversion work, and 12 weeks of support."
+                    "trailingNote": "Ready for more? GROW adds analysis of your actual sales data, pricing and conversion work, and 12 weeks of support."
                 },
                 "howItRuns": {
                     "heading": "How it runs",
@@ -477,24 +482,24 @@
                         ]
                     ]
                 },
-                "paymentNote": "$6,950 + GST. 40% on signing, 30% on delivery of your Growth Plan, 30% at go-live.",
+                "paymentNote": "$5,990 + GST. 40% on signing, 30% on delivery of your Growth Plan, 30% at go-live.",
                 "relatedCaseStudies": [
                     "snack-brands-kettle-popcorn",
                     "adelaide-hills-wine-region"
                 ]
             },
             "doItTogether": {
-                "eyebrow": "Do It Together",
-                "title": "You build the plan. We make sure it's the right one.",
-                "subtitle": "We run the sessions, bring the evidence and guide the decisions. You and your team do the work — and keep the capability.",
+                "eyebrow": "LAUNCH - Do It Together",
+                "title": "Together we build the plan. Together we make sure it's the right one.",
+                "subtitle": "We run the sessions, bring the evidence and guide the decisions. You and your team work beside us — and keep the capability.",
                 "price": "From $9,550 + GST",
-                "pricePending": true,
+                "pricePending": false,
                 "ctaLabel": "Book your free 20 minute call",
                 "intro": {
-                    "heading": "How it works",
+                    "heading": "How it works.",
                     "body": [
                         "We facilitate each stage, do the research and analysis that needs senior experience, and put the hard questions in front of you. Your team builds the plan with us in the room.",
-                        "When we finish, the thinking lives in your business — not in our filing system."
+                        "When we finish, the thinking lives in your business — not in our filing system. We work together to execute the plan- so you get the capability lift and know how to manage it yourself."
                     ]
                 },
                 "included": {
@@ -514,7 +519,7 @@
                         }
                     ],
                     "note": "Brand and website build available as an add-on — $4,500.",
-                    "notePending": true
+                    "notePending": false
                 },
                 "suppliers": {
                     "heading": "We work with the people you already work with.",
@@ -799,24 +804,24 @@
             "eyebrow": "Strategic Advisory",
             "title": "Start with the right questions. Then build the right response.",
             "paraA": "Independent counsel for government, brands and complex organisations — before the money goes into campaigns, content or creative.",
-            "paraB": "We help you define the real problem, shape the strategy that answers it, and brief the right specialists to deliver it.",
+            "paraB": "We help you define your objectives, understand the real problem, shape the strategy that answers it, and brief the right specialists to deliver it.",
             "ctaPrimary": "Book your free 20 minute call"
         },
         "theCase": {
             "title": "Most briefs describe a symptom.",
-            "paraA": "By the time a brief reaches a supplier, the problem has usually been defined by whoever wrote it — and the response is shaped by whatever that supplier happens to sell.",
-            "paraB": "We work upstream of that. What is the organisation actually trying to change? Who has to behave differently for it to happen? Where is influence genuinely available, and where is it being spent for no return?",
+            "paraA": "By the time a brief reaches a marketing team or supplier, the problem has usually been defined by whoever wrote it — and the response is shaped by whatever the marketing team is set up to deliver or that supplier happens to sell.",
+            "paraB": "We work upstream of that. What are the business objectives? What is the organisation actually trying to change? Who has to behave differently for it to happen? Where is influence genuinely available, and where is it being spent for no return?",
             "paraC": "Only then does it make sense to talk about what the work should be."
         },
         "theDifference": {
             "title": "Structurally independent.",
-            "paraA": "We don't keep a fixed team. We build the right people around each challenge — bringing together specialist partners for creative, media, content, production and delivery based on what the work needs, not what we happen to have in-house.",
+            "paraA": "We don't keep a fixed team. We build the right people around each challenge — bringing together specialist partners based on what the work needs, not what we happen to have in-house.",
             "paraB": "No permanent team. No payroll to feed. No preferred answer waiting for a question.",
             "paraC": "And we stay through delivery. Strategy that isn't carried into execution isn't strategy — it's a document."
         },
         "methodology": {
             "eyebrow": "Our methodology",
-            "title": "Three stages.",
+            "title": "Four stages.",
             "steps": [
                 {
                     "num": "01",
@@ -832,16 +837,21 @@
                     "num": "03",
                     "title": "Assemble and direct",
                     "body": "The specialist team built around the challenge, briefed properly and held to the strategy. Senior partners selected for fit. Lean, tailored, accountable to outcomes."
+                },
+                {
+                    "num": "04",
+                    "title": "Measure",
+                    "body": "What's working, what needs to change, where can we improve, and what can we learn?"
                 }
             ]
         },
         "whatWeDo": {
-            "title": "Diagnose. Design. Direct. Measure.",
+            "title": "Understand, Strategise, Assemble and Direct, Measure.",
             "linkServices": "See the full service list",
             "linkProcess": "How the process works",
             "columns": [
                 {
-                    "title": "Diagnose",
+                    "title": "Understand",
                     "items": [
                         "Strategic problem definition",
                         "Audience and stakeholder insight",
@@ -851,7 +861,7 @@
                     ]
                 },
                 {
-                    "title": "Design",
+                    "title": "Strategise",
                     "items": [
                         "The roadmap",
                         "Communications strategy",
@@ -863,7 +873,7 @@
                     ]
                 },
                 {
-                    "title": "Direct",
+                    "title": "Assemble and Direct",
                     "items": [
                         "Partner briefing and direction",
                         "Implementation oversight",
@@ -978,8 +988,8 @@
             "note": "Modular — work through it in order, or take only the sections you need."
         },
         "honestNote": {
-            "heading": "An honest note",
-            "body": "We're building this now. It will be released once we've run the method enough times to know exactly what the training needs to contain — not before."
+            "heading": "Coming Soon",
+            "body": "We're building this now, but we're focused on delivering projects for our clients. Join the waitlist, and we'll keep you updated."
         },
         "waitlist": {
             "heading": "Join the waitlist",
