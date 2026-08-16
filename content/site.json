@@ -493,7 +493,7 @@
                 "title": "Together we build the plan. Together we make sure it's the right one.",
                 "subtitle": "We run the sessions, bring the evidence and guide the decisions. You and your team work beside us — and keep the capability.",
                 "price": "From $9,550 + GST",
-                "pricePending": true,
+                "pricePending": false,
                 "ctaLabel": "Book your free 20 minute call",
                 "intro": {
                     "heading": "How it works",
