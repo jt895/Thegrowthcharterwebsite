@@ -223,12 +223,12 @@
             "title": "Do it together or done for you - the same roadmap, delivered the way you want to work.",
             "intro": "How much ground do you need to cover, and how much do you want to do yourself?",
             "columns": [
-                "Do It Together",
-                "Done For You"
+                "DO IT TOGETHER",
+                "DONE FOR YOU"
             ],
             "rows": [
                 {
-                    "scope": "Launch",
+                    "scope": "LAUNCH",
                     "note": "Foundations done properly — strategy, brand, a launch-ready website and the support to begin your growth journey.",
                     "cells": [
                         {
@@ -242,7 +242,7 @@
                     ]
                 },
                 {
-                    "scope": "Grow",
+                    "scope": "GROW",
                     "note": "Everything you need to grow your business, built on your actual sales data, with pricing, conversion and 12 weeks of support.  Delivered and in hand to build capability, or done for you to let you focus on what matters. ",
                     "cells": [
                         {
@@ -257,7 +257,7 @@
                     ]
                 },
                 {
-                    "scope": "Scale",
+                    "scope": "SCALE",
                     "note": "Multiple audiences, product lines or markets.",
                     "cells": [
                         {
@@ -272,7 +272,7 @@
                 }
             ],
             "note": "All prices ex GST. Every engagement starts with a $450 Viability Session, credited in full.",
-            "charterCourseNote": "Prefer to go at your own pace? Grow It Yourself Self-Paced Training is in development.",
+            "charterCourseNote": "Prefer to go at your own pace? GROW IT YOURSELF Self-Paced Training is in development.",
             "charterCourseLinkLabel": "Join the waitlist",
             "legend": ""
         },
@@ -357,7 +357,7 @@
         },
         "products": {
             "launchCharter": {
-                "eyebrow": "LAUNCH · Done For You",
+                "eyebrow": "LAUNCH · DONE FOR YOU",
                 "title": "Everything you need to grow your business.",
                 "subtitle": "Strategy, positioning, brand, a website that converts and a 90-day plan — for new and small businesses that want to get it right the first time.",
                 "price": "$5,990 + GST",
@@ -489,7 +489,7 @@
                 ]
             },
             "doItTogether": {
-                "eyebrow": "LAUNCH - Do It Together",
+                "eyebrow": "LAUNCH - DO IT TOGETHER",
                 "title": "Together we build the plan. Together we make sure it's the right one.",
                 "subtitle": "We run the sessions, bring the evidence and guide the decisions. You and your team work beside us — and keep the capability.",
                 "price": "From $9,550 + GST",
@@ -540,7 +540,7 @@
                 }
             },
             "launchComplete": {
-                "eyebrow": "Grow · Done For You",
+                "eyebrow": "GROW · DONE FOR YOU",
                 "title": "We do the work. You get your business back.",
                 "subtitle": "The full Growth Program — researched, analysed, built and implemented. You make the decisions. We produce everything else.",
                 "price": "$14,950 + GST",
@@ -553,7 +553,7 @@
                     ]
                 },
                 "included": {
-                    "heading": "Everything in Launch, plus",
+                    "heading": "Everything in LAUNCH, plus",
                     "groups": [
                         {
                             "items": [
@@ -585,7 +585,7 @@
                     ],
                     "trailingNote": "$14,950 + GST. 40% on signing, 30% on delivery of the Roadmap, 30% at go-live. Starts with a free conversation and a $450 Viability Session, credited against the engagement."
                 },
-                "bespokeNote": "Bigger than this? Scale engagements cover multiple audiences, product lines or markets. Priced after the Viability Session.",
+                "bespokeNote": "Bigger than this? SCALE engagements cover multiple audiences, product lines or markets. Priced after the Viability Session.",
                 "relatedCaseStudies": [
                     "snack-brands-kettle-popcorn",
                     "adelaide-hills-wine-region"
@@ -938,10 +938,10 @@
         "waitlist": {
             "id": "charter-course-waitlist",
             "formName": "charter-course-waitlist",
-            "displayName": "Grow It Yourself waitlist",
-            "eyebrow": "Grow It Yourself",
+            "displayName": "GROW IT YOURSELF waitlist",
+            "eyebrow": "GROW IT YOURSELF",
             "title": "Prefer to go at your own pace?",
-            "intro": "Grow It Yourself is in development. Leave your details and we will let you know when it is ready.",
+            "intro": "GROW IT YOURSELF is in development. Leave your details and we will let you know when it is ready.",
             "submitLabel": "Join the waitlist",
             "messageFieldLabel": "What's your biggest growth question right now?"
         },
