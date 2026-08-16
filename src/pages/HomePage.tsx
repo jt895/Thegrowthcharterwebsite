@@ -134,28 +134,6 @@ export default function HomePage({ onNavigate }: HomePageProps) {
           </div>
 
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 2 }}>
-            {/* Advisory */}
-            <div style={{ background: "#1E1E1E", padding: "56px 48px", borderTop: "2px solid rgba(155,155,155,0.3)", position: "relative", cursor: "pointer", transition: "border-color 0.3s" }}
-              onClick={() => nav("strategic-advisory")}
-              onMouseEnter={(e) => { (e.currentTarget as HTMLDivElement).style.borderTopColor = "#9B9B9B"; }}
-              onMouseLeave={(e) => { (e.currentTarget as HTMLDivElement).style.borderTopColor = "rgba(155,155,155,0.3)"; }}
-            >
-              <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.15em", textTransform: "uppercase", color: "#9B9B9B", marginBottom: 12 }}>
-                {homeContent.twoPaths.advisory.eyebrow}
-              </p>
-              <h3 style={{ fontFamily: "'Instrument Serif', serif", fontSize: 32, color: "#F5F3EE", fontWeight: 400, marginBottom: 24 }}>{homeContent.twoPaths.advisory.title}</h3>
-              <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.75, color: "rgba(245,243,238,0.55)", marginBottom: 20 }}>
-                {homeContent.twoPaths.advisory.body}
-              </p>
-              <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, lineHeight: 1.6, fontStyle: "italic", color: "rgba(245,243,238,0.45)", marginBottom: 40 }}>
-                {homeContent.twoPaths.advisory.fitNote}
-              </p>
-              <div style={{ display: "flex", alignItems: "center", gap: 8, color: "#9B9B9B" }}>
-                <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, letterSpacing: "0.05em" }}>{homeContent.twoPaths.advisory.cta}</span>
-                <span style={{ fontSize: 16 }}>→</span>
-              </div>
-            </div>
-
             {/* Growth Charter */}
             <div style={{ background: "#1A2820", padding: "56px 48px", borderTop: "2px solid #2A9D78", position: "relative", cursor: "pointer", transition: "background 0.3s" }}
               onClick={() => nav("growth-charter")}
@@ -174,6 +152,28 @@ export default function HomePage({ onNavigate }: HomePageProps) {
               </p>
               <div style={{ display: "flex", alignItems: "center", gap: 8, color: "#2A9D78" }}>
                 <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, letterSpacing: "0.05em" }}>{homeContent.twoPaths.growthCharter.cta}</span>
+                <span style={{ fontSize: 16 }}>→</span>
+              </div>
+            </div>
+
+            {/* Advisory */}
+            <div style={{ background: "#1E1E1E", padding: "56px 48px", borderTop: "2px solid rgba(155,155,155,0.3)", position: "relative", cursor: "pointer", transition: "border-color 0.3s" }}
+              onClick={() => nav("strategic-advisory")}
+              onMouseEnter={(e) => { (e.currentTarget as HTMLDivElement).style.borderTopColor = "#9B9B9B"; }}
+              onMouseLeave={(e) => { (e.currentTarget as HTMLDivElement).style.borderTopColor = "rgba(155,155,155,0.3)"; }}
+            >
+              <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.15em", textTransform: "uppercase", color: "#9B9B9B", marginBottom: 12 }}>
+                {homeContent.twoPaths.advisory.eyebrow}
+              </p>
+              <h3 style={{ fontFamily: "'Instrument Serif', serif", fontSize: 32, color: "#F5F3EE", fontWeight: 400, marginBottom: 24 }}>{homeContent.twoPaths.advisory.title}</h3>
+              <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.75, color: "rgba(245,243,238,0.55)", marginBottom: 20 }}>
+                {homeContent.twoPaths.advisory.body}
+              </p>
+              <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, lineHeight: 1.6, fontStyle: "italic", color: "rgba(245,243,238,0.45)", marginBottom: 40 }}>
+                {homeContent.twoPaths.advisory.fitNote}
+              </p>
+              <div style={{ display: "flex", alignItems: "center", gap: 8, color: "#9B9B9B" }}>
+                <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, letterSpacing: "0.05em" }}>{homeContent.twoPaths.advisory.cta}</span>
                 <span style={{ fontSize: 16 }}>→</span>
               </div>
             </div>
