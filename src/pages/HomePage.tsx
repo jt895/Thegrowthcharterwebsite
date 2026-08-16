@@ -64,7 +64,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
     <div style={{ background: "#1C1C1C", minHeight: "100vh" }}>
 
       {/* Hero */}
-      <section {...editableField("home.hero")} style={{ minHeight: "100vh", display: "flex", flexDirection: "column", justifyContent: "center", padding: "120px 40px 80px", maxWidth: 1280, margin: "0 auto", position: "relative", overflow: "hidden" }}>
+      <section {...editableField("home.hero")} style={{ minHeight: "100vh", display: "flex", flexDirection: "column", justifyContent: "center", padding: "90px 40px 56px", maxWidth: 1280, margin: "0 auto", position: "relative", overflow: "hidden" }}>
 
         <HoloGlass />
 
@@ -125,7 +125,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
       </section>
 
       {/* Two Paths */}
-      <section id="two-paths" {...editableField("home.twoPaths")} style={{ padding: "120px 40px" }}>
+      <section id="two-paths" {...editableField("home.twoPaths")} style={{ padding: "88px 40px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
           <div ref={r3} className="reveal" style={{ textAlign: "center", marginBottom: 72 }}>
             <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(30px, 4vw, 48px)", color: "#F5F3EE", fontWeight: 400, lineHeight: 1.15 }}>
@@ -182,7 +182,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
       </section>
 
       {/* Why TUR */}
-      <section {...editableField("home.whyTur")} style={{ background: "#161616", padding: "120px 40px" }}>
+      <section {...editableField("home.whyTur")} style={{ background: "#161616", padding: "88px 40px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
           <div ref={r4} className="reveal" style={{ marginBottom: 64 }}>
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 20 }}>{homeContent.whyTur.eyebrow}</p>
@@ -208,7 +208,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
       </section>
 
       {/* Credibility */}
-      <section {...editableField("home.credibility")} style={{ padding: "120px 40px" }}>
+      <section {...editableField("home.credibility")} style={{ padding: "88px 40px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
           <div ref={r5} className="reveal" style={{ marginBottom: 56, textAlign: "center" }}>
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 20 }}>{homeContent.credibility.eyebrow}</p>
@@ -278,7 +278,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
       </section>
 
       {/* CTA */}
-      <section {...editableField("home.cta")} style={{ padding: "100px 40px", textAlign: "center", position: "relative", overflow: "hidden" }}>
+      <section {...editableField("home.cta")} style={{ padding: "72px 40px", textAlign: "center", position: "relative", overflow: "hidden" }}>
         <HoloGlass intensity="subtle" />
         <div style={{ maxWidth: 600, margin: "0 auto", position: "relative", zIndex: 1 }}>
           <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(28px, 3.5vw, 40px)", color: "#F5F3EE", fontWeight: 400, lineHeight: 1.2, marginBottom: 20 }}>

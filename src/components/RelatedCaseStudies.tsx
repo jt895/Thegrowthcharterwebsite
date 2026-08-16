@@ -19,7 +19,7 @@ export default function RelatedCaseStudies({ eyebrow, title, slugs, onNavigate, 
   const nav = (page: Page) => { onNavigate(page); window.scrollTo({ top: 0 }); };
 
   return (
-    <section style={{ background, padding: "80px 40px" }}>
+    <section style={{ background, padding: "56px 40px" }}>
       <div style={{ maxWidth: 1280, margin: "0 auto" }}>
         <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 16, textAlign: "center" }}>
           {eyebrow}

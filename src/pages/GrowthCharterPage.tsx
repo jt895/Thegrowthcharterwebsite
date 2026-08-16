@@ -34,7 +34,7 @@ export default function GrowthCharterPage({ onNavigate }: GrowthCharterPageProps
     <div style={{ background: "#1C1C1C", minHeight: "100vh" }}>
 
       {/* Hero */}
-      <section {...editableField("growthCharter.hero")} style={{ padding: "160px 40px 100px", position: "relative", overflow: "hidden" }}>
+      <section {...editableField("growthCharter.hero")} style={{ padding: "120px 40px 72px", position: "relative", overflow: "hidden" }}>
         <HoloGlass />
         {/* V1 spinning rings — prominent, less subtle */}
         <div style={{ position: "absolute", right: "-2%", top: "50%", transform: "translateY(-50%)", pointerEvents: "none", animation: "fade-in 2.4s ease 0.5s both", zIndex: 1 }}>
@@ -78,7 +78,7 @@ export default function GrowthCharterPage({ onNavigate }: GrowthCharterPageProps
       </section>
 
       {/* What is the Growth Charter */}
-      <section {...editableField("growthCharter.whatIs")} style={{ padding: "100px 40px" }}>
+      <section {...editableField("growthCharter.whatIs")} style={{ padding: "72px 40px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1.4fr", gap: 80, alignItems: "start" }}>
             <div>
@@ -110,7 +110,7 @@ export default function GrowthCharterPage({ onNavigate }: GrowthCharterPageProps
       </section>
 
       {/* Ways to engage — scope × delivery matrix */}
-      <section id="ways-to-work" {...editableField("growthCharter.waysToWork")} style={{ background: "#161616", padding: "100px 40px" }}>
+      <section id="ways-to-work" {...editableField("growthCharter.waysToWork")} style={{ background: "#161616", padding: "72px 40px" }}>
         <div style={{ maxWidth: 1000, margin: "0 auto" }}>
           <div style={{ marginBottom: 40 }}>
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 16 }}>{growthCharterContent.waysToWork.eyebrow}</p>
@@ -208,7 +208,7 @@ export default function GrowthCharterPage({ onNavigate }: GrowthCharterPageProps
       `}</style>
 
       {/* Central idea */}
-      <section {...editableField("growthCharter.centralIdea")} style={{ padding: "100px 40px" }}>
+      <section {...editableField("growthCharter.centralIdea")} style={{ padding: "72px 40px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1fr", gap: 80, alignItems: "start" }}>
           <div>
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 20 }}>{growthCharterContent.centralIdea.eyebrow}</p>
@@ -237,7 +237,7 @@ export default function GrowthCharterPage({ onNavigate }: GrowthCharterPageProps
       </section>
 
       {/* How it works - 5 stages */}
-      <section {...editableField("growthCharter.howItWorks")} style={{ background: "#161616", padding: "100px 40px" }}>
+      <section {...editableField("growthCharter.howItWorks")} style={{ background: "#161616", padding: "72px 40px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
           <div style={{ marginBottom: 64 }}>
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 16 }}>{growthCharterContent.howItWorks.eyebrow}</p>
@@ -265,7 +265,7 @@ export default function GrowthCharterPage({ onNavigate }: GrowthCharterPageProps
       </section>
 
       {/* Why TUR */}
-      <section {...editableField("growthCharter.whyTur")} style={{ padding: "100px 40px" }}>
+      <section {...editableField("growthCharter.whyTur")} style={{ padding: "72px 40px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1fr", gap: 80 }}>
           <div>
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 20 }}>{growthCharterContent.whyTur.eyebrow}</p>
@@ -303,7 +303,7 @@ export default function GrowthCharterPage({ onNavigate }: GrowthCharterPageProps
       />
 
       {/* Is The Growth Charter right for you */}
-      <section {...editableField("growthCharter.fitCheck")} style={{ background: "#0B5E48", padding: "100px 40px" }}>
+      <section {...editableField("growthCharter.fitCheck")} style={{ background: "#0B5E48", padding: "72px 40px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1fr", gap: 80, alignItems: "start" }}>
           <div>
             <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(28px, 3.5vw, 44px)", color: "#F5F3EE", fontWeight: 400, lineHeight: 1.2, marginBottom: 32 }}>

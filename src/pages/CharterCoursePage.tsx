@@ -17,7 +17,7 @@ export default function CharterCoursePage({ onNavigate }: CharterCoursePageProps
     <div style={{ background: "#1C1C1C", minHeight: "100vh" }}>
 
       {/* Hero */}
-      <section {...editableField("charterCourse.hero")} style={{ padding: "160px 40px 80px", textAlign: "center", position: "relative", overflow: "hidden" }}>
+      <section {...editableField("charterCourse.hero")} style={{ padding: "120px 40px 56px", textAlign: "center", position: "relative", overflow: "hidden" }}>
         <HoloGlass />
         <div style={{ maxWidth: 680, margin: "0 auto", position: "relative", zIndex: 1 }}>
           <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 24 }}>
@@ -36,7 +36,7 @@ export default function CharterCoursePage({ onNavigate }: CharterCoursePageProps
       </section>
 
       {/* What it will cover */}
-      <section style={{ background: "#161616", padding: "80px 40px" }}>
+      <section style={{ background: "#161616", padding: "56px 40px" }}>
         <div style={{ maxWidth: 720, margin: "0 auto" }}>
           <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(24px, 3vw, 36px)", color: "#F5F3EE", fontWeight: 400, marginBottom: 28 }}>
             {charterCourseContent.covers.heading}
@@ -56,7 +56,7 @@ export default function CharterCoursePage({ onNavigate }: CharterCoursePageProps
       </section>
 
       {/* Honest note */}
-      <section style={{ padding: "80px 40px" }}>
+      <section style={{ padding: "56px 40px" }}>
         <div style={{ maxWidth: 720, margin: "0 auto", background: "#1E1E1E", padding: "40px 48px", borderLeft: "2px solid #2A9D78" }}>
           <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: 22, color: "#F5F3EE", fontWeight: 400, marginBottom: 16 }}>
             {charterCourseContent.honestNote.heading}
@@ -68,7 +68,7 @@ export default function CharterCoursePage({ onNavigate }: CharterCoursePageProps
       </section>
 
       {/* Waitlist */}
-      <section style={{ background: "#0B5E48", padding: "80px 40px" }}>
+      <section style={{ background: "#0B5E48", padding: "56px 40px" }}>
         <div style={{ maxWidth: 560, margin: "0 auto" }}>
           <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(24px, 3vw, 36px)", color: "#F5F3EE", fontWeight: 400, textAlign: "center", marginBottom: 16 }}>
             {charterCourseContent.waitlist.heading}
