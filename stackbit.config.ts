@@ -103,12 +103,30 @@ export default defineStackbitConfig({
       ],
     }),
   ],
-  sitemap: () => [
-    { stableId: "home", label: "Home", urlPath: "/", isHomePage: true },
-    { stableId: "growth-charter", label: "The Growth Program", urlPath: "/growth-program/" },
-    { stableId: "strategic-advisory", label: "Strategic Advisory", urlPath: "/strategic-advisory/" },
-    { stableId: "services", label: "Services", urlPath: "/services/" },
-    { stableId: "how-we-work", label: "How We Work", urlPath: "/how-we-work/" },
-    { stableId: "about", label: "About", urlPath: "/about/" },
-  ],
+  sitemap: ({ documents }) => {
+    const siteContentDocument = documents.find((document) => document.modelName === "SiteContent");
+
+    const pages = [
+      { stableId: "home", label: "Home", urlPath: "/", isHomePage: true },
+      { stableId: "growth-charter", label: "The Growth Program", urlPath: "/growth-program/" },
+      { stableId: "strategic-advisory", label: "Strategic Advisory", urlPath: "/strategic-advisory/" },
+      { stableId: "services", label: "Services", urlPath: "/services/" },
+      { stableId: "how-we-work", label: "How We Work", urlPath: "/advisory-process/" },
+      { stableId: "about", label: "About", urlPath: "/about/" },
+    ];
+
+    if (!siteContentDocument) {
+      return pages;
+    }
+
+    return pages.map((page) => ({
+      ...page,
+      document: {
+        srcType: siteContentDocument.srcType,
+        srcProjectId: siteContentDocument.srcProjectId,
+        modelName: siteContentDocument.modelName,
+        id: siteContentDocument.id,
+      },
+    }));
+  },
 });
