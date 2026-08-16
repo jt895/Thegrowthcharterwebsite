@@ -142,19 +142,19 @@
             "items": [
                 {
                     "title": "Your business first",
-                    "body": "If we don't understand your business and your objectives, we can't find the levers, the barriers, or what success actually looks like."
+                    "body": "If we don't understand your business and objectives, we can't uncover opportunities for growth, barriers, or what success actually looks like."
                 },
                 {
                     "title": "Customers first",
-                    "body": "Understanding your customers tells us what problem you're really solving, why people buy, and where growth is genuinely available."
+                    "body": "Understanding your customers shows us what problem you're really solving for them, why they buy, and where growth is genuinely available."
                 },
                 {
                     "title": "Evidence, not instinct",
-                    "body": "Strategy grounded in research, insight and data — tested against what the owner believes rather than built on top of it."
+                    "body": "Growth strategy grounded in research, insight and data — not hunches, feelings or assumptions."
                 },
                 {
                     "title": "Independent of execution",
-                    "body": "No channel to protect and no department to keep busy. The only interest is whether the strategy is right."
+                    "body": "No channels to protect and no departments to keep busy. The only interest is whether the strategy is right to drive growth and reach your objectives."
                 }
             ]
         },
@@ -172,7 +172,7 @@
             "paths": [
                 {
                     "title": "Strategic Advisory",
-                    "body": "For government, corporate and complex organisations that need the real problem defined before investing in delivery.",
+                    "body": "For government, corporate and complex organisations that need to define their objectives and understand the real problem before investing in delivery.",
                     "cta": "Explore Strategic Advisory",
                     "target": "strategic-advisory"
                 },
@@ -596,15 +596,15 @@
     "howWeWork": {
         "hero": {
             "eyebrow": "The Advisory Process",
-            "title": "From the real problem to work that performs.",
-            "body": "We work from problem definition through to delivery. Take one phase or the whole journey."
+            "title": "From the real problem - to work that performs.",
+            "body": "We work from business objectives and problem definition through to delivery. Take one phase or the whole journey."
         },
         "intro": "Some organisations need help defining the problem. Some have a clear brief but need strategy and direction. Some need ongoing guidance to make sure execution stays true to the strategic intent.",
         "phases": [
             {
                 "num": "01",
                 "title": "Understand",
-                "tagline": "We identify the problem behind the brief.",
+                "tagline": "We identify the problem underneath the surface",
                 "body": "Before any strategy work begins we need to understand what is really going on. Audience research, stakeholder insight, communications audits and strategic analysis — to define the real challenge rather than the symptoms.",
                 "delivers": [
                     "Audience and stakeholder insight",
@@ -614,13 +614,13 @@
                     "Message and narrative assessment",
                     "Strategic problem definition"
                 ],
-                "approach": "Can run as a standalone diagnostic or as the foundation for everything that follows. The diagnostic output becomes the brief."
+                "approach": "Can run as a standalone diagnostic or as the foundation for everything that follows. The diagnostic output becomes the objectives and success measures."
             },
             {
                 "num": "02",
                 "title": "Strategise",
                 "tagline": "We turn complexity into a clear plan.",
-                "body": "Once the problem is clear we build the strategy — the frameworks, plans and direction that guide decisions, shape creative development and keep activity aligned to outcomes.",
+                "body": "Once the objectives are clear we build the strategy — the frameworks, plans and direction that guide decisions, shape creative development and keep activity aligned to outcomes.",
                 "delivers": [
                     "Communications strategy",
                     "Campaign architecture",
@@ -645,7 +645,7 @@
                     "Creative and content review",
                     "Alignment across stakeholders and partners"
                 ],
-                "approach": "This is where the tailored team model comes to life — creative, media, content producers and delivery teams, selected for the job rather than because they are already on the books."
+                "approach": "This is where the tailored team model comes to life — technology,  creative, media, content producers, delivery teams and anything else the strategy needs, selected for the job rather than because they are already on the books."
             },
             {
                 "num": "04",
@@ -913,7 +913,7 @@
     "contact": {
         "hero": {
             "title": "Start with a conversation.",
-            "body": "Twenty minutes, no pitch. Tell us what you're trying to change and we'll tell you honestly whether we can help."
+            "body": "Twenty minutes, no pitch, or a chat over a coffee. Tell us what you're trying to change, and we'll tell you honestly whether we can help."
         },
         "forms": {
             "title": "Which are you?",
@@ -922,7 +922,7 @@
                 "formName": "growth-charter-enquiry",
                 "displayName": "Growth Program enquiry",
                 "title": "Growing a business",
-                "intro": "You run a business and want more of the right customers, better margins, or a plan you actually own.",
+                "intro": "You run a business and need more of the right customers, better margins, or a plan you actually own.",
                 "submitLabel": "Send enquiry"
             },
             "strategicAdvisory": {
@@ -933,7 +933,7 @@
                 "intro": "You need the real problem defined before investing in campaigns, content or delivery.",
                 "submitLabel": "Send enquiry"
             },
-            "note": "Both forms carry a hidden field capturing the page you came from, so every lead can be traced to its source."
+            "note": ""
         },
         "waitlist": {
             "id": "charter-course-waitlist",
@@ -956,7 +956,7 @@
                 "A twenty-minute conversation — no charge, no pitch",
                 "If it's a fit, we'll set out what an engagement would look like and what it would cost"
             ],
-            "footnote": "If it isn't a fit, we'll say so and point you somewhere better."
+            "footnote": "If it isn't a fit, we'll say so and point you somewhere better suited to your needs."
         }
     },
     "charterCourse": {
