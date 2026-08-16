@@ -25,7 +25,7 @@ function fieldFor(name: string, value: JsonValue): Field {
   }
 
   if (typeof value === "string") {
-    return { ...common, type: textType(name, value) };
+    return { ...common, type: textType(name, value), default: "" } as Field;
   }
 
   if (typeof value === "number") {
@@ -38,13 +38,13 @@ function fieldFor(name: string, value: JsonValue): Field {
 
   if (Array.isArray(value)) {
     if (value.length === 0) {
-      return { ...common, type: "list", items: { type: "string" } };
+      return { ...common, type: "list", items: { type: "string", default: "" } } as Field;
     }
 
     if (value.every((item) => typeof item === "string")) {
       const longest = value.reduce((result, item) =>
         typeof item === "string" && item.length > result.length ? item : result, "");
-      return { ...common, type: "list", items: { type: textType(name, longest) } };
+      return { ...common, type: "list", items: { type: textType(name, longest), default: "" } } as Field;
     }
 
     if (value.every((item) => typeof item === "object" && item !== null && !Array.isArray(item))) {
