@@ -933,7 +933,7 @@
                 "intro": "You need the real problem defined before investing in campaigns, content or delivery.",
                 "submitLabel": "Send enquiry"
             },
-            "note": "Both forms carry a hidden field capturing the page you came from, so every lead can be traced to its source."
+            "note": ""
         },
         "waitlist": {
             "id": "charter-course-waitlist",
