@@ -706,23 +706,6 @@
         },
         "services": [
             {
-                "id": "strategic-diagnostic",
-                "title": "Strategic Diagnostic",
-                "sub": "Define the real problem before you invest",
-                "duration": "2–4 weeks",
-                "body": "A focused diagnostic to understand the challenge, map the landscape, and define where strategic focus will have the greatest impact. Can be run as a facilitated workshop programme where the priority is aligning a team quickly, or as a research-led diagnostic where the priority is establishing the truth.",
-                "included": [
-                    "Audience and stakeholder insight analysis",
-                    "Problem definition and strategic framing",
-                    "Communications landscape review",
-                    "Barrier and opportunity mapping",
-                    "Strategic recommendations and next steps",
-                    "Facilitated sessions where alignment is the constraint"
-                ],
-                "when": "When you need clarity on the problem before committing to strategy or execution. Or when your team is at a crossroads and needs structured thinking to unblock a decision.",
-                "execution": "Leads directly into Strategy Build, or works as a standalone diagnostic to inform internal planning."
-            },
-            {
                 "id": "fractional-cmo",
                 "title": "Fractional CMO",
                 "sub": "Senior marketing leadership without the full-time overhead",
@@ -739,6 +722,23 @@
                 ],
                 "when": "When you need senior marketing leadership but aren't ready or resourced for a full-time CMO. Suited to growth-stage businesses, organisations in transition, or teams that need experienced direction.",
                 "execution": ""
+            },
+            {
+                "id": "strategic-diagnostic",
+                "title": "Strategic Diagnostic",
+                "sub": "Define the real problem before you invest",
+                "duration": "2–4 weeks",
+                "body": "A focused diagnostic to understand the challenge, map the landscape, and define where strategic focus will have the greatest impact. Can be run as a facilitated workshop programme where the priority is aligning a team quickly, or as a research-led diagnostic where the priority is establishing the truth.",
+                "included": [
+                    "Audience and stakeholder insight analysis",
+                    "Problem definition and strategic framing",
+                    "Communications landscape review",
+                    "Barrier and opportunity mapping",
+                    "Strategic recommendations and next steps",
+                    "Facilitated sessions where alignment is the constraint"
+                ],
+                "when": "When you need clarity on the problem before committing to strategy or execution. Or when your team is at a crossroads and needs structured thinking to unblock a decision.",
+                "execution": "Leads directly into Strategy Build, or works as a standalone diagnostic to inform internal planning."
             },
             {
                 "id": "strategy-build",
