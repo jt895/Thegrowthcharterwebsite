@@ -826,32 +826,7 @@
                 {
                     "num": "01",
                     "title": "Understand",
-                    "body": "Business objectives and success measures. Deep audience and stakeholder work. The true challenge rather than the presenting symptom — quantified, with segments, barriers and behaviours mapped."
-                },
-                {
-                    "num": "02",
-                    "title": "Strategise",
-                    "body": "A customer-first roadmap, media-neutral from the outset. An Ideas Brief rather than a traditional creative brief. Built around message, medium and meaning — and the right idea, not the biggest one."
-                },
-                {
-                    "num": "03",
-                    "title": "Assemble and direct",
-                    "body": "The specialist team built around the challenge, briefed properly and held to the strategy. Senior partners selected for fit. Lean, tailored, accountable to outcomes."
-                },
-                {
-                    "num": "04",
-                    "title": "Measure",
-                    "body": "What's working, what needs to change, where can we improve, and what can we learn?"
-                }
-            ]
-        },
-        "whatWeDo": {
-            "title": "Understand, Strategise, Assemble and Direct, Measure.",
-            "linkServices": "See the full service list",
-            "linkProcess": "How the process works",
-            "columns": [
-                {
-                    "title": "Understand",
+                    "body": "Business objectives and success measures. Deep audience and stakeholder work. The true challenge rather than the presenting symptom — quantified, with segments, barriers and behaviours mapped.",
                     "items": [
                         "Strategic problem definition",
                         "Audience and stakeholder insight",
@@ -861,7 +836,9 @@
                     ]
                 },
                 {
+                    "num": "02",
                     "title": "Strategise",
+                    "body": "A customer-first roadmap, media-neutral from the outset. An Ideas Brief rather than a traditional creative brief. Built around message, medium and meaning — and the right idea, not the biggest one.",
                     "items": [
                         "The roadmap",
                         "Communications strategy",
@@ -873,7 +850,9 @@
                     ]
                 },
                 {
-                    "title": "Assemble and Direct",
+                    "num": "03",
+                    "title": "Assemble and direct",
+                    "body": "The specialist team built around the challenge, briefed properly and held to the strategy. Senior partners selected for fit. Lean, tailored, accountable to outcomes.",
                     "items": [
                         "Partner briefing and direction",
                         "Implementation oversight",
@@ -883,7 +862,9 @@
                     ]
                 },
                 {
+                    "num": "04",
                     "title": "Measure",
+                    "body": "What's working, what needs to change, where can we improve, and what can we learn?",
                     "items": [
                         "Campaign evaluation",
                         "Performance reporting",
@@ -892,7 +873,9 @@
                         "Refinement planning"
                     ]
                 }
-            ]
+            ],
+            "linkServices": "See the full service list",
+            "linkProcess": "How the process works"
         },
         "evidence": {
             "eyebrow": "Evidence",

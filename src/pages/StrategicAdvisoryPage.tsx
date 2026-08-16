@@ -27,10 +27,9 @@ function useReveal() {
 export default function StrategicAdvisoryPage({ onNavigate }: StrategicAdvisoryPageProps) {
   const nav = (page: Page) => { onNavigate(page); window.scrollTo({ top: 0 }); };
   const contact = (formAnchor?: string) => goToContact(onNavigate, "strategic-advisory", formAnchor);
-  const r1 = useReveal(), r2 = useReveal(), r3 = useReveal(), r4 = useReveal(), r5 = useReveal(), r6 = useReveal(), r7 = useReveal();
+  const r1 = useReveal(), r2 = useReveal(), r3 = useReveal(), r4 = useReveal(), r5 = useReveal(), r7 = useReveal();
 
   const methodology = strategicAdvisoryContent.methodology.steps;
-  const whatWeDo = strategicAdvisoryContent.whatWeDo.columns;
   const builtFor = strategicAdvisoryContent.builtFor.items;
 
   return (
@@ -129,33 +128,17 @@ export default function StrategicAdvisoryPage({ onNavigate }: StrategicAdvisoryP
                 </div>
                 <div>
                   <h3 style={{ fontFamily: "'Instrument Serif', serif", fontSize: 24, color: "#F5F3EE", fontWeight: 400, marginBottom: 16 }}>{step.title}</h3>
-                  <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, lineHeight: 1.8, color: "rgba(245,243,238,0.55)", margin: 0 }}>{step.body}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* What we do */}
-      <section {...editableField("strategicAdvisory.whatWeDo")} style={{ padding: "100px 40px" }}>
-        <div style={{ maxWidth: 1280, margin: "0 auto" }}>
-          <div ref={r6} className="reveal" style={{ marginBottom: 64 }}>
-            <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(28px, 3.5vw, 44px)", color: "#F5F3EE", fontWeight: 400, lineHeight: 1.15, textAlign: "center" }}>
-              {strategicAdvisoryContent.whatWeDo.title}
-            </h2>
-          </div>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 2, alignItems: "stretch" }}>
-            {whatWeDo.map((col, i) => (
-              <div key={i} style={{ background: "#1E1E1E", padding: "40px 32px", borderTop: "2px solid #2A9D78", display: "flex", flexDirection: "column" }}>
-                <h3 style={{ fontFamily: "'Instrument Serif', serif", fontSize: 24, color: "#F5F3EE", fontWeight: 400, marginBottom: 20 }}>{col.title}</h3>
-                <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
-                  {col.items.map((item) => (
-                    <div key={item} style={{ display: "flex", gap: 10, alignItems: "flex-start" }}>
-                      <div style={{ width: 3, height: 3, borderRadius: "50%", background: "#9B9B9B", marginTop: 8, flexShrink: 0 }} />
-                      <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, lineHeight: 1.6, color: "rgba(245,243,238,0.5)", margin: 0 }}>{item}</p>
+                  <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, lineHeight: 1.8, color: "rgba(245,243,238,0.55)", margin: 0, marginBottom: step.items?.length ? 24 : 0 }}>{step.body}</p>
+                  {step.items?.length ? (
+                    <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+                      {step.items.map((item) => (
+                        <div key={item} style={{ display: "flex", gap: 10, alignItems: "flex-start" }}>
+                          <div style={{ width: 3, height: 3, borderRadius: "50%", background: "#9B9B9B", marginTop: 8, flexShrink: 0 }} />
+                          <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, lineHeight: 1.6, color: "rgba(245,243,238,0.5)", margin: 0 }}>{item}</p>
+                        </div>
+                      ))}
                     </div>
-                  ))}
+                  ) : null}
                 </div>
               </div>
             ))}
@@ -165,13 +148,13 @@ export default function StrategicAdvisoryPage({ onNavigate }: StrategicAdvisoryP
               onClick={() => nav("services")}
               style={{ background: "none", border: "none", cursor: "pointer", display: "flex", alignItems: "center", gap: 8, fontFamily: "'Inter', sans-serif", fontSize: 14, color: "#2A9D78", padding: 0 }}
             >
-              {strategicAdvisoryContent.whatWeDo.linkServices} <span>→</span>
+              {strategicAdvisoryContent.methodology.linkServices} <span>→</span>
             </button>
             <button
               onClick={() => nav("how-we-work")}
               style={{ background: "none", border: "none", cursor: "pointer", display: "flex", alignItems: "center", gap: 8, fontFamily: "'Inter', sans-serif", fontSize: 14, color: "#2A9D78", padding: 0 }}
             >
-              {strategicAdvisoryContent.whatWeDo.linkProcess} <span>→</span>
+              {strategicAdvisoryContent.methodology.linkProcess} <span>→</span>
             </button>
           </div>
         </div>
