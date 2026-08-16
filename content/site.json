@@ -723,24 +723,6 @@
                 "execution": "Leads directly into Strategy Build, or works as a standalone diagnostic to inform internal planning."
             },
             {
-                "id": "strategy-build",
-                "title": "Strategy Build",
-                "sub": "Create the plan that guides everything",
-                "duration": "6–12 weeks",
-                "body": "A complete communications or campaign strategy — from problem definition through to delivery frameworks, partner briefing and implementation guidance.",
-                "included": [
-                    "Full communications or campaign strategy",
-                    "Message frameworks and narrative architecture",
-                    "Channel and media strategy",
-                    "Campaign architecture and phasing",
-                    "Creative and content direction (Ideas Brief)",
-                    "Partner briefing materials",
-                    "Implementation roadmap"
-                ],
-                "when": "When you have a clear challenge and need a comprehensive strategy to guide execution. Includes identification of delivery partners and briefing support.",
-                "execution": "Delivered as a handover, or with ongoing strategic oversight during implementation."
-            },
-            {
                 "id": "fractional-cmo",
                 "title": "Fractional CMO",
                 "sub": "Senior marketing leadership without the full-time overhead",
@@ -757,6 +739,24 @@
                 ],
                 "when": "When you need senior marketing leadership but aren't ready or resourced for a full-time CMO. Suited to growth-stage businesses, organisations in transition, or teams that need experienced direction.",
                 "execution": ""
+            },
+            {
+                "id": "strategy-build",
+                "title": "Strategy Build",
+                "sub": "Create the plan that guides everything",
+                "duration": "6–12 weeks",
+                "body": "A complete communications or campaign strategy — from problem definition through to delivery frameworks, partner briefing and implementation guidance.",
+                "included": [
+                    "Full communications or campaign strategy",
+                    "Message frameworks and narrative architecture",
+                    "Channel and media strategy",
+                    "Campaign architecture and phasing",
+                    "Creative and content direction (Ideas Brief)",
+                    "Partner briefing materials",
+                    "Implementation roadmap"
+                ],
+                "when": "When you have a clear challenge and need a comprehensive strategy to guide execution. Includes identification of delivery partners and briefing support.",
+                "execution": "Delivered as a handover, or with ongoing strategic oversight during implementation."
             },
             {
                 "id": "strategic-lead",
