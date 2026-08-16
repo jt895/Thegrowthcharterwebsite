@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import AnimatedHeroMark from "../components/AnimatedHeroMark";
+import HoloGlass from "../components/HoloGlass";
 import { aboutContent } from "../data/content";
 import { editableField } from "../data/editable";
 import { goToContact } from "../lib/contactNav";
@@ -35,10 +36,11 @@ export default function AboutPage({ onNavigate }: AboutPageProps) {
 
       {/* Hero */}
       <section {...editableField("about.hero")} style={{ paddingTop: 160, paddingBottom: 100, padding: "160px 40px 100px", position: "relative", overflow: "hidden" }}>
-        <div style={{ position: "absolute", right: "-4%", top: "50%", transform: "translateY(-50%)", pointerEvents: "none", animation: "fade-in 2.4s ease 0.5s both" }}>
+        <HoloGlass />
+        <div style={{ position: "absolute", right: "-4%", top: "50%", transform: "translateY(-50%)", pointerEvents: "none", animation: "fade-in 2.4s ease 0.5s both", zIndex: 1 }}>
           <AnimatedHeroMark size={600} opacity={0.32} speedMultiplier={2.2} />
         </div>
-        <div style={{ maxWidth: 1280, margin: "0 auto", position: "relative" }}>
+        <div style={{ maxWidth: 1280, margin: "0 auto", position: "relative", zIndex: 2 }}>
           <div style={{ maxWidth: 760 }}>
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 28 }} className="hero-sub">
               {aboutContent.hero.eyebrow}

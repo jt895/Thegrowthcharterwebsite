@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import EnquiryForm from "../components/EnquiryForm";
+import HoloGlass from "../components/HoloGlass";
 import RelatedCaseStudies from "../components/RelatedCaseStudies";
 import { growthCharterContent } from "../data/content";
 import { editableField } from "../data/editable";
@@ -106,8 +107,9 @@ export default function ProductPage({ onNavigate, page, product }: ProductPagePr
     <div style={{ background: "#1C1C1C", minHeight: "100vh" }}>
 
       {/* Hero */}
-      <section {...editableField(`growthCharter.products.${page}`)} style={{ padding: "160px 40px 100px", textAlign: "center" }}>
-        <div style={{ maxWidth: 720, margin: "0 auto" }}>
+      <section {...editableField(`growthCharter.products.${page}`)} style={{ padding: "160px 40px 100px", textAlign: "center", position: "relative", overflow: "hidden" }}>
+        <HoloGlass />
+        <div style={{ maxWidth: 720, margin: "0 auto", position: "relative", zIndex: 1 }}>
           <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 24 }}>
             {product.eyebrow}
           </p>

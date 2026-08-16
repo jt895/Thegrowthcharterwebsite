@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import HoloGlass from "../components/HoloGlass";
 import RelatedCaseStudies from "../components/RelatedCaseStudies";
 import { servicesContent } from "../data/content";
 import { editableField } from "../data/editable";
@@ -87,8 +88,9 @@ export default function ServicesPage({ onNavigate }: ServicesPageProps) {
     <div style={{ background: "#1C1C1C", minHeight: "100vh" }}>
 
       {/* Hero */}
-      <section {...editableField("services.hero")} style={{ padding: "160px 40px 80px", textAlign: "center" }}>
-        <div style={{ maxWidth: 840, margin: "0 auto" }}>
+      <section {...editableField("services.hero")} style={{ padding: "160px 40px 80px", textAlign: "center", position: "relative", overflow: "hidden" }}>
+        <HoloGlass />
+        <div style={{ maxWidth: 840, margin: "0 auto", position: "relative", zIndex: 1 }}>
           <h1 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(38px, 5vw, 64px)", lineHeight: 1.08, color: "#F5F3EE", fontWeight: 400, marginBottom: 28 }} className="hero-title">
             {servicesContent.hero.title}
           </h1>

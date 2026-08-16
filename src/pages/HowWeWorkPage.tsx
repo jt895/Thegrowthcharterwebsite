@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import HoloGlass from "../components/HoloGlass";
 import { howWeWorkContent } from "../data/content";
 import { editableField } from "../data/editable";
 import { goToContact } from "../lib/contactNav";
@@ -72,8 +73,9 @@ export default function HowWeWorkPage({ onNavigate }: HowWeWorkPageProps) {
 
   return (
     <div style={{ background: "#1C1C1C", minHeight: "100vh" }}>
-      <section {...editableField("howWeWork.hero")} style={{ padding: "160px 40px 80px", textAlign: "center" }}>
-        <div style={{ maxWidth: 800, margin: "0 auto" }}>
+      <section {...editableField("howWeWork.hero")} style={{ padding: "160px 40px 80px", textAlign: "center", position: "relative", overflow: "hidden" }}>
+        <HoloGlass />
+        <div style={{ maxWidth: 800, margin: "0 auto", position: "relative", zIndex: 1 }}>
           <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 24 }} className="hero-sub">{howWeWorkContent.hero.eyebrow}</p>
           <h1 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(38px, 5vw, 64px)", lineHeight: 1.08, color: "#F5F3EE", fontWeight: 400, marginBottom: 28 }} className="hero-title">
             {howWeWorkContent.hero.title}

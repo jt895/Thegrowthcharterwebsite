@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import HoloGlass from "../components/HoloGlass";
 import RelatedCaseStudies from "../components/RelatedCaseStudies";
 import { strategicAdvisoryContent } from "../data/content";
 import { editableField } from "../data/editable";
@@ -37,7 +38,8 @@ export default function StrategicAdvisoryPage({ onNavigate }: StrategicAdvisoryP
 
       {/* Hero */}
       <section {...editableField("strategicAdvisory.hero")} style={{ minHeight: "85vh", display: "flex", flexDirection: "column", justifyContent: "center", padding: "140px 40px 100px", position: "relative", overflow: "hidden" }}>
-        <div style={{ maxWidth: 1280, margin: "0 auto", position: "relative", width: "100%" }}>
+        <HoloGlass />
+        <div style={{ maxWidth: 1280, margin: "0 auto", position: "relative", width: "100%", zIndex: 1 }}>
           <div style={{ maxWidth: 760 }}>
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 28 }} className="hero-sub">
               {strategicAdvisoryContent.hero.eyebrow}

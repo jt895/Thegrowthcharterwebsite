@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import HoloGlass from "../components/HoloGlass";
 import RelatedCaseStudies from "../components/RelatedCaseStudies";
 import SpinningRingMark from "../components/SpinningRingMark";
 import { growthCharterContent } from "../data/content";
@@ -34,12 +35,13 @@ export default function GrowthCharterPage({ onNavigate }: GrowthCharterPageProps
 
       {/* Hero */}
       <section {...editableField("growthCharter.hero")} style={{ padding: "160px 40px 100px", position: "relative", overflow: "hidden" }}>
+        <HoloGlass />
         {/* V1 spinning rings — prominent, less subtle */}
-        <div style={{ position: "absolute", right: "-2%", top: "50%", transform: "translateY(-50%)", pointerEvents: "none", animation: "fade-in 2.4s ease 0.5s both" }}>
+        <div style={{ position: "absolute", right: "-2%", top: "50%", transform: "translateY(-50%)", pointerEvents: "none", animation: "fade-in 2.4s ease 0.5s both", zIndex: 1 }}>
           <SpinningRingMark size={640} opacity={0.55} speed={1.3} weight={1.6} />
         </div>
 
-        <div style={{ maxWidth: 1280, margin: "0 auto" }}>
+        <div style={{ maxWidth: 1280, margin: "0 auto", position: "relative", zIndex: 2 }}>
           <div style={{ maxWidth: 800 }}>
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 28 }} className="hero-sub">
               {growthCharterContent.hero.eyebrow}

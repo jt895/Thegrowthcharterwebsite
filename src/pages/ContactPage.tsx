@@ -1,5 +1,6 @@
 import { useState } from "react";
 import EnquiryForm from "../components/EnquiryForm";
+import HoloGlass from "../components/HoloGlass";
 import { contactContent, siteContent } from "../data/content";
 import { editableField } from "../data/editable";
 import { readContactSource } from "../lib/contactNav";
@@ -16,8 +17,9 @@ export default function ContactPage(_props: ContactPageProps) {
     <div style={{ background: "#1C1C1C", minHeight: "100vh" }}>
 
       {/* Hero */}
-      <section {...editableField("contact.hero")} style={{ padding: "160px 40px 80px", textAlign: "center" }}>
-        <div style={{ maxWidth: 640, margin: "0 auto" }}>
+      <section {...editableField("contact.hero")} style={{ padding: "160px 40px 80px", textAlign: "center", position: "relative", overflow: "hidden" }}>
+        <HoloGlass />
+        <div style={{ maxWidth: 640, margin: "0 auto", position: "relative", zIndex: 1 }}>
           <h1 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(38px, 5vw, 64px)", lineHeight: 1.08, color: "#F5F3EE", fontWeight: 400, marginBottom: 24 }} className="hero-title">
             {contactContent.hero.title}
           </h1>

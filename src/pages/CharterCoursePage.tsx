@@ -1,4 +1,5 @@
 import EnquiryForm from "../components/EnquiryForm";
+import HoloGlass from "../components/HoloGlass";
 import { charterCourseContent, contactContent } from "../data/content";
 import { editableField } from "../data/editable";
 import { readContactSource } from "../lib/contactNav";
@@ -16,8 +17,9 @@ export default function CharterCoursePage({ onNavigate }: CharterCoursePageProps
     <div style={{ background: "#1C1C1C", minHeight: "100vh" }}>
 
       {/* Hero */}
-      <section {...editableField("charterCourse.hero")} style={{ padding: "160px 40px 80px", textAlign: "center" }}>
-        <div style={{ maxWidth: 680, margin: "0 auto" }}>
+      <section {...editableField("charterCourse.hero")} style={{ padding: "160px 40px 80px", textAlign: "center", position: "relative", overflow: "hidden" }}>
+        <HoloGlass />
+        <div style={{ maxWidth: 680, margin: "0 auto", position: "relative", zIndex: 1 }}>
           <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 24 }}>
             {charterCourseContent.eyebrow}
           </p>

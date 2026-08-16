@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import CaseStudyCard from "../components/CaseStudyCard";
+import HoloGlass from "../components/HoloGlass";
 import { caseStudiesContent } from "../data/content";
 import { editableField } from "../data/editable";
 import type { Page } from "../routes";
@@ -43,8 +44,9 @@ export default function CaseStudiesIndexPage({ onNavigate }: CaseStudiesIndexPag
     <div style={{ background: "#1C1C1C", minHeight: "100vh" }}>
 
       {/* Hero */}
-      <section {...editableField("caseStudies.index")} style={{ padding: "160px 40px 80px" }}>
-        <div style={{ maxWidth: 1280, margin: "0 auto" }}>
+      <section {...editableField("caseStudies.index")} style={{ padding: "160px 40px 80px", position: "relative", overflow: "hidden" }}>
+        <HoloGlass />
+        <div style={{ maxWidth: 1280, margin: "0 auto", position: "relative", zIndex: 1 }}>
           <div style={{ maxWidth: 780 }}>
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 28 }} className="hero-sub">
               {index.eyebrow}
