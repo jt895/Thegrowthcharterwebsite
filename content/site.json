@@ -520,7 +520,7 @@
                         }
                     ],
                     "note": "Brand and website build available as an add-on — $4,500.",
-                    "notePending": true
+                    "notePending": false
                 },
                 "suppliers": {
                     "heading": "We work with the people you already work with.",
