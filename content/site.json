@@ -741,24 +741,6 @@
                 "execution": "Delivered as a handover, or with ongoing strategic oversight during implementation."
             },
             {
-                "id": "strategic-lead",
-                "title": "Strategic Lead",
-                "sub": "Ongoing strategic guidance from problem to delivery",
-                "duration": "3–12 months or longer",
-                "body": "Embedded strategic leadership across a programme — from problem definition through strategy development, partner briefing and implementation oversight. Strategic Lead owns the strategy across a body of work. Fractional CMO owns the marketing function inside your organisation.",
-                "included": [
-                    "Full diagnostic and strategy development",
-                    "Identification and briefing of delivery partners",
-                    "Strategic project leadership",
-                    "Implementation oversight and review",
-                    "Creative and content direction",
-                    "Stakeholder alignment and management",
-                    "Performance tracking and refinement"
-                ],
-                "when": "For high-stakes, complex or long-term programmes that need senior strategic leadership from start to finish.",
-                "execution": ""
-            },
-            {
                 "id": "fractional-cmo",
                 "title": "Fractional CMO",
                 "sub": "Senior marketing leadership without the full-time overhead",
@@ -774,6 +756,24 @@
                     "Board and executive-level reporting"
                 ],
                 "when": "When you need senior marketing leadership but aren't ready or resourced for a full-time CMO. Suited to growth-stage businesses, organisations in transition, or teams that need experienced direction.",
+                "execution": ""
+            },
+            {
+                "id": "strategic-lead",
+                "title": "Strategic Lead",
+                "sub": "Ongoing strategic guidance from problem to delivery",
+                "duration": "3–12 months or longer",
+                "body": "Embedded strategic leadership across a programme — from problem definition through strategy development, partner briefing and implementation oversight. Strategic Lead owns the strategy across a body of work. Fractional CMO owns the marketing function inside your organisation.",
+                "included": [
+                    "Full diagnostic and strategy development",
+                    "Identification and briefing of delivery partners",
+                    "Strategic project leadership",
+                    "Implementation oversight and review",
+                    "Creative and content direction",
+                    "Stakeholder alignment and management",
+                    "Performance tracking and refinement"
+                ],
+                "when": "For high-stakes, complex or long-term programmes that need senior strategic leadership from start to finish.",
                 "execution": ""
             },
             {
