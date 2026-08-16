@@ -261,33 +261,33 @@
                     "note": "Multiple audiences, product lines or markets.",
                     "cells": [
                         {
-                            "value": "POA",
+                            "value": "POA - Scope dependent ",
                             "page": null
                         },
                         {
-                            "value": "POA",
+                            "value": "POA - Scope dependent",
                             "page": null
                         }
                     ]
                 }
             ],
             "note": "All prices ex GST. Every engagement starts with a $450 Viability Session, credited in full.",
-            "charterCourseNote": "Prefer to go at your own pace? Grow It Yourself is in development.",
+            "charterCourseNote": "Prefer to go at your own pace? Grow It Yourself Self-Paced Training is in development.",
             "charterCourseLinkLabel": "Join the waitlist",
-            "legend": "Scope is how much work is involved. Delivery is who does it — Do It Together means you're guided through it, Done For You means we build it for you."
+            "legend": ""
         },
         "centralIdea": {
             "eyebrow": "The central idea",
-            "title": "What you believe. What the evidence says.",
-            "paraA": "Every owner has a view of why customers buy, which work is most valuable, and where growth will come from. Some of it is right. Some of it is incomplete. Some of it is quietly costing money.",
-            "paraB": "The Growth Program finds that gap on purpose. That's where better decisions, stronger margins and clearer priorities come from.",
-            "quote": "The product isn't a website, a campaign or an AI tool. It's a stronger business — with clearer commercial choices and the ability to keep moving after we've gone.",
+            "title": "Assumptions vs Evidence and Insight.",
+            "paraA": "There are a lot of assumptions about why customers buy, which work is most valuable, and where growth will come from. Some of them right. Some of them are focused on the business and not the customer. Some of them are old wives' tales. But one thing is for sure: assumptions are costing you money.",
+            "paraB": "The Growth Program works to identify gaps and find the opportunities. It creates the environment where better decisions, stronger margins and clearer priorities come from.",
+            "quote": "A stronger business isn't just about having more customers; it's about finding the right customers and focusing on the opportunities that will drive the growth you want. By understanding your business objectives, the value of your customers and where to focus your efforts, you build a stronger business — with clearer commercial choices and the ability to keep growing.",
             "quoteAttribution": "James Trebilcock, Founder, The United Republic"
         },
         "howItWorks": {
             "eyebrow": "How it works",
-            "title": "Five stages. One commercial plan.",
-            "body": "Each stage produces the evidence and decisions required for the next. We do not jump to marketing activity before the commercial direction is clear.",
+            "title": "Five stages. One plan.",
+            "body": "Each stage produces the evidence and decisions required for the next. We do not jump into action before we understand your business, your objectives, and what success looks like. A clear commercial direction is key to building lasting growth.",
             "stages": [
                 {
                     "num": "01",
@@ -299,25 +299,25 @@
                     "num": "02",
                     "section": "Evidence and analysis",
                     "title": "The Opportunity",
-                    "body": "We test those beliefs against customer research, real numbers and market reality. Then we work out what each opportunity is worth, in dollars, effort and time."
+                    "body": "We test assumptions against customer research, real numbers and market reality. Then we work out the value of each opportunity and prioritise the ones that will have the greatest effect."
                 },
                 {
                     "num": "03",
                     "section": "A clearer place in the market",
                     "title": "Branding & Positioning",
-                    "body": "We work out what you're really selling, why the right customers should choose you, and how your business can stand apart in a way you can actually deliver."
+                    "body": "We work out what you're really selling, the problem you're solving for your customers, why the right customers should choose you, and how your business can stand apart in a way you can actually deliver on."
                 },
                 {
                     "num": "04",
                     "section": "Who matters and how to reach them",
                     "title": "Audiences, Messaging & Channel Planning",
-                    "body": "We work out which customers matter most, shape the messages that count, and choose the channels that fit how people actually decide."
+                    "body": "We work out which customers matter most, who the decision-makers and influencers are, where the value is, shape the right messages for each audience, and find the best way to engage the influencers and decision-makers. "
                 },
                 {
                     "num": "05",
                     "section": "Turn the plan into action",
                     "title": "Go To Market & Implementation",
-                    "body": "We build a staged plan: who does what, when, what it costs, how you'll know it's working, and the tools your team needs to run it."
+                    "body": "We build a staged plan: who does what, when, what it costs, how you'll know it's working, and provide the tools your team needs to run it."
                 }
             ]
         },
@@ -325,7 +325,7 @@
             "eyebrow": "Credibility",
             "title": "Big business experience, applied to yours.",
             "paraA": "The Growth Program draws on 25 years of work with national and international brands, government agencies and owner-led businesses.",
-            "paraB": "James Trebilcock has led strategy, marketing and growth for Toyota, Ford, Commonwealth Bank, Hyundai, Subaru, DFAT, Hort Innovation, the Electoral Commission of South Australia, Adelaide Hills Wine Region and The Bend Motorsport Park.",
+            "paraB": "James Trebilcock has led strategy, marketing and growth for Toyota, Ford, Commonwealth Bank, Hyundai, Subaru, DFAT, Hort Innovation, YellowTail Wines, the Electoral Commission of South Australia, Adelaide Hills Wine Region and The Bend Motorsport Park.",
             "paraC": "The questions that build major brands are the same ones that help a local business make better commercial decisions. The scale changes. The thinking shouldn't.",
             "organisations": [
                 "Toyota",
