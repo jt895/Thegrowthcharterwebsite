@@ -117,7 +117,7 @@
     "about": {
         "hero": {
             "eyebrow": "About",
-            "title": "One senior strategist. The right team around every job.",
+            "title": "The right team around every job.",
             "paraA": "The United Republic is an independent Australian strategy and growth advisory — working with government and major brands through Strategic Advisory, and with owner-led businesses through The Growth Program.",
             "paraB": "We help you define the real problem, shape the response, and stay involved through delivery."
         },
@@ -126,13 +126,13 @@
             "title": "Principal Consultant",
             "name": "James Trebilcock",
             "bioA": "Twenty-five years across strategy, communications, engagement, customer experience and operational leadership — for Toyota, Ford, Commonwealth Bank, Australia Post, DFAT Smartraveller, the Electoral Commission of South Australia and dozens of others. Campaigns that have reached millions of Australians.",
-            "bioB": "The work has always been the same shape: find the real problem before anyone spends money on the wrong one. Understand who has to change their behaviour. Build a strategy that connects insight, message and delivery — then make sure it survives contact with the real world.",
-            "bioC": "These days that happens at two scales. Complex organisations with competing stakeholders and public accountability. And owner-led businesses that have hit a ceiling and need to know which decision comes next.",
-            "bioD": "The same questions that built national campaigns work on a business of ten people. The scale changes. The quality of the thinking shouldn't."
+            "bioB": "The work has always been the same shape: find the real problem before anyone spends money on the wrong one. Understand what behaviours need to change. Build a strategy that connects insight, message and delivery — then make sure it survives contact with the real world.",
+            "bioC": "The questions that helped grow national businesses and campaigns that influenced millions of Australians are the same questions that need to be asked of any-sized business.  The scale changes. The quality of the thinking shouldn't.  ",
+            "bioD": ""
         },
         "tailoredTeam": {
             "title": "No fixed team. No payroll to feed.",
-            "paraA": "The United Republic doesn't run a permanent team or push work through a machine that needs feeding. Each project gets the specialists it actually needs — creative, media, content, production, delivery — selected for the job rather than because they're already on the books.",
+            "paraA": "The United Republic doesn't run a permanent team or push work through a machine that needs feeding. Each project gets the specialists it actually needs — research, strategy, technology, trainers, creative, media, content, production, delivery — selected because they're right for the job, not because they're already on the books.",
             "paraB": "You get senior thinking that isn't biased toward a particular channel, and specialist execution without the overhead.",
             "link": "How advisory engagements work"
         },
