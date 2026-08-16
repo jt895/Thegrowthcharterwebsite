@@ -3,6 +3,7 @@ import { homeContent } from "../data/content";
 import { editableField } from "../data/editable";
 import { goToContact } from "../lib/contactNav";
 import type { Page } from "../routes";
+import HoloGlass from "../components/HoloGlass";
 
 import imgAccolade from "@/imports/accolade.png";
 import imgFord from "@/imports/ford.png";
@@ -63,10 +64,12 @@ export default function HomePage({ onNavigate }: HomePageProps) {
     <div style={{ background: "#1C1C1C", minHeight: "100vh" }}>
 
       {/* Hero */}
-      <section {...editableField("home.hero")} style={{ minHeight: "100vh", display: "flex", flexDirection: "column", justifyContent: "center", padding: "120px 40px 80px", maxWidth: 1280, margin: "0 auto", position: "relative" }}>
+      <section {...editableField("home.hero")} style={{ minHeight: "100vh", display: "flex", flexDirection: "column", justifyContent: "center", padding: "120px 40px 80px", maxWidth: 1280, margin: "0 auto", position: "relative", overflow: "hidden" }}>
+
+        <HoloGlass />
 
         {/* Animated ring mark — exact v1 */}
-        <div style={{ position: "absolute", right: "6%", top: "50%", transform: "translateY(-50%)", opacity: 0.18, pointerEvents: "none" }} className="hero-ring">
+        <div style={{ position: "absolute", right: "6%", top: "50%", transform: "translateY(-50%)", opacity: 0.18, pointerEvents: "none", zIndex: 1 }} className="hero-ring">
           <svg width="520" height="520" viewBox="0 0 520 520" fill="none" ref={heroRef}>
             <defs>
               <clipPath id="hero-left"><rect x="0" y="0" width="260" height="520" /></clipPath>
@@ -89,7 +92,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
           </svg>
         </div>
 
-        <div style={{ maxWidth: 760, position: "relative" }}>
+        <div style={{ maxWidth: 760, position: "relative", zIndex: 2 }}>
           <h1 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(42px, 6vw, 76px)", lineHeight: 1.08, color: "#F5F3EE", marginBottom: 32, fontWeight: 400 }} className="hero-title">
             {homeContent.hero.title}
           </h1>
@@ -275,8 +278,9 @@ export default function HomePage({ onNavigate }: HomePageProps) {
       </section>
 
       {/* CTA */}
-      <section {...editableField("home.cta")} style={{ padding: "100px 40px", textAlign: "center" }}>
-        <div style={{ maxWidth: 600, margin: "0 auto" }}>
+      <section {...editableField("home.cta")} style={{ padding: "100px 40px", textAlign: "center", position: "relative", overflow: "hidden" }}>
+        <HoloGlass intensity="subtle" />
+        <div style={{ maxWidth: 600, margin: "0 auto", position: "relative", zIndex: 1 }}>
           <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(28px, 3.5vw, 40px)", color: "#F5F3EE", fontWeight: 400, lineHeight: 1.2, marginBottom: 20 }}>
             {homeContent.cta.title}
           </h2>

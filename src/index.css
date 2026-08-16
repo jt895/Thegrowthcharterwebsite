@@ -178,3 +178,89 @@ body {
     overflow-wrap: anywhere;
   }
 }
+
+/* Holographic glass — ambient background layer (Hero, CTA) */
+@keyframes holo-swirl {
+  from { transform: rotate(0deg) scale(1.1); }
+  to   { transform: rotate(360deg) scale(1.1); }
+}
+@keyframes holo-drift {
+  0%   { transform: translate(0,0) scale(1); }
+  50%  { transform: translate(-3%, 2%) scale(1.05); }
+  100% { transform: translate(2%, -2%) scale(1); }
+}
+@keyframes holo-sweep {
+  0%   { transform: translateX(-30%) translateY(-10%); }
+  100% { transform: translateX(30%) translateY(10%); }
+}
+
+.holo-swirl {
+  position: absolute;
+  inset: -35%;
+  background: conic-gradient(
+    from 0deg at 50% 50%,
+    rgba(42,157,120,0.22) 0deg,
+    rgba(143,217,190,0.10) 90deg,
+    rgba(42,157,120,0.16) 160deg,
+    rgba(245,243,238,0.05) 220deg,
+    rgba(42,157,120,0.20) 290deg,
+    rgba(42,157,120,0.22) 360deg
+  );
+  filter: blur(90px) saturate(115%);
+  animation: holo-swirl 60s linear infinite;
+}
+
+.holo-field {
+  position: absolute;
+  inset: -20%;
+  background:
+    radial-gradient(circle at 25% 30%, rgba(42,157,120,0.18), transparent 50%),
+    radial-gradient(circle at 75% 70%, rgba(143,217,190,0.10), transparent 50%);
+  filter: blur(70px);
+  animation: holo-drift 34s ease-in-out infinite alternate;
+  mix-blend-mode: screen;
+}
+
+.holo-glass {
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(2px);
+  background: linear-gradient(180deg, rgba(28,28,28,0.45) 0%, rgba(28,28,28,0.72) 65%, rgba(28,28,28,0.94) 100%);
+}
+
+.holo-shimmer {
+  position: absolute;
+  inset: -50%;
+  background: linear-gradient(
+    115deg,
+    transparent 35%,
+    rgba(255,255,255,0.025) 47%,
+    rgba(200,255,235,0.06) 50%,
+    rgba(255,255,255,0.025) 53%,
+    transparent 65%
+  );
+  animation: holo-sweep 13s linear infinite;
+  mix-blend-mode: screen;
+}
+
+.holo-grain {
+  position: absolute;
+  inset: 0;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  pointer-events: none;
+}
+
+/* Reduced motion: freeze all holo animation, keep the static gradient look */
+@media (prefers-reduced-motion: reduce) {
+  .holo-swirl, .holo-field, .holo-shimmer {
+    animation: none !important;
+  }
+}
+
+/* Mobile: drop the expensive blur radius so it doesn't tax GPU/battery */
+@media (max-width: 768px) {
+  .holo-swirl { filter: blur(40px) saturate(115%); }
+  .holo-field { filter: blur(30px); }
+  .holo-shimmer { animation-duration: 13s; }
+}
