@@ -350,7 +350,8 @@
                 "You're not sure which customers or services are actually most profitable",
                 "You've spent on marketing before and can't point to what it returned",
                 "Too much of the business runs through you",
-                "You want a plan you own, not a supplier you can't leave"
+                "You want a plan you own, not a supplier you can't leave",
+                ""
             ]
         },
         "products": {
