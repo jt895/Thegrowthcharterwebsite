@@ -401,7 +401,8 @@
                                 "Go-live",
                                 "A training session on your own tools",
                                 "Every login in your name",
-                                "A short guide to running it yourself"
+                                "A short guide to running it yourself",
+                                null
                             ]
                         }
                     ]
