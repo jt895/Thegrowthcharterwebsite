@@ -220,8 +220,8 @@
         },
         "waysToWork": {
             "eyebrow": "Ways to engage",
-            "title": "The same scope. Two ways to deliver it.",
-            "intro": "Scope is how much work. Delivery is who does it. Pick the row for how much ground you need to cover, then the column for how much you want to do yourself.",
+            "title": "Do it together or done for you - the same roadmap, delivered the way you want to work.",
+            "intro": "How much ground do you need to cover, and how much do you want to do yourself?",
             "columns": [
                 "Do It Together",
                 "Done For You"
@@ -229,21 +229,21 @@
             "rows": [
                 {
                     "scope": "Launch",
-                    "note": "Foundations done properly — strategy, brand, a launch-ready website.",
+                    "note": "Foundations done properly — strategy, brand, a launch-ready website and the support to begin your growth journey.",
                     "cells": [
                         {
                             "value": "—",
                             "page": null
                         },
                         {
-                            "value": "$6,950",
+                            "value": "$5,990",
                             "page": "launch-charter"
                         }
                     ]
                 },
                 {
                     "scope": "Grow",
-                    "note": "Everything, built on your actual sales data, with pricing, conversion and 12 weeks of support.",
+                    "note": "Everything you need to grow your business, built on your actual sales data, with pricing, conversion and 12 weeks of support.  Delivered and in hand to build capability, or done for you to let you focus on what matters. ",
                     "cells": [
                         {
                             "value": "$9,550",
