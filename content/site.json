@@ -603,7 +603,7 @@
         "phases": [
             {
                 "num": "01",
-                "title": "Diagnose",
+                "title": "Understand",
                 "tagline": "We identify the problem behind the brief.",
                 "body": "Before any strategy work begins we need to understand what is really going on. Audience research, stakeholder insight, communications audits and strategic analysis — to define the real challenge rather than the symptoms.",
                 "delivers": [
@@ -618,7 +618,7 @@
             },
             {
                 "num": "02",
-                "title": "Design",
+                "title": "Strategise",
                 "tagline": "We turn complexity into a clear plan.",
                 "body": "Once the problem is clear we build the strategy — the frameworks, plans and direction that guide decisions, shape creative development and keep activity aligned to outcomes.",
                 "delivers": [
@@ -634,7 +634,7 @@
             },
             {
                 "num": "03",
-                "title": "Direct",
+                "title": "Assemble and direct",
                 "tagline": "We help the strategy survive contact with reality.",
                 "body": "Strategy only works if it is executed well. We help you identify and brief the right specialist partners, provide oversight during implementation, and keep the work true to the original intent.",
                 "delivers": [
@@ -673,42 +673,65 @@
     "services": {
         "hero": {
             "title": "Advisory Services",
-            "body": "The United Republic is built to be easy to buy from. Each service has a defined shape, a clear scope and a realistic timeframe — and every one can include execution support, where we identify, brief and guide the right specialist partners to bring the strategy to life."
+            "body": "The United Republic is built to be easy to work with. Each service has a defined shape, a clear scope and a realistic timeframe — and the right specialist partners to bring the strategy to life."
         },
-        "quoteBlock": "We don't keep a fixed team. We build the right people around each challenge — bringing together specialist partners for creative, media, content, production and delivery based on what the work needs, not what we happen to have in-house.",
+        "quoteBlock": "We don't keep a fixed team. We build the right people around each challenge — bringing together specialist partners based on what the work needs, not what we happen to have in-house.",
         "indexLabel": "What we offer",
         "sequence": {
-            "title": "Most engagements follow the same path.",
+            "title": "Engagement Pathways",
             "steps": [
                 {
                     "num": "01",
+                    "title": "Fractional CMO",
+                    "body": "Ongoing senior marketing leadership embedded in your organisation, without the overhead of a full time employee."
+                },
+                {
+                    "num": "02",
                     "title": "Strategic Diagnostic",
                     "body": "Define the real problem before you invest"
                 },
                 {
-                    "num": "02",
+                    "num": "03",
                     "title": "Strategy Build",
                     "body": "Create the plan that guides everything"
                 },
                 {
-                    "num": "03",
+                    "num": "04",
                     "title": "Strategic Lead",
                     "body": "Carry the strategy through delivery"
                 },
                 {
-                    "num": "04",
+                    "num": "05",
                     "title": "Review and Refine",
                     "body": "Evaluate what worked and improve what's next"
                 }
             ],
-            "noteA": "Start anywhere. Most clients begin with a Diagnostic. Some arrive with the problem already clear and start at Strategy Build.",
-            "noteB": "Fractional CMO sits alongside the sequence rather than inside it — ongoing senior marketing leadership embedded in your organisation."
+            "noteA": "Start anywhere. Most clients begin with a Diagnostic. Some arrive with the problem already clear and start at the Strategy Build, or they need a Strategic Lead - a senior project implementation specialist and creative director to bring their established strategy to life. ",
+            "noteB": ""
         },
         "services": [
             {
+                "id": "fractional-cmo",
+                "title": "Fractional CMO",
+                "sub": "Senior marketing leadership without the full-time overhead",
+                "duration": "Ongoing retainer",
+                "body": "Experienced senior marketing leadership on a fractional basis — embedded in your business to own the strategy, lead the team and drive commercial outcomes, without the cost of a full-time executive hire.",
+                "included": [
+                    "Marketing strategy ownership and accountability",
+                    "Brand positioning and messaging direction",
+                    "Team leadership and capability development",
+                    "Partner and supplier management",
+                    "Budget planning and channel allocation",
+                    "Performance reporting and optimisation",
+                    "Board and executive-level reporting"
+                ],
+                "when": "When you need senior marketing leadership but aren't ready or resourced for a full-time CMO. Suited to growth-stage businesses, organisations in transition, or teams that need experienced direction.",
+                "execution": ""
+            },
+            {
                 "id": "strategic-diagnostic",
                 "title": "Strategic Diagnostic",
-                "sub": "Define the real problem before you invest",
+                "sub": "Define the objectives and understand the  real problems before you invest",
                 "duration": "2–4 weeks",
                 "body": "A focused diagnostic to understand the challenge, map the landscape, and define where strategic focus will have the greatest impact. Can be run as a facilitated workshop programme where the priority is aligning a team quickly, or as a research-led diagnostic where the priority is establishing the truth.",
                 "included": [
@@ -719,7 +742,7 @@
                     "Strategic recommendations and next steps",
                     "Facilitated sessions where alignment is the constraint"
                 ],
-                "when": "When you need clarity on the problem before committing to strategy or execution. Or when your team is at a crossroads and needs structured thinking to unblock a decision.",
+                "when": "When you need clarity on the objectives and problems before committing to strategy or execution. Or when your team is at a crossroads and needs structured thinking to unblock a decision.",
                 "execution": "Leads directly into Strategy Build, or works as a standalone diagnostic to inform internal planning."
             },
             {
@@ -745,7 +768,7 @@
                 "title": "Strategic Lead",
                 "sub": "Ongoing strategic guidance from problem to delivery",
                 "duration": "3–12 months or longer",
-                "body": "Embedded strategic leadership across a programme — from problem definition through strategy development, partner briefing and implementation oversight. Strategic Lead owns the strategy across a body of work. Fractional CMO owns the marketing function inside your organisation.",
+                "body": "Embedded strategic leadership across a program — from problem definition through strategy development, partner briefing and implementation oversight. Your Strategic Lead owns the strategy across a body of work. ",
                 "included": [
                     "Full diagnostic and strategy development",
                     "Identification and briefing of delivery partners",
@@ -755,25 +778,7 @@
                     "Stakeholder alignment and management",
                     "Performance tracking and refinement"
                 ],
-                "when": "For high-stakes, complex or long-term programmes that need senior strategic leadership from start to finish.",
-                "execution": ""
-            },
-            {
-                "id": "fractional-cmo",
-                "title": "Fractional CMO",
-                "sub": "Senior marketing leadership without the full-time overhead",
-                "duration": "Ongoing retainer",
-                "body": "Experienced senior marketing leadership on a fractional basis — embedded in your business to own the strategy, lead the team and drive commercial outcomes, without the cost of a full-time executive hire. Where Strategic Lead runs a programme, Fractional CMO runs the function.",
-                "included": [
-                    "Marketing strategy ownership and accountability",
-                    "Brand positioning and messaging direction",
-                    "Team leadership and capability development",
-                    "Partner and supplier management",
-                    "Budget planning and channel allocation",
-                    "Performance reporting and optimisation",
-                    "Board and executive-level reporting"
-                ],
-                "when": "When you need senior marketing leadership but aren't ready or resourced for a full-time CMO. Suited to growth-stage businesses, organisations in transition, or teams that need experienced direction.",
+                "when": "For high-stakes, complex or long-term programmes that need senior strategic and implementation leadership from start to finish.",
                 "execution": ""
             },
             {
@@ -795,7 +800,7 @@
         ],
         "cta": {
             "title": "Not sure which one you need?",
-            "body": "Most conversations start there. Tell us what you're trying to achieve and we'll tell you honestly which service fits — or whether you need one at all.",
+            "body": "Start a conversation, let's grab a coffee or tell us what you're trying to achieve, and we'll tell you honestly which service fits — or whether you need one at all.",
             "ctaLabel": "Book your free 20 minute call"
         }
     },
@@ -826,32 +831,7 @@
                 {
                     "num": "01",
                     "title": "Understand",
-                    "body": "Business objectives and success measures. Deep audience and stakeholder work. The true challenge rather than the presenting symptom — quantified, with segments, barriers and behaviours mapped."
-                },
-                {
-                    "num": "02",
-                    "title": "Strategise",
-                    "body": "A customer-first roadmap, media-neutral from the outset. An Ideas Brief rather than a traditional creative brief. Built around message, medium and meaning — and the right idea, not the biggest one."
-                },
-                {
-                    "num": "03",
-                    "title": "Assemble and direct",
-                    "body": "The specialist team built around the challenge, briefed properly and held to the strategy. Senior partners selected for fit. Lean, tailored, accountable to outcomes."
-                },
-                {
-                    "num": "04",
-                    "title": "Measure",
-                    "body": "What's working, what needs to change, where can we improve, and what can we learn?"
-                }
-            ]
-        },
-        "whatWeDo": {
-            "title": "Understand, Strategise, Assemble and Direct, Measure.",
-            "linkServices": "See the full service list",
-            "linkProcess": "How the process works",
-            "columns": [
-                {
-                    "title": "Understand",
+                    "body": "Business objectives and success measures. Deep audience and stakeholder work. The true challenge rather than the presenting symptom — quantified, with segments, barriers and behaviours mapped.",
                     "items": [
                         "Strategic problem definition",
                         "Audience and stakeholder insight",
@@ -861,7 +841,9 @@
                     ]
                 },
                 {
+                    "num": "02",
                     "title": "Strategise",
+                    "body": "A customer-first roadmap, media-neutral from the outset. An Ideas Brief rather than a traditional creative brief. Built around message, medium and meaning — and the right idea, not the biggest one.",
                     "items": [
                         "The roadmap",
                         "Communications strategy",
@@ -873,7 +855,9 @@
                     ]
                 },
                 {
-                    "title": "Assemble and Direct",
+                    "num": "03",
+                    "title": "Assemble and direct",
+                    "body": "The specialist team built around the challenge, briefed properly and held to the strategy. Senior partners selected for fit. Lean, tailored, accountable to outcomes.",
                     "items": [
                         "Partner briefing and direction",
                         "Implementation oversight",
@@ -883,7 +867,9 @@
                     ]
                 },
                 {
+                    "num": "04",
                     "title": "Measure",
+                    "body": "What's working, what needs to change, where can we improve, and what can we learn?",
                     "items": [
                         "Campaign evaluation",
                         "Performance reporting",
@@ -892,7 +878,9 @@
                         "Refinement planning"
                     ]
                 }
-            ]
+            ],
+            "linkServices": "See the full service list",
+            "linkProcess": "How the process works"
         },
         "evidence": {
             "eyebrow": "Evidence",
