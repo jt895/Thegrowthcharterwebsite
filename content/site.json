@@ -603,7 +603,7 @@
         "phases": [
             {
                 "num": "01",
-                "title": "Diagnose",
+                "title": "Understand",
                 "tagline": "We identify the problem behind the brief.",
                 "body": "Before any strategy work begins we need to understand what is really going on. Audience research, stakeholder insight, communications audits and strategic analysis — to define the real challenge rather than the symptoms.",
                 "delivers": [
@@ -618,7 +618,7 @@
             },
             {
                 "num": "02",
-                "title": "Design",
+                "title": "Strategise",
                 "tagline": "We turn complexity into a clear plan.",
                 "body": "Once the problem is clear we build the strategy — the frameworks, plans and direction that guide decisions, shape creative development and keep activity aligned to outcomes.",
                 "delivers": [
@@ -634,7 +634,7 @@
             },
             {
                 "num": "03",
-                "title": "Direct",
+                "title": "Assemble and direct",
                 "tagline": "We help the strategy survive contact with reality.",
                 "body": "Strategy only works if it is executed well. We help you identify and brief the right specialist partners, provide oversight during implementation, and keep the work true to the original intent.",
                 "delivers": [
