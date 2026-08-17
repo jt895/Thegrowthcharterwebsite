@@ -5,18 +5,19 @@ import { goToContact } from "../lib/contactNav";
 import type { Page } from "../routes";
 import HoloGlass from "../components/HoloGlass";
 
-import imgAccolade from "@/imports/accolade.png";
+import imgToyota from "@/imports/toyota.png";
 import imgFord from "@/imports/ford.png";
 import imgHyundai from "@/imports/hyundai.png";
-import imgIag from "@/imports/iag.png";
-import imgKaplan from "@/imports/kaplan.png";
-import imgPanasonic from "@/imports/panasonic.png";
-import imgSaGovernment from "@/imports/sa-government.png";
-import imgSmartraveller from "@/imports/smartraveller.jpeg";
-import imgStockland from "@/imports/stockland.png";
-import imgSubaru from "@/imports/subaru.png";
-import imgToyota from "@/imports/toyota.png";
-import imgYalumba from "@/imports/yalumba.png";
+import imgCommbank from "@/imports/commbank.png";
+import imgMillers from "@/imports/client-logos/millers.png";
+import imgHipages from "@/imports/hipages.png";
+import imgAdelaideHills from "@/imports/client-logos/adelaide-hills.png";
+import imgEcsa from "@/imports/ecsa.png";
+import imgAqis from "@/imports/client-logos/aqis.png";
+import imgAmbc from "@/imports/ambc.png";
+import imgSaGovernment from "@/imports/client-logos/sa-government.png";
+import imgTafeVictoria from "@/imports/tafe-victoria.png";
+import imgKettle from "@/imports/client-logos/kettle.svg";
 
 interface HomePageProps {
   onNavigate: (page: Page) => void;
@@ -34,21 +35,24 @@ function useReveal() {
   return ref;
 }
 
-// Curated to 10-12 working logos. Previously included CommBank, Yellowtail and
-// hipages marks that render as broken/boxed against the dark treatment.
+// Case-study client roster, curated per JT (Aug 2026). Backgrounds cleaned to
+// true transparent PNGs where the source had a white/opaque backing.
+// DFAT (Smartraveller) intentionally left out pending confirmation on whether
+// its blue badge is part of the brand mark or removable background fill.
 const clientLogoImages: { src: string; alt: string }[] = [
   { src: imgToyota,        alt: "Toyota" },
   { src: imgFord,          alt: "Ford" },
   { src: imgHyundai,       alt: "Hyundai" },
-  { src: imgSubaru,        alt: "Subaru" },
-  { src: imgSmartraveller, alt: "DFAT Smartraveller" },
-  { src: imgYalumba,       alt: "Yalumba Wines" },
-  { src: imgAccolade,      alt: "Accolade Wines" },
-  { src: imgIag,           alt: "IAG" },
-  { src: imgPanasonic,     alt: "Panasonic" },
-  { src: imgStockland,     alt: "Stockland" },
-  { src: imgKaplan,        alt: "Kaplan" },
+  { src: imgCommbank,      alt: "Commonwealth Bank" },
+  { src: imgMillers,       alt: "Millers" },
+  { src: imgHipages,       alt: "hipages" },
+  { src: imgAdelaideHills, alt: "Adelaide Hills Wine Region" },
+  { src: imgEcsa,          alt: "Electoral Commission SA" },
+  { src: imgAqis,          alt: "AQIS" },
+  { src: imgAmbc,          alt: "Australia Malaysia Business Council" },
   { src: imgSaGovernment,  alt: "SA Government" },
+  { src: imgTafeVictoria,  alt: "TAFE Victoria" },
+  { src: imgKettle,        alt: "Kettle Chips" },
 ];
 
 export default function HomePage({ onNavigate }: HomePageProps) {
@@ -220,53 +224,52 @@ export default function HomePage({ onNavigate }: HomePageProps) {
             </p>
           </div>
 
-          {/* Image logos grid */}
+          {/* Client logo grid: transparent tiles, true grayscale-to-colour hover */}
           <div style={{
             display: "grid",
-            gridTemplateColumns: "repeat(6, 1fr)",
-            gap: 2,
-            marginBottom: 2,
+            gridTemplateColumns: "repeat(auto-fit, minmax(130px, 1fr))",
+            gap: 8,
             overflow: "visible",
           }}>
             {clientLogoImages.map(({ src, alt }) => (
               <div
                 key={alt}
                 style={{
-                  background: "#1E1E1E",
+                  background: "transparent",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
-                  padding: "28px 24px",
-                  height: 100,
+                  padding: "20px 16px",
+                  height: 96,
                   position: "relative",
                   zIndex: 0,
-                  transition: "z-index 0s 0.3s",
+                  transition: "z-index 0s 0.25s",
                 }}
                 onMouseEnter={(e) => { e.currentTarget.style.zIndex = "10"; e.currentTarget.style.transition = "z-index 0s"; }}
-                onMouseLeave={(e) => { e.currentTarget.style.zIndex = "0"; e.currentTarget.style.transition = "z-index 0s 0.3s"; }}
+                onMouseLeave={(e) => { e.currentTarget.style.zIndex = "0"; e.currentTarget.style.transition = "z-index 0s 0.25s"; }}
               >
                 <img
                   src={src}
                   alt={alt}
                   style={{
                     maxWidth: "100%",
-                    maxHeight: 52,
+                    maxHeight: 48,
                     objectFit: "contain",
-                    filter: "grayscale(100%) brightness(180%)",
-                    opacity: 0.55,
+                    filter: "grayscale(100%)",
+                    opacity: 0.6,
                     transform: "scale(1)",
                     transition: "opacity 0.3s, filter 0.3s, transform 0.3s cubic-bezier(0.34,1.56,0.64,1)",
                   }}
                   onMouseEnter={(e) => {
                     const img = e.currentTarget as HTMLImageElement;
-                    img.style.filter = "grayscale(0%) brightness(100%)";
+                    img.style.filter = "grayscale(0%)";
                     img.style.opacity = "1";
-                    img.style.transform = "scale(2)";
+                    img.style.transform = "scale(1.4)";
                   }}
                   onMouseLeave={(e) => {
                     const img = e.currentTarget as HTMLImageElement;
-                    img.style.filter = "grayscale(100%) brightness(180%)";
-                    img.style.opacity = "0.55";
+                    img.style.filter = "grayscale(100%)";
+                    img.style.opacity = "0.6";
                     img.style.transform = "scale(1)";
                   }}
                 />
