@@ -248,7 +248,7 @@
                         {
                             "value": "$9,550",
                             "page": "do-it-together",
-                            "pending": true
+                            "pending": false
                         },
                         {
                             "value": "$14,950",
@@ -988,8 +988,8 @@
         "index": {
             "eyebrow": "Our Work",
             "title": "Case studies",
-            "paraA": "Selected work across government, behaviour change, brand strategy and product launches — including some of Australia's largest brands and most complex stakeholder environments.",
-            "paraB": "Every one of these started with a brief that described a symptom. The work was finding what was actually wrong.",
+            "paraA": "Selected work across government, behaviour change, brand strategy and product launches, including some of Australia's largest brands and most complex stakeholder environments. The budgets differ enormously. The growth principles underneath them do not.",
+            "paraB": "Every one of these started with a brief that described a symptom. The work was finding what was actually holding growth back.",
             "filterAll": "All",
             "filterStrategicAdvisory": "Strategic Advisory",
             "filterGrowthCharter": "The Growth Program",
@@ -1007,7 +1007,7 @@
                     "strategic-advisory",
                     "growth-charter"
                 ],
-                "title": "Toyota — A Lifetime of Advantages",
+                "title": "Toyota: A Lifetime of Advantages",
                 "summary": "Korean brands were winning on price. The research found Toyota was already winning the argument that actually mattered.",
                 "linked": true
             },
@@ -1021,7 +1021,7 @@
                 "filters": [
                     "strategic-advisory"
                 ],
-                "title": "Ford — Six Model Launches in Six Months",
+                "title": "Ford: Six Model Launches in Six Months",
                 "summary": "Six launches is not one problem six times. The work was sequencing and proportion, not six campaigns.",
                 "linked": true
             },
@@ -1036,8 +1036,8 @@
                     "strategic-advisory",
                     "growth-charter"
                 ],
-                "title": "Commonwealth Bank — Little Card, Big Rewards",
-                "summary": "Nobody wants a credit card. They want the thing it does — so that's what we said, in language people grasped immediately.",
+                "title": "Commonwealth Bank: Little Card, Big Rewards",
+                "summary": "Nobody wants a credit card. They want the thing it does. So that's what we said, in language people grasped immediately.",
                 "linked": true
             },
             {
@@ -1051,7 +1051,7 @@
                     "strategic-advisory",
                     "growth-charter"
                 ],
-                "title": "Snack Brands — Kettle Popcorn Launch",
+                "title": "Snack Brands: Kettle Popcorn Launch",
                 "summary": "A brand extension has to feel new enough to notice and familiar enough to still be Kettle. The task was knowing which parts to hold onto.",
                 "linked": true
             },
@@ -1081,7 +1081,7 @@
                     "growth-charter"
                 ],
                 "title": "2022 Local Government Elections",
-                "summary": "Postal voting isn't an awareness problem — it's a behaviour with more steps and more places to give up.",
+                "summary": "Postal voting isn't an awareness problem. It's a behaviour with more steps and more places to give up.",
                 "linked": true
             },
             {
@@ -1095,7 +1095,7 @@
                     "strategic-advisory"
                 ],
                 "title": "2024 First Nations Voice to Parliament Election",
-                "summary": "A new electoral process, six regions, and a timing change already working against understanding. Reach wasn't the constraint — trust was.",
+                "summary": "A new electoral process, six regions, and a timing change already working against understanding. Reach wasn't the constraint. Trust was.",
                 "linked": true
             },
             {
@@ -1120,21 +1120,21 @@
                     "Automotive",
                     "Brand strategy"
                 ],
-                "title": "Toyota — A Lifetime of Advantages",
-                "attribution": "Research and strategy lead, [organisation], [years]",
+                "title": "Toyota: A Lifetime of Advantages",
+                "attribution": "Research and strategy lead",
                 "logo": "/case-studies/toyota-logo.png",
                 "situation": {
                     "heading": "The situation",
-                    "body": "Korean brands were competing hard on price and winning. Toyota was being pulled into a sticker-price argument it could not win without discounting its way down."
+                    "body": "Korean brands were competing hard on price and winning. Toyota was being pulled into a price-and-discounting war it could not win without discounting its way down, eroding brand value and reducing margins for the factory and dealers."
                 },
                 "realProblem": {
                     "heading": "The real problem",
-                    "body": "The brief was about price. The research said price was the wrong battleground entirely. A national programme with consumers and dealers found that people define value as the whole ownership experience — reliability, servicing, running costs, resale — not the number on the windscreen. Toyota was already winning that argument. It just was not having it."
+                    "body": "The brief focused on price and on making dealers feel that the factory was supporting them in the face of increased competition. The research said price was the wrong battleground entirely. A national research program with consumers and dealers found that people define value as the whole ownership experience: reliability, servicing, running costs, resale, not the number on the windscreen. So the work was to move the conversation from price to value: the number on the windscreen is not what the car costs you. Toyota was already winning that argument. It just was not having it."
                 },
                 "whatWeDid": {
                     "heading": "What we did",
                     "items": [
-                        "Ran the national research programme with consumers and dealers",
+                        "Ran the national research program with consumers and dealers",
                         "Built the 'A Lifetime of Advantages' positioning and marketing plan from the findings",
                         "Rolled it across brand, retail, finance and service communications",
                         "Made the proposition consistent wherever a customer encountered Toyota"
@@ -1214,12 +1214,12 @@
                 },
                 "whyItMatters": {
                     "heading": "Why it matters to you",
-                    "body": "Almost every business under price pressure is fighting on the wrong ground. The question is not how to justify your price — it is what your customers are actually buying, and whether you have ever said it out loud."
+                    "body": "Nobody grows by discounting. Growth under price pressure comes from knowing what your customers are actually buying and saying it out loud, the same move whether you run five dealerships or five hundred."
                 },
                 "cta": {
                     "eyebrow": "Facing something similar?",
                     "title": "If price feels like the only lever left, that's worth testing before you pull it.",
-                    "body": "Tell us what you're trying to grow — we'll come back to you within one business day.",
+                    "body": "Tell us what you're trying to grow, and let's book a call or grab a coffee.",
                     "ctaLabel": "Send enquiry",
                     "backLabel": "Back to Case Studies"
                 }
@@ -1229,30 +1229,31 @@
                     "Automotive",
                     "Launch strategy"
                 ],
-                "title": "Ford — Six Model Launches in Six Months",
-                "attribution": "National advertising and launch planning lead, [organisation], [years]",
+                "title": "Ford: Six Model Launches in Six Months",
+                "attribution": "National advertising and launch planning lead",
                 "logo": "/case-studies/ford-logo.png",
                 "situation": {
                     "heading": "The situation",
-                    "body": "Six vehicles to market in six months, in a slowing category, with new competitors arriving regularly and a dealer network that needed to stay confident."
+                    "body": "Ford was refreshing its entire model line-up, six new vehicles to market in six months, into a slowing category with new competitors arriving regularly. The dealer network needed to see the factory behind them, with product that gave them an edge on the floor."
                 },
                 "realProblem": {
                     "heading": "The real problem",
-                    "body": "Six launches is not one problem six times. Run separately they compete with each other for attention, budget and dealer energy — and the weakest one drags the rest down. The work was sequencing and proportion, not six campaigns."
+                    "body": "Six launches is not one problem six times. Run separately, they compete for attention, budget and dealer energy, and the weakest one drags the rest down. The work was a single consistent voice that each launch built on and local dealers could use, then sequencing and proportion across the six. Not six campaigns."
                 },
                 "whatWeDid": {
                     "heading": "What we did",
                     "items": [
-                        "Built national advertising and promotional plans across all six launches as one programme",
+                        "Created the unifying 'Ford, Of Course' brand positioning as the halo for all campaigns nationally, regionally and locally",
+                        "Built national advertising and promotional plans across all six launches as one program",
                         "Managed a $100m+ budget through a highly competitive market period",
                         "Targeted each launch to the right audience for the right reason rather than treating them alike",
-                        "Strengthened position through Cricket Australia sponsorship and a major uplift in online presence"
+                        "Moved Ford from a wholly broadcast media strategy into one-to-one channels: digital, direct and sponsorship, including Cricket Australia"
                     ]
                 },
                 "result": {
                     "heading": "The result",
                     "headline": "FG Falcon became Ford's most successful launch since 2000.",
-                    "body": "Market share held above 13% through the period. All six launches delivered, with Ranger and FG Falcon carrying the programme."
+                    "body": "Market share held above 13% through the period, and all six launches delivered, with Ranger and FG Falcon carrying the program."
                 },
                 "gallery": {
                     "heading": "Campaign assets",
@@ -1321,12 +1322,12 @@
                 },
                 "whyItMatters": {
                     "heading": "Why it matters to you",
-                    "body": "Most businesses have more they want to promote than attention to spend on it. Deciding what leads, what follows and what waits is worth more than doing all of it at once, badly."
+                    "body": "Whether you are launching six models or two services, the constraint is the same: you always have more to promote than there is attention to spend on it. Deciding what leads, what follows and what waits, and making it all sound like one business, is worth more than doing all of it at once, badly."
                 },
                 "cta": {
                     "eyebrow": "Facing something similar?",
                     "title": "Got more you want to launch than attention to spend on it? That's a sequencing problem, not a budget one.",
-                    "body": "Tell us what you're trying to grow — we'll come back to you within one business day.",
+                    "body": "Tell us what you're trying to grow, and let's book a call or grab a coffee.",
                     "ctaLabel": "Send enquiry",
                     "backLabel": "Back to Case Studies"
                 }
@@ -1336,8 +1337,8 @@
                     "Financial services",
                     "Product marketing"
                 ],
-                "title": "Commonwealth Bank — Little Card, Big Rewards",
-                "attribution": "Strategy and proposition lead, [organisation], [years]",
+                "title": "Commonwealth Bank: Little Card, Big Rewards",
+                "attribution": "Strategy and proposition lead",
                 "logo": "/case-studies/commbank-logo.png",
                 "situation": {
                     "heading": "The situation",
@@ -1345,7 +1346,7 @@
                 },
                 "realProblem": {
                     "heading": "The real problem",
-                    "body": "Nobody wants a credit card. They want the thing the credit card does. Category language — rates, rewards, points, tiers — was making a genuinely simple benefit sound complicated, and complicated products do not get applied for."
+                    "body": "Nobody wants a credit card. They want the thing the credit card does. Category language, rates, rewards, points, tiers, was making a genuinely simple benefit sound complicated, and complicated products do not get applied for."
                 },
                 "whatWeDid": {
                     "heading": "What we did",
@@ -1383,12 +1384,12 @@
                 },
                 "whyItMatters": {
                     "heading": "Why it matters to you",
-                    "body": "If explaining what you sell takes more than a sentence, you are losing people before price is ever discussed. Clarity is not a creative flourish — it is a conversion mechanism."
+                    "body": "Every extra sentence needed to explain what you sell costs you customers before price is ever discussed. Clarity is not a creative flourish: it is the cheapest growth lever most businesses never pull."
                 },
                 "cta": {
                     "eyebrow": "Facing something similar?",
                     "title": "If your product needs more than a sentence to explain, that's the first thing worth fixing.",
-                    "body": "Tell us what you're trying to grow — we'll come back to you within one business day.",
+                    "body": "Tell us what you're trying to grow, and let's book a call or grab a coffee.",
                     "ctaLabel": "Send enquiry",
                     "backLabel": "Back to Case Studies"
                 }
@@ -1398,8 +1399,8 @@
                     "FMCG",
                     "Product launch"
                 ],
-                "title": "Snack Brands — Kettle Popcorn Launch",
-                "attribution": "Go-to-market strategy lead, [organisation], [years]",
+                "title": "Snack Brands: Kettle Popcorn Launch",
+                "attribution": "Go-to-market strategy lead",
                 "logo": "/case-studies/kettle-logo.png",
                 "situation": {
                     "heading": "The situation",
@@ -1407,7 +1408,7 @@
                 },
                 "realProblem": {
                     "heading": "The real problem",
-                    "body": "Brand extensions usually fail in one of two directions — too different and the equity does not transfer, too similar and there is no reason to buy. The real task was working out precisely which parts of Kettle were doing the work, and holding onto exactly those."
+                    "body": "Brand extensions usually fail in one of two directions, too different and the equity does not transfer, too similar and there is no reason to buy. The real task was working out precisely which parts of Kettle were doing the work, and holding onto exactly those."
                 },
                 "whatWeDid": {
                     "heading": "What we did",
@@ -1415,13 +1416,13 @@
                         "Developed the go-to-market plan for the launch",
                         "Built positioning and messaging around a premium tone with a slightly irreverent edge",
                         "Kept the proposition grounded in product truth rather than category cliché",
-                        "Shaped execution so the product felt distinctive and recognisably Kettle"
+                        "Shaped execution so the product felt distinctive and recognisably Kettle, and linked directly back to Kettle's foundations as premium snacks"
                     ]
                 },
                 "result": {
                     "heading": "The result",
                     "headline": "The most successful brand extension launch in Snack Brands' history.",
-                    "body": "Ranging was secured in Coles, Woolworths, Metcash and independents."
+                    "body": "Ranging secured in Coles, Woolworths, Metcash and independents."
                 },
                 "gallery": {
                     "heading": "Campaign assets",
@@ -1450,12 +1451,12 @@
                 },
                 "whyItMatters": {
                     "heading": "Why it matters to you",
-                    "body": "Adding a service or product line is the most common growth move a small business makes, and the most commonly botched. What you already have is worth more than the new thing — the trick is knowing which part."
+                    "body": "Extending the range is the most common growth move at any size, and the most commonly botched. Growth comes from the part of your reputation that already works, the trick is knowing which part, and holding onto exactly that."
                 },
                 "cta": {
                     "eyebrow": "Facing something similar?",
                     "title": "Thinking about a brand extension? Let's work out which parts of what you have are actually doing the work.",
-                    "body": "Tell us what you're trying to grow — we'll come back to you within one business day.",
+                    "body": "Tell us what you're trying to grow, and let's book a call or grab a coffee.",
                     "ctaLabel": "Send enquiry",
                     "backLabel": "Back to Case Studies"
                 }
@@ -1466,7 +1467,7 @@
                     "Behaviour change"
                 ],
                 "title": "2022 South Australian State Election",
-                "attribution": "Strategic lead, Electoral Commission of South Australia, [years]",
+                "attribution": "Strategic lead, Electoral Commission of South Australia",
                 "logo": "/case-studies/ecsa-2022-1.png",
                 "situation": {
                     "heading": "The situation",
@@ -1474,14 +1475,15 @@
                 },
                 "realProblem": {
                     "heading": "The real problem",
-                    "body": "ECSA engaged us to help procure an advertising supplier. Within weeks it was clear that was not the problem. The communications function itself was not working — no strategic framework, no crisis capability, and no way for a new supplier to succeed even if one were appointed. They did not need a better supplier. They needed a function that could brief one."
+                    "body": "ECSA engaged us to help procure an advertising supplier. Within weeks, it was clear that was not the problem. The communications function itself was not working: no strategic framework, no crisis capability, and no way for a new supplier to succeed even if one were appointed. They did not need a better supplier. They needed a function that understood the business objectives, who the audience was, the challenges and opportunities and how to deliver, in a tight time frame with high public scrutiny and reputational risk."
                 },
                 "whatWeDid": {
                     "heading": "What we did",
                     "items": [
                         "Delivered a full capability review and identified the structural gaps",
                         "Built a multi-year strategy aligned to operational realities and government obligations",
-                        "Established a crisis communications framework from scratch",
+                        "Developed organisational capability, supported by the right external partners",
+                        "Established the media engagement and crisis communications framework from scratch",
                         "Ran statewide research to identify audience segments, behavioural barriers and channel needs",
                         "Directed strategy, creative, media, PR and crisis communications through to implementation"
                     ]
@@ -1555,12 +1557,12 @@
                 },
                 "whyItMatters": {
                     "heading": "Why it matters to you",
-                    "body": "The thing you have decided to buy is frequently not the thing you need. That is worth knowing before you spend the money, not after."
+                    "body": "Growth spend fails most often because the thing being bought is not the thing needed. Diagnosis before procurement is not a delay, it is what makes the money work."
                 },
                 "cta": {
                     "eyebrow": "Facing something similar?",
                     "title": "Not sure the thing you're about to buy is actually the thing you need? That's worth a conversation first.",
-                    "body": "Tell us what you're trying to shift — we'll come back to you within one business day.",
+                    "body": "Tell us what you're trying to shift. We'll come back to you within one business day.",
                     "ctaLabel": "Send enquiry",
                     "backLabel": "Back to Case Studies"
                 }
@@ -1571,29 +1573,30 @@
                     "Behaviour change"
                 ],
                 "title": "2022 Local Government Elections",
-                "attribution": "Campaign strategy lead, Electoral Commission of South Australia, 2022",
+                "attribution": "Campaign strategy lead, Electoral Commission of South Australia",
                 "logo": "/case-studies/local-government-logo.jpeg",
                 "situation": {
                     "heading": "The situation",
-                    "body": "Council elections are voluntary and had been stuck near 30% participation for years, with some districts below 15%. They also fell in the same calendar year as two major parliamentary elections."
+                    "body": "Council elections are voluntary and participation has declined at every election in the last 25 years. With participation around 30% for years, and some districts below 15%, maintaining and growing turnout was critical for public confidence in the process and electoral integrity. They also fell in the same calendar year as two major parliamentary elections, so there were high levels of voter fatigue and disinterest in local government."
                 },
                 "realProblem": {
                     "heading": "The real problem",
-                    "body": "This was not an awareness problem. Postal voting asks people to complete and return a ballot themselves — a different behaviour with more steps and more places to give up. Telling more people about the election would not have moved it."
+                    "body": "This was not an awareness problem, it was a relevance problem: people didn't see the relevance of local councils in their daily lives, so had no motivation to vote. And the mechanism: postal voting asks people to complete and return a ballot themselves, a different behaviour with more steps and more places to give up. Telling more people about the election would not have moved it; we needed to create relevance and tell people what to do."
                 },
                 "whatWeDid": {
                     "heading": "What we did",
                     "items": [
                         "Built an integrated campaign across enrolment, nominations and voting rather than one message",
+                        "Created relevance for the audience by focusing on what councils did for them, councils are more than rates, roads and rubbish",
                         "Built awareness of timing and responsibilities, not just the event",
-                        "Encouraged business enrolment and promoted early completion and return of ballots",
-                        "Co-ordinated messaging across ECSA, councils and the LGA"
+                        "Encouraged business and non-citizen enrolment and promoted early completion and return of ballots",
+                        "Coordinated messaging across ECSA, councils and the LGA"
                     ]
                 },
                 "result": {
                     "heading": "The result",
-                    "headline": "Participation lifted from 30% to over 34% — more than 10% growth against a long-term decline.",
-                    "body": "First-week postal ballot returns rose 300%, which improved processing efficiency and delivered results faster."
+                    "headline": "Participation lifted from 30% to over 34%, a gain of more than 13% increase against a long-term decline, the first time participation had increased in over 25 years.",
+                    "body": "First-week postal ballot returns rose by 300%, improving processing efficiency and delivering results faster."
                 },
                 "gallery": {
                     "heading": "Campaign assets",
@@ -1639,12 +1642,12 @@
                 },
                 "whyItMatters": {
                     "heading": "Why it matters to you",
-                    "body": "Getting someone to act is a different job from getting them to notice. Most marketing that fails has done the first and skipped the second."
+                    "body": "Growth comes from people acting, not from people noticing. Most marketing that fails has bought the attention and skipped the step that turns it into behaviour."
                 },
                 "cta": {
                     "eyebrow": "Facing something similar?",
                     "title": "Getting people to notice and getting them to act are two different jobs. Let's talk about which one you're missing.",
-                    "body": "Tell us what you're trying to shift — we'll come back to you within one business day.",
+                    "body": "Tell us what you're trying to shift. We'll come back to you within one business day.",
                     "ctaLabel": "Send enquiry",
                     "backLabel": "Back to Case Studies"
                 }
@@ -1655,29 +1658,29 @@
                     "Brand strategy"
                 ],
                 "title": "Adelaide Hills Wine Region",
-                "attribution": "Research and brand strategy lead, [organisation], [years]",
+                "attribution": "Brand strategy and research lead",
                 "logo": "/case-studies/adelaide-hills-logo.png",
                 "situation": {
                     "heading": "The situation",
-                    "body": "One of Australia's leading cool climate wine regions, widely respected, and without a clear story about itself."
+                    "body": "The Adelaide Hills is one of Australia's leading cool-climate wine regions: 70 km of ridges and valleys, 90+ winemakers, 50+ cellar doors. The region is widely respected but lacks a story about itself, a shared focus or a consistent brand to unite behind."
                 },
                 "realProblem": {
                     "heading": "The real problem",
-                    "body": "The brief was brand positioning. The actual obstacle was internal: members did not agree on who the region was, who it competed against, or what it should say to consumers, visitors, government, industry bodies and sponsors. No amount of positioning work survives that. Agreement had to come first."
+                    "body": "The brief was to develop a brand positioning, but the real problem was internal: members, while united in the need for a coherent story, couldn't agree on who the region was, who it competed against, or what it should say to consumers, visitors, government, industry bodies and sponsors. Everyone was focused on their own business rather than growing the region as a whole and making the pie bigger for everyone. No amount of positioning work survives that. Agreement had to come first."
                 },
                 "whatWeDid": {
                     "heading": "What we did",
                     "items": [
-                        "Ran an extensive qualitative and quantitative research programme across consumers, stakeholders, industry and government",
+                        "Ran the largest qualitative and quantitative research program ever undertaken for an Australian wine region, covering consumers, stakeholders, industry and government, at local, national and international levels",
                         "Clarified who the region was, what it stood for, where it was heading and why anyone should believe it",
                         "Defined how the region should talk about itself in a way that united members rather than dividing them",
-                        "Built the brand positioning, architecture and communications strategy from the research"
+                        "Built the brand positioning, architecture and communications strategy, positioning the Adelaide Hills as the first choice for Australian cool-climate wine"
                     ]
                 },
                 "result": {
                     "heading": "The result",
-                    "headline": "A research-led positioning and a clearer regional narrative.",
-                    "body": "Giving members a shared platform for visitation, partnerships, government engagement and events."
+                    "headline": "A research-led positioning and a clear regional narrative, agreed by members.",
+                    "body": "A shared platform for visitation, partnerships, government engagement and events, and a road map the region can act on: defined audiences, messages, beliefs and personality that positioned the region for growth."
                 },
                 "gallery": {
                     "heading": "Campaign assets",
@@ -1695,12 +1698,12 @@
                 },
                 "whyItMatters": {
                     "heading": "Why it matters to you",
-                    "body": "If the people inside a business cannot agree on what it is, no external campaign will settle it. That agreement is the first thing the Growth Program goes looking for."
+                    "body": "If the people inside a business cannot agree on what it is, that's where we'd start too. No marketing or communications strategy will settle it. That agreement is the first thing the Growth Program goes looking for, because everything you spend afterwards depends on it."
                 },
                 "cta": {
                     "eyebrow": "Facing something similar?",
                     "title": "If the people inside your business can't agree on what it is, that's where we'd start too.",
-                    "body": "Tell us what you're trying to grow — we'll come back to you within one business day.",
+                    "body": "Tell us what you're trying to grow, and let's book a call or grab a coffee.",
                     "ctaLabel": "Send enquiry",
                     "backLabel": "Back to Case Studies"
                 }
@@ -1711,29 +1714,29 @@
                     "Community engagement"
                 ],
                 "title": "2024 First Nations Voice to Parliament Election",
-                "attribution": "Communications strategy lead, Electoral Commission of South Australia, 2023–24",
+                "attribution": "Communications strategy lead, Electoral Commission of South Australia",
                 "logo": "/case-studies/safnvp-logo.png",
                 "situation": {
                     "heading": "The situation",
-                    "body": "South Australia's first First Nations Voice election — 46 positions across six regions, held on 16 March 2024. Originally scheduled for September 2023 and moved to avoid overlapping the Federal Voice Referendum."
+                    "body": "South Australia's first First Nations Voice election, held after the failed national Voice Referendum, with 46 positions up for election across six regions, held on 16 March 2024. Originally scheduled for September 2023 and moved to avoid overlapping the Federal Voice Referendum."
                 },
                 "realProblem": {
                     "heading": "The real problem",
-                    "body": "Standard election advertising was never going to carry this. A new electoral process, communities spread across six regions, and a timing change that had already disrupted understanding. Reach was not the constraint — trust and comprehension were."
+                    "body": "Confusion, public resentment, and a lack of understanding across the community as to what it was, how it worked and what it meant to them. Standard election advertising was never going to carry this. A new electoral process, communities spread across six regions, and a timing change that had already disrupted understanding. Reach was not the constraint; trust and comprehension were."
                 },
                 "whatWeDid": {
                     "heading": "What we did",
                     "items": [
                         "Identified early that conventional advertising alone would not work, and built a community-led approach instead",
                         "Combined communications strategy, community engagement, media engagement, advertising, PR and budget management",
-                        "Delivered across TV, press, outdoor, digital, website, social and PR",
+                        "Delivered across statewide direct community engagement with the community, supported by TV, press, outdoor, digital, website, social and PR",
                         "Created more than 500 community engagement kits and supported over 400 engagement sessions"
                     ]
                 },
                 "result": {
                     "heading": "The result",
                     "headline": "All 46 positions attracted multiple nominations.",
-                    "body": "Not one was filled uncontested, and elections were successfully held across every position — establishing the First Nations Voice to SA Parliament."
+                    "body": "Not one was filled uncontested, and elections were successfully held across every position, establishing the credibility of First Nations Voice to SA Parliament and delivering the stakeholders' objectives and success measures."
                 },
                 "gallery": {
                     "heading": "Campaign assets",
@@ -1799,12 +1802,12 @@
                 },
                 "whyItMatters": {
                     "heading": "Why it matters to you",
-                    "body": "When the people you need are not reachable through the obvious channels, spending more on those channels does not fix it. Going where they already are does."
+                    "body": "When the people you need are not reachable through the obvious channels, spending more there does not buy growth. Going where they already are does, and that is true at any budget."
                 },
                 "cta": {
                     "eyebrow": "Facing something similar?",
                     "title": "When the obvious channels aren't reaching the people you need, that's a strategy problem before it's a media-buying one.",
-                    "body": "Tell us what you're trying to shift — we'll come back to you within one business day.",
+                    "body": "Tell us what you're trying to shift. We'll come back to you within one business day.",
                     "ctaLabel": "Send enquiry",
                     "backLabel": "Back to Case Studies"
                 }
