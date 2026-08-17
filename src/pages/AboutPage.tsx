@@ -71,9 +71,11 @@ export default function AboutPage({ onNavigate }: AboutPageProps) {
             <p style={{ fontFamily: "'Instrument Serif', serif", fontSize: 24, color: "#8FD9BE", fontWeight: 400, fontStyle: "italic", marginBottom: 32 }}>
               {aboutContent.james.name}
             </p>
-            <div style={{ height: 220, background: "#1C1C1C", border: "1px dashed rgba(255,255,255,0.15)", display: "flex", alignItems: "center", justifyContent: "center", textAlign: "center", padding: 16 }}>
-              <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 12, color: "#9B9B9B" }}>Photograph — to be supplied</span>
-            </div>
+            <img
+              src="/about/jt-headshot.jpg"
+              alt={aboutContent.james.name}
+              style={{ width: "100%", height: 280, objectFit: "cover", objectPosition: "50% 20%", filter: "grayscale(0.15)", border: "1px solid rgba(42,157,120,0.25)" }}
+            />
           </div>
           <div ref={r2} className="reveal reveal-delay-1">
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 16, lineHeight: 1.85, color: "rgba(245,243,238,0.65)", marginBottom: 28 }}>
