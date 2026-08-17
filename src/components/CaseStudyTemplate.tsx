@@ -99,7 +99,7 @@ export default function CaseStudyTemplate({ content, page, formId, formName, onN
     <div style={{ background: "#1C1C1C", minHeight: "100vh" }}>
 
       {/* Header */}
-      <section style={{ padding: "110px 40px 56px" }}>
+      <section style={{ padding: "100px 40px 64px" }}>
         <div style={{ maxWidth: 900, margin: "0 auto" }}>
           <a
             href={pathForPage("case-studies")}
@@ -139,7 +139,7 @@ export default function CaseStudyTemplate({ content, page, formId, formName, onN
       </section>
 
       {/* The situation */}
-      <section style={{ background: "#161616", padding: "56px 40px" }}>
+      <section style={{ background: "#161616", padding: "64px 40px" }}>
         <div ref={r1} className="reveal" style={sectionMax}>
           <h2 style={H2}>{content.situation.heading}</h2>
           <div style={{ background: "#1C1C1C", padding: "40px 44px", borderLeft: "2px solid #2A9D78" }}>
@@ -149,7 +149,7 @@ export default function CaseStudyTemplate({ content, page, formId, formName, onN
       </section>
 
       {/* The real problem */}
-      <section style={{ padding: "56px 40px" }}>
+      <section style={{ padding: "64px 40px" }}>
         <div ref={r2} className="reveal" style={sectionMax}>
           <h2 style={H2}>{content.realProblem.heading}</h2>
           <div style={{ background: "#161616", padding: "40px 44px", borderLeft: "2px solid #2A9D78" }}>
@@ -159,7 +159,7 @@ export default function CaseStudyTemplate({ content, page, formId, formName, onN
       </section>
 
       {/* What we did */}
-      <section style={{ background: "#161616", padding: "56px 40px" }}>
+      <section style={{ background: "#161616", padding: "64px 40px" }}>
         <div ref={r3} className="reveal" style={sectionMax}>
           <h2 style={H2}>{content.whatWeDid.heading}</h2>
           <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
@@ -174,7 +174,7 @@ export default function CaseStudyTemplate({ content, page, formId, formName, onN
       </section>
 
       {/* The result — the payload of the page */}
-      <section style={{ background: "#0B5E48", padding: "72px 40px" }}>
+      <section style={{ background: "#0B5E48", padding: "64px 40px" }}>
         <div ref={r4} className="reveal" style={{ maxWidth: 900, margin: "0 auto", textAlign: "center" }}>
           <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#8FD9BE", marginBottom: 24 }}>
             {content.result.heading}
@@ -189,7 +189,7 @@ export default function CaseStudyTemplate({ content, page, formId, formName, onN
       </section>
 
       {/* Campaign assets gallery */}
-      <section style={{ padding: "72px 40px" }}>
+      <section style={{ padding: "64px 40px" }}>
         <div ref={r5} className="reveal" style={{ maxWidth: 1100, margin: "0 auto" }}>
           <h2 style={{ ...H2, textAlign: "center", marginBottom: 56 }}>{content.gallery.heading}</h2>
 
@@ -275,7 +275,7 @@ export default function CaseStudyTemplate({ content, page, formId, formName, onN
       </section>
 
       {/* Why it matters to you */}
-      <section style={{ background: "#161616", padding: "72px 40px" }}>
+      <section style={{ background: "#161616", padding: "64px 40px" }}>
         <div ref={r6} className="reveal" style={{ maxWidth: 700, margin: "0 auto", textAlign: "center" }}>
           <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 24 }}>
             {content.whyItMatters.heading}
@@ -287,7 +287,7 @@ export default function CaseStudyTemplate({ content, page, formId, formName, onN
       </section>
 
       {/* CTA + enquiry form */}
-      <section id={formId} style={{ padding: "72px 40px" }}>
+      <section id={formId} style={{ padding: "64px 40px" }}>
         <div ref={r7} className="reveal" style={{ maxWidth: 560, margin: "0 auto" }}>
           <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.15em", textTransform: "uppercase", color: "#9B9B9B", marginBottom: 20, textAlign: "center" }}>
             {content.cta.eyebrow}

@@ -73,7 +73,7 @@ export default function HowWeWorkPage({ onNavigate }: HowWeWorkPageProps) {
 
   return (
     <div style={{ background: "#1C1C1C", minHeight: "100vh" }}>
-      <section {...editableField("howWeWork.hero")} style={{ padding: "120px 40px 56px", textAlign: "center", position: "relative", overflow: "hidden" }}>
+      <section {...editableField("howWeWork.hero")} style={{ padding: "100px 40px 64px", textAlign: "center", position: "relative", overflow: "hidden" }}>
         <HoloGlass />
         <div style={{ maxWidth: 800, margin: "0 auto", position: "relative", zIndex: 1 }}>
           <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 24 }} className="hero-sub">{howWeWorkContent.hero.eyebrow}</p>
@@ -86,7 +86,7 @@ export default function HowWeWorkPage({ onNavigate }: HowWeWorkPageProps) {
         </div>
       </section>
 
-      <section {...editableField("howWeWork.intro")} style={{ background: "#161616", padding: "52px 40px" }}>
+      <section {...editableField("howWeWork.intro")} style={{ background: "#161616", padding: "64px 40px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
           <div ref={r1} className="reveal" style={{ maxWidth: 720 }}>
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 16, lineHeight: 1.85, color: "rgba(245,243,238,0.55)" }}>
@@ -96,13 +96,13 @@ export default function HowWeWorkPage({ onNavigate }: HowWeWorkPageProps) {
         </div>
       </section>
 
-      <section {...editableField("howWeWork.phases")} style={{ padding: "0 40px 56px" }}>
+      <section {...editableField("howWeWork.phases")} style={{ padding: "0 40px 64px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
           {phases.map((phase, i) => <PhaseItem key={phase.num} phase={phase} index={i} />)}
         </div>
       </section>
 
-      <section {...editableField("howWeWork.cta")} style={{ background: "#0B5E48", padding: "56px 40px", textAlign: "center" }}>
+      <section {...editableField("howWeWork.cta")} style={{ background: "#0B5E48", padding: "64px 40px", textAlign: "center" }}>
         <div style={{ maxWidth: 680, margin: "0 auto" }}>
           <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, letterSpacing: "0.08em", textTransform: "uppercase", color: "rgba(143,217,190,0.7)", marginBottom: 20 }}>{howWeWorkContent.cta.eyebrow}</p>
           <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(24px, 3vw, 36px)", color: "#F5F3EE", fontWeight: 400, lineHeight: 1.3, marginBottom: 20 }}>

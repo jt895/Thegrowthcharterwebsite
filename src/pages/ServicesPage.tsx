@@ -88,7 +88,7 @@ export default function ServicesPage({ onNavigate }: ServicesPageProps) {
     <div style={{ background: "#1C1C1C", minHeight: "100vh" }}>
 
       {/* Hero */}
-      <section {...editableField("services.hero")} style={{ padding: "120px 40px 56px", textAlign: "center", position: "relative", overflow: "hidden" }}>
+      <section {...editableField("services.hero")} style={{ padding: "100px 40px 64px", textAlign: "center", position: "relative", overflow: "hidden" }}>
         <HoloGlass />
         <div style={{ maxWidth: 840, margin: "0 auto", position: "relative", zIndex: 1 }}>
           <h1 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(38px, 5vw, 64px)", lineHeight: 1.08, color: "#F5F3EE", fontWeight: 400, marginBottom: 28 }} className="hero-title">
@@ -101,7 +101,7 @@ export default function ServicesPage({ onNavigate }: ServicesPageProps) {
       </section>
 
       {/* Quote block — relocated here from the foot of the page */}
-      <section {...editableField("services.quoteBlock")} style={{ padding: "0 40px 44px" }}>
+      <section {...editableField("services.quoteBlock")} style={{ padding: "0 40px 64px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
           <div style={{ maxWidth: 820, margin: "0 auto", background: "#1A2820", borderLeft: "2px solid #2A9D78", padding: "28px 36px" }}>
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, lineHeight: 1.75, color: "rgba(245,243,238,0.6)", margin: 0, fontStyle: "italic" }}>
@@ -112,7 +112,7 @@ export default function ServicesPage({ onNavigate }: ServicesPageProps) {
       </section>
 
       {/* Sequence */}
-      <section {...editableField("services.sequence")} style={{ background: "#161616", padding: "56px 40px" }}>
+      <section {...editableField("services.sequence")} style={{ background: "#161616", padding: "64px 40px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
           <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(26px, 3vw, 38px)", color: "#F5F3EE", fontWeight: 400, lineHeight: 1.2, textAlign: "center", marginBottom: 48 }}>
             {servicesContent.sequence.title}
@@ -138,7 +138,7 @@ export default function ServicesPage({ onNavigate }: ServicesPageProps) {
       </section>
 
       {/* Services index */}
-      <section {...editableField("services.services")} style={{ padding: "44px 40px" }}>
+      <section {...editableField("services.services")} style={{ padding: "64px 40px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
           <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#9B9B9B", marginBottom: 40, textAlign: "center" }}>
             {servicesContent.indexLabel}
@@ -170,7 +170,7 @@ export default function ServicesPage({ onNavigate }: ServicesPageProps) {
       </section>
 
       {/* Service cards */}
-      <section {...editableField("services.services")} style={{ padding: "56px 40px" }}>
+      <section {...editableField("services.services")} style={{ padding: "64px 40px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto", display: "flex", flexDirection: "column", gap: 2 }}>
           {services.map((service, index) => <ServiceCard key={service.title} service={service} index={index} />)}
         </div>
@@ -186,7 +186,7 @@ export default function ServicesPage({ onNavigate }: ServicesPageProps) {
       />
 
       {/* CTA */}
-      <section {...editableField("services.cta")} style={{ background: "#161616", padding: "56px 40px", textAlign: "center" }}>
+      <section {...editableField("services.cta")} style={{ background: "#161616", padding: "64px 40px", textAlign: "center" }}>
         <div style={{ maxWidth: 560, margin: "0 auto" }}>
           <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(24px, 3vw, 36px)", color: "#F5F3EE", fontWeight: 400, lineHeight: 1.25, marginBottom: 20 }}>
             {servicesContent.cta.title}

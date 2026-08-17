@@ -107,7 +107,7 @@ export default function ProductPage({ onNavigate, page, product }: ProductPagePr
     <div style={{ background: "#1C1C1C", minHeight: "100vh" }}>
 
       {/* Hero */}
-      <section {...editableField(`growthCharter.products.${page}`)} style={{ padding: "120px 40px 72px", textAlign: "center", position: "relative", overflow: "hidden" }}>
+      <section {...editableField(`growthCharter.products.${page}`)} style={{ padding: "100px 40px 64px", textAlign: "center", position: "relative", overflow: "hidden" }}>
         <HoloGlass />
         <div style={{ maxWidth: 720, margin: "0 auto", position: "relative", zIndex: 1 }}>
           <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 24 }}>
@@ -136,7 +136,7 @@ export default function ProductPage({ onNavigate, page, product }: ProductPagePr
 
       {/* Intro / problem */}
       {product.intro && (
-        <section style={{ background: "#161616", padding: "56px 40px" }}>
+        <section style={{ background: "#161616", padding: "64px 40px" }}>
           <div ref={r1} className="reveal" style={sectionMax}>
             {product.intro.heading && <h2 style={H2}>{product.intro.heading}</h2>}
             {product.intro.body.map((p, i) => <p key={i} style={bodyP}>{p}</p>)}
@@ -145,7 +145,7 @@ export default function ProductPage({ onNavigate, page, product }: ProductPagePr
       )}
 
       {/* What's included */}
-      <section style={{ padding: "56px 40px" }}>
+      <section style={{ padding: "64px 40px" }}>
         <div ref={r2} className="reveal" style={sectionMax}>
           <h2 style={H2}>{product.included.heading}</h2>
           <div style={{ display: "flex", flexDirection: "column", gap: 48 }}>
@@ -178,7 +178,7 @@ export default function ProductPage({ onNavigate, page, product }: ProductPagePr
 
       {/* Viability session callout */}
       {product.viabilitySession && (
-        <section style={{ background: "#0B5E48", padding: "56px 40px" }}>
+        <section style={{ background: "#0B5E48", padding: "64px 40px" }}>
           <div ref={r3} className="reveal" style={sectionMax}>
             <h2 style={{ ...H2, color: "#F5F3EE" }}>{product.viabilitySession.heading}</h2>
             {product.viabilitySession.body.map((p, i) => (
@@ -190,7 +190,7 @@ export default function ProductPage({ onNavigate, page, product }: ProductPagePr
 
       {/* Add-ons */}
       {product.addOns && (
-        <section style={{ padding: "56px 40px" }}>
+        <section style={{ padding: "64px 40px" }}>
           <div style={sectionMax}>
             <h2 style={H2}>{product.addOns.heading}</h2>
             <div style={{ display: "flex", flexDirection: "column", gap: 1 }}>
@@ -210,7 +210,7 @@ export default function ProductPage({ onNavigate, page, product }: ProductPagePr
 
       {/* Suppliers */}
       {product.suppliers && (
-        <section style={{ background: "#161616", padding: "56px 40px" }}>
+        <section style={{ background: "#161616", padding: "64px 40px" }}>
           <div ref={r4} className="reveal" style={sectionMax}>
             <h2 style={H2}>{product.suppliers.heading}</h2>
             {product.suppliers.body.map((p, i) => <p key={i} style={bodyP}>{p}</p>)}
@@ -220,7 +220,7 @@ export default function ProductPage({ onNavigate, page, product }: ProductPagePr
 
       {/* Five stages (reused from the Growth Charter overview page) */}
       {product.showFiveStages && (
-        <section style={{ padding: "56px 40px" }}>
+        <section style={{ padding: "64px 40px" }}>
           <div style={sectionMax}>
             <h2 style={H2}>{growthCharterContent.howItWorks.title}</h2>
             <div style={{ display: "flex", flexDirection: "column", gap: 1 }}>
@@ -239,7 +239,7 @@ export default function ProductPage({ onNavigate, page, product }: ProductPagePr
       )}
 
       {/* Fit list */}
-      <section style={{ background: "#161616", padding: "56px 40px" }}>
+      <section style={{ background: "#161616", padding: "64px 40px" }}>
         <div ref={r5} className="reveal" style={sectionMax}>
           <h2 style={H2}>{product.fitList.heading}</h2>
           <div style={{ display: "flex", flexDirection: "column", gap: 14, marginBottom: product.fitList.trailingNote ? 28 : 0 }}>
@@ -260,7 +260,7 @@ export default function ProductPage({ onNavigate, page, product }: ProductPagePr
 
       {/* How it runs */}
       {product.howItRuns && (
-        <section style={{ padding: "56px 40px" }}>
+        <section style={{ padding: "64px 40px" }}>
           <div ref={r6} className="reveal" style={sectionMax}>
             <h2 style={H2}>{product.howItRuns.heading}</h2>
             <div style={{ display: "flex", flexDirection: "column", gap: 1, marginBottom: 32 }}>
@@ -277,7 +277,7 @@ export default function ProductPage({ onNavigate, page, product }: ProductPagePr
       )}
 
       {product.bespokeNote && (
-        <section style={{ padding: "0 40px 56px", textAlign: "center" }}>
+        <section style={{ padding: "0 40px 64px", textAlign: "center" }}>
           <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, lineHeight: 1.75, color: "rgba(245,243,238,0.45)", maxWidth: 560, margin: "0 auto" }}>{product.bespokeNote}</p>
         </section>
       )}
@@ -294,7 +294,7 @@ export default function ProductPage({ onNavigate, page, product }: ProductPagePr
       )}
 
       {/* Growth Charter enquiry form */}
-      <section id="product-enquiry-form" style={{ background: "#161616", padding: "56px 40px" }}>
+      <section id="product-enquiry-form" style={{ background: "#161616", padding: "64px 40px" }}>
         <div style={{ maxWidth: 560, margin: "0 auto" }}>
           <h2 style={{ ...H2, textAlign: "center" }}>Ready to talk it through?</h2>
           <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, lineHeight: 1.7, color: "rgba(245,243,238,0.5)", textAlign: "center", marginBottom: 40 }}>

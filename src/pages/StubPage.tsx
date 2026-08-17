@@ -20,7 +20,7 @@ export default function StubPage({ onNavigate, eyebrow, heading, body, backLabel
 
   return (
     <div style={{ background: "#1C1C1C", minHeight: "100vh" }}>
-      <section {...editableField(editableKey)} style={{ padding: "140px 40px 110px", textAlign: "center" }}>
+      <section {...editableField(editableKey)} style={{ padding: "100px 40px 64px", textAlign: "center" }}>
         <div style={{ maxWidth: 620, margin: "0 auto" }}>
           <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 20 }}>
             {eyebrow}
