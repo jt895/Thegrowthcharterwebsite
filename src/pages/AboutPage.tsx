@@ -35,7 +35,7 @@ export default function AboutPage({ onNavigate }: AboutPageProps) {
     <div style={{ background: "#1C1C1C", minHeight: "100vh" }}>
 
       {/* Hero */}
-      <section {...editableField("about.hero")} style={{ paddingTop: 120, paddingBottom: 72, padding: "120px 40px 72px", position: "relative", overflow: "hidden" }}>
+      <section {...editableField("about.hero")} style={{ paddingTop: 100, paddingBottom: 64, padding: "100px 40px 64px", position: "relative", overflow: "hidden" }}>
         <HoloGlass />
         <div style={{ position: "absolute", right: "-4%", top: "50%", transform: "translateY(-50%)", pointerEvents: "none", animation: "fade-in 2.4s ease 0.5s both", zIndex: 1 }}>
           <AnimatedHeroMark size={600} opacity={0.32} speedMultiplier={2.2} />
@@ -59,7 +59,7 @@ export default function AboutPage({ onNavigate }: AboutPageProps) {
       </section>
 
       {/* James */}
-      <section {...editableField("about.james")} style={{ background: "#161616", padding: "72px 40px" }}>
+      <section {...editableField("about.james")} style={{ background: "#161616", padding: "64px 40px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1.5fr", gap: 80, alignItems: "start" }}>
           <div ref={r1} className="reveal">
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 20 }}>
@@ -93,9 +93,9 @@ export default function AboutPage({ onNavigate }: AboutPageProps) {
       </section>
 
       {/* The model */}
-      <section {...editableField("about.tailoredTeam")} style={{ padding: "72px 40px" }}>
+      <section {...editableField("about.tailoredTeam")} style={{ padding: "64px 40px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
-          <div ref={r3} className="reveal" style={{ marginBottom: 56 }}>
+          <div ref={r3} className="reveal" style={{ marginBottom: 40 }}>
             <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(28px, 3.5vw, 44px)", color: "#F5F3EE", fontWeight: 400, lineHeight: 1.15, textAlign: "center" }}>
               {aboutContent.tailoredTeam.title}
             </h2>
@@ -118,9 +118,9 @@ export default function AboutPage({ onNavigate }: AboutPageProps) {
       </section>
 
       {/* How we're different */}
-      <section {...editableField("about.differentiators")} style={{ background: "#161616", padding: "72px 40px" }}>
+      <section {...editableField("about.differentiators")} style={{ background: "#161616", padding: "64px 40px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
-          <div ref={r4} className="reveal" style={{ marginBottom: 72 }}>
+          <div ref={r4} className="reveal" style={{ marginBottom: 48 }}>
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 20, textAlign: "center" }}>
               {aboutContent.differentiators.eyebrow}
             </p>
@@ -144,9 +144,9 @@ export default function AboutPage({ onNavigate }: AboutPageProps) {
       </section>
 
       {/* Track record */}
-      <section {...editableField("about.experience")} style={{ padding: "72px 40px" }}>
+      <section {...editableField("about.experience")} style={{ padding: "64px 40px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
-          <div ref={r5} className="reveal" style={{ marginBottom: 56 }}>
+          <div ref={r5} className="reveal" style={{ marginBottom: 40 }}>
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 20 }}>
               {aboutContent.experience.eyebrow}
             </p>
@@ -172,14 +172,14 @@ export default function AboutPage({ onNavigate }: AboutPageProps) {
       </section>
 
       {/* Route out */}
-      <section {...editableField("about.routeOut")} style={{ background: "#161616", padding: "72px 40px" }}>
+      <section {...editableField("about.routeOut")} style={{ background: "#161616", padding: "64px 40px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
-          <div ref={r6} className="reveal" style={{ textAlign: "center", marginBottom: 56 }}>
+          <div ref={r6} className="reveal" style={{ textAlign: "center", marginBottom: 40 }}>
             <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(28px, 3.5vw, 44px)", color: "#F5F3EE", fontWeight: 400, lineHeight: 1.15 }}>
               {aboutContent.routeOut.title}
             </h2>
           </div>
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 2, marginBottom: 56 }}>
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 2, marginBottom: 40 }}>
             {aboutContent.routeOut.paths.map((path) => (
               <div
                 key={path.target}

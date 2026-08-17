@@ -64,7 +64,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
     <div style={{ background: "#1C1C1C", minHeight: "100vh" }}>
 
       {/* Hero */}
-      <section {...editableField("home.hero")} style={{ minHeight: "100vh", display: "flex", flexDirection: "column", justifyContent: "center", padding: "90px 40px 56px", maxWidth: 1280, margin: "0 auto", position: "relative", overflow: "hidden" }}>
+      <section {...editableField("home.hero")} style={{ padding: "100px 40px 64px", maxWidth: 1280, margin: "0 auto", position: "relative", overflow: "hidden" }}>
 
         <HoloGlass />
 
@@ -125,9 +125,9 @@ export default function HomePage({ onNavigate }: HomePageProps) {
       </section>
 
       {/* Two Paths */}
-      <section id="two-paths" {...editableField("home.twoPaths")} style={{ padding: "88px 40px" }}>
+      <section id="two-paths" {...editableField("home.twoPaths")} style={{ padding: "64px 40px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
-          <div ref={r3} className="reveal" style={{ textAlign: "center", marginBottom: 72 }}>
+          <div ref={r3} className="reveal" style={{ textAlign: "center", marginBottom: 48 }}>
             <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(30px, 4vw, 48px)", color: "#F5F3EE", fontWeight: 400, lineHeight: 1.15 }}>
               {homeContent.twoPaths.title}
             </h2>
@@ -147,7 +147,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
               <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.75, color: "rgba(245,243,238,0.55)", marginBottom: 20 }}>
                 {homeContent.twoPaths.growthCharter.body}
               </p>
-              <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, lineHeight: 1.6, fontStyle: "italic", color: "rgba(245,243,238,0.45)", marginBottom: 40 }}>
+              <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, lineHeight: 1.6, fontStyle: "italic", color: "rgba(245,243,238,0.45)", marginBottom: 28 }}>
                 {homeContent.twoPaths.growthCharter.fitNote}
               </p>
               <div style={{ display: "flex", alignItems: "center", gap: 8, color: "#2A9D78" }}>
@@ -169,7 +169,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
               <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.75, color: "rgba(245,243,238,0.55)", marginBottom: 20 }}>
                 {homeContent.twoPaths.advisory.body}
               </p>
-              <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, lineHeight: 1.6, fontStyle: "italic", color: "rgba(245,243,238,0.45)", marginBottom: 40 }}>
+              <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, lineHeight: 1.6, fontStyle: "italic", color: "rgba(245,243,238,0.45)", marginBottom: 28 }}>
                 {homeContent.twoPaths.advisory.fitNote}
               </p>
               <div style={{ display: "flex", alignItems: "center", gap: 8, color: "#9B9B9B" }}>
@@ -182,15 +182,15 @@ export default function HomePage({ onNavigate }: HomePageProps) {
       </section>
 
       {/* Why TUR */}
-      <section {...editableField("home.whyTur")} style={{ background: "#161616", padding: "88px 40px" }}>
+      <section {...editableField("home.whyTur")} style={{ background: "#161616", padding: "64px 40px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
-          <div ref={r4} className="reveal" style={{ marginBottom: 64 }}>
+          <div ref={r4} className="reveal" style={{ marginBottom: 40 }}>
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 20 }}>{homeContent.whyTur.eyebrow}</p>
             <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(30px, 4vw, 48px)", color: "#F5F3EE", fontWeight: 400, lineHeight: 1.15, maxWidth: 600 }}>
               {homeContent.whyTur.title}
             </h2>
           </div>
-          <div className="reveal reveal-delay-1" style={{ marginBottom: 80 }}>
+          <div className="reveal reveal-delay-1" style={{ marginBottom: 48 }}>
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 16, lineHeight: 1.8, color: "rgba(245,243,238,0.55)", maxWidth: 680 }}>
               {homeContent.whyTur.body}
             </p>
@@ -208,9 +208,9 @@ export default function HomePage({ onNavigate }: HomePageProps) {
       </section>
 
       {/* Credibility */}
-      <section {...editableField("home.credibility")} style={{ padding: "88px 40px" }}>
+      <section {...editableField("home.credibility")} style={{ padding: "64px 40px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
-          <div ref={r5} className="reveal" style={{ marginBottom: 56, textAlign: "center" }}>
+          <div ref={r5} className="reveal" style={{ marginBottom: 40, textAlign: "center" }}>
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 20 }}>{homeContent.credibility.eyebrow}</p>
             <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(30px, 3.5vw, 44px)", color: "#F5F3EE", fontWeight: 400, lineHeight: 1.2, marginBottom: 20 }}>
               {homeContent.credibility.title}
@@ -278,13 +278,13 @@ export default function HomePage({ onNavigate }: HomePageProps) {
       </section>
 
       {/* CTA */}
-      <section {...editableField("home.cta")} style={{ padding: "72px 40px", textAlign: "center", position: "relative", overflow: "hidden" }}>
+      <section {...editableField("home.cta")} style={{ padding: "64px 40px", textAlign: "center", position: "relative", overflow: "hidden" }}>
         <HoloGlass intensity="subtle" />
         <div style={{ maxWidth: 600, margin: "0 auto", position: "relative", zIndex: 1 }}>
           <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(28px, 3.5vw, 40px)", color: "#F5F3EE", fontWeight: 400, lineHeight: 1.2, marginBottom: 20 }}>
             {homeContent.cta.title}
           </h2>
-          <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.75, color: "rgba(245,243,238,0.5)", marginBottom: 40 }}>
+          <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.75, color: "rgba(245,243,238,0.5)", marginBottom: 28 }}>
             {homeContent.cta.body}
           </p>
           <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>

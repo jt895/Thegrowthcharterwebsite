@@ -44,7 +44,7 @@ export default function CaseStudiesIndexPage({ onNavigate }: CaseStudiesIndexPag
     <div style={{ background: "#1C1C1C", minHeight: "100vh" }}>
 
       {/* Hero */}
-      <section {...editableField("caseStudies.index")} style={{ padding: "120px 40px 56px", position: "relative", overflow: "hidden" }}>
+      <section {...editableField("caseStudies.index")} style={{ padding: "100px 40px 64px", position: "relative", overflow: "hidden" }}>
         <HoloGlass />
         <div style={{ maxWidth: 1280, margin: "0 auto", position: "relative", zIndex: 1 }}>
           <div style={{ maxWidth: 780 }}>
@@ -65,9 +65,9 @@ export default function CaseStudiesIndexPage({ onNavigate }: CaseStudiesIndexPag
       </section>
 
       {/* Filters + grid */}
-      <section style={{ background: "#161616", padding: "52px 40px 88px" }}>
+      <section style={{ background: "#161616", padding: "64px 40px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
-          <div ref={r1} className="reveal" style={{ display: "flex", justifyContent: "center", gap: 10, flexWrap: "wrap", marginBottom: 56 }}>
+          <div ref={r1} className="reveal" style={{ display: "flex", justifyContent: "center", gap: 10, flexWrap: "wrap", marginBottom: 40 }}>
             {filterOptions.map((option) => {
               const active = filter === option.key;
               return (

@@ -37,7 +37,7 @@ export default function StrategicAdvisoryPage({ onNavigate }: StrategicAdvisoryP
     <div style={{ background: "#1C1C1C", minHeight: "100vh" }}>
 
       {/* Hero */}
-      <section {...editableField("strategicAdvisory.hero")} style={{ minHeight: "85vh", display: "flex", flexDirection: "column", justifyContent: "center", padding: "110px 40px 72px", position: "relative", overflow: "hidden" }}>
+      <section {...editableField("strategicAdvisory.hero")} style={{ padding: "100px 40px 64px", position: "relative", overflow: "hidden" }}>
         <HoloGlass />
         <div style={{ maxWidth: 1280, margin: "0 auto", position: "relative", width: "100%", zIndex: 1 }}>
           <div style={{ maxWidth: 760 }}>
@@ -68,9 +68,9 @@ export default function StrategicAdvisoryPage({ onNavigate }: StrategicAdvisoryP
       </section>
 
       {/* The Case */}
-      <section {...editableField("strategicAdvisory.theCase")} style={{ background: "#161616", padding: "72px 40px" }}>
+      <section {...editableField("strategicAdvisory.theCase")} style={{ background: "#161616", padding: "64px 40px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
-          <div ref={r1} className="reveal" style={{ marginBottom: 56 }}>
+          <div ref={r1} className="reveal" style={{ marginBottom: 40 }}>
             <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(28px, 3.5vw, 44px)", color: "#F5F3EE", fontWeight: 400, lineHeight: 1.15, textAlign: "center" }}>
               {strategicAdvisoryContent.theCase.title}
             </h2>
@@ -90,9 +90,9 @@ export default function StrategicAdvisoryPage({ onNavigate }: StrategicAdvisoryP
       </section>
 
       {/* The Difference */}
-      <section {...editableField("strategicAdvisory.theDifference")} style={{ padding: "72px 40px" }}>
+      <section {...editableField("strategicAdvisory.theDifference")} style={{ padding: "64px 40px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
-          <div ref={r3} className="reveal" style={{ marginBottom: 56 }}>
+          <div ref={r3} className="reveal" style={{ marginBottom: 40 }}>
             <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(28px, 3.5vw, 44px)", color: "#F5F3EE", fontWeight: 400, lineHeight: 1.15, textAlign: "center" }}>
               {strategicAdvisoryContent.theDifference.title}
             </h2>
@@ -112,9 +112,9 @@ export default function StrategicAdvisoryPage({ onNavigate }: StrategicAdvisoryP
       </section>
 
       {/* Our methodology */}
-      <section {...editableField("strategicAdvisory.methodology")} style={{ background: "#161616", padding: "72px 40px" }}>
+      <section {...editableField("strategicAdvisory.methodology")} style={{ background: "#161616", padding: "64px 40px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
-          <div ref={r5} className="reveal" style={{ marginBottom: 64 }}>
+          <div ref={r5} className="reveal" style={{ marginBottom: 44 }}>
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 16, textAlign: "center" }}>
               {strategicAdvisoryContent.methodology.eyebrow}
             </p>
@@ -163,9 +163,9 @@ export default function StrategicAdvisoryPage({ onNavigate }: StrategicAdvisoryP
       </section>
 
       {/* Evidence */}
-      <section {...editableField("strategicAdvisory.evidence")} style={{ background: "#161616", padding: "72px 40px" }}>
+      <section {...editableField("strategicAdvisory.evidence")} style={{ background: "#161616", padding: "64px 40px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
-          <div style={{ marginBottom: 64, textAlign: "center" }}>
+          <div style={{ marginBottom: 44, textAlign: "center" }}>
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 20 }}>
               {strategicAdvisoryContent.evidence.eyebrow}
             </p>
@@ -189,9 +189,9 @@ export default function StrategicAdvisoryPage({ onNavigate }: StrategicAdvisoryP
       </section>
 
       {/* Built for complex organisations */}
-      <section {...editableField("strategicAdvisory.builtFor")} style={{ background: "#161616", padding: "72px 40px" }}>
+      <section {...editableField("strategicAdvisory.builtFor")} style={{ background: "#161616", padding: "64px 40px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
-          <div ref={r7} className="reveal" style={{ marginBottom: 64 }}>
+          <div ref={r7} className="reveal" style={{ marginBottom: 44 }}>
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 20, textAlign: "center" }}>
               {strategicAdvisoryContent.builtFor.eyebrow}
             </p>
@@ -219,7 +219,7 @@ export default function StrategicAdvisoryPage({ onNavigate }: StrategicAdvisoryP
       />
 
       {/* CTA */}
-      <section {...editableField("strategicAdvisory.cta")} style={{ padding: "72px 40px", textAlign: "center" }}>
+      <section {...editableField("strategicAdvisory.cta")} style={{ padding: "64px 40px", textAlign: "center" }}>
         <div style={{ maxWidth: 560, margin: "0 auto" }}>
           <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.15em", textTransform: "uppercase", color: "#9B9B9B", marginBottom: 20 }}>
             {strategicAdvisoryContent.cta.eyebrow}
@@ -227,7 +227,7 @@ export default function StrategicAdvisoryPage({ onNavigate }: StrategicAdvisoryP
           <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(24px, 3vw, 40px)", color: "#F5F3EE", fontWeight: 400, lineHeight: 1.2, marginBottom: 20 }}>
             {strategicAdvisoryContent.cta.title}
           </h2>
-          <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.75, color: "rgba(245,243,238,0.5)", marginBottom: 40 }}>
+          <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.75, color: "rgba(245,243,238,0.5)", marginBottom: 28 }}>
             {strategicAdvisoryContent.cta.body}
           </p>
           <button
