@@ -17,7 +17,7 @@
         "location": "Adelaide, South Australia. Working with businesses and organisations nationally."
     },
     "navigation": {
-        "growthCharter": "The Growth Program",
+        "growthProgram": "The Growth Program",
         "strategicAdvisory": "Strategic Advisory",
         "services": "Advisory Services",
         "howWeWork": "The Advisory Process",
@@ -34,7 +34,7 @@
             },
             {
                 "label": "The Growth Program",
-                "page": "growth-charter"
+                "page": "growth-program"
             },
             {
                 "label": "The Advisory Process",
@@ -75,7 +75,7 @@
                 "cta": "Explore Strategic Advisory",
                 "fitNote": "Right for you if you're leading a government, corporate or complex organisation and need independent counsel to understand the opportunities and challenges before committing budget."
             },
-            "growthCharter": {
+            "growthProgram": {
                 "eyebrow": "Startups, small businesses and established businesses ready for the next step",
                 "title": "The Growth Program",
                 "body": "We work with you to understand your business, identify your best opportunities, rank them by their value, and build a plan you own. With four ways to work with us, from do-it-yourself to fully done-for-you, there's a Growth Program right for your business.",
@@ -180,12 +180,12 @@
                     "title": "The Growth Program",
                     "body": "For startups, small businesses and established businesses ready for the next stage of growth.",
                     "cta": "Explore The Growth Program",
-                    "target": "growth-charter"
+                    "target": "growth-program"
                 }
             ]
         }
     },
-    "growthCharter": {
+    "growthProgram": {
         "hero": {
             "eyebrow": "The Growth Program",
             "title": "The growth you're looking for is already in your business.",
@@ -237,7 +237,7 @@
                         },
                         {
                             "value": "$5,990",
-                            "page": "launch-charter"
+                            "page": "launch"
                         }
                     ]
                 },
@@ -272,8 +272,8 @@
                 }
             ],
             "note": "All prices ex GST. Every engagement starts with a $450 Viability Session, credited in full.",
-            "charterCourseNote": "Prefer to go at your own pace? GROW IT YOURSELF Self-Paced Training is in development.",
-            "charterCourseLinkLabel": "Join the waitlist",
+            "growItYourselfNote": "Prefer to go at your own pace? GROW IT YOURSELF Self-Paced Training is in development.",
+            "growItYourselfLinkLabel": "Join the waitlist",
             "customPackageNote": "Don't need everything in LAUNCH or GROW, or need something extra, like a booking system? Tell us what you need and we'll build a package for you.",
             "customPackageCtaLabel": "Get in touch",
             "legend": ""
@@ -358,7 +358,7 @@
             ]
         },
         "products": {
-            "launchCharter": {
+            "launch": {
                 "eyebrow": "LAUNCH · DONE FOR YOU",
                 "title": "Everything you need to grow your business.",
                 "subtitle": "Strategy, positioning, brand, a website that converts and a 90-day plan. For new and small businesses that want to get it right the first time.",
@@ -975,7 +975,7 @@
         },
         "forms": {
             "title": "Which are you?",
-            "growthCharter": {
+            "growthProgram": {
                 "id": "growth-charter-enquiry",
                 "formName": "growth-charter-enquiry",
                 "displayName": "Growth Program enquiry",
@@ -1017,7 +1017,7 @@
             "footnote": "If it isn't a fit, we'll say so and point you somewhere better suited to your needs."
         }
     },
-    "charterCourse": {
+    "growItYourself": {
         "eyebrow": "Do It Yourself · Coming Soon",
         "title": "Grow it yourself.",
         "subtitle": "The same Growth Program method, delivered as a structured online course you work through yourself, choosing the sections your business actually needs.",
@@ -1050,7 +1050,7 @@
             "paraB": "Every one of these started with a brief that described a symptom. The work was finding what was actually holding growth back.",
             "filterAll": "All",
             "filterStrategicAdvisory": "Strategic Advisory",
-            "filterGrowthCharter": "The Growth Program",
+            "filterGrowthProgram": "The Growth Program",
             "comingSoonLabel": "Coming soon"
         },
         "items": [
@@ -1063,7 +1063,7 @@
                 ],
                 "filters": [
                     "strategic-advisory",
-                    "growth-charter"
+                    "growth-program"
                 ],
                 "title": "Toyota: A Lifetime of Advantages",
                 "summary": "Korean brands were winning on price. The research found Toyota was already winning the argument that actually mattered.",
@@ -1092,7 +1092,7 @@
                 ],
                 "filters": [
                     "strategic-advisory",
-                    "growth-charter"
+                    "growth-program"
                 ],
                 "title": "Commonwealth Bank: Little Card, Big Rewards",
                 "summary": "Nobody wants a credit card. They want the thing it does. So that's what we said, in language people grasped immediately.",
@@ -1107,7 +1107,7 @@
                 ],
                 "filters": [
                     "strategic-advisory",
-                    "growth-charter"
+                    "growth-program"
                 ],
                 "title": "Snack Brands: Kettle Popcorn Launch",
                 "summary": "A brand extension has to feel new enough to notice and familiar enough to still be Kettle. The task was knowing which parts to hold onto.",
@@ -1136,7 +1136,7 @@
                 ],
                 "filters": [
                     "strategic-advisory",
-                    "growth-charter"
+                    "growth-program"
                 ],
                 "title": "2022 Local Government Elections",
                 "summary": "Postal voting isn't an awareness problem. It's a behaviour with more steps and more places to give up.",
@@ -1165,7 +1165,7 @@
                 ],
                 "filters": [
                     "strategic-advisory",
-                    "growth-charter"
+                    "growth-program"
                 ],
                 "title": "Adelaide Hills Wine Region",
                 "summary": "The brief was positioning. The real obstacle was that members didn't agree on who the region was.",

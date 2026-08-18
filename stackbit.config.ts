@@ -108,7 +108,7 @@ export default defineStackbitConfig({
 
     const pages = [
       { stableId: "home", label: "Home", urlPath: "/", isHomePage: true },
-      { stableId: "growth-charter", label: "The Growth Program", urlPath: "/growth-program/" },
+      { stableId: "growth-program", label: "The Growth Program", urlPath: "/growth-program/" },
       { stableId: "strategic-advisory", label: "Strategic Advisory", urlPath: "/strategic-advisory/" },
       { stableId: "services", label: "Services", urlPath: "/services/" },
       { stableId: "how-we-work", label: "How We Work", urlPath: "/advisory-process/" },

@@ -10,7 +10,7 @@ interface CaseStudiesIndexPageProps {
   onNavigate: (page: Page) => void;
 }
 
-type Filter = "all" | "strategic-advisory" | "growth-charter";
+type Filter = "all" | "strategic-advisory" | "growth-program";
 
 export default function CaseStudiesIndexPage({ onNavigate }: CaseStudiesIndexPageProps) {
   const [filter, setFilter] = useState<Filter>("all");
@@ -23,7 +23,7 @@ export default function CaseStudiesIndexPage({ onNavigate }: CaseStudiesIndexPag
   const filterOptions: { key: Filter; label: string }[] = [
     { key: "all", label: index.filterAll },
     { key: "strategic-advisory", label: index.filterStrategicAdvisory },
-    { key: "growth-charter", label: index.filterGrowthCharter },
+    { key: "growth-program", label: index.filterGrowthProgram },
   ];
 
   return (

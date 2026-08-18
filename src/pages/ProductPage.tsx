@@ -1,7 +1,7 @@
 import EnquiryForm from "../components/EnquiryForm";
 import HoloGlass from "../components/HoloGlass";
 import RelatedCaseStudies from "../components/RelatedCaseStudies";
-import { growthCharterContent } from "../data/content";
+import { growthProgramContent } from "../data/content";
 import { editableField } from "../data/editable";
 import { readContactSource } from "../lib/contactNav";
 import type { Page } from "../routes";
@@ -68,6 +68,10 @@ export interface ProductContent {
 interface ProductPageProps {
   onNavigate: (page: Page) => void;
   page: Page;
+  /** Key of this product under growthProgram.products in site.json. Page keys
+   *  are hyphenated and the content keys are camelCase, so the Visual Editor
+   *  field path has to be given explicitly rather than derived from `page`. */
+  contentKey: string;
   product: ProductContent;
 }
 
@@ -83,7 +87,7 @@ function PendingTag() {
   );
 }
 
-export default function ProductPage({ onNavigate, page, product }: ProductPageProps) {
+export default function ProductPage({ onNavigate, page, contentKey, product }: ProductPageProps) {
   const nav = (target: Page) => { onNavigate(target); window.scrollTo({ top: 0 }); };
   const scrollToForm = () => {
     document.getElementById("product-enquiry-form")?.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -96,7 +100,7 @@ export default function ProductPage({ onNavigate, page, product }: ProductPagePr
     <div style={{ background: "#1C1C1C", minHeight: "100vh" }}>
 
       {/* Hero */}
-      <section {...editableField(`growthCharter.products.${page}`)} style={{ padding: "100px 40px 64px", textAlign: "center", position: "relative", overflow: "hidden" }}>
+      <section {...editableField(`growthProgram.products.${contentKey}`)} style={{ padding: "100px 40px 64px", textAlign: "center", position: "relative", overflow: "hidden" }}>
         <HoloGlass />
         <div style={{ maxWidth: 720, margin: "0 auto", position: "relative", zIndex: 1 }}>
           <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 24 }}>
@@ -217,13 +221,13 @@ export default function ProductPage({ onNavigate, page, product }: ProductPagePr
         </section>
       )}
 
-      {/* Five stages (reused from the Growth Charter overview page) */}
+      {/* Five stages (reused from the Growth Program overview page) */}
       {product.showFiveStages && (
         <section style={{ padding: "64px 40px" }}>
           <div style={sectionMax}>
-            <h2 style={H2}>{growthCharterContent.howItWorks.title}</h2>
+            <h2 style={H2}>{growthProgramContent.howItWorks.title}</h2>
             <div style={{ display: "flex", flexDirection: "column", gap: 1 }}>
-              {growthCharterContent.howItWorks.stages.map((stage, i) => (
+              {growthProgramContent.howItWorks.stages.map((stage, i) => (
                 <div key={stage.num} style={{ display: "grid", gridTemplateColumns: "56px 1fr", gap: 20, padding: "24px 0", borderTop: i === 0 ? "2px solid #2A9D78" : "1px solid rgba(255,255,255,0.07)" }}>
                   <span style={{ fontFamily: "'Instrument Serif', serif", fontSize: 28, color: "rgba(42,157,120,0.4)" }}>{stage.num}</span>
                   <div>
@@ -296,7 +300,7 @@ export default function ProductPage({ onNavigate, page, product }: ProductPagePr
         />
       )}
 
-      {/* Growth Charter enquiry form */}
+      {/* Growth Program enquiry form */}
       <section id="product-enquiry-form" style={{ background: "#161616", padding: "64px 40px" }}>
         <div style={{ maxWidth: 560, margin: "0 auto" }}>
           <h2 style={{ ...H2, textAlign: "center" }}>Ready to talk it through?</h2>
@@ -322,10 +326,10 @@ export default function ProductPage({ onNavigate, page, product }: ProductPagePr
 
       <div style={{ textAlign: "center", padding: "32px 40px 80px" }}>
         <button
-          onClick={() => nav("growth-charter")}
+          onClick={() => nav("growth-program")}
           style={{ background: "none", border: "none", cursor: "pointer", fontFamily: "'Inter', sans-serif", fontSize: 14, color: "#2A9D78" }}
         >
-          ← Back to The Growth Charter
+          ← Back to The Growth Program
         </button>
       </div>
     </div>

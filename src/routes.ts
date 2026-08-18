@@ -4,13 +4,13 @@ export type Page =
   | "how-we-work"
   | "services"
   | "strategic-advisory"
-  | "growth-charter"
+  | "growth-program"
   | "contact"
-  | "launch-charter"
+  | "launch"
   | "do-it-together"
   | "launch-complete"
   | "scale"
-  | "charter-course"
+  | "grow-it-yourself"
   | "case-studies"
   | "toyota-lifetime-advantages"
   | "ford-six-model-launches"
@@ -69,7 +69,7 @@ export const siteRoutes: SiteRoute[] = [
       "Independent strategic advisory for government, brands and complex organisations. We define the real problem, build the strategy and brief the specialists who deliver it.",
   },
   {
-    page: "growth-charter",
+    page: "growth-program",
     path: "/growth-program/",
     title: "The Growth Program | The United Republic",
     description:
@@ -85,7 +85,7 @@ export const siteRoutes: SiteRoute[] = [
 
   // Growth Program product pages - stubs pending full product copy.
   {
-    page: "launch-charter",
+    page: "launch",
     path: "/growth-program/launch/",
     title: "Launch | The Growth Program | The United Republic",
     description:
@@ -113,7 +113,7 @@ export const siteRoutes: SiteRoute[] = [
       "For businesses with more than one audience, product line or market. Tell us what you need, and we'll define the objectives and build the roadmap and tools to take your business to the next level.",
   },
   {
-    page: "charter-course",
+    page: "grow-it-yourself",
     path: "/growth-program/grow-it-yourself/",
     title: "Grow It Yourself | The Growth Program | The United Republic",
     description:

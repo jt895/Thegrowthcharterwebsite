@@ -7,7 +7,7 @@ const distDir = resolve(root, "dist");
 const serverEntry = resolve(root, ".prerender/entry-server.js");
 const { render, siteRoutes } = await import(`${pathToFileURL(serverEntry).href}?t=${Date.now()}`);
 const template = await readFile(resolve(distDir, "index.html"), "utf8");
-const siteUrl = (process.env.URL || "https://thegrowthcharter.netlify.app").replace(/\/$/, "");
+const siteUrl = (process.env.URL || "https://theunitedrepublic.com.au").replace(/\/$/, "");
 
 function escapeHtml(value) {
   return value

@@ -1,36 +1,36 @@
 import EnquiryForm from "../components/EnquiryForm";
 import HoloGlass from "../components/HoloGlass";
-import { charterCourseContent, contactContent } from "../data/content";
+import { growItYourselfContent, contactContent } from "../data/content";
 import { editableField } from "../data/editable";
 import { readContactSource } from "../lib/contactNav";
 import type { Page } from "../routes";
 
-interface CharterCoursePageProps {
+interface GrowItYourselfPageProps {
   onNavigate: (page: Page) => void;
 }
 
-export default function CharterCoursePage({ onNavigate }: CharterCoursePageProps) {
+export default function GrowItYourselfPage({ onNavigate }: GrowItYourselfPageProps) {
   const nav = (page: Page) => { onNavigate(page); window.scrollTo({ top: 0 }); };
-  const sourcePage = readContactSource() || "charter-course";
+  const sourcePage = readContactSource() || "grow-it-yourself";
 
   return (
     <div style={{ background: "#1C1C1C", minHeight: "100vh" }}>
 
       {/* Hero */}
-      <section {...editableField("charterCourse.hero")} style={{ padding: "100px 40px 64px", textAlign: "center", position: "relative", overflow: "hidden" }}>
+      <section {...editableField("growItYourself.hero")} style={{ padding: "100px 40px 64px", textAlign: "center", position: "relative", overflow: "hidden" }}>
         <HoloGlass />
         <div style={{ maxWidth: 680, margin: "0 auto", position: "relative", zIndex: 1 }}>
           <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 24 }}>
-            {charterCourseContent.eyebrow}
+            {growItYourselfContent.eyebrow}
           </p>
           <h1 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(34px, 5vw, 58px)", lineHeight: 1.1, color: "#F5F3EE", fontWeight: 400, marginBottom: 28 }}>
-            {charterCourseContent.title}
+            {growItYourselfContent.title}
           </h1>
           <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 17, lineHeight: 1.75, color: "rgba(245,243,238,0.6)", marginBottom: 24 }}>
-            {charterCourseContent.subtitle}
+            {growItYourselfContent.subtitle}
           </p>
           <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.8, color: "rgba(245,243,238,0.5)" }}>
-            {charterCourseContent.intro}
+            {growItYourselfContent.intro}
           </p>
         </div>
       </section>
@@ -39,10 +39,10 @@ export default function CharterCoursePage({ onNavigate }: CharterCoursePageProps
       <section style={{ background: "#161616", padding: "64px 40px" }}>
         <div style={{ maxWidth: 720, margin: "0 auto" }}>
           <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(24px, 3vw, 36px)", color: "#F5F3EE", fontWeight: 400, marginBottom: 28 }}>
-            {charterCourseContent.covers.heading}
+            {growItYourselfContent.covers.heading}
           </h2>
           <div style={{ display: "flex", flexDirection: "column", gap: 12, marginBottom: 24 }}>
-            {charterCourseContent.covers.items.map((item) => (
+            {growItYourselfContent.covers.items.map((item) => (
               <div key={item} style={{ display: "flex", gap: 12, alignItems: "flex-start" }}>
                 <div style={{ width: 4, height: 4, borderRadius: "50%", background: "#2A9D78", marginTop: 9, flexShrink: 0 }} />
                 <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.7, color: "rgba(245,243,238,0.65)", margin: 0 }}>{item}</p>
@@ -50,7 +50,7 @@ export default function CharterCoursePage({ onNavigate }: CharterCoursePageProps
             ))}
           </div>
           <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, lineHeight: 1.7, color: "rgba(245,243,238,0.45)", fontStyle: "italic" }}>
-            {charterCourseContent.covers.note}
+            {growItYourselfContent.covers.note}
           </p>
         </div>
       </section>
@@ -59,10 +59,10 @@ export default function CharterCoursePage({ onNavigate }: CharterCoursePageProps
       <section style={{ padding: "64px 40px" }}>
         <div style={{ maxWidth: 720, margin: "0 auto", background: "#1E1E1E", padding: "40px 48px", borderLeft: "2px solid #2A9D78" }}>
           <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: 22, color: "#F5F3EE", fontWeight: 400, marginBottom: 16 }}>
-            {charterCourseContent.honestNote.heading}
+            {growItYourselfContent.honestNote.heading}
           </h2>
           <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.8, color: "rgba(245,243,238,0.6)", margin: 0 }}>
-            {charterCourseContent.honestNote.body}
+            {growItYourselfContent.honestNote.body}
           </p>
         </div>
       </section>
@@ -71,10 +71,10 @@ export default function CharterCoursePage({ onNavigate }: CharterCoursePageProps
       <section style={{ background: "#0B5E48", padding: "64px 40px" }}>
         <div style={{ maxWidth: 560, margin: "0 auto" }}>
           <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(24px, 3vw, 36px)", color: "#F5F3EE", fontWeight: 400, textAlign: "center", marginBottom: 16 }}>
-            {charterCourseContent.waitlist.heading}
+            {growItYourselfContent.waitlist.heading}
           </h2>
           <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.75, color: "rgba(245,243,238,0.75)", textAlign: "center", marginBottom: 40 }}>
-            {charterCourseContent.waitlist.intro}
+            {growItYourselfContent.waitlist.intro}
           </p>
           <EnquiryForm
             id={contactContent.waitlist.id}
@@ -94,10 +94,10 @@ export default function CharterCoursePage({ onNavigate }: CharterCoursePageProps
 
       <div style={{ textAlign: "center", padding: "32px 40px 80px" }}>
         <button
-          onClick={() => nav("growth-charter")}
+          onClick={() => nav("growth-program")}
           style={{ background: "none", border: "none", cursor: "pointer", fontFamily: "'Inter', sans-serif", fontSize: 14, color: "#2A9D78" }}
         >
-          ← Back to The Growth Charter
+          ← Back to The Growth Program
         </button>
       </div>
     </div>

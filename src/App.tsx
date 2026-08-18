@@ -7,16 +7,16 @@ import AboutPage from "./pages/AboutPage";
 import HowWeWorkPage from "./pages/HowWeWorkPage";
 import ServicesPage from "./pages/ServicesPage";
 import StrategicAdvisoryPage from "./pages/StrategicAdvisoryPage";
-import GrowthCharterPage from "./pages/GrowthCharterPage";
+import GrowthProgramPage from "./pages/GrowthProgramPage";
 import ContactPage from "./pages/ContactPage";
 import StubPage from "./pages/StubPage";
 import ProductPage from "./pages/ProductPage";
-import CharterCoursePage from "./pages/CharterCoursePage";
+import GrowItYourselfPage from "./pages/GrowItYourselfPage";
 import CaseStudiesIndexPage from "./pages/CaseStudiesIndexPage";
 import CaseStudyDetailPage from "./pages/CaseStudyDetailPage";
 import { trackPageview } from "./lib/analytics";
 import { stubRoutes } from "./data/stubRoutes";
-import { growthCharterContent } from "./data/content";
+import { growthProgramContent } from "./data/content";
 import { pageFromPath, pathForPage, updateDocumentMetadata, type Page } from "./routes";
 
 interface AppProps {
@@ -56,13 +56,13 @@ export default function App({ initialPage = "home" }: AppProps) {
       case "how-we-work": return <HowWeWorkPage onNavigate={navigate} />;
       case "strategic-advisory": return <StrategicAdvisoryPage onNavigate={navigate} />;
       case "services": return <ServicesPage onNavigate={navigate} />;
-      case "growth-charter": return <GrowthCharterPage onNavigate={navigate} />;
+      case "growth-program": return <GrowthProgramPage onNavigate={navigate} />;
       case "contact": return <ContactPage onNavigate={navigate} />;
-      case "launch-charter": return <ProductPage onNavigate={navigate} page="launch-charter" product={growthCharterContent.products.launchCharter} />;
-      case "do-it-together": return <ProductPage onNavigate={navigate} page="do-it-together" product={growthCharterContent.products.doItTogether} />;
-      case "launch-complete": return <ProductPage onNavigate={navigate} page="launch-complete" product={growthCharterContent.products.launchComplete} />;
-      case "scale": return <ProductPage onNavigate={navigate} page="scale" product={growthCharterContent.products.scale} />;
-      case "charter-course": return <CharterCoursePage onNavigate={navigate} />;
+      case "launch": return <ProductPage onNavigate={navigate} page="launch" contentKey="launch" product={growthProgramContent.products.launch} />;
+      case "do-it-together": return <ProductPage onNavigate={navigate} page="do-it-together" contentKey="doItTogether" product={growthProgramContent.products.doItTogether} />;
+      case "launch-complete": return <ProductPage onNavigate={navigate} page="launch-complete" contentKey="launchComplete" product={growthProgramContent.products.launchComplete} />;
+      case "scale": return <ProductPage onNavigate={navigate} page="scale" contentKey="scale" product={growthProgramContent.products.scale} />;
+      case "grow-it-yourself": return <GrowItYourselfPage onNavigate={navigate} />;
       case "case-studies": return <CaseStudiesIndexPage onNavigate={navigate} />;
       case "toyota-lifetime-advantages":
       case "ford-six-model-launches":

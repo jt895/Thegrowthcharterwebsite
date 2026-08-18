@@ -37,21 +37,21 @@ export default function ContactPage(_props: ContactPageProps) {
           </h2>
 
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 2 }}>
-            {/* Growth Charter form */}
+            {/* Growth Program form */}
             <div style={{ background: "#1E1E1E", padding: "48px", borderTop: "2px solid #2A9D78" }}>
               <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.15em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 12 }}>
-                {contactContent.forms.growthCharter.displayName}
+                {contactContent.forms.growthProgram.displayName}
               </p>
               <h3 style={{ fontFamily: "'Instrument Serif', serif", fontSize: 26, color: "#F5F3EE", fontWeight: 400, marginBottom: 16 }}>
-                {contactContent.forms.growthCharter.title}
+                {contactContent.forms.growthProgram.title}
               </h3>
               <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, lineHeight: 1.7, color: "rgba(245,243,238,0.55)", marginBottom: 32 }}>
-                {contactContent.forms.growthCharter.intro}
+                {contactContent.forms.growthProgram.intro}
               </p>
               <EnquiryForm
-                id={contactContent.forms.growthCharter.id}
-                formName={contactContent.forms.growthCharter.formName}
-                submitLabel={contactContent.forms.growthCharter.submitLabel}
+                id={contactContent.forms.growthProgram.id}
+                formName={contactContent.forms.growthProgram.formName}
+                submitLabel={contactContent.forms.growthProgram.submitLabel}
                 sourcePage={sourcePage}
                 accent="#2A9D78"
                 fields={[
@@ -98,7 +98,7 @@ export default function ContactPage(_props: ContactPageProps) {
         </div>
       </section>
 
-      {/* Charter Course waitlist */}
+      {/* Grow It Yourself waitlist */}
       <section {...editableField("contact.waitlist")} style={{ background: "#161616", padding: "64px 40px" }}>
         <div style={{ maxWidth: 620, margin: "0 auto" }}>
           <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.15em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 12, textAlign: "center" }}>

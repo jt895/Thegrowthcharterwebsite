@@ -72,13 +72,13 @@ export default function Nav({ current, onNavigate }: NavProps) {
     }
   };
 
-  const growthCharterItems: DropdownItem[] = [
-    { label: "Overview", page: "growth-charter" },
-    { label: "LAUNCH", page: "launch-charter" },
+  const growthProgramItems: DropdownItem[] = [
+    { label: "Overview", page: "growth-program" },
+    { label: "LAUNCH", page: "launch" },
     { label: "GROW - DO IT TOGETHER", page: "do-it-together" },
     { label: "GROW - DONE FOR YOU", page: "launch-complete" },
     { label: "SCALE", page: "scale" },
-    { label: "GROW IT YOURSELF", page: "charter-course" },
+    { label: "GROW IT YOURSELF", page: "grow-it-yourself" },
   ];
 
   const advisoryItems: DropdownItem[] = [
@@ -87,7 +87,7 @@ export default function Nav({ current, onNavigate }: NavProps) {
     { label: navContent.howWeWork, page: "how-we-work" },
   ];
 
-  const growthActive = pathForPage(current).startsWith("/growth-program/") || current === "growth-charter";
+  const growthActive = pathForPage(current).startsWith("/growth-program/") || current === "growth-program";
   const advisoryActive = current === "strategic-advisory" || current === "services" || current === "how-we-work";
   const caseStudiesActive = pathForPage(current).startsWith("/case-studies/") || current === "case-studies";
 
@@ -102,7 +102,7 @@ export default function Nav({ current, onNavigate }: NavProps) {
   const DropdownPanel = ({ items, menu }: { items: DropdownItem[]; menu: MenuKey }) => (
     <div
       role="group"
-      aria-label={menu === "growth" ? navContent.growthCharter : navContent.strategicAdvisory}
+      aria-label={menu === "growth" ? navContent.growthProgram : navContent.strategicAdvisory}
       onKeyDown={(e) => handleMenuKeyDown(e, menu)}
       style={{
         position: "absolute", top: "calc(100% + 16px)", left: 0,
@@ -165,7 +165,7 @@ export default function Nav({ current, onNavigate }: NavProps) {
 
           {/* Desktop nav */}
           <nav style={{ display: "flex", alignItems: "center", gap: 36 }} className="hidden-mobile">
-            {/* The Growth Charter dropdown */}
+            {/* The Growth Program dropdown */}
             <div ref={growthRef} style={{ position: "relative" }}>
               <button
                 ref={growthTriggerRef}
@@ -184,12 +184,12 @@ export default function Nav({ current, onNavigate }: NavProps) {
                 onMouseEnter={(e) => { if (!growthActive) e.currentTarget.style.color = "#F5F3EE"; }}
                 onMouseLeave={(e) => { if (!growthActive) e.currentTarget.style.color = "rgba(245,243,238,0.6)"; }}
               >
-                {navContent.growthCharter}
+                {navContent.growthProgram}
                 <svg width="10" height="6" viewBox="0 0 10 6" fill="none" style={{ transition: "transform 0.2s", transform: openMenu === "growth" ? "rotate(180deg)" : "rotate(0deg)" }}>
                   <path d="M1 1L5 5L9 1" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </button>
-              {openMenu === "growth" && <DropdownPanel items={growthCharterItems} menu="growth" />}
+              {openMenu === "growth" && <DropdownPanel items={growthProgramItems} menu="growth" />}
             </div>
 
             {/* Strategic Advisory dropdown */}
@@ -294,9 +294,9 @@ export default function Nav({ current, onNavigate }: NavProps) {
       {/* Mobile menu */}
       {mobileOpen && (
         <div style={{ position: "fixed", inset: 0, zIndex: 99, background: "#1C1C1C", overflowY: "auto", display: "flex", flexDirection: "column", paddingTop: 96, paddingLeft: 40, paddingRight: 40, paddingBottom: 40 }}>
-          {/* Growth Charter group */}
-          <p style={{ fontFamily: "'Instrument Serif', serif", fontSize: 28, color: "#F5F3EE", margin: "12px 0 4px" }}>{navContent.growthCharter}</p>
-          {growthCharterItems.map((item) => (
+          {/* Growth Program group */}
+          <p style={{ fontFamily: "'Instrument Serif', serif", fontSize: 28, color: "#F5F3EE", margin: "12px 0 4px" }}>{navContent.growthProgram}</p>
+          {growthProgramItems.map((item) => (
             <a
               key={item.page}
               href={pathForPage(item.page)}
