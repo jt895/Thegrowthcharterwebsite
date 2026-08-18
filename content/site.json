@@ -118,21 +118,21 @@
         "hero": {
             "eyebrow": "About",
             "title": "The right team around every job.",
-            "paraA": "The United Republic is an independent Australian strategy and growth advisory — working with government and major brands through Strategic Advisory, and with owner-led businesses through The Growth Program.",
+            "paraA": "The United Republic is an independent Australian strategy and growth advisory, working with government and major brands through Strategic Advisory, and with owner-led businesses through The Growth Program.",
             "paraB": "We help you define the real problem, shape the response, and stay involved through delivery."
         },
         "james": {
             "eyebrow": "Leadership",
             "title": "Principal Consultant",
             "name": "James Trebilcock",
-            "bioA": "Twenty-five years across strategy, communications, engagement, customer experience and operational leadership — for Toyota, Ford, Commonwealth Bank, Australia Post, DFAT Smartraveller, the Electoral Commission of South Australia and dozens of others. Campaigns that have reached millions of Australians.",
-            "bioB": "The work has always been the same shape: find the real problem before anyone spends money on the wrong one. Understand what behaviours need to change. Build a strategy that connects insight, message and delivery — then make sure it survives contact with the real world.",
+            "bioA": "Twenty-five years across strategy, communications, engagement, customer experience and operational leadership. For Toyota, Ford, Commonwealth Bank, Australia Post, DFAT Smartraveller, the Electoral Commission of South Australia and dozens of others. Campaigns that have reached millions of Australians.",
+            "bioB": "The work has always been the same shape: find the real problem before anyone spends money on the wrong one. Understand what behaviours need to change. Build a strategy that connects insight, message and delivery, then make sure it survives contact with the real world.",
             "bioC": "The questions that helped grow national businesses and campaigns that influenced millions of Australians are the same questions that need to be asked of any-sized business.  The scale changes. The quality of the thinking shouldn't.  ",
             "bioD": ""
         },
         "tailoredTeam": {
             "title": "No fixed team. No payroll to feed.",
-            "paraA": "The United Republic doesn't run a permanent team or push work through a machine that needs feeding. Each project gets the specialists it actually needs — research, strategy, technology, trainers, creative, media, content, production, delivery — selected because they're right for the job, not because they're already on the books.",
+            "paraA": "The United Republic doesn't run a permanent team or push work through a machine that needs feeding. Each project gets the specialists it actually needs: research, strategy, technology, trainers, creative, media, content, production, delivery, all selected because they're right for the job, not because they're already on the books.",
             "paraB": "You get senior thinking that isn't biased toward a particular channel, and specialist execution without the overhead.",
             "link": "How advisory engagements work"
         },
@@ -150,7 +150,7 @@
                 },
                 {
                     "title": "Evidence, not instinct",
-                    "body": "Growth strategy grounded in research, insight and data — not hunches, feelings or assumptions."
+                    "body": "Growth strategy grounded in research, insight and data, not hunches, feelings or assumptions."
                 },
                 {
                     "title": "Independent of execution",
@@ -161,10 +161,10 @@
         "experience": {
             "eyebrow": "Track record",
             "title": "Where the thinking has been tested",
-            "paraA": "Government and public sector — state and local government election programmes, DFAT Smartraveller, AQIS Quarantine Matters, the Motor Accident Commission, the Electoral Commission of South Australia.",
-            "paraB": "Major brands — Toyota, Ford, Hyundai, Subaru, Commonwealth Bank, Australia Post, Stockland, Panasonic.",
-            "paraC": "South Australian business — Yalumba, Accolade Wines, Petaluma, St Hallett, Credit Union SA, Adelaide Hills Wine Region, The Bend Motorsport Park.",
-            "paraD": "And owner-led businesses — from a startup in a garage to multi-million dollar enterprises."
+            "paraA": "Government and public sector: state and local government election programmes, DFAT Smartraveller, AQIS Quarantine Matters, the Motor Accident Commission, the Electoral Commission of South Australia.",
+            "paraB": "Major brands: Toyota, Ford, Hyundai, Subaru, Commonwealth Bank, Australia Post, Stockland, Panasonic.",
+            "paraC": "South Australian business: Yalumba, Accolade Wines, Petaluma, St Hallett, Credit Union SA, Adelaide Hills Wine Region, The Bend Motorsport Park.",
+            "paraD": "And owner-led businesses, from a startup in a garage to multi-million dollar enterprises."
         },
         "routeOut": {
             "title": "Two ways to work with us",
@@ -229,10 +229,10 @@
             "rows": [
                 {
                     "scope": "LAUNCH",
-                    "note": "Foundations done properly — strategy, brand, a launch-ready website and the support to begin your growth journey.",
+                    "note": "Foundations done properly: strategy, brand, a launch-ready website and the support to begin your growth journey.",
                     "cells": [
                         {
-                            "value": "—",
+                            "value": "–",
                             "page": null
                         },
                         {
@@ -281,7 +281,7 @@
             "title": "Assumptions vs Evidence and Insight.",
             "paraA": "There are a lot of assumptions about why customers buy, which work is most valuable, and where growth will come from. Some of them right. Some of them are focused on the business and not the customer. Some of them are old wives' tales. But one thing is for sure: assumptions are costing you money.",
             "paraB": "The Growth Program works to identify gaps and find the opportunities. It creates the environment where better decisions, stronger margins and clearer priorities come from.",
-            "quote": "A stronger business isn't just about having more customers; it's about finding the right customers and focusing on the opportunities that will drive the growth you want. By understanding your business objectives, the value of your customers and where to focus your efforts, you build a stronger business — with clearer commercial choices and the ability to keep growing.",
+            "quote": "A stronger business isn't just about having more customers; it's about finding the right customers and focusing on the opportunities that will drive the growth you want. By understanding your business objectives, the value of your customers and where to focus your efforts, you build a stronger business, with clearer commercial choices and the ability to keep growing.",
             "quoteAttribution": "James Trebilcock, Founder, The United Republic"
         },
         "howItWorks": {
@@ -343,7 +343,7 @@
         },
         "fitCheck": {
             "title": "Is this you?",
-            "body": "Start with a free 20-minute conversation. No pitch — we'll tell you honestly whether the Program is right for you, and what it would look like.",
+            "body": "Start with a free 20-minute conversation. No pitch. We'll tell you honestly whether the Program is right for you, and what it would look like.",
             "cta": "Book your free 20 minute call",
             "points": [
                 "Revenue is there, but growth has flattened",
@@ -359,7 +359,7 @@
             "launchCharter": {
                 "eyebrow": "LAUNCH · DONE FOR YOU",
                 "title": "Everything you need to grow your business.",
-                "subtitle": "Strategy, positioning, brand, a website that converts and a 90-day plan — for new and small businesses that want to get it right the first time.",
+                "subtitle": "Strategy, positioning, brand, a website that converts and a 90-day plan. For new and small businesses that want to get it right the first time.",
                 "price": "$5,990 + GST",
                 "ctaLabel": "Book your free 20 minute call",
                 "intro": {
@@ -376,17 +376,17 @@
                         {
                             "heading": "The strategy",
                             "items": [
-                                "Foundations and Discovery — your goal for the business, the income it needs to produce, your capacity, and how you actually make money",
-                                "Opportunity and Positioning — what you're really selling, a competitor scan, and a position you can defend",
-                                "Your audience — defined, segmented and prioritised, with clear good-customer and bad-customer definitions",
-                                "The Growth Plan — priority segments, core messages, channels, and a 90-day action plan set out week by week"
+                                "Foundations and Discovery: your goal for the business, the income it needs to produce, your capacity, and how you actually make money",
+                                "Opportunity and Positioning: what you're really selling, a competitor scan, and a position you can defend",
+                                "Your audience: defined, segmented and prioritised, with clear good-customer and bad-customer definitions",
+                                "The Growth Plan: priority segments, core messages, channels, and a 90-day action plan set out week by week"
                             ]
                         },
                         {
                             "heading": "The build",
                             "items": [
                                 "Logo and brand guidelines",
-                                "A website built in Framer — up to five pages, designed for you, properly animated, and yours to edit",
+                                "A website built in Framer: up to five pages, designed for you, properly animated, and yours to edit",
                                 "Website copy, with two rounds of changes",
                                 "Web domain, a branded email address  and Google Workspace",
                                 "Google Business Profile",
@@ -410,7 +410,7 @@
                 "viabilitySession": {
                     "heading": "We check the numbers before we take your money.",
                     "body": [
-                        "Every engagement starts with a 90-minute Viability Session — $450, credited in full against the package if you proceed.",
+                        "Every engagement starts with a 90-minute Viability Session ($450), credited in full against the package if you proceed.",
                         "We work out your breakeven, how many customers you need to hit your income goal, and whether your capacity can actually deliver them. You leave with a one-page summary of your own numbers, whether or not you go further.",
                         "If the numbers don't work, we'll tell you."
                     ]
@@ -466,15 +466,15 @@
                         ],
                         [
                             "2",
-                            "Viability Session — $450, credited"
+                            "Viability Session: $450, credited"
                         ],
                         [
                             "3",
-                            "Strategy — working sessions and analysis"
+                            "Strategy: working sessions and analysis"
                         ],
                         [
                             "4",
-                            "Build — brand, website, copy and setup"
+                            "Build: brand, website, copy and setup"
                         ],
                         [
                             "5",
@@ -491,7 +491,7 @@
             "doItTogether": {
                 "eyebrow": "LAUNCH - DO IT TOGETHER",
                 "title": "Together we build the plan. Together we make sure it's the right one.",
-                "subtitle": "We run the sessions, bring the evidence and guide the decisions. You and your team work beside us — and keep the capability.",
+                "subtitle": "We run the sessions, bring the evidence and guide the decisions. You and your team work beside us, and keep the capability.",
                 "price": "From $9,550 + GST",
                 "pricePending": false,
                 "ctaLabel": "Book your free 20 minute call",
@@ -499,7 +499,7 @@
                     "heading": "How it works.",
                     "body": [
                         "We facilitate each stage, do the research and analysis that needs senior experience, and put the hard questions in front of you. Your team builds the plan with us in the room.",
-                        "When we finish, the thinking lives in your business — not in our filing system. We work together to execute the plan- so you get the capability lift and know how to manage it yourself."
+                        "When we finish, the thinking lives in your business, not in our filing system. We work together to execute the plan, so you get the capability lift and know how to manage it yourself."
                     ]
                 },
                 "included": {
@@ -511,14 +511,14 @@
                                 "Customer research and interviews",
                                 "Commercial and profitability analysis using your actual sales data",
                                 "Offer, pricing and conversion design",
-                                "Objectives and measures — the numbers worth tracking and how to capture them",
+                                "Objectives and measures: the numbers worth tracking and how to capture them",
                                 "The full Roadmap document, yours to keep",
                                 "Tools, templates and training",
                                 "12 weeks of implementation support"
                             ]
                         }
                     ],
-                    "note": "Brand and website build available as an add-on — $4,500.",
+                    "note": "Brand and website build available as an add-on for $4,500.",
                     "notePending": false
                 },
                 "suppliers": {
@@ -542,7 +542,7 @@
             "launchComplete": {
                 "eyebrow": "GROW · DONE FOR YOU",
                 "title": "We do the work. You get your business back.",
-                "subtitle": "The full Growth Program — researched, analysed, built and implemented. You make the decisions. We produce everything else.",
+                "subtitle": "The full Growth Program: researched, analysed, built and implemented. You make the decisions. We produce everything else.",
                 "price": "$14,950 + GST",
                 "ctaLabel": "Book your free 20 minute call",
                 "intro": {
@@ -557,13 +557,13 @@
                     "groups": [
                         {
                             "items": [
-                                "Evidence-based analysis of your actual sales — who's profitable, who isn't, and where revenue is leaking",
-                                "Offer, pricing and conversion design — usually the fastest money in the business",
-                                "Objectives and measures — the numbers worth tracking, and how to capture them",
+                                "Evidence-based analysis of your actual sales: who's profitable, who isn't, and where revenue is leaking",
+                                "Offer, pricing and conversion design, usually the fastest money in the business",
+                                "Objectives and measures: the numbers worth tracking, and how to capture them",
                                 "The full Roadmap document rather than the condensed Growth Plan",
                                 "CRM and lead tracking, with enquiry and quote templates",
                                 "A three-month content plan",
-                                "12 weeks of support — six fortnightly check-ins, three monthly numbers reviews and a full reset at week 12",
+                                "12 weeks of support: six fortnightly check-ins, three monthly numbers reviews and a full reset at week 12",
                                 "Formal handover with a recorded walkthrough of your tools"
                             ]
                         }
@@ -579,9 +579,9 @@
                 "fitList": {
                     "heading": "Best for",
                     "items": [
-                        "Speed — you want it done, not scheduled around your week",
-                        "Complexity — more than one audience, product line or market",
-                        "Limited internal capacity — no one to hand it to"
+                        "Speed: you want it done, not scheduled around your week",
+                        "Complexity: more than one audience, product line or market",
+                        "Limited internal capacity: no one to hand it to"
                     ],
                     "trailingNote": "$14,950 + GST. 40% on signing, 30% on delivery of the Roadmap, 30% at go-live. Starts with a free conversation and a $450 Viability Session, credited against the engagement."
                 },
@@ -605,7 +605,7 @@
                 "num": "01",
                 "title": "Understand",
                 "tagline": "We identify the problem underneath the surface",
-                "body": "Before any strategy work begins we need to understand what is really going on. Audience research, stakeholder insight, communications audits and strategic analysis — to define the real challenge rather than the symptoms.",
+                "body": "Before any strategy work begins we need to understand what is really going on. Audience research, stakeholder insight, communications audits and strategic analysis, to define the real challenge rather than the symptoms.",
                 "delivers": [
                     "Audience and stakeholder insight",
                     "Communications review and audit",
@@ -620,7 +620,7 @@
                 "num": "02",
                 "title": "Strategise",
                 "tagline": "We turn complexity into a clear plan.",
-                "body": "Once the objectives are clear we build the strategy — the frameworks, plans and direction that guide decisions, shape creative development and keep activity aligned to outcomes.",
+                "body": "Once the objectives are clear we build the strategy: the frameworks, plans and direction that guide decisions, shape creative development and keep activity aligned to outcomes.",
                 "delivers": [
                     "Communications strategy",
                     "Campaign architecture",
@@ -645,7 +645,7 @@
                     "Creative and content review",
                     "Alignment across stakeholders and partners"
                 ],
-                "approach": "This is where the tailored team model comes to life — technology,  creative, media, content producers, delivery teams and anything else the strategy needs, selected for the job rather than because they are already on the books."
+                "approach": "This is where the tailored team model comes to life: technology,  creative, media, content producers, delivery teams and anything else the strategy needs, selected for the job rather than because they are already on the books."
             },
             {
                 "num": "04",
@@ -673,9 +673,9 @@
     "services": {
         "hero": {
             "title": "Advisory Services",
-            "body": "The United Republic is built to be easy to work with. Each service has a defined shape, a clear scope and a realistic timeframe — and the right specialist partners to bring the strategy to life."
+            "body": "The United Republic is built to be easy to work with. Each service has a defined shape, a clear scope and a realistic timeframe, and the right specialist partners to bring the strategy to life."
         },
-        "quoteBlock": "We don't keep a fixed team. We build the right people around each challenge — bringing together specialist partners based on what the work needs, not what we happen to have in-house.",
+        "quoteBlock": "We don't keep a fixed team. We build the right people around each challenge, bringing together specialist partners based on what the work needs, not what we happen to have in-house.",
         "indexLabel": "What we offer",
         "sequence": {
             "title": "Engagement Pathways",
@@ -715,7 +715,7 @@
                 "title": "Fractional CMO",
                 "sub": "Senior marketing leadership without the full-time overhead",
                 "duration": "Ongoing retainer",
-                "body": "Experienced senior marketing leadership on a fractional basis — embedded in your business to own the strategy, lead the team and drive commercial outcomes, without the cost of a full-time executive hire.",
+                "body": "Experienced senior marketing leadership on a fractional basis, embedded in your business to own the strategy, lead the team and drive commercial outcomes, without the cost of a full-time executive hire.",
                 "included": [
                     "Marketing strategy ownership and accountability",
                     "Brand positioning and messaging direction",
@@ -750,7 +750,7 @@
                 "title": "Strategy Build",
                 "sub": "Create the plan that guides everything",
                 "duration": "6–12 weeks",
-                "body": "A complete communications or campaign strategy — from problem definition through to delivery frameworks, partner briefing and implementation guidance.",
+                "body": "A complete communications or campaign strategy, from problem definition through to delivery frameworks, partner briefing and implementation guidance.",
                 "included": [
                     "Full communications or campaign strategy",
                     "Message frameworks and narrative architecture",
@@ -768,7 +768,7 @@
                 "title": "Strategic Lead",
                 "sub": "Ongoing strategic guidance from problem to delivery",
                 "duration": "3–12 months or longer",
-                "body": "Embedded strategic leadership across a program — from problem definition through strategy development, partner briefing and implementation oversight. Your Strategic Lead owns the strategy across a body of work. ",
+                "body": "Embedded strategic leadership across a program, from problem definition through strategy development, partner briefing and implementation oversight. Your Strategic Lead owns the strategy across a body of work. ",
                 "included": [
                     "Full diagnostic and strategy development",
                     "Identification and briefing of delivery partners",
@@ -786,7 +786,7 @@
                 "title": "Review and Refine",
                 "sub": "Evaluate what worked and improve what's next",
                 "duration": "2–4 weeks",
-                "body": "Post-campaign evaluation, performance analysis and strategic refinement — to learn from what worked and plan smarter next steps.",
+                "body": "Post-campaign evaluation, performance analysis and strategic refinement, to learn from what worked and plan smarter next steps.",
                 "included": [
                     "Campaign performance evaluation",
                     "Audience and stakeholder feedback analysis",
@@ -800,7 +800,7 @@
         ],
         "cta": {
             "title": "Not sure which one you need?",
-            "body": "Start a conversation, let's grab a coffee or tell us what you're trying to achieve, and we'll tell you honestly which service fits — or whether you need one at all.",
+            "body": "Start a conversation, let's grab a coffee or tell us what you're trying to achieve, and we'll tell you honestly which service fits, or whether you need one at all.",
             "ctaLabel": "Book your free 20 minute call"
         }
     },
@@ -808,21 +808,21 @@
         "hero": {
             "eyebrow": "Strategic Advisory",
             "title": "Start with the right questions. Then build the right response.",
-            "paraA": "Independent counsel for government, brands and complex organisations — before the money goes into campaigns, content or creative.",
+            "paraA": "Independent counsel for government, brands and complex organisations, before the money goes into campaigns, content or creative.",
             "paraB": "We help you define your objectives, understand the real problem, shape the strategy that answers it, and brief the right specialists to deliver it.",
             "ctaPrimary": "Book your free 20 minute call"
         },
         "theCase": {
             "title": "Most briefs describe a symptom.",
-            "paraA": "By the time a brief reaches a marketing team or supplier, the problem has usually been defined by whoever wrote it — and the response is shaped by whatever the marketing team is set up to deliver or that supplier happens to sell.",
+            "paraA": "By the time a brief reaches a marketing team or supplier, the problem has usually been defined by whoever wrote it, and the response is shaped by whatever the marketing team is set up to deliver or that supplier happens to sell.",
             "paraB": "We work upstream of that. What are the business objectives? What is the organisation actually trying to change? Who has to behave differently for it to happen? Where is influence genuinely available, and where is it being spent for no return?",
             "paraC": "Only then does it make sense to talk about what the work should be."
         },
         "theDifference": {
             "title": "Structurally independent.",
-            "paraA": "We don't keep a fixed team. We build the right people around each challenge — bringing together specialist partners based on what the work needs, not what we happen to have in-house.",
+            "paraA": "We don't keep a fixed team. We build the right people around each challenge, bringing together specialist partners based on what the work needs, not what we happen to have in-house.",
             "paraB": "No permanent team. No payroll to feed. No preferred answer waiting for a question.",
-            "paraC": "And we stay through delivery. Strategy that isn't carried into execution isn't strategy — it's a document."
+            "paraC": "And we stay through delivery. Strategy that isn't carried into execution isn't strategy. It's a document."
         },
         "methodology": {
             "eyebrow": "Our methodology",
@@ -831,7 +831,7 @@
                 {
                     "num": "01",
                     "title": "Understand",
-                    "body": "Business objectives and success measures. Deep audience and stakeholder work. The true challenge rather than the presenting symptom — quantified, with segments, barriers and behaviours mapped.",
+                    "body": "Business objectives and success measures. Deep audience and stakeholder work. The true challenge rather than the presenting symptom, quantified, with segments, barriers and behaviours mapped.",
                     "items": [
                         "Strategic problem definition",
                         "Audience and stakeholder insight",
@@ -843,7 +843,7 @@
                 {
                     "num": "02",
                     "title": "Strategise",
-                    "body": "A customer-first roadmap, media-neutral from the outset. An Ideas Brief rather than a traditional creative brief. Built around message, medium and meaning — and the right idea, not the biggest one.",
+                    "body": "A customer-first roadmap, media-neutral from the outset. An Ideas Brief rather than a traditional creative brief. Built around message, medium and meaning, and the right idea, not the biggest one.",
                     "items": [
                         "The roadmap",
                         "Communications strategy",
@@ -888,7 +888,7 @@
             "body": "Twenty-five years of strategy, marketing and communications leadership across government, brand and behaviour-change work.",
             "principal": {
                 "name": "James Trebilcock",
-                "bio": "Principal Consultant. Twenty-five years leading strategy, communications and engagement for Toyota, Ford, Commonwealth Bank, Australia Post, DFAT Smartraveller and the Electoral Commission of South Australia — campaigns that have reached millions of Australians."
+                "bio": "Principal Consultant. Twenty-five years leading strategy, communications and engagement for Toyota, Ford, Commonwealth Bank, Australia Post, DFAT Smartraveller and the Electoral Commission of South Australia. Campaigns that have reached millions of Australians."
             }
         },
         "builtFor": {
@@ -947,13 +947,13 @@
         },
         "direct": {
             "title": "Or just get in touch",
-            "note": "Use a business address, PO box or coworking address — never a residential one."
+            "note": "Use a business address, PO box or coworking address, never a residential one."
         },
         "whatHappensNext": {
             "title": "What happens next",
             "steps": [
                 "We'll come back to you within one business day",
-                "A twenty-minute conversation — no charge, no pitch",
+                "A twenty-minute conversation, no charge, no pitch",
                 "If it's a fit, we'll set out what an engagement would look like and what it would cost"
             ],
             "footnote": "If it isn't a fit, we'll say so and point you somewhere better suited to your needs."
@@ -962,18 +962,18 @@
     "charterCourse": {
         "eyebrow": "Do It Yourself · Coming Soon",
         "title": "Grow it yourself.",
-        "subtitle": "The same Growth Program method, delivered as a structured online course you work through yourself — choosing the sections your business actually needs.",
+        "subtitle": "The same Growth Program method, delivered as a structured online course you work through yourself, choosing the sections your business actually needs.",
         "intro": "Every tool, template and worksheet we use with clients, with training that shows you how to use them. Built for owners who have more time than budget, and who would rather learn the thinking than buy the answer.",
         "covers": {
             "heading": "What it will cover",
             "items": [
                 "All five stages of the Growth Program, broken into workable sessions",
                 "The worksheets and templates we use in paid engagements",
-                "The numbers tools — breakeven, goal volume, capacity and pricing",
+                "The numbers tools: breakeven, goal volume, capacity and pricing",
                 "Video training for each stage",
                 "Worked examples from real businesses"
             ],
-            "note": "Modular — work through it in order, or take only the sections you need."
+            "note": "Modular: work through it in order, or take only the sections you need."
         },
         "honestNote": {
             "heading": "Coming Soon",
@@ -1193,19 +1193,19 @@
                     ],
                     "documents": [
                         {
-                            "title": "Print Ad — GCB",
+                            "title": "Print Ad: GCB",
                             "src": "/case-studies/toyota-assets/print-ad-gcb.pdf"
                         },
                         {
-                            "title": "Print Ad — DT",
+                            "title": "Print Ad: DT",
                             "src": "/case-studies/toyota-assets/print-ad-dt.pdf"
                         },
                         {
-                            "title": "Print Ad — BCM",
+                            "title": "Print Ad: BCM",
                             "src": "/case-studies/toyota-assets/print-ad-bcm.pdf"
                         },
                         {
-                            "title": "Print Ad — FP",
+                            "title": "Print Ad: FP",
                             "src": "/case-studies/toyota-assets/print-ad-fp.pdf"
                         }
                     ],
@@ -1271,7 +1271,7 @@
                             "poster": "/case-studies/ford-assets/falcon-50th-anniversary.jpg"
                         },
                         {
-                            "title": "Falcon — First TV Commercial",
+                            "title": "Falcon: First TV Commercial",
                             "src": "/case-studies/ford-assets/falcon-first-tv-commercial.mp4",
                             "poster": "/case-studies/ford-assets/falcon-first-tv-commercial.jpg"
                         },
@@ -1306,7 +1306,7 @@
                             "poster": "/case-studies/ford-assets/most-fuel-efficient-car.jpg"
                         },
                         {
-                            "title": "Ranger — Mother of All Dunes",
+                            "title": "Ranger: Mother of All Dunes",
                             "src": "/case-studies/ford-assets/ranger-mother-of-all-dunes.mp4",
                             "poster": "/case-studies/ford-assets/ranger-mother-of-all-dunes.jpg"
                         },
@@ -1499,39 +1499,39 @@
                     "documentsHeading": "Documents",
                     "videos": [
                         {
-                            "title": "Campaign — G30",
+                            "title": "Campaign: G30",
                             "src": "/case-studies/state-election-assets/campaign-g30.mp4",
                             "poster": "/case-studies/state-election-assets/campaign-g30.jpg"
                         },
                         {
-                            "title": "Campaign — V30",
+                            "title": "Campaign: V30",
                             "src": "/case-studies/state-election-assets/campaign-v30.mp4",
                             "poster": "/case-studies/state-election-assets/campaign-v30.jpg"
                         },
                         {
-                            "title": "Campaign — W15 (YouTube)",
+                            "title": "Campaign: W15 (YouTube)",
                             "src": "/case-studies/state-election-assets/campaign-w15-youtube.mp4",
                             "poster": "/case-studies/state-election-assets/campaign-w15-youtube.jpg"
                         },
                         {
-                            "title": "Majority — Urgency",
+                            "title": "Majority: Urgency",
                             "src": "/case-studies/state-election-assets/majority-urgency.mp4",
                             "poster": "/case-studies/state-election-assets/majority-urgency.jpg"
                         },
                         {
-                            "title": "Story — When (15 sec)",
+                            "title": "Story: When (15 sec)",
                             "src": "/case-studies/state-election-assets/story-when-15sec.mp4",
                             "poster": "/case-studies/state-election-assets/story-when-15sec.jpg"
                         },
                         {
-                            "title": "Ben & Liam — Enrol (6 sec)",
+                            "title": "Ben & Liam: Enrol (6 sec)",
                             "src": "/case-studies/state-election-assets/ben-and-liam-enrol-6sec.mp4",
                             "poster": "/case-studies/state-election-assets/ben-and-liam-enrol-6sec.jpg"
                         }
                     ],
                     "documents": [
                         {
-                            "title": "Press Ad — The Advertiser",
+                            "title": "Press Ad: The Advertiser",
                             "src": "/case-studies/state-election-assets/press-advertiser.pdf"
                         },
                         {
@@ -1604,34 +1604,34 @@
                     "documentsHeading": "Documents",
                     "videos": [
                         {
-                            "title": "Campaign — 15A",
+                            "title": "Campaign: 15A",
                             "src": "/case-studies/local-government-assets/campaign-15a.mp4",
                             "poster": "/case-studies/local-government-assets/campaign-15a.jpg"
                         },
                         {
-                            "title": "Campaign — 30A",
+                            "title": "Campaign: 30A",
                             "src": "/case-studies/local-government-assets/campaign-30a.mp4",
                             "poster": "/case-studies/local-government-assets/campaign-30a.jpg"
                         }
                     ],
                     "documents": [
                         {
-                            "title": "Press Ad — Half Page",
+                            "title": "Press Ad: Half Page",
                             "src": "/case-studies/local-government-assets/press-halfpage.pdf"
                         },
                         {
-                            "title": "Press Ad — Strip",
+                            "title": "Press Ad: Strip",
                             "src": "/case-studies/local-government-assets/press-strip.pdf"
                         },
                         {
-                            "title": "Press Ad — Quarter Vertical (Example)",
+                            "title": "Press Ad: Quarter Vertical (Example)",
                             "src": "/case-studies/local-government-assets/press-qtr-vert-example.pdf"
                         }
                     ],
                     "imagesHeading": "Images",
                     "images": [
                         {
-                            "title": "OOH — Billboard Planner",
+                            "title": "OOH: Billboard Planner",
                             "src": "/case-studies/local-government-assets/ooh-planner.jpg"
                         },
                         {
@@ -1754,7 +1754,7 @@
                             "poster": "/case-studies/voice-assets/enrol.jpg"
                         },
                         {
-                            "title": "Enrol — Urgency",
+                            "title": "Enrol: Urgency",
                             "src": "/case-studies/voice-assets/enrol-urgency.mp4",
                             "poster": "/case-studies/voice-assets/enrol-urgency.jpg"
                         },
@@ -1774,7 +1774,7 @@
                             "poster": "/case-studies/voice-assets/vote-awareness.jpg"
                         },
                         {
-                            "title": "Vote — Urgency",
+                            "title": "Vote: Urgency",
                             "src": "/case-studies/voice-assets/vote-urgency.mp4",
                             "poster": "/case-studies/voice-assets/vote-urgency.jpg"
                         }

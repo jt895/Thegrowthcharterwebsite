@@ -100,7 +100,7 @@ export default function ServicesPage({ onNavigate }: ServicesPageProps) {
         </div>
       </section>
 
-      {/* Quote block — relocated here from the foot of the page */}
+      {/* Quote block - relocated here from the foot of the page */}
       <section {...editableField("services.quoteBlock")} style={{ padding: "0 40px 64px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
           <div style={{ maxWidth: 820, margin: "0 auto", background: "#1A2820", borderLeft: "2px solid #2A9D78", padding: "28px 36px" }}>

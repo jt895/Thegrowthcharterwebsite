@@ -35,7 +35,7 @@ export const siteRoutes: SiteRoute[] = [
   {
     page: "home",
     path: "/",
-    title: "The United Republic | Strategy and Business Growth — Adelaide, South Australia",
+    title: "The United Republic | Strategy and Business Growth in Adelaide, South Australia",
     description:
       "Strategy and growth for Australian businesses and complex organisations. We find where growth is really available, set the priorities and build the capability to act. Based in South Australia.",
   },
@@ -44,14 +44,14 @@ export const siteRoutes: SiteRoute[] = [
     path: "/about/",
     title: "About | The United Republic",
     description:
-      "The United Republic is an independent Australian strategy and growth advisory led by James Trebilcock — 25 years across government, major brands and owner-led business. Based in South Australia.",
+      "The United Republic is an independent Australian strategy and growth advisory led by James Trebilcock, with 25 years across government, major brands and owner-led business. Based in South Australia.",
   },
   {
     page: "how-we-work",
     path: "/advisory-process/",
     title: "The Advisory Process | The United Republic",
     description:
-      "How The United Republic works — diagnose, design, direct and measure. Problem definition through to briefing and guiding the specialists who deliver the work.",
+      "How The United Republic works: diagnose, design, direct and measure. Problem definition through to briefing and guiding the specialists who deliver the work.",
   },
   {
     page: "services",
@@ -72,7 +72,7 @@ export const siteRoutes: SiteRoute[] = [
     path: "/growth-program/",
     title: "The Growth Program | The United Republic",
     description:
-      "The Growth Program finds the growth that's already in your business, sizes it in dollars, and gives you a plan you own — for Australian businesses ready for their next stage.",
+      "The Growth Program finds the growth that's already in your business, sizes it in dollars, and gives you a plan you own. For Australian businesses ready for their next stage.",
   },
   {
     page: "contact",
@@ -82,7 +82,7 @@ export const siteRoutes: SiteRoute[] = [
       "Get in touch with The United Republic. A twenty-minute conversation about what you're trying to change, and whether we're the right people to help.",
   },
 
-  // Growth Program product pages — stubs pending full product copy.
+  // Growth Program product pages - stubs pending full product copy.
   {
     page: "launch-charter",
     path: "/growth-program/launch/",
@@ -112,7 +112,7 @@ export const siteRoutes: SiteRoute[] = [
       "A guided course for owners who want to work through The Growth Program themselves, using structured tools, templates and training.",
   },
 
-  // Case studies — slugs preserved from the old site so no redirects are needed.
+  // Case studies - slugs preserved from the old site so no redirects are needed.
   // Stubs pending the full case-studies rewrite.
   {
     page: "case-studies",
@@ -124,25 +124,25 @@ export const siteRoutes: SiteRoute[] = [
   {
     page: "toyota-lifetime-advantages",
     path: "/case-studies/toyota-lifetime-advantages/",
-    title: "Toyota — Lifetime Advantages | Case Studies | The United Republic",
+    title: "Toyota: Lifetime Advantages | Case Studies | The United Republic",
     description: "How this campaign built long-term value for Toyota owners.",
   },
   {
     page: "ford-six-model-launches",
     path: "/case-studies/ford-six-model-launches/",
-    title: "Ford — Six Model Launches | Case Studies | The United Republic",
+    title: "Ford: Six Model Launches | Case Studies | The United Republic",
     description: "Six model launches for Ford, planned and delivered.",
   },
   {
     page: "commbank-little-card-big-rewards",
     path: "/case-studies/commbank-little-card-big-rewards/",
-    title: "CommBank — Little Card, Big Rewards | Case Studies | The United Republic",
+    title: "CommBank: Little Card, Big Rewards | Case Studies | The United Republic",
     description: "A rewards campaign for Commonwealth Bank.",
   },
   {
     page: "snack-brands-kettle-popcorn",
     path: "/case-studies/snack-brands-kettle-popcorn/",
-    title: "Snack Brands Kettle — Popcorn Launch | Case Studies | The United Republic",
+    title: "Snack Brands Kettle: Popcorn Launch | Case Studies | The United Republic",
     description: "Bringing Kettle popcorn to market for Snack Brands.",
   },
   {

@@ -7,7 +7,7 @@ declare global {
 
 // Set via the VITE_GA_MEASUREMENT_ID environment variable at build time.
 // Vite inlines import.meta.env.VITE_* statically, so this is undefined (and
-// analytics stays fully off) in any build/deploy that doesn't set it — local
+// analytics stays fully off) in any build/deploy that doesn't set it - local
 // dev included.
 const MEASUREMENT_ID = import.meta.env.VITE_GA_MEASUREMENT_ID as string | undefined;
 
@@ -40,7 +40,7 @@ export function trackPageview(path: string): void {
   window.gtag("event", "page_view", { page_path: path });
 }
 
-/** Fired on successful Netlify form submission — the site's conversion event. */
+/** Fired on successful Netlify form submission - the site's conversion event. */
 export function trackFormSubmit(formName: string): void {
   if (typeof window === "undefined" || !MEASUREMENT_ID || !window.gtag) return;
   window.gtag("event", "generate_lead", { form_name: formName });

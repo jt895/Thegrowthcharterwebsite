@@ -18,7 +18,7 @@ export default function AnimatedHeroMark({
   const cx = size / 2;
   const sp = speedMultiplier;
 
-  // Filled concentric rings — faithful to the real logo
+  // Filled concentric rings - faithful to the real logo
   const filled = [
     { r: 0.99, grey: "#5A5A5A", teal: "#0A5240" },
     { r: 0.83, grey: "#7A7A7A", teal: "#167055" },
@@ -28,7 +28,7 @@ export default function AnimatedHeroMark({
     { r: 0.19, grey: "#F2F2F2", teal: "#C4EEDD" },
   ];
 
-  // Orbiting stroke rings — duration divided by speedMultiplier = faster rotation
+  // Orbiting stroke rings - duration divided by speedMultiplier = faster rotation
   const orbiters = [
     { r: 0.95, duration: 32 / sp, dash: "6 14", width: 1.2, reverse: false, delay: 0 },
     { r: 0.75, duration: 22 / sp, dash: "3 9",  width: 0.9, reverse: true,  delay: -4 },
@@ -118,7 +118,7 @@ export default function AnimatedHeroMark({
 
         return (
           <g key={i} opacity={0.55}>
-            {/* Grey half — left */}
+            {/* Grey half - left */}
             <circle
               cx={cx} cy={cx} r={radius}
               stroke="#9B9B9B"
@@ -136,7 +136,7 @@ export default function AnimatedHeroMark({
                 repeatCount="indefinite"
               />
             </circle>
-            {/* Teal half — right */}
+            {/* Teal half - right */}
             <circle
               cx={cx} cy={cx} r={radius}
               stroke="#2A9D78"

@@ -108,7 +108,7 @@ function PTextLg1() {
     <div className="content-stretch flex flex-col items-start pt-[19.45px] relative shrink-0 w-full" data-name="p.text-lg">
       <div className="[word-break:break-word] flex flex-col font-['SF_Pro:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[#2c2c2c] text-[17px] tracking-[-0.442px] w-full" style={{ fontVariationSettings: '"wdth" 100' }}>
         <p className="leading-[28.9px] mb-0">{`Before any strategy work begins, we need to understand what's really going on. This phase combines audience research,`}</p>
-        <p className="leading-[28.9px]">stakeholder insight, communications audits and strategic analysis to define the real challenge—not just the symptoms.</p>
+        <p className="leading-[28.9px]">stakeholder insight, communications audits and strategic analysis to define the real challenge, not just the symptoms.</p>
       </div>
     </div>
   );
@@ -1058,9 +1058,9 @@ function PTextGray3() {
     <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="p.text-gray-700">
       <div className="[word-break:break-word] flex flex-col font-['SF_Pro:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[#2c2c2c] text-[17px] tracking-[-0.442px] w-full" style={{ fontVariationSettings: '"wdth" 100' }}>
         <p className="leading-[28.9px] mb-0">This is where the tailored team model comes to life. We</p>
-        <p className="leading-[28.9px] mb-0">{`identify, brief and guide specialist partners—whether that's`}</p>
+        <p className="leading-[28.9px] mb-0">{`identify, brief and guide specialist partners, whether that's`}</p>
         <p className="leading-[28.9px] mb-0">creative agencies, media partners, content producers, or</p>
-        <p className="leading-[28.9px] mb-0">delivery teams—to bring the strategy to life with the right</p>
+        <p className="leading-[28.9px] mb-0">delivery teams, to bring the strategy to life with the right</p>
         <p className="leading-[28.9px]">expertise.</p>
       </div>
     </div>

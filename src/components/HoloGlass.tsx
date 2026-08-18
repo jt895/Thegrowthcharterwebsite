@@ -6,7 +6,7 @@ interface HoloGlassProps {
 /**
  * Ambient background layer: a slow-rotating swirl of brand teal, a soft glass
  * overlay to keep foreground copy readable, and a faint light-sweep shimmer.
- * Purely decorative — absolutely positioned, no pointer events, safe to drop
+ * Purely decorative - absolutely positioned, no pointer events, safe to drop
  * behind any section that has `position: relative` (or is a flex container)
  * and `overflow: hidden`.
  */

@@ -22,7 +22,7 @@ function MailIcon() {
 
 /**
  * Fixed bottom bar shown only on narrow viewports (same <=768px breakpoint as
- * Nav's mobile menu). Sits at z-index 90 — below Nav's header (100) and full-screen
+ * Nav's mobile menu). Sits at z-index 90 - below Nav's header (100) and full-screen
  * mobile menu (99), so the mobile menu correctly covers it when open. body's
  * mobile padding-bottom (index.css) keeps this from permanently obscuring the
  * end of any page's content, including the Contact page's form fields.

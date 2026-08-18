@@ -298,7 +298,7 @@ export default function ProductPage({ onNavigate, page, product }: ProductPagePr
         <div style={{ maxWidth: 560, margin: "0 auto" }}>
           <h2 style={{ ...H2, textAlign: "center" }}>Ready to talk it through?</h2>
           <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, lineHeight: 1.7, color: "rgba(245,243,238,0.5)", textAlign: "center", marginBottom: 40 }}>
-            Tell us what you're trying to grow — we'll come back to you within one business day.
+            Tell us what you're trying to grow. We'll come back to you within one business day.
           </p>
           <EnquiryForm
             id="growth-charter-enquiry"

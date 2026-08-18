@@ -11,7 +11,7 @@ export function goToContact(onNavigate: (page: Page) => void, sourcePage: Page, 
   try {
     sessionStorage.setItem(SOURCE_KEY, sourcePage);
   } catch {
-    // sessionStorage unavailable (e.g. private browsing) — hidden field just stays blank
+    // sessionStorage unavailable (e.g. private browsing) - hidden field just stays blank
   }
   onNavigate("contact");
   if (formAnchor) {

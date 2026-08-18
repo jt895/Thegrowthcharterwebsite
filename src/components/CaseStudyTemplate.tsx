@@ -173,7 +173,7 @@ export default function CaseStudyTemplate({ content, page, formId, formName, onN
         </div>
       </section>
 
-      {/* The result — the payload of the page */}
+      {/* The result - the payload of the page */}
       <section style={{ background: "#0B5E48", padding: "64px 40px" }}>
         <div ref={r4} className="reveal" style={{ maxWidth: 900, margin: "0 auto", textAlign: "center" }}>
           <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#8FD9BE", marginBottom: 24 }}>
@@ -225,7 +225,7 @@ export default function CaseStudyTemplate({ content, page, formId, formName, onN
               <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 600, letterSpacing: "0.12em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 24 }}>
                 {content.gallery.imagesHeading}
               </p>
-              {/* Natural aspect ratio, not cropped to a fixed box — campaign stills here range from
+              {/* Natural aspect ratio, not cropped to a fixed box - campaign stills here range from
                   landscape billboards to portrait social/press mockups. */}
               <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))", gap: 24 }}>
                 {content.gallery.images.map((image) => (

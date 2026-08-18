@@ -141,7 +141,7 @@ body {
 
 @media (max-width: 768px) {
   /* Clears MobileContactBar (fixed bottom bar, same breakpoint) so it never
-     permanently covers the last content on any page — including the Contact
+     permanently covers the last content on any page - including the Contact
      page's form fields and submit buttons. */
   body {
     padding-bottom: calc(51px + env(safe-area-inset-bottom));
@@ -179,7 +179,7 @@ body {
   }
 }
 
-/* Holographic glass — ambient background layer (Hero, CTA) */
+/* Holographic glass - ambient background layer (Hero, CTA) */
 @keyframes holo-swirl {
   from { transform: rotate(0deg) scale(1.1); }
   to   { transform: rotate(360deg) scale(1.1); }

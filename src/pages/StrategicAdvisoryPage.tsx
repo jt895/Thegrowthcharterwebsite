@@ -178,7 +178,7 @@ export default function StrategicAdvisoryPage({ onNavigate }: StrategicAdvisoryP
           </div>
           <div style={{ maxWidth: 900, margin: "0 auto", display: "grid", gridTemplateColumns: "220px 1fr", gap: 48, alignItems: "start", background: "#1C1C1C", padding: "48px", borderTop: "2px solid #2A9D78" }}>
             <div style={{ height: 220, background: "#242424", border: "1px dashed rgba(255,255,255,0.15)", display: "flex", alignItems: "center", justifyContent: "center", textAlign: "center", padding: 16 }}>
-              <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 12, color: "#9B9B9B" }}>Photograph — to be supplied</span>
+              <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 12, color: "#9B9B9B" }}>Photograph to be supplied</span>
             </div>
             <div>
               <h3 style={{ fontFamily: "'Instrument Serif', serif", fontSize: 24, color: "#F5F3EE", fontWeight: 400, marginBottom: 16 }}>{strategicAdvisoryContent.evidence.principal.name}</h3>

@@ -36,7 +36,7 @@ export default function GrowthCharterPage({ onNavigate }: GrowthCharterPageProps
       {/* Hero */}
       <section {...editableField("growthCharter.hero")} style={{ padding: "100px 40px 64px", position: "relative", overflow: "hidden" }}>
         <HoloGlass />
-        {/* V1 spinning rings — prominent, less subtle */}
+        {/* V1 spinning rings - prominent, less subtle */}
         <div style={{ position: "absolute", right: "-2%", top: "50%", transform: "translateY(-50%)", pointerEvents: "none", animation: "fade-in 2.4s ease 0.5s both", zIndex: 1 }}>
           <SpinningRingMark size={640} opacity={0.55} speed={1.3} weight={1.6} />
         </div>
@@ -109,7 +109,7 @@ export default function GrowthCharterPage({ onNavigate }: GrowthCharterPageProps
         </div>
       </section>
 
-      {/* Ways to engage — scope × delivery matrix */}
+      {/* Ways to engage - scope × delivery matrix */}
       <section id="ways-to-work" {...editableField("growthCharter.waysToWork")} style={{ background: "#161616", padding: "64px 40px" }}>
         <div style={{ maxWidth: 1000, margin: "0 auto" }}>
           <div style={{ marginBottom: 40 }}>
@@ -122,7 +122,7 @@ export default function GrowthCharterPage({ onNavigate }: GrowthCharterPageProps
             </p>
           </div>
 
-          {/* Legend — sits tight against the table so it reads as the table's caption, not a continuation of the section intro above. */}
+          {/* Legend - sits tight against the table so it reads as the table's caption, not a continuation of the section intro above. */}
           <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.75, color: "rgba(245,243,238,0.5)", maxWidth: 620, marginBottom: 20 }}>
             {growthCharterContent.waysToWork.legend}
           </p>
@@ -227,10 +227,10 @@ export default function GrowthCharterPage({ onNavigate }: GrowthCharterPageProps
               "{growthCharterContent.centralIdea.quote}"
             </p>
             <div style={{ width: 40, height: 1, background: "rgba(143,217,190,0.4)", marginBottom: 20 }} />
-            {/* Matches the case-study attribution line style (CaseStudyTemplate.tsx) — the
+            {/* Matches the case-study attribution line style (CaseStudyTemplate.tsx) - the
                 site's one established byline/credibility caption convention. */}
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, color: "rgba(245,243,238,0.45)", margin: 0 }}>
-              — {growthCharterContent.centralIdea.quoteAttribution}
+              – {growthCharterContent.centralIdea.quoteAttribution}
             </p>
           </div>
         </div>

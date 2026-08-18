@@ -47,7 +47,7 @@ function PTextLg() {
     <div className="relative shrink-0 w-full" data-name="p.text-lg">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
         <div className="[word-break:break-word] flex flex-col font-['SF_Pro:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[#2c2c2c] text-[17px] tracking-[-0.442px] w-full" style={{ fontVariationSettings: '"wdth" 100' }}>
-          <p className="leading-[28.9px] mb-0">Every service can include campaign execution support—we help identify, brief and guide the right specialist</p>
+          <p className="leading-[28.9px] mb-0">Every service can include campaign execution support. We help identify, brief and guide the right specialist</p>
           <p className="leading-[28.9px]">partners to bring the strategy to life.</p>
         </div>
       </div>
@@ -501,7 +501,7 @@ function PTextLg2() {
   return (
     <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="p.text-lg">
       <div className="[word-break:break-word] flex flex-col font-['SF_Pro:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[#2c2c2c] text-[17px] tracking-[-0.442px] w-full" style={{ fontVariationSettings: '"wdth" 100' }}>
-        <p className="leading-[28.9px] mb-0">A complete communications or campaign strategy—from problem definition through to delivery frameworks, partner briefing</p>
+        <p className="leading-[28.9px] mb-0">A complete communications or campaign strategy, from problem definition through to delivery frameworks, partner briefing</p>
         <p className="leading-[28.9px]">and implementation guidance.</p>
       </div>
     </div>
@@ -951,7 +951,7 @@ function PTextLg3() {
   return (
     <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="p.text-lg">
       <div className="[word-break:break-word] flex flex-col font-['SF_Pro:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[#2c2c2c] text-[17px] tracking-[-0.442px] w-full" style={{ fontVariationSettings: '"wdth" 100' }}>
-        <p className="leading-[28.9px] mb-0">Embedded strategic leadership across the full project lifecycle—from initial problem definition through strategy development,</p>
+        <p className="leading-[28.9px] mb-0">Embedded strategic leadership across the full project lifecycle, from initial problem definition through strategy development,</p>
         <p className="leading-[28.9px]">partner briefing, and implementation oversight.</p>
       </div>
     </div>
@@ -1797,7 +1797,7 @@ function PTextXl5() {
     <div className="content-stretch flex flex-col items-center max-w-[768px] relative shrink-0 w-[768px]" data-name="p.text-xl">
       <div className="[word-break:break-word] flex flex-col font-['SF_Pro:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[#2c2c2c] text-[17px] text-center tracking-[-0.442px] whitespace-nowrap" style={{ fontVariationSettings: '"wdth" 100' }}>
         <p className="leading-[28.9px] mb-0">{`The United Republic doesn't run a fixed agency structure. We build the right team around each`}</p>
-        <p className="leading-[28.9px] mb-0">challenge—bringing together specialist partners for creative, media, content, production and delivery</p>
+        <p className="leading-[28.9px] mb-0">challenge, bringing together specialist partners for creative, media, content, production and delivery</p>
         <p className="leading-[28.9px]">based on what the work needs, not what we happen to have in-house.</p>
       </div>
     </div>

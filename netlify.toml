@@ -74,7 +74,7 @@
 
 # Old-site case study URLs: every slug below is preserved exactly as a route
 # on the new site (see src/routes.ts), so none of them need a redirect rule.
-# Listed here for the record — nothing to configure:
+# Listed here for the record. Nothing to configure:
 #   /case-studies/toyota-lifetime-advantages
 #   /case-studies/ford-six-model-launches
 #   /case-studies/commbank-little-card-big-rewards

@@ -3,7 +3,7 @@ import { useId } from "react";
 interface SpinningRingMarkProps {
   size?: number;
   opacity?: number;
-  /** Speed multiplier — lower = faster. Default 1. */
+  /** Speed multiplier - lower = faster. Default 1. */
   speed?: number;
   /** Stroke weight multiplier. Default 1. */
   weight?: number;
@@ -51,7 +51,7 @@ export default function SpinningRingMark({
           <rect x="0" y="0" width={size} height={size} fill={`url(#${uid}-fade)`} />
         </mask>
 
-        {/* Keyframes injected as SVG animate — use CSS classes for CW/CCW */}
+        {/* Keyframes injected as SVG animate - use CSS classes for CW/CCW */}
       </defs>
 
       <g mask={`url(#${uid}-m)`}>

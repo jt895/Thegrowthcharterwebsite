@@ -240,7 +240,7 @@ export default function Nav({ current, onNavigate }: NavProps) {
               {navContent.about}
             </a>
 
-            {/* Phone — persistent quick-contact, right-aligned next to the nav links */}
+            {/* Phone - persistent quick-contact, right-aligned next to the nav links */}
             <a
               href={siteContent.contact.phoneHref}
               style={{

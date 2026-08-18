@@ -47,7 +47,7 @@ export default function EnquiryForm({ id, formName, fields, submitLabel, sourceP
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
-    // Honeypot: real users never fill this in — bots that fill every field do.
+    // Honeypot: real users never fill this in - bots that fill every field do.
     if (values["bot-field"]) return;
 
     setStatus("submitting");
@@ -67,7 +67,7 @@ export default function EnquiryForm({ id, formName, fields, submitLabel, sourceP
   if (status === "success") {
     return (
       <div id={id} style={{ background: "#1A2820", borderLeft: `2px solid ${accent}`, padding: "40px 36px" }}>
-        <p style={{ fontFamily: "'Instrument Serif', serif", fontSize: 22, color: "#F5F3EE", marginBottom: 12 }}>Thanks — that's through.</p>
+        <p style={{ fontFamily: "'Instrument Serif', serif", fontSize: 22, color: "#F5F3EE", marginBottom: 12 }}>Thanks, that's through.</p>
         <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, lineHeight: 1.7, color: "rgba(245,243,238,0.65)", margin: 0 }}>
           We'll come back to you within one business day.
         </p>
@@ -85,12 +85,12 @@ export default function EnquiryForm({ id, formName, fields, submitLabel, sourceP
       style={{ display: "flex", flexDirection: "column", gap: 20 }}
     >
       {/* Netlify build-time form detection needs this literal input alongside the
-          form's `name` attribute — React doesn't render it automatically the way
+          form's `name` attribute - React doesn't render it automatically the way
           a static HTML form submitted through Netlify's own build step would. */}
       <input type="hidden" name="form-name" value={formName} />
       <input type="hidden" name="source-page" value={sourcePage} />
 
-      {/* Honeypot — hidden from real visitors via an off-screen wrapper, not display:none. */}
+      {/* Honeypot - hidden from real visitors via an off-screen wrapper, not display:none. */}
       <p style={{ position: "absolute", left: "-9999px", width: 1, height: 1, overflow: "hidden" }} aria-hidden="true">
         <label>
           Leave this field blank
@@ -134,7 +134,7 @@ export default function EnquiryForm({ id, formName, fields, submitLabel, sourceP
 
       {status === "error" && (
         <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, color: "#E38686", margin: 0 }}>
-          Something went wrong sending that — please try again, or email {" "}
+          Something went wrong sending that. Please try again, or email {" "}
           <a href="mailto:jt@theunitedrepublic.com.au" style={{ color: "#E38686" }}>jt@theunitedrepublic.com.au</a> directly.
         </p>
       )}

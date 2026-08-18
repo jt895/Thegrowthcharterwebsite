@@ -1,6 +1,6 @@
 # Open Graph share images
 
-Drop the site-wide default here as **`default.png`** (1200×630, PNG or JPG — update the
+Drop the site-wide default here as **`default.png`** (1200×630, PNG or JPG; update the
 extension in `index.html` and `scripts/prerender.mjs`'s `DEFAULT_OG_IMAGE` if you use JPG).
 
 Anything in this folder is served verbatim from `/og/...` (Vite copies `public/` straight

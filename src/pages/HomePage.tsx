@@ -75,7 +75,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
 
         <HoloGlass />
 
-        {/* Animated ring mark — exact v1 */}
+        {/* Animated ring mark - exact v1 */}
         <div style={{ position: "absolute", right: "6%", top: "50%", transform: "translateY(-50%)", opacity: 0.18, pointerEvents: "none", zIndex: 1 }} className="hero-ring">
           <svg width="520" height="520" viewBox="0 0 520 520" fill="none" ref={heroRef}>
             <defs>
