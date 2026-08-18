@@ -177,9 +177,11 @@ export default function StrategicAdvisoryPage({ onNavigate }: StrategicAdvisoryP
             </p>
           </div>
           <div style={{ maxWidth: 900, margin: "0 auto", display: "grid", gridTemplateColumns: "220px 1fr", gap: 48, alignItems: "start", background: "#1C1C1C", padding: "48px", borderTop: "2px solid #2A9D78" }}>
-            <div style={{ height: 220, background: "#242424", border: "1px dashed rgba(255,255,255,0.15)", display: "flex", alignItems: "center", justifyContent: "center", textAlign: "center", padding: 16 }}>
-              <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 12, color: "#9B9B9B" }}>Photograph to be supplied</span>
-            </div>
+            <img
+              src="/about/jt-headshot.jpg"
+              alt={strategicAdvisoryContent.evidence.principal.name}
+              style={{ width: "100%", height: 220, objectFit: "cover", objectPosition: "50% 20%", filter: "grayscale(0.15)", border: "1px solid rgba(42,157,120,0.25)" }}
+            />
             <div>
               <h3 style={{ fontFamily: "'Instrument Serif', serif", fontSize: 24, color: "#F5F3EE", fontWeight: 400, marginBottom: 16 }}>{strategicAdvisoryContent.evidence.principal.name}</h3>
               <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.8, color: "rgba(245,243,238,0.6)", margin: 0 }}>{strategicAdvisoryContent.evidence.principal.bio}</p>

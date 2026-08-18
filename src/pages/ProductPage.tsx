@@ -60,6 +60,7 @@ export interface ProductContent {
   fitList: ProductFitList;
   howItRuns?: ProductHowItRuns;
   paymentNote?: string;
+  flexScopeNote?: string;
   bespokeNote?: string;
   relatedCaseStudies?: string[];
 }
@@ -276,9 +277,16 @@ export default function ProductPage({ onNavigate, page, product }: ProductPagePr
         </section>
       )}
 
-      {product.bespokeNote && (
+      {(product.flexScopeNote || product.bespokeNote) && (
         <section style={{ padding: "0 40px 64px", textAlign: "center" }}>
-          <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, lineHeight: 1.75, color: "rgba(245,243,238,0.45)", maxWidth: 560, margin: "0 auto" }}>{product.bespokeNote}</p>
+          <div style={{ maxWidth: 560, margin: "0 auto", display: "flex", flexDirection: "column", gap: 16 }}>
+            {product.flexScopeNote && (
+              <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, lineHeight: 1.75, color: "rgba(245,243,238,0.45)", margin: 0 }}>{product.flexScopeNote}</p>
+            )}
+            {product.bespokeNote && (
+              <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, lineHeight: 1.75, color: "rgba(245,243,238,0.45)", margin: 0 }}>{product.bespokeNote}</p>
+            )}
+          </div>
         </section>
       )}
 
