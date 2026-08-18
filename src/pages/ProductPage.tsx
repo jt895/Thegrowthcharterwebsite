@@ -162,6 +162,16 @@ export default function ProductPage({ onNavigate, page, product }: ProductPagePr
               {product.included.notePending && <PendingTag />}
             </p>
           )}
+          {product.flexScopeNote && (
+            <div style={{ marginTop: 36, paddingTop: 28, borderTop: "1px solid rgba(255,255,255,0.08)", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 20 }}>
+              <p style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(19px, 2.2vw, 25px)", lineHeight: 1.3, color: "#F5F3EE", margin: 0, maxWidth: 620 }}>
+                {product.flexScopeNote}
+              </p>
+              <button onClick={scrollToForm} style={{ background: "none", border: "none", cursor: "pointer", display: "flex", alignItems: "center", gap: 8, fontFamily: "'Inter', sans-serif", fontSize: 15, color: "#2A9D78", padding: 0, whiteSpace: "nowrap" }}>
+                Get in touch <span>→</span>
+              </button>
+            </div>
+          )}
         </div>
       </section>
 
@@ -265,12 +275,9 @@ export default function ProductPage({ onNavigate, page, product }: ProductPagePr
         </section>
       )}
 
-      {(product.flexScopeNote || product.bespokeNote) && (
+      {product.bespokeNote && (
         <section style={{ padding: "0 40px 64px", textAlign: "center" }}>
           <div style={{ maxWidth: 560, margin: "0 auto", display: "flex", flexDirection: "column", gap: 16 }}>
-            {product.flexScopeNote && (
-              <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, lineHeight: 1.75, color: "rgba(245,243,238,0.45)", margin: 0 }}>{product.flexScopeNote}</p>
-            )}
             {product.bespokeNote && (
               <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, lineHeight: 1.75, color: "rgba(245,243,238,0.45)", margin: 0 }}>{product.bespokeNote}</p>
             )}

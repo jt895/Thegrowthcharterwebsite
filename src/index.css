@@ -62,6 +62,18 @@ body {
 .reveal-delay-4 { transition-delay: 0.4s; }
 .reveal-delay-5 { transition-delay: 0.5s; }
 
+/* .reveal starts at opacity 0 and only becomes visible once useReveal marks it,
+   so any reader whose JS never runs would see prerendered copy as blank space.
+   Show it outright when scripting is off, and skip the movement entirely for
+   anyone who has asked for reduced motion. */
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
 /* Ring mark animation */
 @keyframes ring-spin {
   from { transform: rotate(0deg); }

@@ -45,6 +45,13 @@
       }
     </script>
     <!-- figma:head-end -->
+    <noscript>
+      <style>
+        /* Scroll reveals are JS-driven; without it the prerendered copy would
+           stay at opacity 0. Show everything instead. */
+        .reveal { opacity: 1 !important; transform: none !important; }
+      </style>
+    </noscript>
   </head>
   <body>
     <!-- figma:body-start -->

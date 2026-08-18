@@ -17,8 +17,9 @@ import { useEffect, useRef } from "react";
  *    old 0.06-0.12 thresholds. The bottom rootMargin, not the ratio, is what
  *    holds the trigger until the section has properly arrived, and it behaves
  *    the same at any height.
- *  - An immediate check at mount, so anything already on screen (above the
- *    fold, a short page, a deep link) never waits on the observer at all.
+ *  - An immediate check at mount, so anything already on screen or already
+ *    scrolled past (above the fold, a short page, a deep link, or a cold load
+ *    that the reader scrolled during hydration) never waits on the observer.
  *  - A passive scroll/resize backstop, so a section still reveals if its
  *    observer callback never arrives. Unlike a timed fallback this keeps the
  *    reveal tied to actually scrolling, rather than flipping the whole page
@@ -30,10 +31,18 @@ import { useEffect, useRef } from "react";
 const VIEWPORT_BIAS = 0.92;
 const ROOT_MARGIN = "0px 0px -8% 0px";
 
+// True once the element's top has passed the trigger line - which covers both
+// "on screen now" and "already scrolled past". The scrolled-past half matters:
+// these pages are prerendered, so on a cold load the HTML (and its opacity: 0)
+// is on screen well before the JS hydrates. Scroll down during that window and
+// a section is already above the viewport by the time its observer starts
+// watching, so it never intersects and never reveals - invisible until you
+// reload. On a warm cache hydration wins the race and it looks fine, which is
+// exactly the "only shows up after a refresh" report.
 function isInView(el: HTMLElement) {
   const rect = el.getBoundingClientRect();
   const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
-  return rect.top < viewportHeight * VIEWPORT_BIAS && rect.bottom > 0;
+  return rect.top < viewportHeight * VIEWPORT_BIAS;
 }
 
 export function useReveal() {

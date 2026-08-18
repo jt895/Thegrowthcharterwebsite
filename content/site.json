@@ -485,7 +485,7 @@
                     ]
                 },
                 "paymentNote": "$5,990 + GST. 40% on signing, 30% on delivery of your Growth Plan, 30% at go-live.",
-                "flexScopeNote": "Don't need everything in LAUNCH, or need something extra, like a booking system? Tell us what you need and we'll build a package for you.",
+                "flexScopeNote": "Don't need everything here, or need something extra, like a booking system? Tell us what you need and we'll build a package for you.",
                 "relatedCaseStudies": [
                     "snack-brands-kettle-popcorn",
                     "adelaide-hills-wine-region"
@@ -646,7 +646,8 @@
                 "relatedCaseStudies": [
                     "ford-six-model-launches",
                     "commbank-little-card-big-rewards"
-                ]
+                ],
+                "flexScopeNote": "Don't need everything here, or need something extra, like a booking system? Tell us what you need and we'll build a package for you."
             }
         }
     },

@@ -54,7 +54,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
   };
 
   const heroRef = useRef<SVGSVGElement>(null);
-  const r3 = useReveal(), r4 = useReveal(), r5 = useReveal();
+  const r3 = useReveal(), r4 = useReveal(), r5 = useReveal(), r6 = useReveal();
 
   return (
     <div style={{ background: "#1C1C1C", minHeight: "100vh" }}>
@@ -186,7 +186,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
               {homeContent.whyTur.title}
             </h2>
           </div>
-          <div className="reveal reveal-delay-1" style={{ marginBottom: 28 }}>
+          <div ref={r6} className="reveal reveal-delay-1" style={{ marginBottom: 28 }}>
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 16, lineHeight: 1.8, color: "rgba(245,243,238,0.55)", maxWidth: 680 }}>
               {homeContent.whyTur.body}
             </p>

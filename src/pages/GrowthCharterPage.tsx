@@ -5,7 +5,6 @@ import { growthCharterContent } from "../data/content";
 import { editableField } from "../data/editable";
 import { goToContact } from "../lib/contactNav";
 import type { Page } from "../routes";
-import { useReveal } from "../hooks/useReveal";
 
 interface GrowthCharterPageProps {
   onNavigate: (page: Page) => void;
@@ -180,16 +179,16 @@ export default function GrowthCharterPage({ onNavigate }: GrowthCharterPageProps
           </p>
 
           <div style={{ marginTop: 32, display: "flex", flexDirection: "column", gap: 24 }}>
-            <div style={{ paddingTop: 32, borderTop: "1px solid rgba(255,255,255,0.08)", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 16 }}>
-              <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, color: "rgba(245,243,238,0.55)", margin: 0 }}>{growthCharterContent.waysToWork.charterCourseNote}</p>
-              <button onClick={() => nav("charter-course")} style={{ background: "none", border: "none", cursor: "pointer", display: "flex", alignItems: "center", gap: 8, fontFamily: "'Inter', sans-serif", fontSize: 14, color: "#2A9D78", padding: 0 }}>
-                {growthCharterContent.waysToWork.charterCourseLinkLabel} <span>→</span>
+            <div style={{ paddingTop: 32, borderTop: "1px solid rgba(255,255,255,0.08)", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 20 }}>
+              <p style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(19px, 2.2vw, 25px)", lineHeight: 1.3, color: "#F5F3EE", margin: 0, maxWidth: 620 }}>{growthCharterContent.waysToWork.customPackageNote}</p>
+              <button onClick={contact} style={{ background: "none", border: "none", cursor: "pointer", display: "flex", alignItems: "center", gap: 8, fontFamily: "'Inter', sans-serif", fontSize: 15, color: "#2A9D78", padding: 0, whiteSpace: "nowrap" }}>
+                {growthCharterContent.waysToWork.customPackageCtaLabel} <span>→</span>
               </button>
             </div>
             <div style={{ paddingTop: 24, borderTop: "1px solid rgba(255,255,255,0.06)", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 16 }}>
-              <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, color: "rgba(245,243,238,0.55)", margin: 0 }}>{growthCharterContent.waysToWork.customPackageNote}</p>
-              <button onClick={contact} style={{ background: "none", border: "none", cursor: "pointer", display: "flex", alignItems: "center", gap: 8, fontFamily: "'Inter', sans-serif", fontSize: 14, color: "#2A9D78", padding: 0 }}>
-                {growthCharterContent.waysToWork.customPackageCtaLabel} <span>→</span>
+              <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, color: "rgba(245,243,238,0.55)", margin: 0 }}>{growthCharterContent.waysToWork.charterCourseNote}</p>
+              <button onClick={() => nav("charter-course")} style={{ background: "none", border: "none", cursor: "pointer", display: "flex", alignItems: "center", gap: 8, fontFamily: "'Inter', sans-serif", fontSize: 14, color: "#2A9D78", padding: 0 }}>
+                {growthCharterContent.waysToWork.charterCourseLinkLabel} <span>→</span>
               </button>
             </div>
           </div>
