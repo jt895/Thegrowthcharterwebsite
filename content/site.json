@@ -1194,19 +1194,23 @@
                     "documents": [
                         {
                             "title": "Print Ad: GCB",
-                            "src": "/case-studies/toyota-assets/print-ad-gcb.pdf"
+                            "src": "/case-studies/toyota-assets/print-ad-gcb.pdf",
+                            "thumbnail": "/case-studies/toyota-assets/print-ad-gcb.preview.jpg"
                         },
                         {
                             "title": "Print Ad: DT",
-                            "src": "/case-studies/toyota-assets/print-ad-dt.pdf"
+                            "src": "/case-studies/toyota-assets/print-ad-dt.pdf",
+                            "thumbnail": "/case-studies/toyota-assets/print-ad-dt.preview.jpg"
                         },
                         {
                             "title": "Print Ad: BCM",
-                            "src": "/case-studies/toyota-assets/print-ad-bcm.pdf"
+                            "src": "/case-studies/toyota-assets/print-ad-bcm.pdf",
+                            "thumbnail": "/case-studies/toyota-assets/print-ad-bcm.preview.jpg"
                         },
                         {
                             "title": "Print Ad: FP",
-                            "src": "/case-studies/toyota-assets/print-ad-fp.pdf"
+                            "src": "/case-studies/toyota-assets/print-ad-fp.pdf",
+                            "thumbnail": "/case-studies/toyota-assets/print-ad-fp.preview.jpg"
                         }
                     ],
                     "imagesHeading": "Images",
@@ -1532,26 +1536,31 @@
                     "documents": [
                         {
                             "title": "Press Ad: The Advertiser",
-                            "src": "/case-studies/state-election-assets/press-advertiser.pdf"
+                            "src": "/case-studies/state-election-assets/press-advertiser.pdf",
+                            "thumbnail": "/case-studies/state-election-assets/press-advertiser.preview.jpg"
                         },
                         {
                             "title": "Postal Voting Guide",
-                            "src": "/case-studies/state-election-assets/postal-voting-guide.pdf"
+                            "src": "/case-studies/state-election-assets/postal-voting-guide.pdf",
+                            "thumbnail": "/case-studies/state-election-assets/postal-voting-guide.preview.jpg"
                         },
                         {
                             "title": "Official Guide",
-                            "src": "/case-studies/state-election-assets/official-guide.pdf"
+                            "src": "/case-studies/state-election-assets/official-guide.pdf",
+                            "thumbnail": "/case-studies/state-election-assets/official-guide.preview.jpg"
                         }
                     ],
                     "imagesHeading": "Images",
                     "images": [
                         {
                             "title": "Saturday Press Ad",
-                            "src": "/case-studies/state-election-assets/saturday-press-ad.jpg"
+                            "src": "/case-studies/state-election-assets/saturday-press-ad.jpg",
+                            "thumbnail": "/case-studies/state-election-assets/saturday-press-ad.thumb.jpg"
                         },
                         {
                             "title": "Youth Letter",
-                            "src": "/case-studies/state-election-assets/youth-letter.jpg"
+                            "src": "/case-studies/state-election-assets/youth-letter.jpg",
+                            "thumbnail": "/case-studies/state-election-assets/youth-letter.jpg"
                         }
                     ]
                 },
@@ -1617,26 +1626,31 @@
                     "documents": [
                         {
                             "title": "Press Ad: Half Page",
-                            "src": "/case-studies/local-government-assets/press-halfpage.pdf"
+                            "src": "/case-studies/local-government-assets/press-halfpage.pdf",
+                            "thumbnail": "/case-studies/local-government-assets/press-halfpage.preview.jpg"
                         },
                         {
                             "title": "Press Ad: Strip",
-                            "src": "/case-studies/local-government-assets/press-strip.pdf"
+                            "src": "/case-studies/local-government-assets/press-strip.pdf",
+                            "thumbnail": "/case-studies/local-government-assets/press-strip.preview.jpg"
                         },
                         {
                             "title": "Press Ad: Quarter Vertical (Example)",
-                            "src": "/case-studies/local-government-assets/press-qtr-vert-example.pdf"
+                            "src": "/case-studies/local-government-assets/press-qtr-vert-example.pdf",
+                            "thumbnail": "/case-studies/local-government-assets/press-qtr-vert-example.preview.jpg"
                         }
                     ],
                     "imagesHeading": "Images",
                     "images": [
                         {
                             "title": "OOH: Billboard Planner",
-                            "src": "/case-studies/local-government-assets/ooh-planner.jpg"
+                            "src": "/case-studies/local-government-assets/ooh-planner.jpg",
+                            "thumbnail": "/case-studies/local-government-assets/ooh-planner.thumb.jpg"
                         },
                         {
                             "title": "Social Post (In Situ)",
-                            "src": "/case-studies/local-government-assets/social-post-insitu.jpg"
+                            "src": "/case-studies/local-government-assets/social-post-insitu.jpg",
+                            "thumbnail": "/case-studies/local-government-assets/social-post-insitu.thumb.jpg"
                         }
                     ]
                 },
@@ -1690,7 +1704,8 @@
                     "documents": [
                         {
                             "title": "Brand Pyramid",
-                            "src": "/case-studies/adelaide-hills-assets/brand-pyramid.pdf"
+                            "src": "/case-studies/adelaide-hills-assets/brand-pyramid.pdf",
+                            "thumbnail": "/case-studies/adelaide-hills-assets/brand-pyramid.preview.jpg"
                         }
                     ],
                     "imagesHeading": "Images",
@@ -1782,19 +1797,23 @@
                     "documents": [
                         {
                             "title": "Vote Poster (A2)",
-                            "src": "/case-studies/voice-assets/vote-poster-a2.pdf"
+                            "src": "/case-studies/voice-assets/vote-poster-a2.pdf",
+                            "thumbnail": "/case-studies/voice-assets/vote-poster-a2.preview.jpg"
                         },
                         {
                             "title": "Enrol Press Ad",
-                            "src": "/case-studies/voice-assets/enrol-press-ad.pdf"
+                            "src": "/case-studies/voice-assets/enrol-press-ad.pdf",
+                            "thumbnail": "/case-studies/voice-assets/enrol-press-ad.preview.jpg"
                         },
                         {
                             "title": "Election Brochure",
-                            "src": "/case-studies/voice-assets/brochure.pdf"
+                            "src": "/case-studies/voice-assets/brochure.pdf",
+                            "thumbnail": "/case-studies/voice-assets/brochure.preview.jpg"
                         },
                         {
                             "title": "Nominations Guide (A3)",
-                            "src": "/case-studies/voice-assets/nominations-guide-a3.pdf"
+                            "src": "/case-studies/voice-assets/nominations-guide-a3.pdf",
+                            "thumbnail": "/case-studies/voice-assets/nominations-guide-a3.preview.jpg"
                         }
                     ],
                     "imagesHeading": "Images",

@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import EnquiryForm from "./EnquiryForm";
 import { readContactSource } from "../lib/contactNav";
 import { pathForPage, type Page } from "../routes";
@@ -12,11 +12,15 @@ export interface CaseStudyGalleryVideo {
 export interface CaseStudyGalleryDocument {
   title: string;
   src: string;
+  /** Rendered page preview. Falls back to a generic document tile when absent. */
+  thumbnail?: string;
 }
 
 export interface CaseStudyGalleryImage {
   title: string;
   src: string;
+  /** Downscaled version used in the grid. Falls back to `src`. */
+  thumbnail?: string;
 }
 
 export interface CaseStudyContent {
@@ -80,12 +84,106 @@ function videoMimeType(src: string): string {
   return ext === "mov" ? "video/quicktime" : "video/mp4";
 }
 
-function DocumentIcon() {
+function DocumentIcon({ size = 20 }: { size?: number }) {
   return (
-    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" style={{ flexShrink: 0 }}>
+    <svg width={size} height={size} viewBox="0 0 20 20" fill="none" style={{ flexShrink: 0 }}>
       <path d="M5 2h6l4 4v10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1Z" stroke="#2A9D78" strokeWidth="1.2" strokeLinejoin="round" />
       <path d="M11 2v4h4" stroke="#2A9D78" strokeWidth="1.2" strokeLinejoin="round" />
     </svg>
+  );
+}
+
+function ExpandIcon() {
+  return (
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" style={{ flexShrink: 0 }}>
+      <path d="M5.5 1.5H1.5V5.5M8.5 1.5H12.5V5.5M5.5 12.5H1.5V8.5M8.5 12.5H12.5V8.5" stroke="#F5F3EE" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
+/** Grid tile shared by the image and document galleries. */
+const thumbTile = {
+  position: "relative", display: "block", width: "100%", padding: 0, margin: 0,
+  aspectRatio: "3 / 4", background: "#161616", border: "1px solid rgba(245,243,238,0.08)",
+  overflow: "hidden", cursor: "pointer", transition: "border-color 0.2s, background 0.2s",
+} as const;
+
+const thumbImg = {
+  width: "100%", height: "100%", objectFit: "contain", display: "block",
+} as const;
+
+const thumbBadge = {
+  position: "absolute", left: 8, bottom: 8, display: "inline-flex", alignItems: "center", gap: 6,
+  background: "rgba(11,11,11,0.72)", padding: "5px 9px",
+  fontFamily: "'Inter', sans-serif", fontSize: 10, fontWeight: 600, letterSpacing: "0.1em",
+  textTransform: "uppercase", color: "rgba(245,243,238,0.9)",
+} as const;
+
+const thumbCaption = {
+  fontFamily: "'Inter', sans-serif", fontSize: 13, lineHeight: 1.5,
+  color: "rgba(245,243,238,0.55)", marginTop: 10, marginBottom: 0,
+} as const;
+
+const thumbGrid = {
+  display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))", gap: 24,
+} as const;
+
+function highlightTile(el: HTMLElement, on: boolean) {
+  el.style.borderColor = on ? "rgba(42,157,120,0.9)" : "rgba(245,243,238,0.08)";
+  el.style.background = on ? "#1E1E1E" : "#161616";
+}
+
+interface LightboxState {
+  src: string;
+  title: string;
+}
+
+function Lightbox({ item, onClose }: { item: LightboxState; onClose: () => void }) {
+  useEffect(() => {
+    const onKey = (event: KeyboardEvent) => { if (event.key === "Escape") onClose(); };
+    document.addEventListener("keydown", onKey);
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.removeEventListener("keydown", onKey);
+      document.body.style.overflow = previousOverflow;
+    };
+  }, [onClose]);
+
+  return (
+    <div
+      role="dialog"
+      aria-modal="true"
+      aria-label={item.title}
+      onClick={onClose}
+      style={{
+        position: "fixed", inset: 0, zIndex: 1000, background: "rgba(10,10,10,0.94)",
+        display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center",
+        gap: 16, padding: "56px 24px 32px", cursor: "zoom-out",
+      }}
+    >
+      <button
+        type="button"
+        onClick={onClose}
+        aria-label="Close"
+        style={{
+          position: "absolute", top: 20, right: 24, background: "none", border: "none", cursor: "pointer",
+          fontFamily: "'Inter', sans-serif", fontSize: 22, lineHeight: 1, color: "rgba(245,243,238,0.7)", padding: 8,
+        }}
+      >
+        ×
+      </button>
+      {/* The overlay closes on click; stop the image itself from swallowing that intent silently. */}
+      <img
+        src={item.src}
+        alt={item.title}
+        onClick={(event) => event.stopPropagation()}
+        style={{ maxWidth: "min(1100px, 92vw)", maxHeight: "82vh", objectFit: "contain", cursor: "default" }}
+      />
+      <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, color: "rgba(245,243,238,0.6)", margin: 0, textAlign: "center" }}>
+        {item.title}
+      </p>
+    </div>
   );
 }
 
@@ -94,6 +192,8 @@ export default function CaseStudyTemplate({ content, page, formId, formName, onN
   const sourcePage = readContactSource() || page;
 
   const r1 = useReveal(), r2 = useReveal(), r3 = useReveal(), r4 = useReveal(), r5 = useReveal(), r6 = useReveal(), r7 = useReveal();
+
+  const [lightbox, setLightbox] = useState<LightboxState | null>(null);
 
   return (
     <div style={{ background: "#1C1C1C", minHeight: "100vh" }}>
@@ -227,18 +327,23 @@ export default function CaseStudyTemplate({ content, page, formId, formName, onN
               </p>
               {/* Natural aspect ratio, not cropped to a fixed box - campaign stills here range from
                   landscape billboards to portrait social/press mockups. */}
-              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))", gap: 24 }}>
+              <div style={thumbGrid}>
                 {content.gallery.images.map((image) => (
                   <div key={image.src}>
-                    <img
-                      src={image.src}
-                      alt=""
-                      loading="lazy"
-                      style={{ width: "100%", height: "auto", display: "block", background: "#161616" }}
-                    />
-                    <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, color: "rgba(245,243,238,0.55)", marginTop: 10, marginBottom: 0 }}>
-                      {image.title}
-                    </p>
+                    <button
+                      type="button"
+                      onClick={() => setLightbox({ src: image.src, title: image.title })}
+                      aria-label={`View ${image.title} full size`}
+                      style={thumbTile}
+                      onMouseEnter={(e) => highlightTile(e.currentTarget, true)}
+                      onMouseLeave={(e) => highlightTile(e.currentTarget, false)}
+                      onFocus={(e) => highlightTile(e.currentTarget, true)}
+                      onBlur={(e) => highlightTile(e.currentTarget, false)}
+                    >
+                      <img src={image.thumbnail || image.src} alt="" loading="lazy" style={thumbImg} />
+                      <span style={thumbBadge}><ExpandIcon />View</span>
+                    </button>
+                    <p style={thumbCaption}>{image.title}</p>
                   </div>
                 ))}
               </div>
@@ -250,23 +355,32 @@ export default function CaseStudyTemplate({ content, page, formId, formName, onN
               <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 600, letterSpacing: "0.12em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 24 }}>
                 {content.gallery.documentsHeading}
               </p>
-              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: 2 }}>
+              <div style={thumbGrid}>
                 {content.gallery.documents.map((doc) => (
-                  <a
-                    key={doc.src}
-                    href={doc.src}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{
-                      display: "flex", alignItems: "center", gap: 12, background: "#161616",
-                      padding: "18px 20px", textDecoration: "none", transition: "background 0.2s",
-                    }}
-                    onMouseEnter={(e) => { e.currentTarget.style.background = "#1E1E1E"; }}
-                    onMouseLeave={(e) => { e.currentTarget.style.background = "#161616"; }}
-                  >
-                    <DocumentIcon />
-                    <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, color: "rgba(245,243,238,0.75)" }}>{doc.title}</span>
-                  </a>
+                  <div key={doc.src}>
+                    {/* PDFs open in a new tab so the browser's own viewer handles paging and download. */}
+                    <a
+                      href={doc.src}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`Open ${doc.title} (PDF) in a new tab`}
+                      style={thumbTile}
+                      onMouseEnter={(e) => highlightTile(e.currentTarget, true)}
+                      onMouseLeave={(e) => highlightTile(e.currentTarget, false)}
+                      onFocus={(e) => highlightTile(e.currentTarget, true)}
+                      onBlur={(e) => highlightTile(e.currentTarget, false)}
+                    >
+                      {doc.thumbnail ? (
+                        <img src={doc.thumbnail} alt="" loading="lazy" style={thumbImg} />
+                      ) : (
+                        <span style={{ width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                          <DocumentIcon />
+                        </span>
+                      )}
+                      <span style={thumbBadge}><DocumentIcon size={12} />PDF</span>
+                    </a>
+                    <p style={thumbCaption}>{doc.title}</p>
+                  </div>
                 ))}
               </div>
             </div>
@@ -314,6 +428,8 @@ export default function CaseStudyTemplate({ content, page, formId, formName, onN
           />
         </div>
       </section>
+
+      {lightbox && <Lightbox item={lightbox} onClose={() => setLightbox(null)} />}
 
       <div style={{ textAlign: "center", padding: "0 40px 80px" }}>
         <button
