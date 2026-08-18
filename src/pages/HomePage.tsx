@@ -71,7 +71,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
     <div style={{ background: "#1C1C1C", minHeight: "100vh" }}>
 
       {/* Hero */}
-      <section {...editableField("home.hero")} style={{ padding: "100px 40px 64px", maxWidth: 1280, margin: "0 auto", position: "relative", overflow: "hidden" }}>
+      <section {...editableField("home.hero")} style={{ padding: "100px 40px 32px", maxWidth: 1280, margin: "0 auto", position: "relative", overflow: "hidden" }}>
 
         <HoloGlass />
 
@@ -125,16 +125,16 @@ export default function HomePage({ onNavigate }: HomePageProps) {
         </div>
 
         {/* Scroll indicator */}
-        <div style={{ display: "flex", alignItems: "center", gap: 12, marginTop: 64 }}>
-          <div style={{ width: 1, height: 48, background: "linear-gradient(to bottom, #2A9D78, transparent)" }} />
+        <div style={{ display: "flex", alignItems: "center", gap: 12, marginTop: 28 }}>
+          <div style={{ width: 1, height: 28, background: "linear-gradient(to bottom, #2A9D78, transparent)" }} />
           <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, letterSpacing: "0.12em", textTransform: "uppercase", color: "#9B9B9B" }}>{homeContent.hero.scrollLabel}</span>
         </div>
       </section>
 
       {/* Two Paths */}
-      <section id="two-paths" {...editableField("home.twoPaths")} style={{ padding: "64px 40px" }}>
+      <section id="two-paths" {...editableField("home.twoPaths")} style={{ padding: "40px 40px 36px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
-          <div ref={r3} className="reveal" style={{ textAlign: "center", marginBottom: 48 }}>
+          <div ref={r3} className="reveal" style={{ textAlign: "center", marginBottom: 32 }}>
             <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(30px, 4vw, 48px)", color: "#F5F3EE", fontWeight: 400, lineHeight: 1.15 }}>
               {homeContent.twoPaths.title}
             </h2>
@@ -189,15 +189,15 @@ export default function HomePage({ onNavigate }: HomePageProps) {
       </section>
 
       {/* Why TUR */}
-      <section {...editableField("home.whyTur")} style={{ background: "#161616", padding: "64px 40px" }}>
+      <section {...editableField("home.whyTur")} style={{ background: "#161616", padding: "40px 40px 64px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
-          <div ref={r4} className="reveal" style={{ marginBottom: 40 }}>
+          <div ref={r4} className="reveal" style={{ marginBottom: 24 }}>
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 20 }}>{homeContent.whyTur.eyebrow}</p>
             <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(30px, 4vw, 48px)", color: "#F5F3EE", fontWeight: 400, lineHeight: 1.15, maxWidth: 600 }}>
               {homeContent.whyTur.title}
             </h2>
           </div>
-          <div className="reveal reveal-delay-1" style={{ marginBottom: 48 }}>
+          <div className="reveal reveal-delay-1" style={{ marginBottom: 28 }}>
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 16, lineHeight: 1.8, color: "rgba(245,243,238,0.55)", maxWidth: 680 }}>
               {homeContent.whyTur.body}
             </p>
