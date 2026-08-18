@@ -12,7 +12,7 @@ import imgCommbank from "@/imports/client-logos/commbank.png";
 import imgMillers from "@/imports/client-logos/millers.png";
 import imgHipages from "@/imports/client-logos/hipages.png";
 import imgAdelaideHills from "@/imports/client-logos/adelaide-hills.png";
-import imgEcsa from "@/imports/ecsa.png";
+import imgEcsa from "@/imports/client-logos/ecsa-campaign.png";
 import imgAqis from "@/imports/client-logos/aqis.png";
 import imgAmbc from "@/imports/ambc.png";
 import imgSaGovernment from "@/imports/client-logos/sa-government.png";
@@ -20,6 +20,8 @@ import imgTafeVictoria from "@/imports/tafe-victoria.png";
 import imgDfat from "@/imports/client-logos/dfat.png";
 import { useReveal } from "../hooks/useReveal";
 import imgKettle from "@/imports/client-logos/kettle.svg";
+import imgCommbankWhite from "@/imports/client-logos/commbank-white.png";
+import imgHipagesWhite from "@/imports/client-logos/hipages-white.png";
 
 interface HomePageProps {
   onNavigate: (page: Page) => void;
@@ -29,14 +31,24 @@ interface HomePageProps {
 // true transparent PNGs where the source had a white/opaque backing. CommBank
 // and hipages sourced from seeklogo (higher-res, already transparent) rather
 // than the older low-res site assets. DFAT's blue badge shape is part of the
-// Smartraveller brand mark, so it's kept intact rather than stripped.
-const clientLogoImages: { src: string; alt: string }[] = [
+// Smartraveller brand mark, so it's kept intact rather than stripped. ECSA
+// uses the "Your vote. Your voice." campaign lockup (white keyline, includes
+// the Electoral Commission SA name) per JT, replacing the plain crest.
+// CommBank and hipages swap to a dedicated white version on hover instead of
+// the grid's usual colour swap: their colour art has near-black elements
+// (CommBank's wordmark/corner, hipages' "pages" text) that disappear against
+// the black background at full colour. The white versions are generated from
+// the same source art, with hipages' "hi" lettering knocked out to
+// transparent (it's solid white-on-orange in the original, not a cutout, so
+// a naive recolour would merge it into the house shape). Both use a larger
+// 1.5x hover scale instead of the grid's default 1.4x, per JT.
+const clientLogoImages: { src: string; alt: string; hoverSrc?: string; hoverScale?: number }[] = [
   { src: imgToyota,        alt: "Toyota" },
   { src: imgFord,          alt: "Ford" },
   { src: imgHyundai,       alt: "Hyundai" },
-  { src: imgCommbank,      alt: "Commonwealth Bank" },
+  { src: imgCommbank,      alt: "Commonwealth Bank", hoverSrc: imgCommbankWhite, hoverScale: 1.5 },
   { src: imgMillers,       alt: "Millers" },
-  { src: imgHipages,       alt: "hipages" },
+  { src: imgHipages,       alt: "hipages", hoverSrc: imgHipagesWhite, hoverScale: 1.5 },
   { src: imgAdelaideHills, alt: "Adelaide Hills Wine Region" },
   { src: imgEcsa,          alt: "Electoral Commission SA" },
   { src: imgDfat,          alt: "DFAT Smartraveller" },
@@ -223,7 +235,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
             gap: 8,
             overflow: "visible",
           }}>
-            {clientLogoImages.map(({ src, alt }) => (
+            {clientLogoImages.map(({ src, alt, hoverSrc, hoverScale }) => (
               <div
                 key={alt}
                 style={{
@@ -254,12 +266,14 @@ export default function HomePage({ onNavigate }: HomePageProps) {
                   }}
                   onMouseEnter={(e) => {
                     const img = e.currentTarget as HTMLImageElement;
+                    if (hoverSrc) { img.src = hoverSrc; }
                     img.style.filter = "grayscale(0%)";
                     img.style.opacity = "1";
-                    img.style.transform = "scale(1.4)";
+                    img.style.transform = `scale(${hoverScale ?? 1.4})`;
                   }}
                   onMouseLeave={(e) => {
                     const img = e.currentTarget as HTMLImageElement;
+                    if (hoverSrc) { img.src = src; }
                     img.style.filter = "grayscale(100%)";
                     img.style.opacity = "0.6";
                     img.style.transform = "scale(1)";
