@@ -1,24 +1,12 @@
-import { useEffect, useRef } from "react";
 import HoloGlass from "../components/HoloGlass";
 import { howWeWorkContent } from "../data/content";
 import { editableField } from "../data/editable";
 import { goToContact } from "../lib/contactNav";
 import type { Page } from "../routes";
+import { useReveal } from "../hooks/useReveal";
 
 interface HowWeWorkPageProps {
   onNavigate: (page: Page) => void;
-}
-
-function useReveal() {
-  const ref = useRef<HTMLDivElement>(null);
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-    const obs = new IntersectionObserver(([e]) => { if (e.isIntersecting) { el.classList.add("visible"); obs.unobserve(el); } }, { threshold: 0.08 });
-    obs.observe(el);
-    return () => obs.disconnect();
-  }, []);
-  return ref;
 }
 
 const phases = howWeWorkContent.phases;

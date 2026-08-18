@@ -9,6 +9,7 @@ export type Page =
   | "launch-charter"
   | "do-it-together"
   | "launch-complete"
+  | "scale"
   | "charter-course"
   | "case-studies"
   | "toyota-lifetime-advantages"
@@ -103,6 +104,13 @@ export const siteRoutes: SiteRoute[] = [
     title: "Grow | The Growth Program | The United Republic",
     description:
       "Everything, built on your actual sales data, with pricing, conversion and 12 weeks of support.",
+  },
+  {
+    page: "scale",
+    path: "/growth-program/scale/",
+    title: "Scale | The Growth Program | The United Republic",
+    description:
+      "For businesses with more than one audience, product line or market. Tell us what you need, and we'll define the objectives and build the roadmap and tools to take your business to the next level.",
   },
   {
     page: "charter-course",

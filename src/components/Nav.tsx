@@ -75,9 +75,10 @@ export default function Nav({ current, onNavigate }: NavProps) {
   const growthCharterItems: DropdownItem[] = [
     { label: "Overview", page: "growth-charter" },
     { label: "LAUNCH", page: "launch-charter" },
-    { label: "DO IT TOGETHER", page: "do-it-together" },
-    { label: "GROW", page: "launch-complete" },
+    { label: "GROW - DO IT TOGETHER", page: "do-it-together" },
+    { label: "GROW - DONE FOR YOU", page: "launch-complete" },
     { label: "GROW IT YOURSELF", page: "charter-course" },
+    { label: "SCALE", page: "scale" },
   ];
 
   const advisoryItems: DropdownItem[] = [

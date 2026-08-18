@@ -1,27 +1,13 @@
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import CaseStudyCard from "../components/CaseStudyCard";
 import HoloGlass from "../components/HoloGlass";
 import { caseStudiesContent } from "../data/content";
 import { editableField } from "../data/editable";
 import type { Page } from "../routes";
+import { useReveal } from "../hooks/useReveal";
 
 interface CaseStudiesIndexPageProps {
   onNavigate: (page: Page) => void;
-}
-
-function useReveal() {
-  const ref = useRef<HTMLDivElement>(null);
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-    const obs = new IntersectionObserver(
-      ([e]) => { if (e.isIntersecting) { el.classList.add("visible"); obs.unobserve(el); } },
-      { threshold: 0.1 }
-    );
-    obs.observe(el);
-    return () => obs.disconnect();
-  }, []);
-  return ref;
 }
 
 type Filter = "all" | "strategic-advisory" | "growth-charter";

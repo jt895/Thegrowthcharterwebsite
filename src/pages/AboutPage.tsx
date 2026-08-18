@@ -1,28 +1,13 @@
-import { useEffect, useRef } from "react";
 import AnimatedHeroMark from "../components/AnimatedHeroMark";
 import HoloGlass from "../components/HoloGlass";
 import { aboutContent } from "../data/content";
 import { editableField } from "../data/editable";
 import { goToContact } from "../lib/contactNav";
 import type { Page } from "../routes";
+import { useReveal } from "../hooks/useReveal";
 
 interface AboutPageProps {
   onNavigate: (page: Page) => void;
-}
-
-function useReveal() {
-  const ref = useRef<HTMLDivElement>(null);
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-    const obs = new IntersectionObserver(
-      ([e]) => { if (e.isIntersecting) { el.classList.add("visible"); obs.unobserve(el); } },
-      { threshold: 0.1 }
-    );
-    obs.observe(el);
-    return () => obs.disconnect();
-  }, []);
-  return ref;
 }
 
 export default function AboutPage({ onNavigate }: AboutPageProps) {

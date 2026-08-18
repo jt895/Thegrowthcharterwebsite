@@ -262,11 +262,11 @@
                     "cells": [
                         {
                             "value": "POA - Scope dependent ",
-                            "page": null
+                            "page": "scale"
                         },
                         {
                             "value": "POA - Scope dependent",
-                            "page": null
+                            "page": "scale"
                         }
                     ]
                 }
@@ -492,7 +492,7 @@
                 ]
             },
             "doItTogether": {
-                "eyebrow": "LAUNCH - DO IT TOGETHER",
+                "eyebrow": "GROW · DO IT TOGETHER",
                 "title": "Together we build the plan. Together we make sure it's the right one.",
                 "subtitle": "We run the sessions, bring the evidence and guide the decisions. You and your team work beside us, and keep the capability.",
                 "price": "From $9,550 + GST",
@@ -594,6 +594,58 @@
                 "relatedCaseStudies": [
                     "snack-brands-kettle-popcorn",
                     "adelaide-hills-wine-region"
+                ]
+            },
+            "scale": {
+                "eyebrow": "SCALE",
+                "title": "Tell us what you need. We'll build the roadmap to get you there.",
+                "subtitle": "For businesses with more than one audience, product line or market. We define the objectives with you, then build the roadmap and the tools to take the business to its next stage.",
+                "price": "POA",
+                "pricePending": false,
+                "ctaLabel": "Book your free 20 minute call",
+                "intro": {
+                    "heading": "How it works.",
+                    "body": [
+                        "SCALE isn't a fixed package. It starts with a conversation about what you're actually trying to do: a new market, a second product line, a different customer, expansion beyond the owner-operator stage.",
+                        "We work with you to define the business objectives, then scope the research, strategy and delivery a business at this level of complexity actually needs. Every SCALE engagement is priced after that scoping, so you're never paying for parts of LAUNCH or GROW you don't need."
+                    ]
+                },
+                "included": {
+                    "heading": "What's included",
+                    "groups": [
+                        {
+                            "items": [
+                                "A scoping session to define the objectives, audiences and markets involved",
+                                "Evidence-based analysis across every audience, product line or market in scope",
+                                "A roadmap built for the complexity of a multi-audience or multi-market business",
+                                "The tools, systems and measures needed to run and track the next stage of growth",
+                                "Delivery, done together or done for you, matched to your team's capacity"
+                            ]
+                        }
+                    ],
+                    "note": "Scope is set with you after the Viability Session, so the roadmap only covers what your business actually needs.",
+                    "notePending": false
+                },
+                "suppliers": {
+                    "heading": "We work with the people you already work with.",
+                    "body": [
+                        "Your accountant, your bookkeeper, your web developer, your printer. We brief them, guide them and hold the work to the strategy. We're not here to replace anyone.",
+                        "If the roadmap needs something your current suppliers can't do, we'll tell you plainly and help you find the right people. But that's a decision, not a default."
+                    ]
+                },
+                "fitList": {
+                    "heading": "Best for",
+                    "items": [
+                        "Businesses moving beyond a single owner-operator audience, product line or market",
+                        "Organisational complexity that LAUNCH and GROW aren't built to cover",
+                        "Owners who know they're ready for the next stage but need the plan defined first"
+                    ],
+                    "trailingNote": "Priced after scoping. Starts with a free conversation and a $450 Viability Session, credited against the engagement."
+                },
+                "bespokeNote": "Not sure if you need SCALE? Start with a Viability Session and we'll tell you plainly whether LAUNCH, GROW or SCALE is the right fit.",
+                "relatedCaseStudies": [
+                    "ford-six-model-launches",
+                    "commbank-little-card-big-rewards"
                 ]
             }
         }

@@ -61,6 +61,7 @@ export default function App({ initialPage = "home" }: AppProps) {
       case "launch-charter": return <ProductPage onNavigate={navigate} page="launch-charter" product={growthCharterContent.products.launchCharter} />;
       case "do-it-together": return <ProductPage onNavigate={navigate} page="do-it-together" product={growthCharterContent.products.doItTogether} />;
       case "launch-complete": return <ProductPage onNavigate={navigate} page="launch-complete" product={growthCharterContent.products.launchComplete} />;
+      case "scale": return <ProductPage onNavigate={navigate} page="scale" product={growthCharterContent.products.scale} />;
       case "charter-course": return <CharterCoursePage onNavigate={navigate} />;
       case "case-studies": return <CaseStudiesIndexPage onNavigate={navigate} />;
       case "toyota-lifetime-advantages":

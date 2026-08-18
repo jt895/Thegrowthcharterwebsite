@@ -1,7 +1,8 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import EnquiryForm from "./EnquiryForm";
 import { readContactSource } from "../lib/contactNav";
 import { pathForPage, type Page } from "../routes";
+import { useReveal } from "../hooks/useReveal";
 
 export interface CaseStudyGalleryVideo {
   title: string;
@@ -51,21 +52,6 @@ interface CaseStudyTemplateProps {
   formId: string;
   formName: string;
   onNavigate: (page: Page) => void;
-}
-
-function useReveal() {
-  const ref = useRef<HTMLDivElement>(null);
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-    const obs = new IntersectionObserver(
-      ([e]) => { if (e.isIntersecting) { el.classList.add("visible"); obs.unobserve(el); } },
-      { threshold: 0.1 }
-    );
-    obs.observe(el);
-    return () => obs.disconnect();
-  }, []);
-  return ref;
 }
 
 const sectionMax = { maxWidth: 900, margin: "0 auto" };

@@ -1,4 +1,3 @@
-import { useEffect, useRef } from "react";
 import EnquiryForm from "../components/EnquiryForm";
 import HoloGlass from "../components/HoloGlass";
 import RelatedCaseStudies from "../components/RelatedCaseStudies";
@@ -6,6 +5,7 @@ import { growthCharterContent } from "../data/content";
 import { editableField } from "../data/editable";
 import { readContactSource } from "../lib/contactNav";
 import type { Page } from "../routes";
+import { useReveal } from "../hooks/useReveal";
 
 interface ProductGroup {
   heading?: string;
@@ -69,18 +69,6 @@ interface ProductPageProps {
   onNavigate: (page: Page) => void;
   page: Page;
   product: ProductContent;
-}
-
-function useReveal() {
-  const ref = useRef<HTMLDivElement>(null);
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-    const obs = new IntersectionObserver(([e]) => { if (e.isIntersecting) { el.classList.add("visible"); obs.unobserve(el); } }, { threshold: 0.08 });
-    obs.observe(el);
-    return () => obs.disconnect();
-  }, []);
-  return ref;
 }
 
 const sectionMax = { maxWidth: 900, margin: "0 auto" };

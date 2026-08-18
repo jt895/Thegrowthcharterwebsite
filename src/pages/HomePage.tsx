@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import { homeContent } from "../data/content";
 import { editableField } from "../data/editable";
 import { goToContact } from "../lib/contactNav";
@@ -18,22 +18,11 @@ import imgAmbc from "@/imports/ambc.png";
 import imgSaGovernment from "@/imports/client-logos/sa-government.png";
 import imgTafeVictoria from "@/imports/tafe-victoria.png";
 import imgDfat from "@/imports/client-logos/dfat.png";
+import { useReveal } from "../hooks/useReveal";
 import imgKettle from "@/imports/client-logos/kettle.svg";
 
 interface HomePageProps {
   onNavigate: (page: Page) => void;
-}
-
-function useReveal() {
-  const ref = useRef<HTMLDivElement>(null);
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-    const obs = new IntersectionObserver(([e]) => { if (e.isIntersecting) { el.classList.add("visible"); obs.unobserve(el); } }, { threshold: 0.1 });
-    obs.observe(el);
-    return () => obs.disconnect();
-  }, []);
-  return ref;
 }
 
 // Case-study client roster, curated per JT (Aug 2026). Backgrounds cleaned to
