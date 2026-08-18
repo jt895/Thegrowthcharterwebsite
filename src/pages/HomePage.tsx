@@ -8,15 +8,16 @@ import HoloGlass from "../components/HoloGlass";
 import imgToyota from "@/imports/toyota.png";
 import imgFord from "@/imports/ford.png";
 import imgHyundai from "@/imports/hyundai.png";
-import imgCommbank from "@/imports/commbank.png";
+import imgCommbank from "@/imports/client-logos/commbank.png";
 import imgMillers from "@/imports/client-logos/millers.png";
-import imgHipages from "@/imports/hipages.png";
+import imgHipages from "@/imports/client-logos/hipages.png";
 import imgAdelaideHills from "@/imports/client-logos/adelaide-hills.png";
 import imgEcsa from "@/imports/ecsa.png";
 import imgAqis from "@/imports/client-logos/aqis.png";
 import imgAmbc from "@/imports/ambc.png";
 import imgSaGovernment from "@/imports/client-logos/sa-government.png";
 import imgTafeVictoria from "@/imports/tafe-victoria.png";
+import imgDfat from "@/imports/client-logos/dfat.png";
 import imgKettle from "@/imports/client-logos/kettle.svg";
 
 interface HomePageProps {
@@ -36,9 +37,10 @@ function useReveal() {
 }
 
 // Case-study client roster, curated per JT (Aug 2026). Backgrounds cleaned to
-// true transparent PNGs where the source had a white/opaque backing.
-// DFAT (Smartraveller) intentionally left out pending confirmation on whether
-// its blue badge is part of the brand mark or removable background fill.
+// true transparent PNGs where the source had a white/opaque backing. CommBank
+// and hipages sourced from seeklogo (higher-res, already transparent) rather
+// than the older low-res site assets. DFAT's blue badge shape is part of the
+// Smartraveller brand mark, so it's kept intact rather than stripped.
 const clientLogoImages: { src: string; alt: string }[] = [
   { src: imgToyota,        alt: "Toyota" },
   { src: imgFord,          alt: "Ford" },
@@ -48,6 +50,7 @@ const clientLogoImages: { src: string; alt: string }[] = [
   { src: imgHipages,       alt: "hipages" },
   { src: imgAdelaideHills, alt: "Adelaide Hills Wine Region" },
   { src: imgEcsa,          alt: "Electoral Commission SA" },
+  { src: imgDfat,          alt: "DFAT Smartraveller" },
   { src: imgAqis,          alt: "AQIS" },
   { src: imgAmbc,          alt: "Australia Malaysia Business Council" },
   { src: imgSaGovernment,  alt: "SA Government" },
