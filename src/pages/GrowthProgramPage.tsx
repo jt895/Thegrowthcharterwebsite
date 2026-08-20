@@ -1,6 +1,6 @@
 import HoloGlass from "../components/HoloGlass";
 import RelatedCaseStudies from "../components/RelatedCaseStudies";
-import SpinningRingMark from "../components/SpinningRingMark";
+import HeroMark from "../components/HeroMark";
 import { growthProgramContent } from "../data/content";
 import { editableField } from "../data/editable";
 import { goToContact } from "../lib/contactNav";
@@ -25,7 +25,7 @@ export default function GrowthProgramPage({ onNavigate }: GrowthProgramPageProps
         <HoloGlass />
         {/* V1 spinning rings - prominent, less subtle */}
         <div style={{ position: "absolute", right: "-2%", top: "50%", transform: "translateY(-50%)", pointerEvents: "none", animation: "fade-in 2.4s ease 0.5s both", zIndex: 1 }}>
-          <SpinningRingMark size={640} opacity={0.55} speed={1.3} weight={1.6} />
+          <HeroMark variant="expand" size={640} opacity={0.55} speed={1.1} weight={1.6} />
         </div>
 
         <div style={{ maxWidth: 1280, margin: "0 auto", position: "relative", zIndex: 2 }}>

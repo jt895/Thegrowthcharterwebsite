@@ -1,5 +1,6 @@
 import EnquiryForm from "../components/EnquiryForm";
 import HoloGlass from "../components/HoloGlass";
+import HeroMark from "../components/HeroMark";
 import RelatedCaseStudies from "../components/RelatedCaseStudies";
 import { growthProgramContent } from "../data/content";
 import { editableField } from "../data/editable";
@@ -79,6 +80,20 @@ const sectionMax = { maxWidth: 900, margin: "0 auto" };
 const H2 = { fontFamily: "'Instrument Serif', serif", fontSize: "clamp(24px, 3vw, 36px)", color: "#F5F3EE", fontWeight: 400, lineHeight: 1.2, marginBottom: 28 } as const;
 const bodyP = { fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.85, color: "rgba(245,243,238,0.6)", marginBottom: 20 } as const;
 
+/**
+ * The ring ladder. Each product draws the mark truncated to the number of
+ * rings that matches its tier, so the mark itself carries the product
+ * architecture: Launch is the outer three, Grow adds two more, Scale is the
+ * whole mark. Rings are always taken from the outside in, so every product
+ * shows the real mark, never a redrawn one.
+ */
+const TIER_RINGS: Record<string, number> = {
+  launch: 3,
+  doItTogether: 4,
+  launchComplete: 5,
+  scale: 6,
+};
+
 function PendingTag() {
   return (
     <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 10, fontWeight: 600, letterSpacing: "0.06em", textTransform: "uppercase", color: "#E3B15E", border: "1px solid rgba(227,177,94,0.4)", padding: "2px 8px", marginLeft: 10, verticalAlign: "middle" }}>
@@ -102,6 +117,11 @@ export default function ProductPage({ onNavigate, page, contentKey, product }: P
       {/* Hero */}
       <section {...editableField(`growthProgram.products.${contentKey}`)} style={{ padding: "100px 40px 64px", textAlign: "center", position: "relative", overflow: "hidden" }}>
         <HoloGlass />
+        {/* Anchored bottom right and bled off the section, so it never sits
+            behind the centred hero copy. */}
+        <div style={{ position: "absolute", right: "-6%", bottom: "-34%", opacity: 0.13, pointerEvents: "none", zIndex: 0 }} className="hero-ring">
+          <HeroMark variant="still" size={520} rings={TIER_RINGS[contentKey] ?? 6} weight={1.7} />
+        </div>
         <div style={{ maxWidth: 720, margin: "0 auto", position: "relative", zIndex: 1 }}>
           <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#3AAC88", marginBottom: 24 }}>
             {product.eyebrow}

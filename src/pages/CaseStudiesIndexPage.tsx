@@ -1,6 +1,7 @@
 import { useState } from "react";
 import CaseStudyCard from "../components/CaseStudyCard";
 import HoloGlass from "../components/HoloGlass";
+import HeroMark from "../components/HeroMark";
 import { caseStudiesContent } from "../data/content";
 import { editableField } from "../data/editable";
 import type { Page } from "../routes";
@@ -32,6 +33,9 @@ export default function CaseStudiesIndexPage({ onNavigate }: CaseStudiesIndexPag
       {/* Hero */}
       <section {...editableField("caseStudies.index")} style={{ padding: "100px 40px 64px", position: "relative", overflow: "hidden" }}>
         <HoloGlass />
+        <div style={{ position: "absolute", right: "6%", top: "50%", transform: "translateY(-50%)", opacity: 0.16, pointerEvents: "none", zIndex: 0 }} className="hero-ring">
+          <HeroMark variant="trace" size={540} weight={1.3} />
+        </div>
         <div style={{ maxWidth: 1280, margin: "0 auto", position: "relative", zIndex: 1 }}>
           <div style={{ maxWidth: 780 }}>
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#3AAC88", marginBottom: 28 }} className="hero-sub">

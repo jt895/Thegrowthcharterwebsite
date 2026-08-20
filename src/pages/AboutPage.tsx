@@ -1,4 +1,4 @@
-import AnimatedHeroMark from "../components/AnimatedHeroMark";
+import HeroMark from "../components/HeroMark";
 import HoloGlass from "../components/HoloGlass";
 import { aboutContent } from "../data/content";
 import { editableField } from "../data/editable";
@@ -23,7 +23,7 @@ export default function AboutPage({ onNavigate }: AboutPageProps) {
       <section {...editableField("about.hero")} style={{ paddingTop: 100, paddingBottom: 64, padding: "100px 40px 64px", position: "relative", overflow: "hidden" }}>
         <HoloGlass />
         <div style={{ position: "absolute", right: "-4%", top: "50%", transform: "translateY(-50%)", pointerEvents: "none", animation: "fade-in 2.4s ease 0.5s both", zIndex: 1 }}>
-          <AnimatedHeroMark size={600} opacity={0.2} speedMultiplier={2.2} />
+          <HeroMark variant="orbit" size={600} opacity={0.2} speed={2.2} />
         </div>
         <div style={{ maxWidth: 1280, margin: "0 auto", position: "relative", zIndex: 2 }}>
           <div style={{ maxWidth: 760 }}>

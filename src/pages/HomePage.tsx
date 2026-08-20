@@ -3,7 +3,7 @@ import { editableField } from "../data/editable";
 import { goToContact } from "../lib/contactNav";
 import type { Page } from "../routes";
 import HoloGlass from "../components/HoloGlass";
-import SpinningRingMark from "../components/SpinningRingMark";
+import HeroMark from "../components/HeroMark";
 
 import imgToyota from "@/imports/toyota.png";
 import imgFord from "@/imports/ford.png";
@@ -76,11 +76,11 @@ export default function HomePage({ onNavigate }: HomePageProps) {
         <HoloGlass />
 
         {/* Ring mark. Geometry and colours come from the corrected logo master
-            via SpinningRingMark; this used to be a hand-coded copy with its own
+            via HeroMark; this used to be a hand-coded copy with its own
             radii, the split mirrored, and no transform origin on the outer ring,
             which made it swing off-centre as it rotated. */}
         <div style={{ position: "absolute", right: "6%", top: "50%", transform: "translateY(-50%)", opacity: 0.18, pointerEvents: "none", zIndex: 1 }} className="hero-ring">
-          <SpinningRingMark size={520} />
+          <HeroMark variant="rotate" size={520} />
         </div>
 
         <div style={{ maxWidth: 760, position: "relative", zIndex: 2 }}>
