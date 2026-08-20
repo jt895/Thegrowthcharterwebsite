@@ -27,14 +27,14 @@ export default function CaseStudiesIndexPage({ onNavigate }: CaseStudiesIndexPag
   ];
 
   return (
-    <div style={{ background: "#1C1C1C", minHeight: "100vh" }}>
+    <div style={{ background: "#231F20", minHeight: "100vh" }}>
 
       {/* Hero */}
       <section {...editableField("caseStudies.index")} style={{ padding: "100px 40px 64px", position: "relative", overflow: "hidden" }}>
         <HoloGlass />
         <div style={{ maxWidth: 1280, margin: "0 auto", position: "relative", zIndex: 1 }}>
           <div style={{ maxWidth: 780 }}>
-            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 28 }} className="hero-sub">
+            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#3AAC88", marginBottom: 28 }} className="hero-sub">
               {index.eyebrow}
             </p>
             <h1 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(38px, 5.5vw, 68px)", lineHeight: 1.08, color: "#F5F3EE", fontWeight: 400, marginBottom: 32 }} className="hero-title">
@@ -43,7 +43,7 @@ export default function CaseStudiesIndexPage({ onNavigate }: CaseStudiesIndexPag
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 17, lineHeight: 1.8, color: "rgba(245,243,238,0.65)", maxWidth: 640, marginBottom: 32 }} className="hero-sub">
               {index.paraA}
             </p>
-            <p style={{ fontFamily: "'Instrument Serif', serif", fontStyle: "italic", fontSize: 22, lineHeight: 1.5, color: "#8FD9BE", maxWidth: 620, borderLeft: "2px solid #2A9D78", paddingLeft: 24, margin: 0 }} className="hero-sub">
+            <p style={{ fontFamily: "'Instrument Serif', serif", fontStyle: "italic", fontSize: 22, lineHeight: 1.5, color: "#8AD0BF", maxWidth: 620, borderLeft: "2px solid #2E9677", paddingLeft: 24, margin: 0 }} className="hero-sub">
               {index.paraB}
             </p>
           </div>
@@ -51,7 +51,7 @@ export default function CaseStudiesIndexPage({ onNavigate }: CaseStudiesIndexPag
       </section>
 
       {/* Filters + grid */}
-      <section style={{ background: "#161616", padding: "64px 40px" }}>
+      <section style={{ background: "#1D191A", padding: "64px 40px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
           <div ref={r1} className="reveal" style={{ display: "flex", justifyContent: "center", gap: 10, flexWrap: "wrap", marginBottom: 40 }}>
             {filterOptions.map((option) => {
@@ -61,15 +61,15 @@ export default function CaseStudiesIndexPage({ onNavigate }: CaseStudiesIndexPag
                   key={option.key}
                   onClick={() => setFilter(option.key)}
                   style={{
-                    background: active ? "#2A9D78" : "transparent",
-                    border: active ? "1px solid #2A9D78" : "1px solid rgba(255,255,255,0.14)",
+                    background: active ? "#2E9677" : "transparent",
+                    border: active ? "1px solid #2E9677" : "1px solid rgba(255,255,255,0.14)",
                     cursor: "pointer",
                     fontFamily: "'Inter', sans-serif", fontSize: 13, fontWeight: 500,
                     color: active ? "#fff" : "rgba(245,243,238,0.65)",
                     padding: "10px 22px",
                     transition: "background 0.2s, border-color 0.2s, color 0.2s",
                   }}
-                  onMouseEnter={(e) => { if (!active) { e.currentTarget.style.borderColor = "rgba(42,157,120,0.6)"; e.currentTarget.style.color = "#F5F3EE"; } }}
+                  onMouseEnter={(e) => { if (!active) { e.currentTarget.style.borderColor = "rgba(46,150,119,0.6)"; e.currentTarget.style.color = "#F5F3EE"; } }}
                   onMouseLeave={(e) => { if (!active) { e.currentTarget.style.borderColor = "rgba(255,255,255,0.14)"; e.currentTarget.style.color = "rgba(245,243,238,0.65)"; } }}
                 >
                   {option.label}

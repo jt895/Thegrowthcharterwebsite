@@ -19,7 +19,7 @@ interface EnquiryFormProps {
 
 const inputStyle: CSSProperties = {
   width: "100%",
-  background: "#161616",
+  background: "#1D191A",
   border: "1px solid rgba(255,255,255,0.12)",
   color: "#F5F3EE",
   fontFamily: "'Inter', sans-serif",
@@ -32,11 +32,11 @@ const labelStyle: CSSProperties = {
   display: "block",
   fontFamily: "'Inter', sans-serif",
   fontSize: 12,
-  color: "#9B9B9B",
+  color: "#939598",
   marginBottom: 8,
 };
 
-export default function EnquiryForm({ id, formName, fields, submitLabel, sourcePage, accent = "#2A9D78" }: EnquiryFormProps) {
+export default function EnquiryForm({ id, formName, fields, submitLabel, sourcePage, accent = "#2E9677" }: EnquiryFormProps) {
   const [values, setValues] = useState<Record<string, string>>({});
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
 
@@ -66,7 +66,7 @@ export default function EnquiryForm({ id, formName, fields, submitLabel, sourceP
 
   if (status === "success") {
     return (
-      <div id={id} style={{ background: "#1A2820", borderLeft: `2px solid ${accent}`, padding: "40px 36px" }}>
+      <div id={id} style={{ background: "#212B24", borderLeft: `2px solid ${accent}`, padding: "40px 36px" }}>
         <p style={{ fontFamily: "'Instrument Serif', serif", fontSize: 22, color: "#F5F3EE", marginBottom: 12 }}>Thanks, that's through.</p>
         <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, lineHeight: 1.7, color: "rgba(245,243,238,0.65)", margin: 0 }}>
           We'll come back to you within one business day.

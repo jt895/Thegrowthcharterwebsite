@@ -1,4 +1,5 @@
 import { useId } from "react";
+import { RING_RADII, RINGS_DARK, SPLIT_HAIRLINE } from "./brandMark";
 
 interface AnimatedHeroMarkProps {
   size?: number;
@@ -8,6 +9,12 @@ interface AnimatedHeroMarkProps {
   className?: string;
 }
 
+/**
+ * About-page hero. The static rings underneath are the real mark: the x0.8
+ * radius progression and the dark-surface colour ramp from the corrected
+ * logo master (see brandMark.ts). The dashed orbiters sit in the gaps
+ * between those rings and are decoration only.
+ */
 export default function AnimatedHeroMark({
   size = 560,
   opacity = 1,
@@ -18,23 +25,15 @@ export default function AnimatedHeroMark({
   const cx = size / 2;
   const sp = speedMultiplier;
 
-  // Filled concentric rings - faithful to the real logo
-  const filled = [
-    { r: 0.99, grey: "#5A5A5A", teal: "#0A5240" },
-    { r: 0.83, grey: "#7A7A7A", teal: "#167055" },
-    { r: 0.67, grey: "#A0A0A0", teal: "#2A9D78" },
-    { r: 0.51, grey: "#C0C0C0", teal: "#52B896" },
-    { r: 0.35, grey: "#DEDEDE", teal: "#8FD9BE" },
-    { r: 0.19, grey: "#F2F2F2", teal: "#C4EEDD" },
-  ];
-
-  // Orbiting stroke rings - duration divided by speedMultiplier = faster rotation
+  // Orbiters ride the midpoints between consecutive brand ring radii, so the
+  // animation never cuts across a ring edge.
+  const midpoint = (i: number) => (RING_RADII[i] + RING_RADII[i + 1]) / 2;
   const orbiters = [
-    { r: 0.95, duration: 32 / sp, dash: "6 14", width: 1.2, reverse: false, delay: 0 },
-    { r: 0.75, duration: 22 / sp, dash: "3 9",  width: 0.9, reverse: true,  delay: -4 },
-    { r: 0.55, duration: 40 / sp, dash: "8 20", width: 1.0, reverse: false, delay: -8 },
-    { r: 0.37, duration: 18 / sp, dash: "2 6",  width: 0.7, reverse: true,  delay: -2 },
-    { r: 0.20, duration: 28 / sp, dash: "4 10", width: 0.6, reverse: false, delay: -6 },
+    { r: midpoint(0), duration: 32 / sp, dash: "6 14", width: 1.2, reverse: false, delay: 0 },
+    { r: midpoint(1), duration: 22 / sp, dash: "3 9", width: 0.9, reverse: true, delay: -4 },
+    { r: midpoint(2), duration: 40 / sp, dash: "8 20", width: 1.0, reverse: false, delay: -8 },
+    { r: midpoint(3), duration: 18 / sp, dash: "2 6", width: 0.7, reverse: true, delay: -2 },
+    { r: midpoint(4), duration: 28 / sp, dash: "4 10", width: 0.6, reverse: false, delay: -6 },
   ];
 
   return (
@@ -47,7 +46,7 @@ export default function AnimatedHeroMark({
       className={className}
     >
       <defs>
-        {/* Split clip paths for filled rings */}
+        {/* Greys left, greens right - the mark's split runs on the vertical centreline. */}
         <clipPath id={`${uid}-left`}>
           <rect x="0" y="0" width={cx} height={size} />
         </clipPath>
@@ -55,20 +54,11 @@ export default function AnimatedHeroMark({
           <rect x={cx} y="0" width={cx} height={size} />
         </clipPath>
 
-        {/* Clip paths for each orbiting ring's teal half */}
-        {orbiters.map((_, i) => (
-          <clipPath key={i} id={`${uid}-orb-r-${i}`}>
-            <rect x={cx} y="0" width={cx} height={size} />
-          </clipPath>
-        ))}
-
-        {/* Radial glow gradient */}
         <radialGradient id={`${uid}-glow`} cx="50%" cy="50%" r="50%">
-          <stop offset="0%" stopColor="#2A9D78" stopOpacity="0.15" />
-          <stop offset="100%" stopColor="#2A9D78" stopOpacity="0" />
+          <stop offset="0%" stopColor="#2E9677" stopOpacity="0.15" />
+          <stop offset="100%" stopColor="#2E9677" stopOpacity="0" />
         </radialGradient>
 
-        {/* Soft vignette mask */}
         <radialGradient id={`${uid}-mask`} cx="50%" cy="50%" r="50%">
           <stop offset="70%" stopColor="white" stopOpacity="1" />
           <stop offset="100%" stopColor="white" stopOpacity="0" />
@@ -88,40 +78,41 @@ export default function AnimatedHeroMark({
         />
       </circle>
 
-      {/* ─── Static filled rings (logo faithful) ─── */}
+      {/* Static filled rings - the corrected mark */}
       <g mask={`url(#${uid}-fade)`}>
-        {filled.map(({ r, grey, teal }, i) => {
-          const radius = cx * r;
+        {RINGS_DARK.map(({ grey, green }, i) => {
+          const radius = cx * RING_RADII[i];
           return (
             <g key={i}>
               <circle cx={cx} cy={cx} r={radius} fill={grey} clipPath={`url(#${uid}-left)`} />
-              <circle cx={cx} cy={cx} r={radius} fill={teal} clipPath={`url(#${uid}-right)`} />
+              <circle cx={cx} cy={cx} r={radius} fill={green} clipPath={`url(#${uid}-right)`} />
             </g>
           );
         })}
 
-        {/* Vertical split hairline */}
         <line
-          x1={cx} y1={cx * 0.01} x2={cx} y2={size * 0.99}
-          stroke="rgba(28,28,28,0.5)"
+          x1={cx}
+          y1={0}
+          x2={cx}
+          y2={size}
+          stroke={SPLIT_HAIRLINE}
           strokeWidth="1.5"
         />
       </g>
 
-      {/* ─── Orbiting dashed rings ─── */}
+      {/* Orbiting dashed rings */}
       {orbiters.map(({ r, duration, dash, width, reverse, delay }, i) => {
         const radius = cx * r;
-        const circum = 2 * Math.PI * radius;
-        const animId = `${uid}-rot-${i}`;
-        const from = reverse ? "360 " + cx + " " + cx : "0 " + cx + " " + cx;
-        const to   = reverse ? "0 "   + cx + " " + cx : "360 " + cx + " " + cx;
+        const from = reverse ? `360 ${cx} ${cx}` : `0 ${cx} ${cx}`;
+        const to = reverse ? `0 ${cx} ${cx}` : `360 ${cx} ${cx}`;
 
         return (
           <g key={i} opacity={0.55}>
-            {/* Grey half - left */}
             <circle
-              cx={cx} cy={cx} r={radius}
-              stroke="#9B9B9B"
+              cx={cx}
+              cy={cx}
+              r={radius}
+              stroke="#939598"
               strokeWidth={width}
               strokeDasharray={dash}
               strokeLinecap="round"
@@ -130,25 +121,28 @@ export default function AnimatedHeroMark({
               <animateTransform
                 attributeName="transform"
                 type="rotate"
-                from={from} to={to}
+                from={from}
+                to={to}
                 dur={`${duration}s`}
                 begin={`${delay}s`}
                 repeatCount="indefinite"
               />
             </circle>
-            {/* Teal half - right */}
             <circle
-              cx={cx} cy={cx} r={radius}
-              stroke="#2A9D78"
+              cx={cx}
+              cy={cx}
+              r={radius}
+              stroke="#3AAC88"
               strokeWidth={width}
               strokeDasharray={dash}
               strokeLinecap="round"
-              clipPath={`url(#${uid}-orb-r-${i})`}
+              clipPath={`url(#${uid}-right)`}
             >
               <animateTransform
                 attributeName="transform"
                 type="rotate"
-                from={from} to={to}
+                from={from}
+                to={to}
                 dur={`${duration}s`}
                 begin={`${delay}s`}
                 repeatCount="indefinite"
@@ -158,11 +152,11 @@ export default function AnimatedHeroMark({
         );
       })}
 
-      {/* ─── Slow breathe on entire mark ─── */}
+      {/* Slow breathe on entire mark */}
       <animateTransform
         attributeName="transform"
         type="scale"
-        values={`1;1.012;1`}
+        values="1;1.012;1"
         dur="8s"
         repeatCount="indefinite"
         additive="sum"

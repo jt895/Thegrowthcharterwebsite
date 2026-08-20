@@ -34,7 +34,7 @@ export default function MobileContactBar() {
       style={{
         position: "fixed", left: 0, right: 0, bottom: 0, zIndex: 90,
         display: "none",
-        background: "#1A1A1A",
+        background: "#211D1E",
         borderTop: "1px solid rgba(255,255,255,0.08)",
         // Clears the home-indicator gesture area on notched iOS devices.
         paddingBottom: "env(safe-area-inset-bottom)",
@@ -46,7 +46,7 @@ export default function MobileContactBar() {
           flex: 1, display: "flex", alignItems: "center", justifyContent: "center", gap: 8,
           padding: "16px 0", textDecoration: "none",
           fontFamily: "'Inter', sans-serif", fontSize: 14, fontWeight: 500, letterSpacing: "0.02em",
-          color: "#2A9D78",
+          color: "#3AAC88",
         }}
       >
         <PhoneIcon /> Call

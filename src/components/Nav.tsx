@@ -94,9 +94,9 @@ export default function Nav({ current, onNavigate }: NavProps) {
   const linkStyle = (active: boolean) => ({
     cursor: "pointer" as const, textDecoration: "none" as const,
     fontFamily: "'Inter', sans-serif", fontSize: 13, fontWeight: 400, letterSpacing: "0.03em",
-    color: active ? "#2A9D78" : "rgba(245,243,238,0.6)",
+    color: active ? "#2E9677" : "rgba(245,243,238,0.6)",
     transition: "color 0.25s", padding: "4px 0",
-    borderBottom: active ? "1px solid #2A9D78" : "1px solid transparent",
+    borderBottom: active ? "1px solid #2E9677" : "1px solid transparent",
   });
 
   const DropdownPanel = ({ items, menu }: { items: DropdownItem[]; menu: MenuKey }) => (
@@ -106,7 +106,7 @@ export default function Nav({ current, onNavigate }: NavProps) {
       onKeyDown={(e) => handleMenuKeyDown(e, menu)}
       style={{
         position: "absolute", top: "calc(100% + 16px)", left: 0,
-        background: "#1A1A1A", border: "1px solid rgba(255,255,255,0.08)",
+        background: "#211D1E", border: "1px solid rgba(255,255,255,0.08)",
         minWidth: 220, boxShadow: "0 16px 40px rgba(0,0,0,0.5)",
         animation: "fade-in 0.15s ease",
       }}
@@ -119,13 +119,13 @@ export default function Nav({ current, onNavigate }: NavProps) {
             onClick={(event) => handleLink(event, item.page)}
             style={{
               display: "block", width: "100%", cursor: "pointer", textDecoration: "none",
-              fontFamily: "'Inter', sans-serif", fontSize: 13, color: current === item.page ? "#2A9D78" : "rgba(245,243,238,0.7)",
+              fontFamily: "'Inter', sans-serif", fontSize: 13, color: current === item.page ? "#2E9677" : "rgba(245,243,238,0.7)",
               textAlign: "left", padding: "14px 20px",
-              borderLeft: current === item.page ? "2px solid #2A9D78" : "2px solid transparent",
+              borderLeft: current === item.page ? "2px solid #2E9677" : "2px solid transparent",
               transition: "color 0.2s, border-color 0.2s",
             }}
-            onMouseEnter={(e) => { e.currentTarget.style.color = "#2A9D78"; e.currentTarget.style.background = "rgba(42,157,120,0.06)"; }}
-            onMouseLeave={(e) => { e.currentTarget.style.color = current === item.page ? "#2A9D78" : "rgba(245,243,238,0.7)"; e.currentTarget.style.background = "none"; }}
+            onMouseEnter={(e) => { e.currentTarget.style.color = "#2E9677"; e.currentTarget.style.background = "rgba(46,150,119,0.06)"; }}
+            onMouseLeave={(e) => { e.currentTarget.style.color = current === item.page ? "#2E9677" : "rgba(245,243,238,0.7)"; e.currentTarget.style.background = "none"; }}
           >
             {item.label}
           </a>
@@ -176,9 +176,9 @@ export default function Nav({ current, onNavigate }: NavProps) {
                 style={{
                   background: "none", border: "none", cursor: "pointer",
                   fontFamily: "'Inter', sans-serif", fontSize: 13, fontWeight: 400, letterSpacing: "0.03em",
-                  color: growthActive ? "#2A9D78" : "rgba(245,243,238,0.6)",
+                  color: growthActive ? "#2E9677" : "rgba(245,243,238,0.6)",
                   transition: "color 0.25s", padding: "4px 0",
-                  borderBottom: growthActive ? "1px solid #2A9D78" : "1px solid transparent",
+                  borderBottom: growthActive ? "1px solid #2E9677" : "1px solid transparent",
                   display: "flex", alignItems: "center", gap: 6,
                 }}
                 onMouseEnter={(e) => { if (!growthActive) e.currentTarget.style.color = "#F5F3EE"; }}
@@ -203,9 +203,9 @@ export default function Nav({ current, onNavigate }: NavProps) {
                 style={{
                   background: "none", border: "none", cursor: "pointer",
                   fontFamily: "'Inter', sans-serif", fontSize: 13, fontWeight: 400, letterSpacing: "0.03em",
-                  color: advisoryActive ? "#2A9D78" : "rgba(245,243,238,0.6)",
+                  color: advisoryActive ? "#2E9677" : "rgba(245,243,238,0.6)",
                   transition: "color 0.25s", padding: "4px 0",
-                  borderBottom: advisoryActive ? "1px solid #2A9D78" : "1px solid transparent",
+                  borderBottom: advisoryActive ? "1px solid #2E9677" : "1px solid transparent",
                   display: "flex", alignItems: "center", gap: 6,
                 }}
                 onMouseEnter={(e) => { if (!advisoryActive) e.currentTarget.style.color = "#F5F3EE"; }}
@@ -260,17 +260,17 @@ export default function Nav({ current, onNavigate }: NavProps) {
               onClick={(event) => handleLink(event, "contact")}
               style={{
                 background: "none",
-                border: "1px solid rgba(42,157,120,0.5)",
+                border: "1px solid rgba(46,150,119,0.5)",
                 cursor: "pointer",
                 fontFamily: "'Inter', sans-serif", fontSize: 12, fontWeight: 500,
                 letterSpacing: "0.08em", textTransform: "uppercase",
-                color: current === "contact" ? "#F5F3EE" : "#2A9D78",
+                color: current === "contact" ? "#F5F3EE" : "#2E9677",
                 padding: "8px 20px",
                 textDecoration: "none", display: "inline-block",
                 transition: "border-color 0.25s, background 0.25s",
               }}
-              onMouseEnter={(e) => { (e.currentTarget as HTMLAnchorElement).style.background = "rgba(42,157,120,0.08)"; (e.currentTarget as HTMLAnchorElement).style.borderColor = "#2A9D78"; }}
-              onMouseLeave={(e) => { (e.currentTarget as HTMLAnchorElement).style.background = "none"; (e.currentTarget as HTMLAnchorElement).style.borderColor = "rgba(42,157,120,0.5)"; }}
+              onMouseEnter={(e) => { (e.currentTarget as HTMLAnchorElement).style.background = "rgba(46,150,119,0.08)"; (e.currentTarget as HTMLAnchorElement).style.borderColor = "#2E9677"; }}
+              onMouseLeave={(e) => { (e.currentTarget as HTMLAnchorElement).style.background = "none"; (e.currentTarget as HTMLAnchorElement).style.borderColor = "rgba(46,150,119,0.5)"; }}
             >
               {navContent.contact}
             </a>
@@ -293,7 +293,7 @@ export default function Nav({ current, onNavigate }: NavProps) {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div style={{ position: "fixed", inset: 0, zIndex: 99, background: "#1C1C1C", overflowY: "auto", display: "flex", flexDirection: "column", paddingTop: 96, paddingLeft: 40, paddingRight: 40, paddingBottom: 40 }}>
+        <div style={{ position: "fixed", inset: 0, zIndex: 99, background: "#231F20", overflowY: "auto", display: "flex", flexDirection: "column", paddingTop: 96, paddingLeft: 40, paddingRight: 40, paddingBottom: 40 }}>
           {/* Growth Program group */}
           <p style={{ fontFamily: "'Instrument Serif', serif", fontSize: 28, color: "#F5F3EE", margin: "12px 0 4px" }}>{navContent.growthProgram}</p>
           {growthProgramItems.map((item) => (
@@ -304,7 +304,7 @@ export default function Nav({ current, onNavigate }: NavProps) {
               style={{
                 cursor: "pointer", textDecoration: "none",
                 fontFamily: "'Inter', sans-serif", fontSize: 17,
-                color: current === item.page ? "#2A9D78" : "rgba(245,243,238,0.75)",
+                color: current === item.page ? "#2E9677" : "rgba(245,243,238,0.75)",
                 textAlign: "left", padding: "10px 0", paddingLeft: 20,
               }}
             >
@@ -322,7 +322,7 @@ export default function Nav({ current, onNavigate }: NavProps) {
               style={{
                 cursor: "pointer", textDecoration: "none",
                 fontFamily: "'Inter', sans-serif", fontSize: 17,
-                color: current === item.page ? "#2A9D78" : "rgba(245,243,238,0.75)",
+                color: current === item.page ? "#2E9677" : "rgba(245,243,238,0.75)",
                 textAlign: "left", padding: "10px 0", paddingLeft: 20,
               }}
             >
@@ -343,7 +343,7 @@ export default function Nav({ current, onNavigate }: NavProps) {
                 style={{
                   cursor: "pointer", textDecoration: "none",
                   fontFamily: "'Instrument Serif', serif", fontSize: 32,
-                  color: current === l.page ? "#2A9D78" : "#F5F3EE",
+                  color: current === l.page ? "#2E9677" : "#F5F3EE",
                   textAlign: "left", padding: "12px 0",
                   borderBottom: "1px solid rgba(255,255,255,0.06)",
                   display: "block",

@@ -1,9 +1,9 @@
-import { useRef } from "react";
 import { homeContent } from "../data/content";
 import { editableField } from "../data/editable";
 import { goToContact } from "../lib/contactNav";
 import type { Page } from "../routes";
 import HoloGlass from "../components/HoloGlass";
+import SpinningRingMark from "../components/SpinningRingMark";
 
 import imgToyota from "@/imports/toyota.png";
 import imgFord from "@/imports/ford.png";
@@ -65,39 +65,22 @@ export default function HomePage({ onNavigate }: HomePageProps) {
     document.getElementById("two-paths")?.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
-  const heroRef = useRef<SVGSVGElement>(null);
   const r3 = useReveal(), r4 = useReveal(), r5 = useReveal(), r6 = useReveal();
 
   return (
-    <div style={{ background: "#1C1C1C", minHeight: "100vh" }}>
+    <div style={{ background: "#231F20", minHeight: "100vh" }}>
 
       {/* Hero */}
       <section {...editableField("home.hero")} style={{ padding: "100px 40px 32px", maxWidth: 1280, margin: "0 auto", position: "relative", overflow: "hidden" }}>
 
         <HoloGlass />
 
-        {/* Animated ring mark - exact v1 */}
+        {/* Ring mark. Geometry and colours come from the corrected logo master
+            via SpinningRingMark; this used to be a hand-coded copy with its own
+            radii, the split mirrored, and no transform origin on the outer ring,
+            which made it swing off-centre as it rotated. */}
         <div style={{ position: "absolute", right: "6%", top: "50%", transform: "translateY(-50%)", opacity: 0.18, pointerEvents: "none", zIndex: 1 }} className="hero-ring">
-          <svg width="520" height="520" viewBox="0 0 520 520" fill="none" ref={heroRef}>
-            <defs>
-              <clipPath id="hero-left"><rect x="0" y="0" width="260" height="520" /></clipPath>
-              <clipPath id="hero-right"><rect x="260" y="0" width="260" height="520" /></clipPath>
-            </defs>
-            <g className="ring-outer">
-              <circle cx="260" cy="260" r="250" stroke="#2A9D78" strokeWidth="1" clipPath="url(#hero-left)" />
-              <circle cx="260" cy="260" r="250" stroke="#9B9B9B" strokeWidth="1" clipPath="url(#hero-right)" />
-            </g>
-            <g className="ring-inner" style={{ transformOrigin: "260px 260px" }}>
-              <circle cx="260" cy="260" r="175" stroke="#2A9D78" strokeWidth="1" strokeDasharray="4 6" clipPath="url(#hero-left)" />
-              <circle cx="260" cy="260" r="175" stroke="#9B9B9B" strokeWidth="1" strokeDasharray="4 6" clipPath="url(#hero-right)" />
-            </g>
-            <circle cx="260" cy="260" r="100" stroke="#2A9D78" strokeWidth="0.8" clipPath="url(#hero-left)" />
-            <circle cx="260" cy="260" r="100" stroke="#9B9B9B" strokeWidth="0.8" clipPath="url(#hero-right)" />
-            <circle cx="260" cy="260" r="40" stroke="#2A9D78" strokeWidth="0.6" clipPath="url(#hero-left)" />
-            <circle cx="260" cy="260" r="40" stroke="#9B9B9B" strokeWidth="0.6" clipPath="url(#hero-right)" />
-            <circle cx="260" cy="260" r="6" fill="#2A9D78" />
-            <line x1="260" y1="0" x2="260" y2="520" stroke="rgba(255,255,255,0.1)" strokeWidth="0.5" />
-          </svg>
+          <SpinningRingMark size={520} />
         </div>
 
         <div style={{ maxWidth: 760, position: "relative", zIndex: 2 }}>
@@ -116,9 +99,9 @@ export default function HomePage({ onNavigate }: HomePageProps) {
           <div style={{ display: "flex", gap: 16, flexWrap: "wrap" }} className="hero-cta">
             <button
               onClick={scrollToPaths}
-              style={{ background: "#2A9D78", border: "none", cursor: "pointer", fontFamily: "'Inter', sans-serif", fontSize: 14, fontWeight: 500, color: "#fff", padding: "16px 32px", letterSpacing: "0.02em", transition: "background 0.25s" }}
-              onMouseEnter={(e) => { e.currentTarget.style.background = "#239068"; }}
-              onMouseLeave={(e) => { e.currentTarget.style.background = "#2A9D78"; }}
+              style={{ background: "#2E9677", border: "none", cursor: "pointer", fontFamily: "'Inter', sans-serif", fontSize: 14, fontWeight: 500, color: "#fff", padding: "16px 32px", letterSpacing: "0.02em", transition: "background 0.25s" }}
+              onMouseEnter={(e) => { e.currentTarget.style.background = "#268A67"; }}
+              onMouseLeave={(e) => { e.currentTarget.style.background = "#2E9677"; }}
             >
               {homeContent.hero.ctaPrimary}
             </button>
@@ -127,8 +110,8 @@ export default function HomePage({ onNavigate }: HomePageProps) {
 
         {/* Scroll indicator */}
         <div style={{ display: "flex", alignItems: "center", gap: 12, marginTop: 28 }}>
-          <div style={{ width: 1, height: 28, background: "linear-gradient(to bottom, #2A9D78, transparent)" }} />
-          <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, letterSpacing: "0.12em", textTransform: "uppercase", color: "#9B9B9B" }}>{homeContent.hero.scrollLabel}</span>
+          <div style={{ width: 1, height: 28, background: "linear-gradient(to bottom, #2E9677, transparent)" }} />
+          <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, letterSpacing: "0.12em", textTransform: "uppercase", color: "#939598" }}>{homeContent.hero.scrollLabel}</span>
         </div>
       </section>
 
@@ -143,12 +126,12 @@ export default function HomePage({ onNavigate }: HomePageProps) {
 
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 2 }}>
             {/* Growth Program */}
-            <div style={{ background: "#1A2820", padding: "56px 48px", borderTop: "2px solid #2A9D78", position: "relative", cursor: "pointer", transition: "background 0.3s" }}
+            <div style={{ background: "#212B24", padding: "56px 48px", borderTop: "2px solid #2E9677", position: "relative", cursor: "pointer", transition: "background 0.3s" }}
               onClick={() => nav("growth-program")}
               onMouseEnter={(e) => { (e.currentTarget as HTMLDivElement).style.background = "#1E2E25"; }}
-              onMouseLeave={(e) => { (e.currentTarget as HTMLDivElement).style.background = "#1A2820"; }}
+              onMouseLeave={(e) => { (e.currentTarget as HTMLDivElement).style.background = "#212B24"; }}
             >
-              <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.15em", textTransform: "uppercase", color: "#8FD9BE", marginBottom: 12 }}>
+              <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.15em", textTransform: "uppercase", color: "#8AD0BF", marginBottom: 12 }}>
                 {homeContent.twoPaths.growthProgram.eyebrow}
               </p>
               <h3 style={{ fontFamily: "'Instrument Serif', serif", fontSize: 32, color: "#F5F3EE", fontWeight: 400, marginBottom: 24 }}>{homeContent.twoPaths.growthProgram.title}</h3>
@@ -158,19 +141,19 @@ export default function HomePage({ onNavigate }: HomePageProps) {
               <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, lineHeight: 1.6, fontStyle: "italic", color: "rgba(245,243,238,0.45)", marginBottom: 28 }}>
                 {homeContent.twoPaths.growthProgram.fitNote}
               </p>
-              <div style={{ display: "flex", alignItems: "center", gap: 8, color: "#2A9D78" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: 8, color: "#3AAC88" }}>
                 <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, letterSpacing: "0.05em" }}>{homeContent.twoPaths.growthProgram.cta}</span>
                 <span style={{ fontSize: 16 }}>→</span>
               </div>
             </div>
 
             {/* Advisory */}
-            <div style={{ background: "#1E1E1E", padding: "56px 48px", borderTop: "2px solid rgba(155,155,155,0.3)", position: "relative", cursor: "pointer", transition: "border-color 0.3s" }}
+            <div style={{ background: "#252122", padding: "56px 48px", borderTop: "2px solid rgba(147,149,152,0.3)", position: "relative", cursor: "pointer", transition: "border-color 0.3s" }}
               onClick={() => nav("strategic-advisory")}
-              onMouseEnter={(e) => { (e.currentTarget as HTMLDivElement).style.borderTopColor = "#9B9B9B"; }}
-              onMouseLeave={(e) => { (e.currentTarget as HTMLDivElement).style.borderTopColor = "rgba(155,155,155,0.3)"; }}
+              onMouseEnter={(e) => { (e.currentTarget as HTMLDivElement).style.borderTopColor = "#939598"; }}
+              onMouseLeave={(e) => { (e.currentTarget as HTMLDivElement).style.borderTopColor = "rgba(147,149,152,0.3)"; }}
             >
-              <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.15em", textTransform: "uppercase", color: "#9B9B9B", marginBottom: 12 }}>
+              <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.15em", textTransform: "uppercase", color: "#939598", marginBottom: 12 }}>
                 {homeContent.twoPaths.advisory.eyebrow}
               </p>
               <h3 style={{ fontFamily: "'Instrument Serif', serif", fontSize: 32, color: "#F5F3EE", fontWeight: 400, marginBottom: 24 }}>{homeContent.twoPaths.advisory.title}</h3>
@@ -180,7 +163,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
               <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, lineHeight: 1.6, fontStyle: "italic", color: "rgba(245,243,238,0.45)", marginBottom: 28 }}>
                 {homeContent.twoPaths.advisory.fitNote}
               </p>
-              <div style={{ display: "flex", alignItems: "center", gap: 8, color: "#9B9B9B" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: 8, color: "#939598" }}>
                 <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, letterSpacing: "0.05em" }}>{homeContent.twoPaths.advisory.cta}</span>
                 <span style={{ fontSize: 16 }}>→</span>
               </div>
@@ -190,10 +173,10 @@ export default function HomePage({ onNavigate }: HomePageProps) {
       </section>
 
       {/* Why TUR */}
-      <section {...editableField("home.whyTur")} style={{ background: "#161616", padding: "40px 40px 64px" }}>
+      <section {...editableField("home.whyTur")} style={{ background: "#1D191A", padding: "40px 40px 64px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
           <div ref={r4} className="reveal" style={{ marginBottom: 24 }}>
-            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 20 }}>{homeContent.whyTur.eyebrow}</p>
+            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#3AAC88", marginBottom: 20 }}>{homeContent.whyTur.eyebrow}</p>
             <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(30px, 4vw, 48px)", color: "#F5F3EE", fontWeight: 400, lineHeight: 1.15, maxWidth: 600 }}>
               {homeContent.whyTur.title}
             </h2>
@@ -206,7 +189,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
 
           <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 2 }}>
             {homeContent.whyTur.pillars.map((item, i) => (
-              <div key={i} style={{ background: "#1C1C1C", padding: "40px", borderTop: "1px solid rgba(42,157,120,0.3)" }}>
+              <div key={i} style={{ background: "#231F20", padding: "40px", borderTop: "1px solid rgba(46,150,119,0.3)" }}>
                 <h3 style={{ fontFamily: "'Instrument Serif', serif", fontSize: 22, color: "#F5F3EE", fontWeight: 400, marginBottom: 16 }}>{item.title}</h3>
                 <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, lineHeight: 1.75, color: "rgba(245,243,238,0.55)", margin: 0 }}>{item.body}</p>
               </div>
@@ -219,7 +202,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
       <section {...editableField("home.credibility")} style={{ padding: "64px 40px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
           <div ref={r5} className="reveal" style={{ marginBottom: 40, textAlign: "center" }}>
-            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 20 }}>{homeContent.credibility.eyebrow}</p>
+            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#3AAC88", marginBottom: 20 }}>{homeContent.credibility.eyebrow}</p>
             <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(30px, 3.5vw, 44px)", color: "#F5F3EE", fontWeight: 400, lineHeight: 1.2, marginBottom: 20 }}>
               {homeContent.credibility.title}
             </h2>
@@ -299,9 +282,9 @@ export default function HomePage({ onNavigate }: HomePageProps) {
           <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
             <button
               onClick={() => goToContact(onNavigate, "home")}
-              style={{ background: "#2A9D78", border: "none", cursor: "pointer", fontFamily: "'Inter', sans-serif", fontSize: 14, fontWeight: 500, color: "#fff", padding: "16px 32px", transition: "background 0.25s" }}
-              onMouseEnter={(e) => { e.currentTarget.style.background = "#239068"; }}
-              onMouseLeave={(e) => { e.currentTarget.style.background = "#2A9D78"; }}
+              style={{ background: "#2E9677", border: "none", cursor: "pointer", fontFamily: "'Inter', sans-serif", fontSize: 14, fontWeight: 500, color: "#fff", padding: "16px 32px", transition: "background 0.25s" }}
+              onMouseEnter={(e) => { e.currentTarget.style.background = "#268A67"; }}
+              onMouseLeave={(e) => { e.currentTarget.style.background = "#2E9677"; }}
             >
               {homeContent.cta.ctaPrimary}
             </button>

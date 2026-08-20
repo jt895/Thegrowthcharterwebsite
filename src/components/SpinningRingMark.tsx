@@ -1,18 +1,23 @@
 import { useId } from "react";
+import { RING_RADII, RINGS_DARK } from "./brandMark";
 
 interface SpinningRingMarkProps {
   size?: number;
   opacity?: number;
-  /** Speed multiplier - lower = faster. Default 1. */
+  /** Speed multiplier - higher = faster. Default 1. */
   speed?: number;
   /** Stroke weight multiplier. Default 1. */
   weight?: number;
 }
 
 /**
- * Version-1 hero animation: stroke-only concentric rings, grey/teal split,
- * outer ring spins CW and inner ring spins CCW via CSS keyframes.
- * Extra static inner rings add depth.
+ * Growth Program hero. Stroke-only reading of the mark: one ring per brand
+ * radius, greys left and greens right as in the logo, alternating spin
+ * direction outward to inward. Radii and colours come from brandMark.ts, so
+ * this stays in step with the artwork rather than drifting from it.
+ *
+ * Before August 2026 this component hand-coded its own radii, used the
+ * pre-correction green, and drew the split mirrored - greens on the left.
  */
 export default function SpinningRingMark({
   size = 520,
@@ -22,13 +27,16 @@ export default function SpinningRingMark({
 }: SpinningRingMarkProps) {
   const uid = useId().replace(/:/g, "");
   const cx = size / 2;
-
-  const outerDur = `${24 / speed}s`;
-  const innerDur = `${16 / speed}s`;
-  const mid1Dur  = `${36 / speed}s`;
-  const mid2Dur  = `${28 / speed}s`;
-
   const w = (n: number) => n * weight;
+
+  const rings = [
+    { duration: 24 / speed, dash: undefined, width: 1.2, reverse: false },
+    { duration: 36 / speed, dash: "6 10", width: 1.0, reverse: true },
+    { duration: 16 / speed, dash: "4 6", width: 0.9, reverse: true },
+    { duration: 28 / speed, dash: "2 5", width: 0.8, reverse: false },
+    { duration: 0, dash: undefined, width: 0.6, reverse: false },
+    { duration: 0, dash: undefined, width: 0.5, reverse: false },
+  ];
 
   return (
     <svg
@@ -39,56 +47,64 @@ export default function SpinningRingMark({
       style={{ opacity, display: "block", overflow: "visible" }}
     >
       <defs>
-        <clipPath id={`${uid}-l`}><rect x="0"  y="0" width={cx}   height={size} /></clipPath>
-        <clipPath id={`${uid}-r`}><rect x={cx} y="0" width={cx}   height={size} /></clipPath>
+        <clipPath id={`${uid}-l`}>
+          <rect x="0" y="0" width={cx} height={size} />
+        </clipPath>
+        <clipPath id={`${uid}-r`}>
+          <rect x={cx} y="0" width={cx} height={size} />
+        </clipPath>
 
         {/* Soft radial fade so it bleeds into the dark bg */}
         <radialGradient id={`${uid}-fade`} cx="50%" cy="50%" r="50%">
-          <stop offset="60%"  stopColor="white" stopOpacity="1" />
+          <stop offset="60%" stopColor="white" stopOpacity="1" />
           <stop offset="100%" stopColor="white" stopOpacity="0" />
         </radialGradient>
         <mask id={`${uid}-m`}>
           <rect x="0" y="0" width={size} height={size} fill={`url(#${uid}-fade)`} />
         </mask>
-
-        {/* Keyframes injected as SVG animate - use CSS classes for CW/CCW */}
       </defs>
 
       <g mask={`url(#${uid}-m)`}>
+        {rings.map(({ duration, dash, width, reverse }, i) => {
+          // The outermost stroke sits just inside the edge so the round cap
+          // is not clipped by the viewBox.
+          const r = cx * RING_RADII[i] * (i === 0 ? 0.97 : 1);
+          const { grey, green } = RINGS_DARK[i];
+          const spin = duration
+            ? {
+                transformOrigin: `${cx}px ${cx}px`,
+                animation: `${reverse ? "ring-counter" : "ring-spin"} ${duration}s linear infinite`,
+              }
+            : undefined;
 
-        {/* ── OUTER ring: spins CW ── */}
-        <g style={{ transformOrigin: `${cx}px ${cx}px`, animation: `ring-spin ${outerDur} linear infinite` }}>
-          <circle cx={cx} cy={cx} r={cx * 0.96} stroke="#9B9B9B" strokeWidth={w(1.2)} clipPath={`url(#${uid}-r)`} />
-          <circle cx={cx} cy={cx} r={cx * 0.96} stroke="#2A9D78" strokeWidth={w(1.2)} clipPath={`url(#${uid}-l)`} />
-        </g>
+          return (
+            <g key={i} style={spin}>
+              {/* Greys left */}
+              <circle
+                cx={cx}
+                cy={cx}
+                r={r}
+                stroke={grey}
+                strokeWidth={w(width)}
+                strokeDasharray={dash}
+                clipPath={`url(#${uid}-l)`}
+              />
+              {/* Greens right */}
+              <circle
+                cx={cx}
+                cy={cx}
+                r={r}
+                stroke={green}
+                strokeWidth={w(width)}
+                strokeDasharray={dash}
+                clipPath={`url(#${uid}-r)`}
+              />
+            </g>
+          );
+        })}
 
-        {/* ── MID-OUTER ring: spins CCW, dashed ── */}
-        <g style={{ transformOrigin: `${cx}px ${cx}px`, animation: `ring-counter ${mid1Dur} linear infinite` }}>
-          <circle cx={cx} cy={cx} r={cx * 0.78} stroke="#9B9B9B" strokeWidth={w(0.9)} strokeDasharray="6 10" clipPath={`url(#${uid}-r)`} />
-          <circle cx={cx} cy={cx} r={cx * 0.78} stroke="#2A9D78" strokeWidth={w(0.9)} strokeDasharray="6 10" clipPath={`url(#${uid}-l)`} />
-        </g>
-
-        {/* ── INNER ring: spins CCW ── */}
-        <g style={{ transformOrigin: `${cx}px ${cx}px`, animation: `ring-counter ${innerDur} linear infinite` }}>
-          <circle cx={cx} cy={cx} r={cx * 0.60} stroke="#9B9B9B" strokeWidth={w(1.0)} strokeDasharray="4 6" clipPath={`url(#${uid}-r)`} />
-          <circle cx={cx} cy={cx} r={cx * 0.60} stroke="#2A9D78" strokeWidth={w(1.0)} strokeDasharray="4 6" clipPath={`url(#${uid}-l)`} />
-        </g>
-
-        {/* ── MID-INNER ring: CW, tighter dash ── */}
-        <g style={{ transformOrigin: `${cx}px ${cx}px`, animation: `ring-spin ${mid2Dur} linear infinite` }}>
-          <circle cx={cx} cy={cx} r={cx * 0.42} stroke="#9B9B9B" strokeWidth={w(0.7)} strokeDasharray="2 5" clipPath={`url(#${uid}-r)`} />
-          <circle cx={cx} cy={cx} r={cx * 0.42} stroke="#2A9D78" strokeWidth={w(0.7)} strokeDasharray="2 5" clipPath={`url(#${uid}-l)`} />
-        </g>
-
-        {/* ── Static innermost rings ── */}
-        <circle cx={cx} cy={cx} r={cx * 0.26} stroke="#9B9B9B" strokeWidth={w(0.6)} clipPath={`url(#${uid}-r)`} />
-        <circle cx={cx} cy={cx} r={cx * 0.26} stroke="#2A9D78" strokeWidth={w(0.6)} clipPath={`url(#${uid}-l)`} />
-
-        <circle cx={cx} cy={cx} r={cx * 0.12} stroke="#9B9B9B" strokeWidth={w(0.5)} clipPath={`url(#${uid}-r)`} />
-        <circle cx={cx} cy={cx} r={cx * 0.12} stroke="#2A9D78" strokeWidth={w(0.5)} clipPath={`url(#${uid}-l)`} />
-
-        {/* Centre dot */}
-        <circle cx={cx} cy={cx} r={w(3.5)} fill="#2A9D78" />
+        {/* Centre dot, taken from the innermost ring's green */}
+        <circle cx={cx} cy={cx} r={w(3.5)} fill={RINGS_DARK[5].green} />
 
         {/* Vertical split hairline */}
         <line x1={cx} y1="0" x2={cx} y2={size} stroke="rgba(255,255,255,0.08)" strokeWidth="0.75" />

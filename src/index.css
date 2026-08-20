@@ -2,26 +2,31 @@
 @import 'tailwindcss';
 
 :root {
-  --background: #1C1C1C;
+  --background: #231F20;
   --foreground: #F5F3EE;
-  --card: #242424;
+  --card: #2B2728;
   --card-foreground: #F5F3EE;
-  --primary: #2A9D78;
+  --primary: #2E9677;
   --primary-foreground: #ffffff;
-  --secondary: #0B5E48;
-  --secondary-foreground: #8FD9BE;
-  --muted: #2A2A2A;
-  --muted-foreground: #9B9B9B;
-  --accent: #2A9D78;
+  --secondary: #086F54;
+  --secondary-foreground: #8AD0BF;
+  --muted: #312D2E;
+  --muted-foreground: #939598;
+  --accent: #2E9677;
   --accent-foreground: #ffffff;
+  /* Ring 1 green (#2E9677) is the brand primary and is used for fills, rules
+     and borders. As small text on the ink background it lands at 4.45:1,
+     just under WCAG AA. Green *text* therefore uses ring 3 (#3AAC88), which
+     is 5.77:1 and still inside the logo's own ramp. */
+  --accent-text: #3AAC88;
   --border: rgba(255,255,255,0.08);
-  --ring: #2A9D78;
+  --ring: #2E9677;
   --radius: 0px;
 
-  --mint: #8FD9BE;
-  --pine: #0B5E48;
-  --charcoal: #1C1C1C;
-  --mid-grey: #9B9B9B;
+  --mint: #8AD0BF;
+  --pine: #086F54;
+  --charcoal: #231F20;
+  --mid-grey: #939598;
 }
 
 * {
@@ -211,12 +216,12 @@ body {
   inset: -35%;
   background: conic-gradient(
     from 0deg at 50% 50%,
-    rgba(42,157,120,0.22) 0deg,
-    rgba(143,217,190,0.10) 90deg,
-    rgba(42,157,120,0.16) 160deg,
+    rgba(46,150,119,0.22) 0deg,
+    rgba(138,208,191,0.10) 90deg,
+    rgba(46,150,119,0.16) 160deg,
     rgba(245,243,238,0.05) 220deg,
-    rgba(42,157,120,0.20) 290deg,
-    rgba(42,157,120,0.22) 360deg
+    rgba(46,150,119,0.20) 290deg,
+    rgba(46,150,119,0.22) 360deg
   );
   filter: blur(90px) saturate(115%);
   animation: holo-swirl 60s linear infinite;
@@ -226,8 +231,8 @@ body {
   position: absolute;
   inset: -20%;
   background:
-    radial-gradient(circle at 25% 30%, rgba(42,157,120,0.18), transparent 50%),
-    radial-gradient(circle at 75% 70%, rgba(143,217,190,0.10), transparent 50%);
+    radial-gradient(circle at 25% 30%, rgba(46,150,119,0.18), transparent 50%),
+    radial-gradient(circle at 75% 70%, rgba(138,208,191,0.10), transparent 50%);
   filter: blur(70px);
   animation: holo-drift 34s ease-in-out infinite alternate;
   mix-blend-mode: screen;

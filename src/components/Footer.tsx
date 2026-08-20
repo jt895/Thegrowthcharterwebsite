@@ -27,14 +27,14 @@ export default function Footer({ current, onNavigate }: FooterProps) {
                 {siteContent.brandNameLines[0]}<br />{siteContent.brandNameLines[1]}
               </span>
             </div>
-            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, lineHeight: 1.7, color: "#9B9B9B", maxWidth: 260 }}>
+            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, lineHeight: 1.7, color: "#939598", maxWidth: 260 }}>
               {siteContent.blurb}
             </p>
           </div>
 
           {/* Navigation */}
           <div>
-            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.1em", textTransform: "uppercase", color: "#9B9B9B", marginBottom: 20 }}>
+            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.1em", textTransform: "uppercase", color: "#939598", marginBottom: 20 }}>
               {footerContent.navHeading}
             </p>
             <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
@@ -44,7 +44,7 @@ export default function Footer({ current, onNavigate }: FooterProps) {
                   href={pathForPage(l.page)}
                   onClick={(event) => { event.preventDefault(); nav(l.page); }}
                   style={{ cursor: "pointer", textDecoration: "none", fontFamily: "'Inter', sans-serif", fontSize: 14, color: "rgba(245,243,238,0.55)", textAlign: "left", padding: 0, transition: "color 0.2s" }}
-                  onMouseEnter={(e) => { e.currentTarget.style.color = "#2A9D78"; }}
+                  onMouseEnter={(e) => { e.currentTarget.style.color = "#2E9677"; }}
                   onMouseLeave={(e) => { e.currentTarget.style.color = "rgba(245,243,238,0.55)"; }}
                 >
                   {l.label}
@@ -55,12 +55,12 @@ export default function Footer({ current, onNavigate }: FooterProps) {
 
           {/* Contact */}
           <div>
-            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.1em", textTransform: "uppercase", color: "#9B9B9B", marginBottom: 20 }}>
+            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.1em", textTransform: "uppercase", color: "#939598", marginBottom: 20 }}>
               {footerContent.contactHeading}
             </p>
             <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
               <a href={`mailto:${siteContent.contact.email}`} style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, color: "rgba(245,243,238,0.55)", textDecoration: "none", transition: "color 0.2s" }}
-                onMouseEnter={(e) => { e.currentTarget.style.color = "#2A9D78"; }}
+                onMouseEnter={(e) => { e.currentTarget.style.color = "#2E9677"; }}
                 onMouseLeave={(e) => { e.currentTarget.style.color = "rgba(245,243,238,0.55)"; }}
               >
                 {siteContent.contact.email}
@@ -68,7 +68,7 @@ export default function Footer({ current, onNavigate }: FooterProps) {
               <a href={siteContent.contact.phoneHref} style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, color: "rgba(245,243,238,0.55)", textDecoration: "none" }}>
                 {siteContent.contact.phone}
               </a>
-              <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, lineHeight: 1.6, color: "#9B9B9B", marginTop: 8 }}>
+              <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, lineHeight: 1.6, color: "#939598", marginTop: 8 }}>
                 {siteContent.location}
               </p>
               <div style={{ marginTop: 4, display: "flex", flexDirection: "column", gap: 8 }}>
@@ -76,9 +76,9 @@ export default function Footer({ current, onNavigate }: FooterProps) {
                   <button
                     key={item.anchor}
                     onClick={() => goToContact(onNavigate, current, item.anchor)}
-                    style={{ background: "none", border: "none", cursor: "pointer", textAlign: "left", padding: 0, fontFamily: "'Inter', sans-serif", fontSize: 12, color: "#9B9B9B", transition: "color 0.2s" }}
-                    onMouseEnter={(e) => { e.currentTarget.style.color = "#2A9D78"; }}
-                    onMouseLeave={(e) => { e.currentTarget.style.color = "#9B9B9B"; }}
+                    style={{ background: "none", border: "none", cursor: "pointer", textAlign: "left", padding: 0, fontFamily: "'Inter', sans-serif", fontSize: 12, color: "#939598", transition: "color 0.2s" }}
+                    onMouseEnter={(e) => { e.currentTarget.style.color = "#2E9677"; }}
+                    onMouseLeave={(e) => { e.currentTarget.style.color = "#939598"; }}
                   >
                     {item.label}
                   </button>
@@ -89,10 +89,10 @@ export default function Footer({ current, onNavigate }: FooterProps) {
         </div>
 
         <div style={{ borderTop: "1px solid rgba(255,255,255,0.06)", paddingTop: 32, display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 16 }}>
-          <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 12, color: "#9B9B9B", margin: 0 }}>
+          <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 12, color: "#939598", margin: 0 }}>
             {siteContent.copyright}
           </p>
-          <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 12, color: "#9B9B9B", margin: 0, fontStyle: "italic" }}>
+          <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 12, color: "#939598", margin: 0, fontStyle: "italic" }}>
             {siteContent.tagline}
           </p>
         </div>

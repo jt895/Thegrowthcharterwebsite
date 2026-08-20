@@ -14,7 +14,7 @@ export default function ContactPage(_props: ContactPageProps) {
   const [sourcePage] = useState(() => readContactSource());
 
   return (
-    <div style={{ background: "#1C1C1C", minHeight: "100vh" }}>
+    <div style={{ background: "#231F20", minHeight: "100vh" }}>
 
       {/* Hero */}
       <section {...editableField("contact.hero")} style={{ padding: "100px 40px 64px", textAlign: "center", position: "relative", overflow: "hidden" }}>
@@ -38,8 +38,8 @@ export default function ContactPage(_props: ContactPageProps) {
 
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 2 }}>
             {/* Growth Program form */}
-            <div style={{ background: "#1E1E1E", padding: "48px", borderTop: "2px solid #2A9D78" }}>
-              <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.15em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 12 }}>
+            <div style={{ background: "#252122", padding: "48px", borderTop: "2px solid #2E9677" }}>
+              <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.15em", textTransform: "uppercase", color: "#3AAC88", marginBottom: 12 }}>
                 {contactContent.forms.growthProgram.displayName}
               </p>
               <h3 style={{ fontFamily: "'Instrument Serif', serif", fontSize: 26, color: "#F5F3EE", fontWeight: 400, marginBottom: 16 }}>
@@ -53,7 +53,7 @@ export default function ContactPage(_props: ContactPageProps) {
                 formName={contactContent.forms.growthProgram.formName}
                 submitLabel={contactContent.forms.growthProgram.submitLabel}
                 sourcePage={sourcePage}
-                accent="#2A9D78"
+                accent="#2E9677"
                 fields={[
                   { name: "name", label: "Name", type: "text" },
                   { name: "business", label: "Business name", type: "text" },
@@ -65,8 +65,8 @@ export default function ContactPage(_props: ContactPageProps) {
             </div>
 
             {/* Strategic Advisory form */}
-            <div style={{ background: "#1E1E1E", padding: "48px", borderTop: "2px solid rgba(155,155,155,0.5)" }}>
-              <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.15em", textTransform: "uppercase", color: "#9B9B9B", marginBottom: 12 }}>
+            <div style={{ background: "#252122", padding: "48px", borderTop: "2px solid rgba(147,149,152,0.5)" }}>
+              <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.15em", textTransform: "uppercase", color: "#939598", marginBottom: 12 }}>
                 {contactContent.forms.strategicAdvisory.displayName}
               </p>
               <h3 style={{ fontFamily: "'Instrument Serif', serif", fontSize: 26, color: "#F5F3EE", fontWeight: 400, marginBottom: 16 }}>
@@ -80,7 +80,7 @@ export default function ContactPage(_props: ContactPageProps) {
                 formName={contactContent.forms.strategicAdvisory.formName}
                 submitLabel={contactContent.forms.strategicAdvisory.submitLabel}
                 sourcePage={sourcePage}
-                accent="#9B9B9B"
+                accent="#939598"
                 fields={[
                   { name: "name", label: "Name", type: "text" },
                   { name: "organisation", label: "Organisation", type: "text" },
@@ -99,9 +99,9 @@ export default function ContactPage(_props: ContactPageProps) {
       </section>
 
       {/* Grow It Yourself waitlist */}
-      <section {...editableField("contact.waitlist")} style={{ background: "#161616", padding: "64px 40px" }}>
+      <section {...editableField("contact.waitlist")} style={{ background: "#1D191A", padding: "64px 40px" }}>
         <div style={{ maxWidth: 620, margin: "0 auto" }}>
-          <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.15em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 12, textAlign: "center" }}>
+          <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.15em", textTransform: "uppercase", color: "#3AAC88", marginBottom: 12, textAlign: "center" }}>
             {contactContent.waitlist.eyebrow}
           </p>
           <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(22px, 2.5vw, 30px)", color: "#F5F3EE", fontWeight: 400, textAlign: "center", marginBottom: 12 }}>
@@ -141,22 +141,22 @@ export default function ContactPage(_props: ContactPageProps) {
           <a href={siteContent.contact.phoneHref} style={{ display: "block", fontFamily: "'Inter', sans-serif", fontSize: 15, color: "rgba(245,243,238,0.7)", textDecoration: "none", marginBottom: 16 }}>
             {siteContent.contact.phone}
           </a>
-          <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, color: "#9B9B9B", margin: 0 }}>
+          <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, color: "#939598", margin: 0 }}>
             {siteContent.location}
           </p>
         </div>
       </section>
 
       {/* What happens next */}
-      <section {...editableField("contact.whatHappensNext")} style={{ background: "#161616", padding: "64px 40px" }}>
+      <section {...editableField("contact.whatHappensNext")} style={{ background: "#1D191A", padding: "64px 40px" }}>
         <div style={{ maxWidth: 720, margin: "0 auto" }}>
           <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(24px, 3vw, 34px)", color: "#F5F3EE", fontWeight: 400, textAlign: "center", marginBottom: 48 }}>
             {contactContent.whatHappensNext.title}
           </h2>
           <div style={{ display: "flex", flexDirection: "column", gap: 2 }}>
             {contactContent.whatHappensNext.steps.map((step, i) => (
-              <div key={i} style={{ display: "grid", gridTemplateColumns: "48px 1fr", gap: 20, padding: "20px 0", borderTop: i === 0 ? "2px solid #2A9D78" : "1px solid rgba(255,255,255,0.07)", alignItems: "center" }}>
-                <span style={{ fontFamily: "'Instrument Serif', serif", fontSize: 28, color: "rgba(42,157,120,0.5)" }}>{i + 1}</span>
+              <div key={i} style={{ display: "grid", gridTemplateColumns: "48px 1fr", gap: 20, padding: "20px 0", borderTop: i === 0 ? "2px solid #2E9677" : "1px solid rgba(255,255,255,0.07)", alignItems: "center" }}>
+                <span style={{ fontFamily: "'Instrument Serif', serif", fontSize: 28, color: "rgba(46,150,119,0.5)" }}>{i + 1}</span>
                 <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.7, color: "rgba(245,243,238,0.65)", margin: 0 }}>{step}</p>
               </div>
             ))}

@@ -51,7 +51,7 @@ export default function CaseStudyCard({ item, comingSoonLabel, onNavigate }: Cas
 
       <div style={{ marginTop: 24 }}>
         {item.linked ? (
-          <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, fontWeight: 500, color: "#2A9D78", display: "inline-flex", alignItems: "center", gap: 8 }}>
+          <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, fontWeight: 500, color: "#3AAC88", display: "inline-flex", alignItems: "center", gap: 8 }}>
             Read the case study <span>→</span>
           </span>
         ) : (
@@ -64,8 +64,8 @@ export default function CaseStudyCard({ item, comingSoonLabel, onNavigate }: Cas
   );
 
   const baseStyle = {
-    background: "#1E1E1E",
-    borderTop: "2px solid #2A9D78",
+    background: "#252122",
+    borderTop: "2px solid #2E9677",
     padding: "28px 28px 32px",
     display: "flex",
     flexDirection: "column" as const,
@@ -75,7 +75,7 @@ export default function CaseStudyCard({ item, comingSoonLabel, onNavigate }: Cas
 
   if (!item.linked) {
     return (
-      <div style={{ ...baseStyle, borderTopColor: "rgba(42,157,120,0.3)" }}>
+      <div style={{ ...baseStyle, borderTopColor: "rgba(46,150,119,0.3)" }}>
         {inner}
       </div>
     );
@@ -91,8 +91,8 @@ export default function CaseStudyCard({ item, comingSoonLabel, onNavigate }: Cas
         window.scrollTo({ top: 0 });
       }}
       style={{ ...baseStyle, textDecoration: "none", cursor: "pointer" }}
-      onMouseEnter={(e) => { e.currentTarget.style.background = "#242424"; e.currentTarget.style.transform = "translateY(-3px)"; }}
-      onMouseLeave={(e) => { e.currentTarget.style.background = "#1E1E1E"; e.currentTarget.style.transform = "translateY(0)"; }}
+      onMouseEnter={(e) => { e.currentTarget.style.background = "#2B2728"; e.currentTarget.style.transform = "translateY(-3px)"; }}
+      onMouseLeave={(e) => { e.currentTarget.style.background = "#252122"; e.currentTarget.style.transform = "translateY(0)"; }}
     >
       {inner}
     </a>

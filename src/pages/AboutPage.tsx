@@ -17,17 +17,17 @@ export default function AboutPage({ onNavigate }: AboutPageProps) {
   const differences = aboutContent.differentiators.items;
 
   return (
-    <div style={{ background: "#1C1C1C", minHeight: "100vh" }}>
+    <div style={{ background: "#231F20", minHeight: "100vh" }}>
 
       {/* Hero */}
       <section {...editableField("about.hero")} style={{ paddingTop: 100, paddingBottom: 64, padding: "100px 40px 64px", position: "relative", overflow: "hidden" }}>
         <HoloGlass />
         <div style={{ position: "absolute", right: "-4%", top: "50%", transform: "translateY(-50%)", pointerEvents: "none", animation: "fade-in 2.4s ease 0.5s both", zIndex: 1 }}>
-          <AnimatedHeroMark size={600} opacity={0.32} speedMultiplier={2.2} />
+          <AnimatedHeroMark size={600} opacity={0.2} speedMultiplier={2.2} />
         </div>
         <div style={{ maxWidth: 1280, margin: "0 auto", position: "relative", zIndex: 2 }}>
           <div style={{ maxWidth: 760 }}>
-            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 28 }} className="hero-sub">
+            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#3AAC88", marginBottom: 28 }} className="hero-sub">
               {aboutContent.hero.eyebrow}
             </p>
             <h1 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(38px, 5.5vw, 68px)", lineHeight: 1.08, color: "#F5F3EE", fontWeight: 400, marginBottom: 40 }} className="hero-title">
@@ -44,22 +44,22 @@ export default function AboutPage({ onNavigate }: AboutPageProps) {
       </section>
 
       {/* James */}
-      <section {...editableField("about.james")} style={{ background: "#161616", padding: "64px 40px" }}>
+      <section {...editableField("about.james")} style={{ background: "#1D191A", padding: "64px 40px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1.5fr", gap: 80, alignItems: "start" }}>
           <div ref={r1} className="reveal">
-            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 20 }}>
+            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#3AAC88", marginBottom: 20 }}>
               {aboutContent.james.eyebrow}
             </p>
             <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(26px, 3vw, 38px)", color: "#F5F3EE", fontWeight: 400, lineHeight: 1.2, marginBottom: 16 }}>
               {aboutContent.james.title}
             </h2>
-            <p style={{ fontFamily: "'Instrument Serif', serif", fontSize: 24, color: "#8FD9BE", fontWeight: 400, fontStyle: "italic", marginBottom: 32 }}>
+            <p style={{ fontFamily: "'Instrument Serif', serif", fontSize: 24, color: "#8AD0BF", fontWeight: 400, fontStyle: "italic", marginBottom: 32 }}>
               {aboutContent.james.name}
             </p>
             <img
               src="/about/jt-headshot.jpg"
               alt={aboutContent.james.name}
-              style={{ width: "100%", height: 280, objectFit: "cover", objectPosition: "50% 20%", filter: "grayscale(0.15)", border: "1px solid rgba(42,157,120,0.25)" }}
+              style={{ width: "100%", height: 280, objectFit: "cover", objectPosition: "50% 20%", filter: "grayscale(0.15)", border: "1px solid rgba(46,150,119,0.25)" }}
             />
           </div>
           <div ref={r2} className="reveal reveal-delay-1">
@@ -87,7 +87,7 @@ export default function AboutPage({ onNavigate }: AboutPageProps) {
               {aboutContent.tailoredTeam.title}
             </h2>
           </div>
-          <div style={{ maxWidth: 760, margin: "0 auto", background: "#1C1C1C", padding: "56px 64px", borderLeft: "2px solid #2A9D78" }}>
+          <div style={{ maxWidth: 760, margin: "0 auto", background: "#231F20", padding: "56px 64px", borderLeft: "2px solid #2E9677" }}>
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 16, lineHeight: 1.85, color: "rgba(245,243,238,0.65)", marginBottom: 24 }}>
               {aboutContent.tailoredTeam.paraA}
             </p>
@@ -96,7 +96,7 @@ export default function AboutPage({ onNavigate }: AboutPageProps) {
             </p>
             <button
               onClick={() => nav("how-we-work")}
-              style={{ background: "none", border: "none", cursor: "pointer", display: "flex", alignItems: "center", gap: 8, fontFamily: "'Inter', sans-serif", fontSize: 14, color: "#2A9D78", padding: 0 }}
+              style={{ background: "none", border: "none", cursor: "pointer", display: "flex", alignItems: "center", gap: 8, fontFamily: "'Inter', sans-serif", fontSize: 14, color: "#3AAC88", padding: 0 }}
             >
               {aboutContent.tailoredTeam.link} <span>→</span>
             </button>
@@ -105,10 +105,10 @@ export default function AboutPage({ onNavigate }: AboutPageProps) {
       </section>
 
       {/* How we're different */}
-      <section {...editableField("about.differentiators")} style={{ background: "#161616", padding: "64px 40px" }}>
+      <section {...editableField("about.differentiators")} style={{ background: "#1D191A", padding: "64px 40px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
           <div ref={r4} className="reveal" style={{ marginBottom: 48 }}>
-            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 20, textAlign: "center" }}>
+            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#3AAC88", marginBottom: 20, textAlign: "center" }}>
               {aboutContent.differentiators.eyebrow}
             </p>
             <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(28px, 3.5vw, 44px)", color: "#F5F3EE", fontWeight: 400, lineHeight: 1.15, textAlign: "center" }}>
@@ -117,7 +117,7 @@ export default function AboutPage({ onNavigate }: AboutPageProps) {
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: 2 }}>
             {differences.map((item, i) => (
-              <div key={i} style={{ background: "#1E1E1E", padding: "44px 48px", borderTop: i < 2 ? "2px solid #2A9D78" : "1px solid rgba(42,157,120,0.2)" }}>
+              <div key={i} style={{ background: "#252122", padding: "44px 48px", borderTop: i < 2 ? "2px solid #2E9677" : "1px solid rgba(46,150,119,0.2)" }}>
                 <h3 style={{ fontFamily: "'Instrument Serif', serif", fontSize: 22, color: "#F5F3EE", fontWeight: 400, marginBottom: 16 }}>
                   {item.title}
                 </h3>
@@ -134,14 +134,14 @@ export default function AboutPage({ onNavigate }: AboutPageProps) {
       <section {...editableField("about.experience")} style={{ padding: "64px 40px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
           <div ref={r5} className="reveal" style={{ marginBottom: 40 }}>
-            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 20 }}>
+            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#3AAC88", marginBottom: 20 }}>
               {aboutContent.experience.eyebrow}
             </p>
             <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(28px, 3.5vw, 44px)", color: "#F5F3EE", fontWeight: 400, lineHeight: 1.15 }}>
               {aboutContent.experience.title}
             </h2>
           </div>
-          <div style={{ maxWidth: 760, background: "#1C1C1C", padding: "56px 64px", borderTop: "1px solid rgba(42,157,120,0.3)", borderLeft: "1px solid rgba(42,157,120,0.15)" }}>
+          <div style={{ maxWidth: 760, background: "#231F20", padding: "56px 64px", borderTop: "1px solid rgba(46,150,119,0.3)", borderLeft: "1px solid rgba(46,150,119,0.15)" }}>
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.85, color: "rgba(245,243,238,0.6)", marginBottom: 24 }}>
               {aboutContent.experience.paraA}
             </p>
@@ -159,7 +159,7 @@ export default function AboutPage({ onNavigate }: AboutPageProps) {
       </section>
 
       {/* Route out */}
-      <section {...editableField("about.routeOut")} style={{ background: "#161616", padding: "64px 40px" }}>
+      <section {...editableField("about.routeOut")} style={{ background: "#1D191A", padding: "64px 40px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
           <div ref={r6} className="reveal" style={{ textAlign: "center", marginBottom: 40 }}>
             <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(28px, 3.5vw, 44px)", color: "#F5F3EE", fontWeight: 400, lineHeight: 1.15 }}>
@@ -170,14 +170,14 @@ export default function AboutPage({ onNavigate }: AboutPageProps) {
             {aboutContent.routeOut.paths.map((path) => (
               <div
                 key={path.target}
-                style={{ background: "#1E1E1E", padding: "48px", borderTop: "2px solid #2A9D78", cursor: "pointer", transition: "background 0.3s" }}
+                style={{ background: "#252122", padding: "48px", borderTop: "2px solid #2E9677", cursor: "pointer", transition: "background 0.3s" }}
                 onClick={() => nav(path.target as Page)}
-                onMouseEnter={(e) => { (e.currentTarget as HTMLDivElement).style.background = "#242424"; }}
-                onMouseLeave={(e) => { (e.currentTarget as HTMLDivElement).style.background = "#1E1E1E"; }}
+                onMouseEnter={(e) => { (e.currentTarget as HTMLDivElement).style.background = "#2B2728"; }}
+                onMouseLeave={(e) => { (e.currentTarget as HTMLDivElement).style.background = "#252122"; }}
               >
                 <h3 style={{ fontFamily: "'Instrument Serif', serif", fontSize: 26, color: "#F5F3EE", fontWeight: 400, marginBottom: 16 }}>{path.title}</h3>
                 <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, lineHeight: 1.75, color: "rgba(245,243,238,0.55)", marginBottom: 28 }}>{path.body}</p>
-                <div style={{ display: "flex", alignItems: "center", gap: 8, color: "#2A9D78" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: 8, color: "#3AAC88" }}>
                   <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, letterSpacing: "0.05em" }}>{path.cta}</span>
                   <span style={{ fontSize: 16 }}>→</span>
                 </div>
@@ -187,9 +187,9 @@ export default function AboutPage({ onNavigate }: AboutPageProps) {
           <div style={{ textAlign: "center" }}>
             <button
               onClick={() => goToContact(onNavigate, "about")}
-              style={{ background: "#2A9D78", border: "none", cursor: "pointer", fontFamily: "'Inter', sans-serif", fontSize: 14, fontWeight: 500, color: "#fff", padding: "16px 32px", transition: "background 0.25s" }}
-              onMouseEnter={(e) => { e.currentTarget.style.background = "#239068"; }}
-              onMouseLeave={(e) => { e.currentTarget.style.background = "#2A9D78"; }}
+              style={{ background: "#2E9677", border: "none", cursor: "pointer", fontFamily: "'Inter', sans-serif", fontSize: 14, fontWeight: 500, color: "#fff", padding: "16px 32px", transition: "background 0.25s" }}
+              onMouseEnter={(e) => { e.currentTarget.style.background = "#268A67"; }}
+              onMouseLeave={(e) => { e.currentTarget.style.background = "#2E9677"; }}
             >
               {aboutContent.routeOut.buttonLabel}
             </button>

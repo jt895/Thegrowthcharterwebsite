@@ -73,8 +73,8 @@ function videoMimeType(src: string): string {
 function DocumentIcon({ size = 20 }: { size?: number }) {
   return (
     <svg width={size} height={size} viewBox="0 0 20 20" fill="none" style={{ flexShrink: 0 }}>
-      <path d="M5 2h6l4 4v10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1Z" stroke="#2A9D78" strokeWidth="1.2" strokeLinejoin="round" />
-      <path d="M11 2v4h4" stroke="#2A9D78" strokeWidth="1.2" strokeLinejoin="round" />
+      <path d="M5 2h6l4 4v10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1Z" stroke="#2E9677" strokeWidth="1.2" strokeLinejoin="round" />
+      <path d="M11 2v4h4" stroke="#2E9677" strokeWidth="1.2" strokeLinejoin="round" />
     </svg>
   );
 }
@@ -90,7 +90,7 @@ function ExpandIcon() {
 /** Grid tile shared by the image and document galleries. */
 const thumbTile = {
   position: "relative", display: "block", width: "100%", padding: 0, margin: 0,
-  aspectRatio: "3 / 4", background: "#161616", border: "1px solid rgba(245,243,238,0.08)",
+  aspectRatio: "3 / 4", background: "#1D191A", border: "1px solid rgba(245,243,238,0.08)",
   overflow: "hidden", cursor: "pointer", transition: "border-color 0.2s, background 0.2s",
 } as const;
 
@@ -115,8 +115,8 @@ const thumbGrid = {
 } as const;
 
 function highlightTile(el: HTMLElement, on: boolean) {
-  el.style.borderColor = on ? "rgba(42,157,120,0.9)" : "rgba(245,243,238,0.08)";
-  el.style.background = on ? "#1E1E1E" : "#161616";
+  el.style.borderColor = on ? "rgba(46,150,119,0.9)" : "rgba(245,243,238,0.08)";
+  el.style.background = on ? "#252122" : "#1D191A";
 }
 
 interface LightboxState {
@@ -182,7 +182,7 @@ export default function CaseStudyTemplate({ content, page, formId, formName, onN
   const [lightbox, setLightbox] = useState<LightboxState | null>(null);
 
   return (
-    <div style={{ background: "#1C1C1C", minHeight: "100vh" }}>
+    <div style={{ background: "#231F20", minHeight: "100vh" }}>
 
       {/* Header */}
       <section style={{ padding: "100px 40px 64px" }}>
@@ -190,7 +190,7 @@ export default function CaseStudyTemplate({ content, page, formId, formName, onN
           <a
             href={pathForPage("case-studies")}
             onClick={(event) => { event.preventDefault(); nav("case-studies"); }}
-            style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, color: "#2A9D78", textDecoration: "none", display: "inline-flex", alignItems: "center", gap: 8, marginBottom: 40 }}
+            style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, color: "#3AAC88", textDecoration: "none", display: "inline-flex", alignItems: "center", gap: 8, marginBottom: 40 }}
           >
             ← {content.cta.backLabel}
           </a>
@@ -225,10 +225,10 @@ export default function CaseStudyTemplate({ content, page, formId, formName, onN
       </section>
 
       {/* The situation */}
-      <section style={{ background: "#161616", padding: "64px 40px" }}>
+      <section style={{ background: "#1D191A", padding: "64px 40px" }}>
         <div ref={r1} className="reveal" style={sectionMax}>
           <h2 style={H2}>{content.situation.heading}</h2>
-          <div style={{ background: "#1C1C1C", padding: "40px 44px", borderLeft: "2px solid #2A9D78" }}>
+          <div style={{ background: "#231F20", padding: "40px 44px", borderLeft: "2px solid #2E9677" }}>
             <p style={bodyP}>{content.situation.body}</p>
           </div>
         </div>
@@ -238,20 +238,20 @@ export default function CaseStudyTemplate({ content, page, formId, formName, onN
       <section style={{ padding: "64px 40px" }}>
         <div ref={r2} className="reveal" style={sectionMax}>
           <h2 style={H2}>{content.realProblem.heading}</h2>
-          <div style={{ background: "#161616", padding: "40px 44px", borderLeft: "2px solid #2A9D78" }}>
+          <div style={{ background: "#1D191A", padding: "40px 44px", borderLeft: "2px solid #2E9677" }}>
             <p style={bodyP}>{content.realProblem.body}</p>
           </div>
         </div>
       </section>
 
       {/* What we did */}
-      <section style={{ background: "#161616", padding: "64px 40px" }}>
+      <section style={{ background: "#1D191A", padding: "64px 40px" }}>
         <div ref={r3} className="reveal" style={sectionMax}>
           <h2 style={H2}>{content.whatWeDid.heading}</h2>
           <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
             {content.whatWeDid.items.map((item) => (
               <div key={item} style={{ display: "flex", gap: 14, alignItems: "flex-start" }}>
-                <div style={{ width: 4, height: 4, borderRadius: "50%", background: "#2A9D78", marginTop: 10, flexShrink: 0 }} />
+                <div style={{ width: 4, height: 4, borderRadius: "50%", background: "#2E9677", marginTop: 10, flexShrink: 0 }} />
                 <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.75, color: "rgba(245,243,238,0.65)", margin: 0 }}>{item}</p>
               </div>
             ))}
@@ -260,9 +260,9 @@ export default function CaseStudyTemplate({ content, page, formId, formName, onN
       </section>
 
       {/* The result - the payload of the page */}
-      <section style={{ background: "#0B5E48", padding: "64px 40px" }}>
+      <section style={{ background: "#086F54", padding: "64px 40px" }}>
         <div ref={r4} className="reveal" style={{ maxWidth: 900, margin: "0 auto", textAlign: "center" }}>
-          <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#8FD9BE", marginBottom: 24 }}>
+          <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#8AD0BF", marginBottom: 24 }}>
             {content.result.heading}
           </p>
           <p style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(28px, 4vw, 46px)", lineHeight: 1.2, color: "#F5F3EE", fontWeight: 400, marginBottom: 24 }}>
@@ -281,7 +281,7 @@ export default function CaseStudyTemplate({ content, page, formId, formName, onN
 
           {content.gallery.videos.length > 0 && (
             <div style={{ marginBottom: 64 }}>
-              <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 600, letterSpacing: "0.12em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 24 }}>
+              <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 600, letterSpacing: "0.12em", textTransform: "uppercase", color: "#3AAC88", marginBottom: 24 }}>
                 {content.gallery.videosHeading}
               </p>
               <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: 24 }}>
@@ -308,7 +308,7 @@ export default function CaseStudyTemplate({ content, page, formId, formName, onN
 
           {content.gallery.images.length > 0 && (
             <div style={{ marginBottom: 64 }}>
-              <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 600, letterSpacing: "0.12em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 24 }}>
+              <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 600, letterSpacing: "0.12em", textTransform: "uppercase", color: "#3AAC88", marginBottom: 24 }}>
                 {content.gallery.imagesHeading}
               </p>
               {/* Natural aspect ratio, not cropped to a fixed box - campaign stills here range from
@@ -338,7 +338,7 @@ export default function CaseStudyTemplate({ content, page, formId, formName, onN
 
           {content.gallery.documents.length > 0 && (
             <div>
-              <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 600, letterSpacing: "0.12em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 24 }}>
+              <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 600, letterSpacing: "0.12em", textTransform: "uppercase", color: "#3AAC88", marginBottom: 24 }}>
                 {content.gallery.documentsHeading}
               </p>
               <div style={thumbGrid}>
@@ -375,9 +375,9 @@ export default function CaseStudyTemplate({ content, page, formId, formName, onN
       </section>
 
       {/* Why it matters to you */}
-      <section style={{ background: "#161616", padding: "64px 40px" }}>
+      <section style={{ background: "#1D191A", padding: "64px 40px" }}>
         <div ref={r6} className="reveal" style={{ maxWidth: 700, margin: "0 auto", textAlign: "center" }}>
-          <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 24 }}>
+          <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#3AAC88", marginBottom: 24 }}>
             {content.whyItMatters.heading}
           </p>
           <p style={{ fontFamily: "'Instrument Serif', serif", fontStyle: "italic", fontSize: "clamp(22px, 2.6vw, 30px)", lineHeight: 1.5, color: "#F5F3EE", fontWeight: 400, margin: 0 }}>
@@ -389,7 +389,7 @@ export default function CaseStudyTemplate({ content, page, formId, formName, onN
       {/* CTA + enquiry form */}
       <section id={formId} style={{ padding: "64px 40px" }}>
         <div ref={r7} className="reveal" style={{ maxWidth: 560, margin: "0 auto" }}>
-          <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.15em", textTransform: "uppercase", color: "#9B9B9B", marginBottom: 20, textAlign: "center" }}>
+          <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.15em", textTransform: "uppercase", color: "#939598", marginBottom: 20, textAlign: "center" }}>
             {content.cta.eyebrow}
           </p>
           <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(24px, 3vw, 36px)", color: "#F5F3EE", fontWeight: 400, lineHeight: 1.25, marginBottom: 20, textAlign: "center" }}>
@@ -403,7 +403,7 @@ export default function CaseStudyTemplate({ content, page, formId, formName, onN
             formName={formName}
             submitLabel={content.cta.ctaLabel}
             sourcePage={sourcePage}
-            accent="#2A9D78"
+            accent="#2E9677"
             fields={[
               { name: "name", label: "Name", type: "text" },
               { name: "organisation", label: "Organisation", type: "text" },
@@ -420,7 +420,7 @@ export default function CaseStudyTemplate({ content, page, formId, formName, onN
       <div style={{ textAlign: "center", padding: "0 40px 80px" }}>
         <button
           onClick={() => nav("case-studies")}
-          style={{ background: "none", border: "none", cursor: "pointer", fontFamily: "'Inter', sans-serif", fontSize: 14, color: "#2A9D78" }}
+          style={{ background: "none", border: "none", cursor: "pointer", fontFamily: "'Inter', sans-serif", fontSize: 14, color: "#3AAC88" }}
         >
           ← {content.cta.backLabel}
         </button>

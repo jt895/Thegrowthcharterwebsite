@@ -97,13 +97,13 @@ export default function ProductPage({ onNavigate, page, contentKey, product }: P
   const r1 = useReveal(), r2 = useReveal(), r3 = useReveal(), r4 = useReveal(), r5 = useReveal(), r6 = useReveal();
 
   return (
-    <div style={{ background: "#1C1C1C", minHeight: "100vh" }}>
+    <div style={{ background: "#231F20", minHeight: "100vh" }}>
 
       {/* Hero */}
       <section {...editableField(`growthProgram.products.${contentKey}`)} style={{ padding: "100px 40px 64px", textAlign: "center", position: "relative", overflow: "hidden" }}>
         <HoloGlass />
         <div style={{ maxWidth: 720, margin: "0 auto", position: "relative", zIndex: 1 }}>
-          <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 24 }}>
+          <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#3AAC88", marginBottom: 24 }}>
             {product.eyebrow}
           </p>
           <h1 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(34px, 5vw, 58px)", lineHeight: 1.1, color: "#F5F3EE", fontWeight: 400, marginBottom: 28 }}>
@@ -112,15 +112,15 @@ export default function ProductPage({ onNavigate, page, contentKey, product }: P
           <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 17, lineHeight: 1.75, color: "rgba(245,243,238,0.6)", marginBottom: 32, maxWidth: 620, marginLeft: "auto", marginRight: "auto" }}>
             {product.subtitle}
           </p>
-          <p style={{ fontFamily: "'Instrument Serif', serif", fontSize: 28, color: "#8FD9BE", fontWeight: 400, marginBottom: 40 }}>
+          <p style={{ fontFamily: "'Instrument Serif', serif", fontSize: 28, color: "#8AD0BF", fontWeight: 400, marginBottom: 40 }}>
             {product.price}
             {product.pricePending && <PendingTag />}
           </p>
           <button
             onClick={scrollToForm}
-            style={{ background: "#2A9D78", border: "none", cursor: "pointer", fontFamily: "'Inter', sans-serif", fontSize: 14, fontWeight: 500, color: "#fff", padding: "16px 32px", transition: "background 0.25s" }}
-            onMouseEnter={(e) => { e.currentTarget.style.background = "#239068"; }}
-            onMouseLeave={(e) => { e.currentTarget.style.background = "#2A9D78"; }}
+            style={{ background: "#2E9677", border: "none", cursor: "pointer", fontFamily: "'Inter', sans-serif", fontSize: 14, fontWeight: 500, color: "#fff", padding: "16px 32px", transition: "background 0.25s" }}
+            onMouseEnter={(e) => { e.currentTarget.style.background = "#268A67"; }}
+            onMouseLeave={(e) => { e.currentTarget.style.background = "#2E9677"; }}
           >
             {product.ctaLabel}
           </button>
@@ -129,7 +129,7 @@ export default function ProductPage({ onNavigate, page, contentKey, product }: P
 
       {/* Intro / problem */}
       {product.intro && (
-        <section style={{ background: "#161616", padding: "64px 40px" }}>
+        <section style={{ background: "#1D191A", padding: "64px 40px" }}>
           <div ref={r1} className="reveal" style={sectionMax}>
             {product.intro.heading && <h2 style={H2}>{product.intro.heading}</h2>}
             {product.intro.body.map((p, i) => <p key={i} style={bodyP}>{p}</p>)}
@@ -145,14 +145,14 @@ export default function ProductPage({ onNavigate, page, contentKey, product }: P
             {product.included.groups.map((group, gi) => (
               <div key={gi}>
                 {group.heading && (
-                  <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 600, letterSpacing: "0.12em", textTransform: "uppercase", color: "#2A9D78", marginBottom: 18 }}>
+                  <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 600, letterSpacing: "0.12em", textTransform: "uppercase", color: "#3AAC88", marginBottom: 18 }}>
                     {group.heading}
                   </p>
                 )}
                 <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
                   {group.items.map((item) => (
                     <div key={item} style={{ display: "flex", gap: 12, alignItems: "flex-start" }}>
-                      <div style={{ width: 4, height: 4, borderRadius: "50%", background: "#2A9D78", marginTop: 9, flexShrink: 0 }} />
+                      <div style={{ width: 4, height: 4, borderRadius: "50%", background: "#2E9677", marginTop: 9, flexShrink: 0 }} />
                       <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.7, color: "rgba(245,243,238,0.65)", margin: 0 }}>{item}</p>
                     </div>
                   ))}
@@ -171,7 +171,7 @@ export default function ProductPage({ onNavigate, page, contentKey, product }: P
               <p style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(19px, 2.2vw, 25px)", lineHeight: 1.3, color: "#F5F3EE", margin: 0, maxWidth: 620 }}>
                 {product.flexScopeNote}
               </p>
-              <button onClick={scrollToForm} style={{ background: "none", border: "none", cursor: "pointer", display: "flex", alignItems: "center", gap: 8, fontFamily: "'Inter', sans-serif", fontSize: 15, color: "#2A9D78", padding: 0, whiteSpace: "nowrap" }}>
+              <button onClick={scrollToForm} style={{ background: "none", border: "none", cursor: "pointer", display: "flex", alignItems: "center", gap: 8, fontFamily: "'Inter', sans-serif", fontSize: 15, color: "#3AAC88", padding: 0, whiteSpace: "nowrap" }}>
                 Get in touch <span>→</span>
               </button>
             </div>
@@ -181,7 +181,7 @@ export default function ProductPage({ onNavigate, page, contentKey, product }: P
 
       {/* Viability session callout */}
       {product.viabilitySession && (
-        <section style={{ background: "#0B5E48", padding: "64px 40px" }}>
+        <section style={{ background: "#086F54", padding: "64px 40px" }}>
           <div ref={r3} className="reveal" style={sectionMax}>
             <h2 style={{ ...H2, color: "#F5F3EE" }}>{product.viabilitySession.heading}</h2>
             {product.viabilitySession.body.map((p, i) => (
@@ -198,9 +198,9 @@ export default function ProductPage({ onNavigate, page, contentKey, product }: P
             <h2 style={H2}>{product.addOns.heading}</h2>
             <div style={{ display: "flex", flexDirection: "column", gap: 1 }}>
               {product.addOns.rows.map(([label, price], i) => (
-                <div key={label} style={{ display: "flex", justifyContent: "space-between", gap: 24, padding: "18px 0", borderTop: i === 0 ? "2px solid #2A9D78" : "1px solid rgba(255,255,255,0.07)" }}>
+                <div key={label} style={{ display: "flex", justifyContent: "space-between", gap: 24, padding: "18px 0", borderTop: i === 0 ? "2px solid #2E9677" : "1px solid rgba(255,255,255,0.07)" }}>
                   <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, lineHeight: 1.6, color: "rgba(245,243,238,0.65)", margin: 0 }}>{label}</p>
-                  <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, color: "#8FD9BE", margin: 0, whiteSpace: "nowrap" }}>{price}</p>
+                  <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, color: "#8AD0BF", margin: 0, whiteSpace: "nowrap" }}>{price}</p>
                 </div>
               ))}
             </div>
@@ -213,7 +213,7 @@ export default function ProductPage({ onNavigate, page, contentKey, product }: P
 
       {/* Suppliers */}
       {product.suppliers && (
-        <section style={{ background: "#161616", padding: "64px 40px" }}>
+        <section style={{ background: "#1D191A", padding: "64px 40px" }}>
           <div ref={r4} className="reveal" style={sectionMax}>
             <h2 style={H2}>{product.suppliers.heading}</h2>
             {product.suppliers.body.map((p, i) => <p key={i} style={bodyP}>{p}</p>)}
@@ -228,8 +228,8 @@ export default function ProductPage({ onNavigate, page, contentKey, product }: P
             <h2 style={H2}>{growthProgramContent.howItWorks.title}</h2>
             <div style={{ display: "flex", flexDirection: "column", gap: 1 }}>
               {growthProgramContent.howItWorks.stages.map((stage, i) => (
-                <div key={stage.num} style={{ display: "grid", gridTemplateColumns: "56px 1fr", gap: 20, padding: "24px 0", borderTop: i === 0 ? "2px solid #2A9D78" : "1px solid rgba(255,255,255,0.07)" }}>
-                  <span style={{ fontFamily: "'Instrument Serif', serif", fontSize: 28, color: "rgba(42,157,120,0.4)" }}>{stage.num}</span>
+                <div key={stage.num} style={{ display: "grid", gridTemplateColumns: "56px 1fr", gap: 20, padding: "24px 0", borderTop: i === 0 ? "2px solid #2E9677" : "1px solid rgba(255,255,255,0.07)" }}>
+                  <span style={{ fontFamily: "'Instrument Serif', serif", fontSize: 28, color: "rgba(46,150,119,0.4)" }}>{stage.num}</span>
                   <div>
                     <h3 style={{ fontFamily: "'Instrument Serif', serif", fontSize: 18, color: "#F5F3EE", fontWeight: 400, marginBottom: 6 }}>{stage.title}</h3>
                     <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, lineHeight: 1.7, color: "rgba(245,243,238,0.5)", margin: 0 }}>{stage.body}</p>
@@ -242,14 +242,14 @@ export default function ProductPage({ onNavigate, page, contentKey, product }: P
       )}
 
       {/* Fit list */}
-      <section style={{ background: "#161616", padding: "64px 40px" }}>
+      <section style={{ background: "#1D191A", padding: "64px 40px" }}>
         <div ref={r5} className="reveal" style={sectionMax}>
           <h2 style={H2}>{product.fitList.heading}</h2>
           <div style={{ display: "flex", flexDirection: "column", gap: 14, marginBottom: product.fitList.trailingNote ? 28 : 0 }}>
             {product.fitList.items.map((item) => (
               <div key={item} style={{ display: "flex", gap: 14, alignItems: "flex-start" }}>
-                <div style={{ width: 18, height: 18, border: "1px solid rgba(42,157,120,0.5)", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, marginTop: 2 }}>
-                  <div style={{ width: 6, height: 6, borderRadius: "50%", background: "#2A9D78" }} />
+                <div style={{ width: 18, height: 18, border: "1px solid rgba(46,150,119,0.5)", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, marginTop: 2 }}>
+                  <div style={{ width: 6, height: 6, borderRadius: "50%", background: "#2E9677" }} />
                 </div>
                 <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.7, color: "rgba(245,243,238,0.7)", margin: 0 }}>{item}</p>
               </div>
@@ -268,8 +268,8 @@ export default function ProductPage({ onNavigate, page, contentKey, product }: P
             <h2 style={H2}>{product.howItRuns.heading}</h2>
             <div style={{ display: "flex", flexDirection: "column", gap: 1, marginBottom: 32 }}>
               {product.howItRuns.steps.map(([num, label], i) => (
-                <div key={num} style={{ display: "grid", gridTemplateColumns: "48px 1fr", gap: 20, padding: "18px 0", alignItems: "center", borderTop: i === 0 ? "2px solid #2A9D78" : "1px solid rgba(255,255,255,0.07)" }}>
-                  <span style={{ fontFamily: "'Instrument Serif', serif", fontSize: 24, color: "rgba(42,157,120,0.5)" }}>{num}</span>
+                <div key={num} style={{ display: "grid", gridTemplateColumns: "48px 1fr", gap: 20, padding: "18px 0", alignItems: "center", borderTop: i === 0 ? "2px solid #2E9677" : "1px solid rgba(255,255,255,0.07)" }}>
+                  <span style={{ fontFamily: "'Instrument Serif', serif", fontSize: 24, color: "rgba(46,150,119,0.5)" }}>{num}</span>
                   <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, color: "rgba(245,243,238,0.7)", margin: 0 }}>{label}</p>
                 </div>
               ))}
@@ -296,12 +296,12 @@ export default function ProductPage({ onNavigate, page, contentKey, product }: P
           title="See it applied"
           slugs={product.relatedCaseStudies as Page[]}
           onNavigate={onNavigate}
-          background="#1C1C1C"
+          background="#231F20"
         />
       )}
 
       {/* Growth Program enquiry form */}
-      <section id="product-enquiry-form" style={{ background: "#161616", padding: "64px 40px" }}>
+      <section id="product-enquiry-form" style={{ background: "#1D191A", padding: "64px 40px" }}>
         <div style={{ maxWidth: 560, margin: "0 auto" }}>
           <h2 style={{ ...H2, textAlign: "center" }}>Ready to talk it through?</h2>
           <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, lineHeight: 1.7, color: "rgba(245,243,238,0.5)", textAlign: "center", marginBottom: 40 }}>
@@ -312,7 +312,7 @@ export default function ProductPage({ onNavigate, page, contentKey, product }: P
             formName="growth-charter-enquiry"
             submitLabel="Send enquiry"
             sourcePage={sourcePage}
-            accent="#2A9D78"
+            accent="#2E9677"
             fields={[
               { name: "name", label: "Name", type: "text" },
               { name: "business", label: "Business name", type: "text" },
@@ -327,7 +327,7 @@ export default function ProductPage({ onNavigate, page, contentKey, product }: P
       <div style={{ textAlign: "center", padding: "32px 40px 80px" }}>
         <button
           onClick={() => nav("growth-program")}
-          style={{ background: "none", border: "none", cursor: "pointer", fontFamily: "'Inter', sans-serif", fontSize: 14, color: "#2A9D78" }}
+          style={{ background: "none", border: "none", cursor: "pointer", fontFamily: "'Inter', sans-serif", fontSize: 14, color: "#3AAC88" }}
         >
           ← Back to The Growth Program
         </button>
