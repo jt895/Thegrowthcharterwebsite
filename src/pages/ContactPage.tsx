@@ -36,7 +36,7 @@ export default function ContactPage(_props: ContactPageProps) {
             {contactContent.forms.title}
           </h2>
 
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 2 }}>
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 2 }}>
             {/* Growth Program form */}
             <div style={{ background: "#252122", padding: "48px", borderTop: "2px solid #2E9677" }}>
               <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.15em", textTransform: "uppercase", color: "#3AAC88", marginBottom: 12 }}>
@@ -60,6 +60,33 @@ export default function ContactPage(_props: ContactPageProps) {
                   { name: "email", label: "Email", type: "email" },
                   { name: "phone", label: "Phone", type: "tel" },
                   { name: "message", label: "What's slowed down, or what are you trying to grow?", type: "textarea" },
+                ]}
+              />
+            </div>
+
+            {/* Viability Session form */}
+            <div style={{ background: "#252122", padding: "48px", borderTop: "2px solid #086F54" }}>
+              <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.15em", textTransform: "uppercase", color: "#3AAC88", marginBottom: 12 }}>
+                {contactContent.forms.viabilitySession.displayName}
+              </p>
+              <h3 style={{ fontFamily: "'Instrument Serif', serif", fontSize: 26, color: "#F5F3EE", fontWeight: 400, marginBottom: 16 }}>
+                {contactContent.forms.viabilitySession.title}
+              </h3>
+              <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, lineHeight: 1.7, color: "rgba(245,243,238,0.55)", marginBottom: 32 }}>
+                {contactContent.forms.viabilitySession.intro}
+              </p>
+              <EnquiryForm
+                id={contactContent.forms.viabilitySession.id}
+                formName={contactContent.forms.viabilitySession.formName}
+                submitLabel={contactContent.forms.viabilitySession.submitLabel}
+                sourcePage={sourcePage}
+                accent="#2E9677"
+                fields={[
+                  { name: "name", label: "Name", type: "text" },
+                  { name: "business", label: "Business name", type: "text" },
+                  { name: "email", label: "Email", type: "email" },
+                  { name: "phone", label: "Phone", type: "tel" },
+                  { name: "message", label: "What do you want to look at in the session?", type: "textarea" },
                 ]}
               />
             </div>

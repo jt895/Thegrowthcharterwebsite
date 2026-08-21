@@ -189,7 +189,7 @@
         "hero": {
             "eyebrow": "The Growth Program",
             "title": "The growth you're looking for is already in your business.",
-            "paraA": "The Growth Program finds it, sizes it's value, and gives you a plan you own.",
+            "paraA": "The Growth Program finds it, sizes its value, and gives you a plan you own.",
             "paraB": "Most businesses are one or two decisions away from achieving better growth, and the answer probably isn't another marketing campaign. We test the assumptions about your business against what the evidence actually says and build the plan around the gaps and the opportunities.",
             "ctaPrimary": "Book your free 20 minute call",
             "ctaSecondary": "See the ways to work with us"
@@ -271,17 +271,45 @@
                     ]
                 }
             ],
-            "note": "All prices ex GST. Every engagement starts with a $450 Viability Session, credited in full.",
+            "note": "All prices ex GST.",
+            "viabilityPointerLabel": "Every engagement starts with the Viability Session. See how it works below.",
             "growItYourselfNote": "Prefer to go at your own pace? GROW IT YOURSELF Self-Paced Training is in development.",
             "growItYourselfLinkLabel": "Join the waitlist",
             "customPackageNote": "Don't need everything in LAUNCH or GROW, or need something extra, like a booking system? Tell us what you need and we'll build a package for you.",
             "customPackageCtaLabel": "Get in touch",
             "legend": ""
         },
+        "viabilitySession": {
+            "eyebrow": "The Viability Session",
+            "title": "Know it's worth it before you commit.",
+            "price": "$450.",
+            "priceNote": "Credited in full.",
+            "body": [
+                "Every engagement starts with a Viability Session. Two and a half hours with your numbers, your market and your goals, answering one question honestly: will the Growth Program pay for itself in your business?",
+                "If the answer is yes, the $450 comes off your program. If the answer is no, we'll tell you straight, and you'll still walk away knowing more about your business than you did.",
+                "Either way, you get certainty. That's the point."
+            ],
+            "steps": [
+                {
+                    "num": "01",
+                    "text": "Book the session"
+                },
+                {
+                    "num": "02",
+                    "text": "We test the fit against your actual numbers"
+                },
+                {
+                    "num": "03",
+                    "text": "You get an honest verdict. Yes, and it's credited in full. No, and we say so."
+                }
+            ],
+            "ctaLabel": "Book your Viability Session",
+            "ctaNote": "$450 ex GST. Credited in full against any Growth Program engagement."
+        },
         "centralIdea": {
             "eyebrow": "The central idea",
             "title": "Assumptions vs Evidence and Insight.",
-            "paraA": "There are a lot of assumptions about why customers buy, which work is most valuable, and where growth will come from. Some of them right. Some of them are focused on the business and not the customer. Some of them are old wives' tales. But one thing is for sure: assumptions are costing you money.",
+            "paraA": "There are a lot of assumptions about why customers buy, which work is most valuable, and where growth will come from. Some of them are right. Some of them are focused on the business and not the customer. Some of them are old wives' tales. But one thing is for sure: assumptions are costing you money.",
             "paraB": "The Growth Program works to identify gaps and find the opportunities. It creates the environment where better decisions, stronger margins and clearer priorities come from.",
             "quote": "A stronger business isn't just about having more customers; it's about finding the right customers and focusing on the opportunities that will drive the growth you want. By understanding your business objectives, the value of your customers and where to focus your efforts, you build a stronger business, with clearer commercial choices and the ability to keep growing.",
             "quoteAttribution": "James Trebilcock, Founder, The United Republic"
@@ -981,6 +1009,14 @@
                 "displayName": "Growth Program enquiry",
                 "title": "Growing a business",
                 "intro": "You run a business and need more of the right customers, better margins, or a plan you actually own.",
+                "submitLabel": "Send enquiry"
+            },
+            "viabilitySession": {
+                "id": "viability-session-enquiry",
+                "formName": "viability-session-enquiry",
+                "displayName": "Viability Session enquiry",
+                "title": "Booking a Viability Session",
+                "intro": "You've seen the Growth Program and want to test the fit before committing to anything larger.",
                 "submitLabel": "Send enquiry"
             },
             "strategicAdvisory": {
