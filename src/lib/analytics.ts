@@ -45,3 +45,13 @@ export function trackFormSubmit(formName: string): void {
   if (typeof window === "undefined" || !MEASUREMENT_ID || !window.gtag) return;
   window.gtag("event", "generate_lead", { form_name: formName });
 }
+
+/**
+ * Fired when a visitor clicks a call to action, so the free 20 minute call and
+ * the paid Viability Session can be measured as separate events rather than
+ * one undifferentiated "contact" click.
+ */
+export function trackCtaClick(ctaId: string): void {
+  if (typeof window === "undefined" || !MEASUREMENT_ID || !window.gtag) return;
+  window.gtag("event", "cta_click", { cta_id: ctaId });
+}

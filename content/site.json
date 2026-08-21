@@ -272,7 +272,7 @@
                 }
             ],
             "note": "All prices ex GST.",
-            "viabilityPointerLabel": "Every engagement starts with a Viability Session.",
+            "viabilityPointerLabel": "Every engagement starts with the Viability Session. See how it works below.",
             "growItYourselfNote": "Prefer to go at your own pace? GROW IT YOURSELF Self-Paced Training is in development.",
             "growItYourselfLinkLabel": "Join the waitlist",
             "customPackageNote": "Don't need everything in LAUNCH or GROW, or need something extra, like a booking system? Tell us what you need and we'll build a package for you.",
@@ -282,9 +282,13 @@
         "viabilitySession": {
             "eyebrow": "The Viability Session",
             "title": "Know it's worth it before you commit.",
-            "body": "Every engagement starts with a Viability Session. Two and a half hours with your numbers, your market and your goals, answering one question honestly: will the Growth Program pay for itself in your business? If the answer is yes, the $450 comes off your program. If the answer is no, we'll tell you straight, and you'll still walk away knowing more about your business than you did. Either way, you get certainty. That's the point.",
-            "price": "$450",
+            "price": "$450.",
             "priceNote": "Credited in full.",
+            "body": [
+                "Every engagement starts with a Viability Session. Two and a half hours with your numbers, your market and your goals, answering one question honestly: will the Growth Program pay for itself in your business?",
+                "If the answer is yes, the $450 comes off your program. If the answer is no, we'll tell you straight, and you'll still walk away knowing more about your business than you did.",
+                "Either way, you get certainty. That's the point."
+            ],
             "steps": [
                 {
                     "num": "01",
