@@ -39,6 +39,9 @@ export default function StrategicAdvisoryPage({ onNavigate }: StrategicAdvisoryP
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 17, lineHeight: 1.8, color: "rgba(245,243,238,0.65)", maxWidth: 620, marginBottom: 16 }} className="hero-sub">
               {strategicAdvisoryContent.hero.paraA}
             </p>
+            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.8, color: "rgba(245,243,238,0.45)", maxWidth: 580, marginBottom: 16 }} className="hero-sub">
+              {strategicAdvisoryContent.hero.supportLine}
+            </p>
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.8, color: "rgba(245,243,238,0.45)", maxWidth: 580, marginBottom: 52 }} className="hero-sub">
               {strategicAdvisoryContent.hero.paraB}
             </p>
@@ -71,8 +74,11 @@ export default function StrategicAdvisoryPage({ onNavigate }: StrategicAdvisoryP
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.85, color: "rgba(245,243,238,0.5)", marginBottom: 28 }}>
               {strategicAdvisoryContent.theCase.paraB}
             </p>
-            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.85, color: "rgba(245,243,238,0.5)", margin: 0 }}>
+            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.85, color: "rgba(245,243,238,0.5)", marginBottom: 28 }}>
               {strategicAdvisoryContent.theCase.paraC}
+            </p>
+            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.85, color: "rgba(245,243,238,0.5)", margin: 0 }}>
+              {strategicAdvisoryContent.theCase.paraD}
             </p>
           </div>
         </div>
