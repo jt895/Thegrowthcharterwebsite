@@ -1,5 +1,5 @@
 # The United Republic
-## Messaging Hierarchy, Homepage Copy and Growth Program Copy
+## Messaging Hierarchy, Homepage Copy, Growth Program Copy and Strategic Advisory Copy
 
 ---
 
@@ -304,7 +304,7 @@ Don't need everything in LAUNCH or GROW, or need something extra, like a booking
 
 Prefer to go at your own pace? GROW IT YOURSELF self-paced training is in development. → Join the waitlist
 
-*Rationale: the Viability Session is the strongest conversion asset on this page and the current copy treats it as fine print. Reframed, it's the offer itself in miniature: a small, refundable way to buy certainty before buying the program. It should be visually prominent, not a footnote under the pricing table.*
+*Rationale: the Viability Session is the strongest conversion asset on this page and the current copy treats it as fine print. Reframed, it's the offer itself in miniature: a small, refundable way to buy certainty before buying the program. It should be visually prominent, not a footnote under the pricing table. See the standalone Viability Session design brief for the full section spec.*
 
 ---
 
@@ -351,7 +351,7 @@ Start with a free 20-minute conversation. No pitch. We'll tell you honestly whet
 ---
 ---
 
-# Part 4: Implementation notes
+# Part 4: Implementation notes (homepage and Growth Program)
 
 1. **The homepage hero stays rational, the subhead does the emotional work.** "Certainty about where the effort should go" is the doubt named in a register the government audience can also sit with. Don't push the homepage further than that.
 
@@ -363,6 +363,150 @@ Start with a free 20-minute conversation. No pitch. We'll tell you honestly whet
 
 5. **"Growth is the receipt" is a keepable brand line.** It compresses the whole strategy: certainty is the product, growth is the evidence. Consider it for proposals, decks and the About page.
 
-6. **Strategic Advisory copy is deliberately not rewritten here.** The current framing is close to right for that audience. The one addition worth carrying over when you touch that page: "need the decision to hold up before the money moves", used in the homepage pathway copy.
+6. **Strategic Advisory refinements are now written — see Part 5.** The original framing was close to right for that audience, so the pass there is additions and sharpening, not a rewrite. It carries over "need the decision to hold up before the money moves" from this homepage pathway copy, as flagged below.
 
-7. **Sequence for rollout:** live-page typo fixes immediately, homepage subhead and closing CTA next (low risk, immediate sharpening), then the Growth Program page as a full replacement, then Advisory refinements.
+7. **Sequence for rollout:** live-page typo fixes immediately, homepage subhead and closing CTA next (low risk, immediate sharpening), then the Growth Program page as a full replacement, then the Strategic Advisory refinements in Part 5 (can ship independently, lower risk than the Growth Program rebuild).
+
+---
+---
+
+# Part 5: Revised Strategic Advisory Page Copy
+
+*Rewritten against the live page at theunitedrepublic.com.au/strategic-advisory: hero, "Most briefs describe a symptom," "Structurally independent," the four-stage methodology (Understand / Strategise / Assemble and direct / Measure), evidence, "Who we work with," three case studies, closing CTA. This page was deliberately left alone in Part 1–4 because the framing was already close to right for this audience. This pass is refinement, not replacement: the changes are additions and sharpening, not a rewrite of what's working.*
+
+*Strategy overlay, per section 1.4: lead with Pillar 2 (decide what matters, defensibly), supported by independence. Keep the emotion implicit — this audience buys reassurance but needs to look rational doing it, so the page should read as rigour and let the reassurance sit inside that. The one line carried over from the homepage pathway copy, as originally flagged: "need the decision to hold up before the money moves."*
+
+---
+
+### Hero
+
+**Eyebrow:** Strategic Advisory
+
+**H1 (unchanged):**
+# Start with the right questions. Then build the right response.
+
+**Subhead (unchanged):**
+Independent counsel for government, corporate and complex organisations, before the money goes into campaigns, content or delivery.
+
+**Support line (new):**
+So the decision holds up before the budget moves, not after it's been spent.
+
+**Opening body (unchanged):**
+We help you define your objectives, understand the real problem, shape the strategy that answers it, and brief the right specialists to deliver it.
+
+**CTA:** Book your free 20 minute call
+**Secondary:** See how we work
+
+*Rationale: the H1 and subhead already do the job — rational, specific, no wasted words. The support line is the one addition the original brief called for. It's placed as a third beat rather than folded into the subhead, so it reads as the payoff of the sentence before it rather than crowding it.*
+
+---
+
+### Most briefs describe a symptom
+
+By the time a brief reaches a marketing team or a supplier, the problem has usually been defined by whoever wrote it, and the response is shaped by whatever the marketing team is set up to deliver, or whatever that supplier happens to sell.
+
+We work upstream of that. What are the business objectives? What is the organisation actually trying to change? Who has to behave differently for it to happen? Where is influence genuinely available, and where is it being spent for no return?
+
+Only then does it make sense to talk about what the work should be. The result is an answer you can take into the room that has to approve it, with the reasoning already attached.
+
+*Rationale: the first three paragraphs are unchanged, they're doing exactly what this audience needs. The closing line is new and it's the only place on the page that states Pillar 2 outright (without using the word "defensible") — a decision that survives being questioned in the room it's presented to.*
+
+---
+
+### Structurally independent
+
+We don't keep a fixed team. We build the right people around each challenge, bringing together specialist partners based on what the work needs, not what we happen to have in-house.
+
+No permanent team. No payroll to feed. No preferred answer waiting for a question.
+
+And we stay through delivery. Strategy that isn't carried into execution isn't strategy. It's a document.
+
+*Unchanged. This section already does the hardest job on the page: it explains why the advice can be trusted without ever using the word "trust," and it pre-empts the one thing this audience is trained to suspect — that the answer will conveniently point at more work for us. "No payroll to feed" says that better than any promise could.*
+
+---
+
+### How we work
+
+Four stages. Each one produces the evidence the next depends on.
+
+**01 Understand**
+Strategic problem definition. Audience and stakeholder insight. Communications and brand review. Barrier and opportunity mapping. Behaviour change strategy.
+
+**02 Strategise**
+The roadmap. Communications strategy. Campaign architecture. Message frameworks. Channel and content planning. Stakeholder engagement. Launch sequencing.
+
+**03 Assemble and direct**
+Partner briefing and direction. Implementation oversight. Strategic project leadership. Creative and content review. Alignment across stakeholders.
+
+**04 Measure**
+Campaign evaluation. Performance reporting. Message testing. Post-campaign review. Refinement planning.
+
+*Rationale: the four stages and their contents are unchanged, they're specific and credible as they stand. The only addition is the one-line intro, which gives the section a spine ("each stage produces the evidence the next depends on") and matches the framing already used for the five-stage methodology on the Growth Program page, so a reader who lands on both pages recognises the same discipline at work.*
+
+---
+
+### Evidence
+
+**James Trebilcock — Principal Consultant**
+
+Twenty-five years leading strategy, communications and engagement for Toyota, Ford, Commonwealth Bank, Australia Post, DFAT Smartraveller and the Electoral Commission of South Australia. Campaigns that have reached millions of Australians.
+
+*Unchanged.*
+
+---
+
+### Who we work with
+
+- Government and public sector
+- Purpose-led organisations
+- Complex stakeholder environments
+- Brand and reputation challenges
+- Behaviour change programs
+- Projects needing strategy, alignment and implementation discipline
+
+*Unchanged.*
+
+---
+
+### Case studies
+
+**2022 South Australian State Election**
+Engaged to help procure an ad agency. Within weeks it was clear the communications function itself wasn't working.
+
+**2024 First Nations Voice to Parliament Election**
+A new electoral process, six regions, and a timing change already working against understanding. Reach wasn't the constraint. Trust was.
+
+**2022 Local Government Elections**
+Postal voting isn't an awareness problem. It's a behaviour with more steps and more places to give up.
+
+*Unchanged. These are the strongest proof on the page — specific, unglamorous, and each one reframes a problem the client thought they had into the real one. Leave them exactly as they are.*
+
+---
+
+### Closing CTA
+
+## Know it holds up before you commit the budget.
+
+Start with a conversation about the problem. Not a pitch, not a capability presentation. What you're trying to change, what the real issue is, and whether we're the right people to help you answer it. Twenty minutes, no pitch.
+
+**CTA:** Book your free 20 minute call
+
+*Rationale: the original closing paragraph ("Start with a conversation about the problem...") is carried over almost word for word, it already does the job. Two additions: a headline, which the section didn't have, matching the pattern set by the homepage and Growth Program closing CTAs; and the "no pitch" close, matching the tonal benchmark set across the whole site. The headline is the one place this page states the emotional payoff out loud — not "guessing," which is the founder-facing word, but "holds up," which is the word this audience actually uses.*
+
+---
+
+### Footer description (unchanged)
+
+Independent strategic advisory for complex organisations and practical business growth support through The Growth Program.
+
+---
+
+## Part 5 implementation notes
+
+1. **This is a refinement pass, not a replacement.** Roughly 80% of the page is untouched. The additions are: the hero support line, one closing sentence in "Most briefs describe a symptom," a one-line intro to the four stages, and a headline plus closing line on the CTA. Everything else — the four-stage methodology, the independence section, the evidence, the case studies, "Who we work with" — stays exactly as it is because it's already doing its job.
+
+2. **"Holds up" is this page's version of "Growth is the receipt."** It's the load-bearing word for the Advisory audience the way "certainty" and "guessing" carry the founder audience. It now appears in the hero support line, implied in the new line in "Most briefs describe a symptom" ("take into the room that has to approve it"), and the closing headline. Don't add a fourth instance — three is enough to establish it without it starting to sound like a slogan.
+
+3. **No pricing, no packages on this page, and that's deliberate.** Unlike the Growth Program's LAUNCH/GROW/SCALE table, Advisory engagements are scoped per client. The absence of a price list is itself consistent with "independent counsel" positioning — nothing here should read as a menu.
+
+4. **Sequence:** this page can ship independently of the Growth Program replacement. It's a smaller change with lower risk, so it can go out whenever it's ready rather than waiting on the Growth Program build.
