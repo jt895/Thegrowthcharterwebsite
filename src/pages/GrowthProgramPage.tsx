@@ -13,6 +13,7 @@ interface GrowthProgramPageProps {
 export default function GrowthProgramPage({ onNavigate }: GrowthProgramPageProps) {
   const nav = (page: Page) => { onNavigate(page); window.scrollTo({ top: 0 }); };
   const contact = () => goToContact(onNavigate, "growth-program", "growth-charter-enquiry");
+  const bookViability = () => goToContact(onNavigate, "growth-program", "viability-session-enquiry");
   const scrollToWaysToWork = () => {
     document.getElementById("ways-to-work")?.scrollIntoView({ behavior: "smooth", block: "start" });
   };
@@ -175,7 +176,10 @@ export default function GrowthProgramPage({ onNavigate }: GrowthProgramPageProps
           </div>
 
           <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, lineHeight: 1.7, color: "rgba(245,243,238,0.4)", marginTop: 24 }}>
-            {growthProgramContent.waysToWork.note}
+            {growthProgramContent.waysToWork.note}{" "}
+            <a href="#viability-session" style={{ color: "#3AAC88", textDecoration: "none" }}>
+              {growthProgramContent.waysToWork.viabilityPointerLabel}
+            </a>
           </p>
 
           <div style={{ marginTop: 32, display: "flex", flexDirection: "column", gap: 24 }}>
@@ -201,6 +205,58 @@ export default function GrowthProgramPage({ onNavigate }: GrowthProgramPageProps
           .matrix-stack { display: flex !important; }
         }
       `}</style>
+
+      {/* Viability Session */}
+      <section id="viability-session" {...editableField("growthProgram.viabilitySession")} style={{ padding: "64px 40px" }}>
+        <div
+          style={{
+            maxWidth: 760,
+            margin: "0 auto",
+            padding: "56px 48px",
+            // Gradient border: card fill layered over the gradient so only the
+            // 2px border shows it. Kept unique to this card.
+            border: "2px solid transparent",
+            background: "linear-gradient(#252122, #252122) padding-box, linear-gradient(135deg, #3AAC88, #086F54) border-box",
+          }}
+        >
+          <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: "#3AAC88", marginBottom: 20 }}>
+            {growthProgramContent.viabilitySession.eyebrow}
+          </p>
+          <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(26px, 3vw, 38px)", color: "#F5F3EE", fontWeight: 400, lineHeight: 1.2, marginBottom: 24 }}>
+            {growthProgramContent.viabilitySession.title}
+          </h2>
+          <p style={{ display: "flex", alignItems: "baseline", gap: 20, flexWrap: "wrap", margin: "0 0 28px" }}>
+            <span style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(52px, 7vw, 84px)", lineHeight: 1, color: "#F5F3EE" }}>
+              {growthProgramContent.viabilitySession.price}
+            </span>
+            <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, color: "rgba(245,243,238,0.65)" }}>
+              {growthProgramContent.viabilitySession.priceNote}
+            </span>
+          </p>
+          <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.85, color: "rgba(245,243,238,0.65)", marginBottom: 36 }}>
+            {growthProgramContent.viabilitySession.body}
+          </p>
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 24, marginBottom: 36 }}>
+            {growthProgramContent.viabilitySession.steps.map((step) => (
+              <div key={step.num} style={{ borderTop: "1px solid rgba(255,255,255,0.08)", paddingTop: 16 }}>
+                <p style={{ fontFamily: "'Instrument Serif', serif", fontSize: 20, color: "#3AAC88", fontWeight: 400, marginBottom: 8 }}>{step.num}</p>
+                <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, lineHeight: 1.7, color: "rgba(245,243,238,0.65)", margin: 0 }}>{step.text}</p>
+              </div>
+            ))}
+          </div>
+          <button
+            onClick={bookViability}
+            style={{ background: "#2E9677", border: "none", cursor: "pointer", fontFamily: "'Inter', sans-serif", fontSize: 14, fontWeight: 500, color: "#fff", padding: "16px 32px", transition: "background 0.25s" }}
+            onMouseEnter={(e) => { e.currentTarget.style.background = "#268A67"; }}
+            onMouseLeave={(e) => { e.currentTarget.style.background = "#2E9677"; }}
+          >
+            {growthProgramContent.viabilitySession.ctaLabel}
+          </button>
+          <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, lineHeight: 1.7, color: "rgba(245,243,238,0.55)", margin: "16px 0 0" }}>
+            {growthProgramContent.viabilitySession.ctaNote}
+          </p>
+        </div>
+      </section>
 
       {/* Central idea */}
       <section {...editableField("growthProgram.centralIdea")} style={{ padding: "64px 40px" }}>
