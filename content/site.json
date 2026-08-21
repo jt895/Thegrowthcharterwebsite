@@ -900,6 +900,7 @@
             "eyebrow": "Strategic Advisory",
             "title": "Start with the right questions. Then build the right response.",
             "paraA": "Independent counsel for government, brands and complex organisations, before the money goes into campaigns, content or creative.",
+            "supportLine": "So the decision holds up before the budget moves, not after it's been spent.",
             "paraB": "We help you define your objectives, understand the real problem, shape the strategy that answers it, and brief the right specialists to deliver it.",
             "ctaPrimary": "Book your free 20 minute call"
         },
@@ -907,7 +908,8 @@
             "title": "Most briefs describe a symptom.",
             "paraA": "By the time a brief reaches a marketing team or supplier, the problem has usually been defined by whoever wrote it, and the response is shaped by whatever the marketing team is set up to deliver or that supplier happens to sell.",
             "paraB": "We work upstream of that. What are the business objectives? What is the organisation actually trying to change? Who has to behave differently for it to happen? Where is influence genuinely available, and where is it being spent for no return?",
-            "paraC": "Only then does it make sense to talk about what the work should be."
+            "paraC": "Only then does it make sense to talk about what the work should be.",
+            "paraD": "The result is an answer you can take into the room that has to approve it, with the reasoning already attached."
         },
         "theDifference": {
             "title": "Structurally independent.",
@@ -917,7 +919,7 @@
         },
         "methodology": {
             "eyebrow": "Our methodology",
-            "title": "Four stages.",
+            "title": "Four stages. Each one produces the evidence the next depends on.",
             "steps": [
                 {
                     "num": "01",
@@ -996,8 +998,8 @@
         },
         "cta": {
             "eyebrow": "Start the conversation",
-            "title": "Start with a conversation about the problem.",
-            "body": "Not a pitch and not a capability presentation. A discussion about what you're trying to change and whether we're the right people to help.",
+            "title": "Know it holds up before you commit the budget.",
+            "body": "Start with a conversation about the problem. Not a pitch and not a capability presentation. A discussion about what you're trying to change and whether we're the right people to help. Twenty minutes, no pitch.",
             "ctaLabel": "Book your free 20 minute call"
         }
     },
