@@ -291,6 +291,25 @@ export default function GrowthProgramPage({ onNavigate }: GrowthProgramPageProps
         </div>
       </section>
 
+      {/* What changes - simple centred text section, matching StrategicAdvisoryPage's theCase/theDifference pattern */}
+      <section {...editableField("growthProgram.whatChanges")} style={{ padding: "64px 40px" }}>
+        <div style={{ maxWidth: 1280, margin: "0 auto" }}>
+          <div style={{ marginBottom: 40 }}>
+            <h2 style={{ fontFamily: "'Instrument Serif', serif", fontSize: "clamp(28px, 3.5vw, 44px)", color: "#F5F3EE", fontWeight: 400, lineHeight: 1.15, textAlign: "center" }}>
+              {growthProgramContent.whatChanges.title}
+            </h2>
+          </div>
+          <div style={{ maxWidth: 820, margin: "0 auto", background: "#252122", padding: "56px 64px", borderLeft: "2px solid #2E9677" }}>
+            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 16, lineHeight: 1.85, color: "rgba(245,243,238,0.65)", marginBottom: 28 }}>
+              {growthProgramContent.whatChanges.paraA}
+            </p>
+            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.85, color: "rgba(245,243,238,0.5)", margin: 0 }}>
+              {growthProgramContent.whatChanges.paraB}
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Central idea */}
       <section {...editableField("growthProgram.centralIdea")} style={{ padding: "64px 40px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1fr", gap: 80, alignItems: "start" }}>
@@ -302,8 +321,11 @@ export default function GrowthProgramPage({ onNavigate }: GrowthProgramPageProps
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.85, color: "rgba(245,243,238,0.55)", marginBottom: 24 }}>
               {growthProgramContent.centralIdea.paraA}
             </p>
-            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.85, color: "rgba(245,243,238,0.55)" }}>
+            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.85, color: "rgba(245,243,238,0.55)", marginBottom: 24 }}>
               {growthProgramContent.centralIdea.paraB}
+            </p>
+            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.85, color: "rgba(245,243,238,0.55)" }}>
+              {growthProgramContent.centralIdea.paraC}
             </p>
           </div>
           <div style={{ background: "#086F54", padding: "56px 48px" }}>
@@ -359,11 +381,8 @@ export default function GrowthProgramPage({ onNavigate }: GrowthProgramPageProps
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.85, color: "rgba(245,243,238,0.55)", marginBottom: 24 }}>
               {growthProgramContent.whyTur.paraA}
             </p>
-            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.85, color: "rgba(245,243,238,0.55)", marginBottom: 24 }}>
-              {growthProgramContent.whyTur.paraB}
-            </p>
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: 1.85, color: "rgba(245,243,238,0.45)" }}>
-              {growthProgramContent.whyTur.paraC}
+              {growthProgramContent.whyTur.paraB}
             </p>
           </div>
           <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>

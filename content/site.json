@@ -188,29 +188,29 @@
     "growthProgram": {
         "hero": {
             "eyebrow": "The Growth Program",
-            "title": "The growth you're looking for is already in your business.",
-            "paraA": "The Growth Program finds it, sizes its value, and gives you a plan you own.",
-            "paraB": "Most businesses are one or two decisions away from achieving better growth, and the answer probably isn't another marketing campaign. We test the assumptions about your business against what the evidence actually says and build the plan around the gaps and the opportunities.",
+            "title": "You're busy. You're spending. And you're still not sure it's working.",
+            "paraA": "Here's the good news: the growth you're looking for is already in your business. The Growth Program finds it, sizes its value in dollars, and gives you a plan you own.",
+            "paraB": "Most businesses are one or two decisions away from better growth, and the answer probably isn't another marketing campaign. We test your assumptions against what the evidence actually says, then build the plan around the gaps and the opportunities.",
             "ctaPrimary": "Book your free 20 minute call",
             "ctaSecondary": "See the ways to work with us"
         },
         "whatIs": {
             "eyebrow": "What it is",
             "title": "A growth program built to be used, not filed.",
-            "paraA": "The Growth Program finds your strongest opportunities, ranks them by the value to your business, and turns them into a plan with your name on it.",
-            "paraB": "Every stage leaves you with real evidence, clear decisions and tools you can use. You end up stronger and more capable, not with a consultant on retainer or an agency focused on their profitability.",
+            "paraA": "The Growth Program finds your strongest opportunities, ranks them by their value to your business, and turns them into a plan with your name on it.",
+            "paraB": "Every stage leaves you with real evidence, clear decisions and tools you can use. You end up more certain and more capable, not with a consultant on retainer or an agency invested in staying.",
             "pillars": [
                 {
                     "title": "Evidence first",
-                    "body": "We test assumptions against customer insight and real data before any decisions are made."
+                    "body": "We test assumptions against customer insight and real data before any decisions are made. You'll know why each choice was made, not just what it is."
                 },
                 {
                     "title": "Strategy before spend",
-                    "body": "No campaigns, websites or marketing until the objectives are defined, success is quantified, and the direction is clear."
+                    "body": "No campaigns, websites or marketing until the objectives are defined, success is quantified, and the direction is clear. Money moves last, not first."
                 },
                 {
                     "title": "Built for your business",
-                    "body": "Shaped around your stage of growth, your objectives, your sector, your customers and your goals. A tailored playbook for your business"
+                    "body": "Shaped around your stage of growth, your sector, your customers and your goals. A playbook for your business, not a template with your logo on it."
                 },
                 {
                     "title": "Capability, not dependency",
@@ -221,7 +221,7 @@
         "waysToWork": {
             "eyebrow": "Ways to engage",
             "title": "Do it together or done for you - the same roadmap, delivered the way you want to work.",
-            "intro": "How much ground do you need to cover, and how much do you want to do yourself?",
+            "intro": "Two questions decide the fit: how much ground do you need to cover, and how much do you want to do yourself?",
             "columns": [
                 "DO IT TOGETHER",
                 "DONE FOR YOU"
@@ -229,7 +229,7 @@
             "rows": [
                 {
                     "scope": "LAUNCH",
-                    "note": "Foundations done properly: strategy, brand, a launch-ready website and the support to begin your growth journey.",
+                    "note": "For businesses starting out or starting again. Foundations done properly: strategy, brand, a launch-ready website and the support to begin with confidence instead of guesswork.",
                     "cells": [
                         {
                             "value": "–",
@@ -243,7 +243,7 @@
                 },
                 {
                     "scope": "GROW",
-                    "note": "Everything you need to grow your business, built on your actual sales data, with pricing, conversion and 12 weeks of support.  Delivered and in hand to build capability, or done for you to let you focus on what matters. ",
+                    "note": "For established businesses ready for the next step. Everything you need to grow, built on your actual sales data, with pricing, conversion and 12 weeks of support. Do it together to build the capability in-house, or done for you so you can stay focused on running the business.",
                     "cells": [
                         {
                             "value": "$9,550",
@@ -258,7 +258,7 @@
                 },
                 {
                     "scope": "SCALE",
-                    "note": "Multiple audiences, product lines or markets.",
+                    "note": "For businesses with multiple audiences, product lines or markets. Scoped to the complexity you're actually managing.",
                     "cells": [
                         {
                             "value": "POA - Scope dependent ",
@@ -306,57 +306,62 @@
             "ctaLabel": "Book your Viability Session",
             "ctaNote": "$450 ex GST. Credited in full against any Growth Program engagement."
         },
+        "whatChanges": {
+            "title": "The plan matters. The certainty matters more.",
+            "paraA": "Owners tell us the tangible results first: spend stops leaking, decisions get faster, the priorities are finally on one page. But the thing they mention last is the thing they value most. They stop second-guessing. They walk into their own business on Monday knowing why they're doing what they're doing, and able to say so to their team, their partner and themselves.",
+            "paraB": "That's the real product. Growth is the receipt."
+        },
         "centralIdea": {
             "eyebrow": "The central idea",
-            "title": "Assumptions vs Evidence and Insight.",
-            "paraA": "There are a lot of assumptions about why customers buy, which work is most valuable, and where growth will come from. Some of them are right. Some of them are focused on the business and not the customer. Some of them are old wives' tales. But one thing is for sure: assumptions are costing you money.",
-            "paraB": "The Growth Program works to identify gaps and find the opportunities. It creates the environment where better decisions, stronger margins and clearer priorities come from.",
-            "quote": "A stronger business isn't just about having more customers; it's about finding the right customers and focusing on the opportunities that will drive the growth you want. By understanding your business objectives, the value of your customers and where to focus your efforts, you build a stronger business, with clearer commercial choices and the ability to keep growing.",
+            "title": "Assumptions are costing you money.",
+            "paraA": "Every business runs on assumptions. Why customers buy. Which work is most valuable. Where growth will come from. Some of them are right. Some are about the business, not the customer. Some are old wives' tales that have never been checked.",
+            "paraB": "The problem isn't having assumptions. It's spending real money on them without knowing which are which.",
+            "paraC": "The Growth Program replaces assumptions with evidence and insight. That's where better decisions, stronger margins and clearer priorities come from. Not from doing more. From knowing more.",
+            "quote": "A stronger business isn't just about having more customers. It's about finding the right customers and focusing on the opportunities that will drive the growth you want. When you understand your objectives, the value of your customers and where to focus, you get clearer commercial choices and the ability to keep growing.",
             "quoteAttribution": "James Trebilcock, Founder, The United Republic"
         },
         "howItWorks": {
             "eyebrow": "How it works",
-            "title": "Five stages. One plan.",
-            "body": "Each stage produces the evidence and decisions required for the next. We do not jump into action before we understand your business, your objectives, and what success looks like. A clear commercial direction is key to building lasting growth.",
+            "title": "Five stages. One plan. Evidence at every step.",
+            "body": "Each stage produces the evidence and decisions the next one needs. We don't jump into action before we understand your business, your objectives and what success looks like, because action without direction is how the money got wasted last time.",
             "stages": [
                 {
                     "num": "01",
                     "section": "Discovery",
                     "title": "The Business Now",
-                    "body": "We find out how you and your team see the business today: your goals, customers, business model, capacity, risks and where you personally want to end up."
+                    "body": "How you and your team see the business today: goals, customers, business model, capacity, risks, and where you personally want to end up. That last one matters more than most consultants admit."
                 },
                 {
                     "num": "02",
                     "section": "Evidence and analysis",
                     "title": "The Opportunity",
-                    "body": "We test assumptions against customer research, real numbers and market reality. Then we work out the value of each opportunity and prioritise the ones that will have the greatest effect."
+                    "body": "We test the assumptions against customer research, real numbers and market reality. Some will hold up. Some won't. Either way, you'll know instead of wondering. Then we put a value on each opportunity and rank them by what they're worth."
                 },
                 {
                     "num": "03",
                     "section": "A clearer place in the market",
                     "title": "Branding & Positioning",
-                    "body": "We work out what you're really selling, the problem you're solving for your customers, why the right customers should choose you, and how your business can stand apart in a way you can actually deliver on."
+                    "body": "What you're really selling, the problem you solve, why the right customers should choose you, and how you stand apart in a way you can actually deliver on."
                 },
                 {
                     "num": "04",
                     "section": "Who matters and how to reach them",
                     "title": "Audiences, Messaging & Channel Planning",
-                    "body": "We work out which customers matter most, who the decision-makers and influencers are, where the value is, shape the right messages for each audience, and find the best way to engage the influencers and decision-makers. "
+                    "body": "Which customers matter most, who decides and who influences, what to say to each of them, and the best way to reach them. No spray, no pray."
                 },
                 {
                     "num": "05",
                     "section": "Turn the plan into action",
                     "title": "Go To Market & Implementation",
-                    "body": "We build a staged plan: who does what, when, what it costs, how you'll know it's working, and provide the tools your team needs to run it."
+                    "body": "A staged plan: who does what, when, what it costs, and how you'll know it's working. Plus the tools your team needs to run it without us."
                 }
             ]
         },
         "whyTur": {
             "eyebrow": "Credibility",
             "title": "Big business experience, applied to yours.",
-            "paraA": "The Growth Program draws on 25 years of work with national and international brands, government agencies and owner-led businesses.",
-            "paraB": "James has led strategy, marketing and growth for Toyota, Ford, Commonwealth Bank, Hyundai, Subaru, DFAT, Hort Innovation, YellowTail Wines, the Electoral Commission of South Australia, Adelaide Hills Wine Region and The Bend Motorsport Park.",
-            "paraC": "The questions that build major brands are the same ones that help a local business make better commercial decisions. The scale changes. The thinking shouldn't.",
+            "paraA": "The Growth Program draws on 25 years of work with national and international brands, government agencies and owner-led businesses. James has led strategy, marketing and growth for Toyota, Ford, Commonwealth Bank, Hyundai, Subaru, DFAT, Hort Innovation, Yellow Tail, the Electoral Commission of South Australia, Adelaide Hills Wine Region and The Bend Motorsport Park.",
+            "paraB": "The questions that build major brands are the same ones that help a local business make better commercial decisions. The scale changes. The thinking shouldn't.",
             "organisations": [
                 "Toyota",
                 "Ford",
@@ -368,12 +373,12 @@
                 "Electoral Commission of South Australia",
                 "Adelaide Hills Wine Region",
                 "The Bend Motorsport Park",
-                "YellowTail"
+                "Yellow Tail"
             ]
         },
         "fitCheck": {
             "title": "Is this you?",
-            "body": "Start with a free 20-minute conversation. No pitch. We'll tell you honestly whether the Program is right for you, and what it would look like.",
+            "body": "Start with a free 20-minute conversation. No pitch. We'll tell you honestly whether the Program is right for you, and what it would look like. If it's not, you'll still leave with something useful.",
             "cta": "Book your free 20 minute call",
             "points": [
                 "Revenue is there, but growth has flattened",
@@ -381,8 +386,8 @@
                 "You've spent on marketing before and can't point to what it returned",
                 "Too much of the business runs through you",
                 "You want a plan you own, not a supplier you can't leave",
-                "Business is good, but you need to take the next step ",
-                "You're great at the delivery, but need help finding new customers and opportunities"
+                "Business is good, but the next step isn't obvious",
+                "You're great at the delivery, but finding new customers is the gap"
             ]
         },
         "products": {
