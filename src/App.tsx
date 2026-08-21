@@ -36,7 +36,15 @@ export default function App({ initialPage = "home" }: AppProps) {
 
   useEffect(() => {
     updateDocumentMetadata(page);
-    window.scrollTo({ top: 0 });
+    // Explicit "auto" (instant) here, not "smooth": the global CSS sets
+    // scroll-behavior: smooth, so an unqualified scrollTo would animate.
+    // goToContact() (lib/contactNav.ts) sometimes needs to scroll straight
+    // to one of the Contact page's enquiry forms a beat after this runs -
+    // if this reset were still animating, that second smooth scroll would
+    // race it and the browser would drop both, leaving the page wherever
+    // scroll happened to land on the previous page. Instant here removes
+    // the race so the later smooth scroll-to-anchor always wins cleanly.
+    window.scrollTo({ top: 0, behavior: "auto" });
     trackPageview(pathForPage(page));
   }, [page]);
 
