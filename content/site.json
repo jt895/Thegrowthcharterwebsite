@@ -60,7 +60,7 @@
     "home": {
         "hero": {
             "title": "Growth needs sharper choices, not more activity.",
-            "subA": "We help businesses and organisations find where growth is really available, decide what matters most, and build the capability to act on it.",
+            "subA": "Most businesses aren't short on effort. They're short on certainty about where the effort should go. We find where growth is really available, decide what matters most, and build the capability to act on it.",
             "subB": "Big-brand strategic thinking. Backed by real customer evidence. A hard eye on the money. Sized to fit your business.",
             "ctaPrimary": "Book your free 20 minute call",
             "scrollLabel": "Scroll",
@@ -71,16 +71,16 @@
             "advisory": {
                 "eyebrow": "Government, corporate and complex organisations",
                 "title": "Strategic Advisory",
-                "body": "Independent counsel for organisations that need to define business objectives and understand the real issues before investing in campaigns, content or delivery. Complex stakeholders, competing priorities, and a clear answer at the end.",
+                "body": "Independent counsel for organisations that need to understand the real issues before committing budget to campaigns, content or delivery. We work through the complex stakeholders and competing priorities and give you a clear, evidence-based answer you can take into any room.",
                 "cta": "Explore Strategic Advisory",
-                "fitNote": "Right for you if you're leading a government, corporate or complex organisation and need independent counsel to understand the opportunities and challenges before committing budget."
+                "fitNote": "Right for you if you're leading a government, corporate or complex organisation and need the decision to hold up before the money moves."
             },
             "growthProgram": {
                 "eyebrow": "Startups, small businesses and established businesses ready for the next step",
                 "title": "The Growth Program",
-                "body": "We work with you to understand your business, identify your best opportunities, rank them by their value, and build a plan you own. With four ways to work with us, from do-it-yourself to fully done-for-you, there's a Growth Program right for your business.",
+                "body": "You know your business. What's harder to know is where the next stage of growth is actually coming from, and whether what you're doing now is getting you there. The Growth Program answers that. We work with you to find your best opportunities, rank them by value, and build a plan you own. Four ways in, from do-it-yourself to fully done-for-you.",
                 "cta": "Explore The Growth Program",
-                "fitNote": "Right for you if you're a founder or owner ready to find and act on your next growth opportunity."
+                "fitNote": "Right for you if you're a founder or owner who wants to be sure the next move is the right one."
             }
         },
         "whyTur": {
@@ -94,7 +94,7 @@
                 },
                 {
                     "title": "Evidence led",
-                    "body": "We test the assumptions against customer insight,  real data and market reality before deciding what matters most and where the opportunities exist."
+                    "body": "We test the assumptions against customer insight, real data and market reality before deciding what matters most. You'll know why each choice was made, not just what it is."
                 },
                 {
                     "title": "Capability, not dependency",
@@ -108,8 +108,8 @@
             "body": "Brands and organisations we've led strategy, marketing and communications work for across 25 years."
         },
         "cta": {
-            "title": "Find the growth your business needs to take the next step.",
-            "body": "The first conversation is practical and free. What are you trying to achieve? What do you see as the issues? What's slowed down? What are you doing now?  Where might the opportunity be? And what would a useful outcome look like? Twenty minutes, no pitch.",
+            "title": "Stop guessing where growth will come from.",
+            "body": "The first conversation is practical and free. What are you trying to achieve? What's slowed down? Where might the opportunity be? And what would a useful outcome look like? Twenty minutes, no pitch.",
             "ctaPrimary": "Book your free 20 minute call",
             "ctaSecondary": "Find out more"
         }
